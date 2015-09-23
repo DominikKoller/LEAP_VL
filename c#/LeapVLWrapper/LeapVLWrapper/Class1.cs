@@ -66,6 +66,14 @@ namespace LeapVLWrapper
         {
             return finger.Bone(ToLeapBoneType(type));
         }
+
+        public static void GetBones(Leap.Finger finger, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
+        {
+            metacarpal = finger.Bone(ToLeapBoneType(BoneType.TYPE_METACARPAL));
+            proximal = finger.Bone(ToLeapBoneType(BoneType.TYPE_PROXIMAL));
+            intermediate = finger.Bone(ToLeapBoneType(BoneType.TYPE_INTERMEDIATE));
+            distal = finger.Bone(ToLeapBoneType(BoneType.TYPE_DISTAL));
+        }
         
         
         public static FingerType GetFingerType(Leap.Finger f)

@@ -41,3 +41,14 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# =========================
+# Project specific, vvvv specific
+# =========================
+*~.xml
+*.dll
+*.pdb
+
+c#/LeapVLWrapper/.vs/
+c#/LeapVLWrapper/packages/
+c#/LeapVLWrapper/LeapVLWrapper/obj

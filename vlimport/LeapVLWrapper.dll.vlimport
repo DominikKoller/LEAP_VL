@@ -1,0 +1,279 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "BoneType",
+        "Category": "LeapVLWrapper",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_DISTAL"
+          },
+          "DotNetName": "TYPE_DISTAL"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_INTERMEDIATE"
+          },
+          "DotNetName": "TYPE_INTERMEDIATE"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_METACARPAL"
+          },
+          "DotNetName": "TYPE_METACARPAL"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_PROXIMAL"
+          },
+          "DotNetName": "TYPE_PROXIMAL"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "value__",
+            "ShowCategory": true
+          },
+          "DotNetName": "value__"
+        }
+      ],
+      "DotNetName": "LeapVLWrapper.BoneType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "FingerJoint",
+        "Category": "LeapVLWrapper",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "JOINT_DIP"
+          },
+          "DotNetName": "JOINT_DIP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "JOINT_MCP"
+          },
+          "DotNetName": "JOINT_MCP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "JOINT_PIP"
+          },
+          "DotNetName": "JOINT_PIP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "JOINT_TIP"
+          },
+          "DotNetName": "JOINT_TIP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "value__",
+            "ShowCategory": true
+          },
+          "DotNetName": "value__"
+        }
+      ],
+      "DotNetName": "LeapVLWrapper.FingerJoint"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "FingerType",
+        "Category": "LeapVLWrapper",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_INDEX"
+          },
+          "DotNetName": "TYPE_INDEX"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_MIDDLE"
+          },
+          "DotNetName": "TYPE_MIDDLE"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_PINKY"
+          },
+          "DotNetName": "TYPE_PINKY"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_RING"
+          },
+          "DotNetName": "TYPE_RING"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_THUMB"
+          },
+          "DotNetName": "TYPE_THUMB"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "value__",
+            "ShowCategory": true
+          },
+          "DotNetName": "value__"
+        }
+      ],
+      "DotNetName": "LeapVLWrapper.FingerType"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "LeapHelper",
+        "Category": "LeapVLWrapper",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "CreateObservable"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "TDataForSubscribe",
+              "DotNetName": "dataForSubscribe"
+            },
+            {
+              "TypeFullName": "System.Func<System.Tuple<TDataForSubscribe, System.IObserver<TData>>, TDataForUnsubscribe>",
+              "DotNetName": "onSubscribe"
+            },
+            {
+              "TypeFullName": "System.Action<TDataForUnsubscribe>",
+              "DotNetName": "onUnsubscribe"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.IObservable<TData>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "CreateObservable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetBone"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Finger",
+              "DotNetName": "finger"
+            },
+            {
+              "TypeFullName": "LeapVLWrapper.BoneType",
+              "DotNetName": "type"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Bone",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetBone"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetBoneType"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Bone",
+              "DotNetName": "b"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "LeapVLWrapper.BoneType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetBoneType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetFingerType"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Finger",
+              "DotNetName": "f"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "LeapVLWrapper.FingerType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetFingerType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetJointPosition"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Finger",
+              "DotNetName": "finger"
+            },
+            {
+              "TypeFullName": "LeapVLWrapper.FingerJoint",
+              "DotNetName": "fingerJoint"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetJointPosition"
+        }
+      ],
+      "DotNetName": "LeapVLWrapper.LeapHelper"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ListenerWrapper",
+        "Category": "LeapVLWrapper"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IObserver<Leap.Frame>",
+              "DotNetName": "observer"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnFrame"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "controller"
+            }
+          ],
+          "DotNetName": "OnFrame"
+        }
+      ],
+      "DotNetName": "LeapVLWrapper.ListenerWrapper"
+    }
+  ],
+  "DotNetName": "LeapVLWrapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+}

@@ -1,0 +1,6469 @@
+{
+  "Version": 2,
+  "Types": [
+    {
+      "TypeAttribute": {
+        "Name": "Arm",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Basis",
+            "ShowCategory": true
+          },
+          "DotNetName": "Basis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Center",
+            "ShowCategory": true
+          },
+          "DotNetName": "Center"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Direction",
+            "ShowCategory": true
+          },
+          "DotNetName": "Direction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ElbowPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "ElbowPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Arm",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true
+          },
+          "DotNetName": "Width"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "WristPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "WristPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Arm",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Arm"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Bone",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Basis",
+            "ShowCategory": true
+          },
+          "DotNetName": "Basis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Center",
+            "ShowCategory": true
+          },
+          "DotNetName": "Center"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Direction",
+            "ShowCategory": true
+          },
+          "DotNetName": "Direction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Bone",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Length",
+            "ShowCategory": true
+          },
+          "DotNetName": "Length"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "NextJoint",
+            "ShowCategory": true
+          },
+          "DotNetName": "NextJoint"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PrevJoint",
+            "ShowCategory": true
+          },
+          "DotNetName": "PrevJoint"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type",
+            "ShowCategory": true
+          },
+          "DotNetName": "Type"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true
+          },
+          "DotNetName": "Width"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Bone",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Bone"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "BugReport",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "BeginRecording"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "BeginRecording"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Duration",
+            "ShowCategory": true
+          },
+          "DotNetName": "Duration"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "EndRecording"
+          },
+          "DotNetName": "EndRecording"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsActive",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsActive"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Progress",
+            "ShowCategory": true
+          },
+          "DotNetName": "Progress"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.BugReport",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.BugReport"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "CircleGesture",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Center",
+            "ShowCategory": true
+          },
+          "DotNetName": "Center"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ClassType"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Gesture.GestureType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ClassType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Gesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "rhs"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Normal",
+            "ShowCategory": true
+          },
+          "DotNetName": "Normal"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointable",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pointable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Progress",
+            "ShowCategory": true
+          },
+          "DotNetName": "Progress"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Radius",
+            "ShowCategory": true
+          },
+          "DotNetName": "Radius"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.CircleGesture",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.CircleGesture"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Config",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetBool"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetBool"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetFloat"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetFloat"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetInt32"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Int32",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetInt32"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetString"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Save"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Save"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SetBool"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "value"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "SetBool"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SetFloat"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "value"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "SetFloat"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SetInt32"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "value"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "SetInt32"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SetString"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            },
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "value"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "SetString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.String",
+              "DotNetName": "key"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Config.ValueType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Type"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Config",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Config"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Controller",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "AddListener"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Listener",
+              "DotNetName": "listener"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "AddListener"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "BugReport",
+            "ShowCategory": true
+          },
+          "DotNetName": "BugReport"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ClearPolicy"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller.PolicyFlag",
+              "DotNetName": "policy"
+            }
+          ],
+          "DotNetName": "ClearPolicy"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Config",
+            "ShowCategory": true
+          },
+          "DotNetName": "Config"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Listener"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Listener",
+              "DotNetName": "listener"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Devices",
+            "ShowCategory": true
+          },
+          "DotNetName": "Devices"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "EnableGesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture.GestureType",
+              "DotNetName": "type"
+            }
+          ],
+          "DotNetName": "EnableGesture"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "EnableGesture",
+            "Version": "Gesture.GestureType Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture.GestureType",
+              "DotNetName": "type"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "enable"
+            }
+          ],
+          "DotNetName": "EnableGesture"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frame"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Frame",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Frame"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frame",
+            "Version": "Int32"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "history"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Frame",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Frame"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "HasFocus",
+            "ShowCategory": true
+          },
+          "DotNetName": "HasFocus"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Images",
+            "ShowCategory": true
+          },
+          "DotNetName": "Images"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsConnected",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsConnected"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsGestureEnabled"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture.GestureType",
+              "DotNetName": "type"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsGestureEnabled"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsPolicySet"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller.PolicyFlag",
+              "DotNetName": "policy"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsPolicySet"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsServiceConnected"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsServiceConnected"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "LocatedScreens",
+            "ShowCategory": true
+          },
+          "DotNetName": "LocatedScreens"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Now"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Int64",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Now"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PolicyFlags",
+            "ShowCategory": true
+          },
+          "DotNetName": "PolicyFlags"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RemoveListener"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Listener",
+              "DotNetName": "listener"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RemoveListener"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SetPolicy"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller.PolicyFlag",
+              "DotNetName": "policy"
+            }
+          ],
+          "DotNetName": "SetPolicy"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SetPolicyFlags"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller.PolicyFlag",
+              "DotNetName": "flags"
+            }
+          ],
+          "DotNetName": "SetPolicyFlags"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TrackedQuad",
+            "ShowCategory": true
+          },
+          "DotNetName": "TrackedQuad"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Controller"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Device",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Baseline",
+            "ShowCategory": true
+          },
+          "DotNetName": "Baseline"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistanceToBoundary"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DistanceToBoundary"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Device",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "HorizontalViewAngle",
+            "ShowCategory": true
+          },
+          "DotNetName": "HorizontalViewAngle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmbedded",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmbedded"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsFlipped",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsFlipped"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsStreaming",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsStreaming"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Orientation",
+            "ShowCategory": true
+          },
+          "DotNetName": "Orientation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Position",
+            "ShowCategory": true
+          },
+          "DotNetName": "Position"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Range",
+            "ShowCategory": true
+          },
+          "DotNetName": "Range"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SerialNumber",
+            "ShowCategory": true
+          },
+          "DotNetName": "SerialNumber"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type",
+            "ShowCategory": true
+          },
+          "DotNetName": "Type"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "VerticalViewAngle",
+            "ShowCategory": true
+          },
+          "DotNetName": "VerticalViewAngle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Device",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Device"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "DeviceList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.DeviceList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.DeviceList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Device>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.DeviceList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.DeviceList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Finger",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Bone"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Bone.BoneType",
+              "DotNetName": "boneIx"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Bone",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Bone"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Pointable"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Pointable",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "JointPosition"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Finger.FingerJoint",
+              "DotNetName": "jointIx"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "JointPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type",
+            "ShowCategory": true
+          },
+          "DotNetName": "Type"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Finger",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Finger"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "FingerList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.FingerList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.FingerList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Extended"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.FingerList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Extended"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "FingerType"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Finger.FingerType",
+              "DotNetName": "type"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.FingerList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "FingerType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frontmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Frontmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Finger>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Leftmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Leftmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rightmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Rightmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.FingerList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.FingerList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Frame",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "CurrentFramesPerSecond",
+            "ShowCategory": true
+          },
+          "DotNetName": "CurrentFramesPerSecond"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Deserialize"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte[]",
+              "DotNetName": "arg"
+            }
+          ],
+          "DotNetName": "Deserialize"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DeserializeWithLength"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte[]",
+              "DotNetName": "ptr"
+            },
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "length"
+            }
+          ],
+          "DotNetName": "DeserializeWithLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Finger"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Finger",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Finger"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Fingers",
+            "ShowCategory": true
+          },
+          "DotNetName": "Fingers"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Gesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Gesture",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Gesture"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Gestures"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.GestureList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Gestures"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Gestures",
+            "Version": "Frame"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.GestureList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Gestures"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Hand"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Hand",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Hand"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Hands",
+            "ShowCategory": true
+          },
+          "DotNetName": "Hands"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Images",
+            "ShowCategory": true
+          },
+          "DotNetName": "Images"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "InteractionBox",
+            "ShowCategory": true
+          },
+          "DotNetName": "InteractionBox"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointable"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Pointable",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Pointable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointables",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pointables"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationAngle"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationAngle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationAngle",
+            "Version": "Frame Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "axis"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationAngle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationAxis"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationAxis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationMatrix"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Matrix",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationMatrix"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationProbability"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationProbability"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ScaleFactor"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ScaleFactor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ScaleProbability"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ScaleProbability"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Serialize",
+            "ShowCategory": true
+          },
+          "DotNetName": "Serialize"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SerializeLength",
+            "ShowCategory": true
+          },
+          "DotNetName": "SerializeLength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SerializeWithArg"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte[]",
+              "DotNetName": "ptr"
+            }
+          ],
+          "DotNetName": "SerializeWithArg"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Timestamp",
+            "ShowCategory": true
+          },
+          "DotNetName": "Timestamp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Tool"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Tool",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Tool"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Tools",
+            "ShowCategory": true
+          },
+          "DotNetName": "Tools"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TrackedQuad",
+            "ShowCategory": true
+          },
+          "DotNetName": "TrackedQuad"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Translation"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Translation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TranslationProbability"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "TranslationProbability"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Frame"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Gesture",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Gesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "rhs"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Duration",
+            "ShowCategory": true
+          },
+          "DotNetName": "Duration"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DurationSeconds",
+            "ShowCategory": true
+          },
+          "DotNetName": "DurationSeconds"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "rhs"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frame",
+            "ShowCategory": true
+          },
+          "DotNetName": "Frame"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Hands",
+            "ShowCategory": true
+          },
+          "DotNetName": "Hands"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointables",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pointables"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "State",
+            "ShowCategory": true
+          },
+          "DotNetName": "State"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Type",
+            "ShowCategory": true
+          },
+          "DotNetName": "Type"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Gesture"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.GestureList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.GestureList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Gesture>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.GestureList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.GestureList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Hand",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Arm",
+            "ShowCategory": true
+          },
+          "DotNetName": "Arm"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Basis",
+            "ShowCategory": true
+          },
+          "DotNetName": "Basis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Confidence",
+            "ShowCategory": true
+          },
+          "DotNetName": "Confidence"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Direction",
+            "ShowCategory": true
+          },
+          "DotNetName": "Direction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Hand",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Finger"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Finger",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Finger"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Fingers",
+            "ShowCategory": true
+          },
+          "DotNetName": "Fingers"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frame",
+            "ShowCategory": true
+          },
+          "DotNetName": "Frame"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GrabStrength",
+            "ShowCategory": true
+          },
+          "DotNetName": "GrabStrength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsLeft",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsLeft"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsRight",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsRight"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PalmNormal",
+            "ShowCategory": true
+          },
+          "DotNetName": "PalmNormal"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PalmPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "PalmPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PalmVelocity",
+            "ShowCategory": true
+          },
+          "DotNetName": "PalmVelocity"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PalmWidth",
+            "ShowCategory": true
+          },
+          "DotNetName": "PalmWidth"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "PinchStrength",
+            "ShowCategory": true
+          },
+          "DotNetName": "PinchStrength"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointable"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Pointable",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Pointable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointables",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pointables"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationAngle"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationAngle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationAngle",
+            "Version": "Frame Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "axis"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationAngle"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationAxis"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationAxis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationMatrix"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Matrix",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationMatrix"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RotationProbability"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RotationProbability"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ScaleFactor"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ScaleFactor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ScaleProbability"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ScaleProbability"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SphereCenter",
+            "ShowCategory": true
+          },
+          "DotNetName": "SphereCenter"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SphereRadius",
+            "ShowCategory": true
+          },
+          "DotNetName": "SphereRadius"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StabilizedPalmPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "StabilizedPalmPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TimeVisible",
+            "ShowCategory": true
+          },
+          "DotNetName": "TimeVisible"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Tool"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Int32",
+              "DotNetName": "id"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Tool",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Tool"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Tools",
+            "ShowCategory": true
+          },
+          "DotNetName": "Tools"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Translation"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Translation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TranslationProbability"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Frame",
+              "DotNetName": "sinceFrame"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "TranslationProbability"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "WristPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "WristPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Hand",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Hand"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "HandList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.HandList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.HandList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frontmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Frontmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Hand>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Leftmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Leftmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rightmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Rightmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.HandList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.HandList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Image",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "BytesPerPixel",
+            "ShowCategory": true
+          },
+          "DotNetName": "BytesPerPixel"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Data",
+            "ShowCategory": true
+          },
+          "DotNetName": "Data"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DataPointer"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.IntPtr",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DataPointer"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DataWithArg"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte[]",
+              "DotNetName": "dst"
+            }
+          ],
+          "DotNetName": "DataWithArg"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Distortion",
+            "ShowCategory": true
+          },
+          "DotNetName": "Distortion"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistortionHeight",
+            "ShowCategory": true
+          },
+          "DotNetName": "DistortionHeight"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistortionPointer"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.IntPtr",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DistortionPointer"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistortionWidth",
+            "ShowCategory": true
+          },
+          "DotNetName": "DistortionWidth"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistortionWithArg"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Single[]",
+              "DotNetName": "dst"
+            }
+          ],
+          "DotNetName": "DistortionWithArg"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Image",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Format",
+            "ShowCategory": true
+          },
+          "DotNetName": "Format"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Height",
+            "ShowCategory": true
+          },
+          "DotNetName": "Height"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RayOffsetX",
+            "ShowCategory": true
+          },
+          "DotNetName": "RayOffsetX"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RayOffsetY",
+            "ShowCategory": true
+          },
+          "DotNetName": "RayOffsetY"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RayScaleX",
+            "ShowCategory": true
+          },
+          "DotNetName": "RayScaleX"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RayScaleY",
+            "ShowCategory": true
+          },
+          "DotNetName": "RayScaleY"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rectify"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "uv"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Rectify"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SequenceId",
+            "ShowCategory": true
+          },
+          "DotNetName": "SequenceId"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Timestamp",
+            "ShowCategory": true
+          },
+          "DotNetName": "Timestamp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Warp"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "xy"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Warp"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true
+          },
+          "DotNetName": "Width"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Image",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Image"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ImageList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.ImageList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.ImageList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Image>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.ImageList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.ImageList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "InteractionBox",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Center",
+            "ShowCategory": true
+          },
+          "DotNetName": "Center"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DenormalizePoint"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "normalizedPosition"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DenormalizePoint"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Depth",
+            "ShowCategory": true
+          },
+          "DotNetName": "Depth"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.InteractionBox",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Height",
+            "ShowCategory": true
+          },
+          "DotNetName": "Height"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "NormalizePoint"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "NormalizePoint"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "NormalizePoint",
+            "Version": "Vector Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "clamp"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "NormalizePoint"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true
+          },
+          "DotNetName": "Width"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.InteractionBox",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.InteractionBox"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Interface",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Interface",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Interface"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "KeyTapGesture",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ClassType"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Gesture.GestureType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ClassType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Gesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "rhs"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Direction",
+            "ShowCategory": true
+          },
+          "DotNetName": "Direction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointable",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pointable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Position",
+            "ShowCategory": true
+          },
+          "DotNetName": "Position"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Progress",
+            "ShowCategory": true
+          },
+          "DotNetName": "Progress"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.KeyTapGesture",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.KeyTapGesture"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Leap",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ePSILON"
+          },
+          "DotNetName": "ePSILON"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "get_ePSILON"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "get_ePSILON"
+        }
+      ],
+      "DotNetName": "Leap.Leap"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Listener",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnConnect"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnConnect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnDeviceChange"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnDeviceChange"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnDisconnect"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnDisconnect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnExit"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnExit"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnFocusGained"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnFocusGained"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnFocusLost"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnFocusLost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnFrame"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnFrame"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnImages"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnImages"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnInit"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnInit"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnServiceConnect"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnServiceConnect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OnServiceDisconnect"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": "OnServiceDisconnect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Listener",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Listener"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Mask",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Data",
+            "ShowCategory": true
+          },
+          "DotNetName": "Data"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DataPointer"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.IntPtr",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DataPointer"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DataWithArg"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Byte[]",
+              "DotNetName": "dst"
+            }
+          ],
+          "DotNetName": "DataWithArg"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Mask",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Height",
+            "ShowCategory": true
+          },
+          "DotNetName": "Height"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Mask",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OffsetX",
+            "ShowCategory": true
+          },
+          "DotNetName": "OffsetX"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "OffsetY",
+            "ShowCategory": true
+          },
+          "DotNetName": "OffsetY"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SequenceId",
+            "ShowCategory": true
+          },
+          "DotNetName": "SequenceId"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true
+          },
+          "DotNetName": "Width"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Mask",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Mask"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "MaskList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.MaskList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.MaskList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Mask>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.MaskList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.MaskList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Matrix",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "*"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Matrix",
+              "DotNetName": "m1"
+            },
+            {
+              "TypeFullName": "Leap.Matrix",
+              "DotNetName": "m2"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Matrix",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "op_Multiply"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Matrix"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Matrix",
+              "DotNetName": "other"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Vector Single"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "axis"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "angleRadians"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Vector Single Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "axis"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "angleRadians"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "translation"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Vector Vector Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "_xBasis"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "_yBasis"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "_zBasis"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Vector Vector Vector Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "_xBasis"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "_yBasis"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "_zBasis"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "_origin"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Matrix",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Identity",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Identity"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "RigidInverse"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Matrix",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "RigidInverse"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "SetRotation"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "axis"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "angleRadians"
+            }
+          ],
+          "DotNetName": "SetRotation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToArray3x3"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Single[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToArray3x3"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToArray3x3",
+            "Version": "Double[]"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Double[]",
+              "DotNetName": "output"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Double[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToArray3x3"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToArray3x3",
+            "Version": "Single[]"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Single[]",
+              "DotNetName": "output"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToArray3x3"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToArray4x4"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Single[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToArray4x4"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToArray4x4",
+            "Version": "Double[]"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Double[]",
+              "DotNetName": "output"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Double[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToArray4x4"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToArray4x4",
+            "Version": "Single[]"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Single[]",
+              "DotNetName": "output"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToArray4x4"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TransformDirection"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "TransformDirection"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TransformPoint"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "TransformPoint"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Matrix",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "origin",
+            "ShowCategory": true
+          },
+          "DotNetName": "origin"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "xBasis",
+            "ShowCategory": true
+          },
+          "DotNetName": "xBasis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "yBasis",
+            "ShowCategory": true
+          },
+          "DotNetName": "yBasis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "zBasis",
+            "ShowCategory": true
+          },
+          "DotNetName": "zBasis"
+        }
+      ],
+      "DotNetName": "Leap.Matrix"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Pointable",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Direction",
+            "ShowCategory": true
+          },
+          "DotNetName": "Direction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Pointable",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frame",
+            "ShowCategory": true
+          },
+          "DotNetName": "Frame"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Hand",
+            "ShowCategory": true
+          },
+          "DotNetName": "Hand"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsExtended",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsExtended"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsFinger",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsFinger"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsTool",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsTool"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Length",
+            "ShowCategory": true
+          },
+          "DotNetName": "Length"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StabilizedTipPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "StabilizedTipPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TimeVisible",
+            "ShowCategory": true
+          },
+          "DotNetName": "TimeVisible"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TipPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "TipPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TipVelocity",
+            "ShowCategory": true
+          },
+          "DotNetName": "TipVelocity"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TouchDistance",
+            "ShowCategory": true
+          },
+          "DotNetName": "TouchDistance"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TouchZone",
+            "ShowCategory": true
+          },
+          "DotNetName": "TouchZone"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true
+          },
+          "DotNetName": "Width"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Pointable",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Pointable"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "PointableList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.PointableList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.PointableList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Append",
+            "Version": "FingerList"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.FingerList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.PointableList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Append",
+            "Version": "ToolList"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.ToolList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.PointableList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Extended"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.PointableList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Extended"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frontmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Frontmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Pointable>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Leftmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Leftmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rightmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Rightmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.PointableList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.PointableList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Screen",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "BottomLeftCorner",
+            "ShowCategory": true
+          },
+          "DotNetName": "BottomLeftCorner"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistanceToPoint"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "point"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DistanceToPoint"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Screen",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "HeightPixels",
+            "ShowCategory": true
+          },
+          "DotNetName": "HeightPixels"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "HorizontalAxis",
+            "ShowCategory": true
+          },
+          "DotNetName": "HorizontalAxis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Id",
+            "ShowCategory": true
+          },
+          "DotNetName": "Id"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Intersect"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Pointable",
+              "DotNetName": "pointable"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "normalize"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Intersect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Intersect",
+            "Version": "Pointable Boolean Single"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Pointable",
+              "DotNetName": "pointable"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "normalize"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "clampRatio"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Intersect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Intersect",
+            "Version": "Vector Vector Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "direction"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "normalize"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Intersect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Intersect",
+            "Version": "Vector Vector Boolean Single"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "direction"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "normalize"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "clampRatio"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Intersect"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Normal"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Normal"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Project"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "normalize"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Project"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Project",
+            "Version": "Vector Boolean Single"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "normalize"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "clampRatio"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Project"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "VerticalAxis",
+            "ShowCategory": true
+          },
+          "DotNetName": "VerticalAxis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "WidthPixels",
+            "ShowCategory": true
+          },
+          "DotNetName": "WidthPixels"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Screen",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Screen"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ScreenList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ClosestScreen"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Screen",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ClosestScreen"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ClosestScreenHit"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Pointable",
+              "DotNetName": "pointable"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Screen",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ClosestScreenHit"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ClosestScreenHit",
+            "Version": "Vector Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "position"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "direction"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Screen",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ClosestScreenHit"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Screen>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.ScreenList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.ScreenList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ScreenTapGesture",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ClassType"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Gesture.GestureType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ClassType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Gesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "rhs"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Direction",
+            "ShowCategory": true
+          },
+          "DotNetName": "Direction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointable",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pointable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Position",
+            "ShowCategory": true
+          },
+          "DotNetName": "Position"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Progress",
+            "ShowCategory": true
+          },
+          "DotNetName": "Progress"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.ScreenTapGesture",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.ScreenTapGesture"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "SwipeGesture",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "ClassType"
+          },
+          "ReturnValue": {
+            "TypeFullName": "Leap.Gesture.GestureType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ClassType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Gesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "rhs"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Direction",
+            "ShowCategory": true
+          },
+          "DotNetName": "Direction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pointable",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pointable"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Position",
+            "ShowCategory": true
+          },
+          "DotNetName": "Position"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Speed",
+            "ShowCategory": true
+          },
+          "DotNetName": "Speed"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "StartPosition",
+            "ShowCategory": true
+          },
+          "DotNetName": "StartPosition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.SwipeGesture",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.SwipeGesture"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Tool",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Pointable"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Pointable",
+              "DotNetName": "arg0"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Tool",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.Tool"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "ToolList",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Append"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.ToolList",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.ToolList",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Append"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Count",
+            "ShowCategory": true
+          },
+          "DotNetName": "Count"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Frontmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Frontmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetEnumerator"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Collections.Generic.IEnumerator<Leap.Tool>",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetEnumerator"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsEmpty",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsEmpty"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Item",
+            "ShowCategory": true
+          },
+          "DotNetName": "Item"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Leftmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Leftmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Rightmost",
+            "ShowCategory": true
+          },
+          "DotNetName": "Rightmost"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.ToolList",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.ToolList"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "TrackedQuad",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.TrackedQuad",
+              "DotNetName": "arg0"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Height",
+            "ShowCategory": true
+          },
+          "DotNetName": "Height"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Images",
+            "ShowCategory": true
+          },
+          "DotNetName": "Images"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Invalid",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Invalid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid",
+            "ShowCategory": true
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Masks",
+            "ShowCategory": true
+          },
+          "DotNetName": "Masks"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Orientation",
+            "ShowCategory": true
+          },
+          "DotNetName": "Orientation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Position",
+            "ShowCategory": true
+          },
+          "DotNetName": "Position"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ResolutionX",
+            "ShowCategory": true
+          },
+          "DotNetName": "ResolutionX"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ResolutionY",
+            "ShowCategory": true
+          },
+          "DotNetName": "ResolutionY"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Visible",
+            "ShowCategory": true
+          },
+          "DotNetName": "Visible"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Width",
+            "ShowCategory": true
+          },
+          "DotNetName": "Width"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.TrackedQuad",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        }
+      ],
+      "DotNetName": "Leap.TrackedQuad"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "Vector",
+        "Category": "Leap"
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "*"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v1"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "scalar"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "op_Multiply"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "*",
+            "Version": "Single Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "scalar"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v1"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "op_Multiply"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "+"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v1"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v2"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "op_Addition"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "-"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v1"
+            },
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v2"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "op_Subtraction"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "-",
+            "Version": "Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v1"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "op_UnaryNegation"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "/"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "v1"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "scalar"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "op_Division"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "AngleTo"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "AngleTo"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Backward"
+          },
+          "DotNetName": "Backward"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create"
+          },
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "IntPtr Boolean"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.IntPtr",
+              "DotNetName": "cPtr"
+            },
+            {
+              "TypeFullName": "System.Boolean",
+              "DotNetName": "cMemoryOwn"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Single Single Single"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "_x"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "_y"
+            },
+            {
+              "TypeFullName": "System.Single",
+              "DotNetName": "_z"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Create",
+            "Version": "Vector"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "vector"
+            }
+          ],
+          "DotNetName": ".ctor"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Cross"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "Leap.Vector",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Cross"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Destroy"
+          },
+          "DotNetName": "Dispose"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "DistanceTo"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "DistanceTo"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Dot"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Single",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Dot"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Down"
+          },
+          "DotNetName": "Down"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Equals"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "other"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "Equals"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Forward"
+          },
+          "DotNetName": "Forward"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "IsValid"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Boolean",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "IsValid"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Left"
+          },
+          "DotNetName": "Left"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Magnitude",
+            "ShowCategory": true
+          },
+          "DotNetName": "Magnitude"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "MagnitudeSquared",
+            "ShowCategory": true
+          },
+          "DotNetName": "MagnitudeSquared"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Normalized",
+            "ShowCategory": true
+          },
+          "DotNetName": "Normalized"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Pitch",
+            "ShowCategory": true
+          },
+          "DotNetName": "Pitch"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Right"
+          },
+          "DotNetName": "Right"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Roll",
+            "ShowCategory": true
+          },
+          "DotNetName": "Roll"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToFloatArray"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.Single[]",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToFloatArray"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ToString"
+          },
+          "ReturnValue": {
+            "TypeFullName": "System.String",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "ToString"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Up"
+          },
+          "DotNetName": "Up"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "XAxis"
+          },
+          "DotNetName": "XAxis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "YAxis"
+          },
+          "DotNetName": "YAxis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Yaw",
+            "ShowCategory": true
+          },
+          "DotNetName": "Yaw"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "ZAxis"
+          },
+          "DotNetName": "ZAxis"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "Zero",
+            "IsDefaultValue": true
+          },
+          "DotNetName": "Zero"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "getCPtr"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Vector",
+              "DotNetName": "obj"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "System.Runtime.InteropServices.HandleRef",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "getCPtr"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "x",
+            "ShowCategory": true
+          },
+          "DotNetName": "x"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "y",
+            "ShowCategory": true
+          },
+          "DotNetName": "y"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "z",
+            "ShowCategory": true
+          },
+          "DotNetName": "z"
+        }
+      ],
+      "DotNetName": "Leap.Vector"
+    }
+  ],
+  "DotNetName": "LeapCSharp.NET4.0, Version=2.3.1.0, Culture=neutral, PublicKeyToken=6e1b1368e71eba9b"
+}

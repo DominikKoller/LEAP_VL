@@ -271,6 +271,48 @@
         },
         {
           "NodeAttribute": {
+            "Name": "DisableGesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "controller"
+            },
+            {
+              "TypeFullName": "out Leap.Controller",
+              "PinDirection": 1,
+              "DotNetName": "controllerOut"
+            },
+            {
+              "TypeFullName": "LeapVLWrapper.GestureType",
+              "DotNetName": "gestureType"
+            }
+          ],
+          "DotNetName": "DisableGesture"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "EnableGesture"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Controller",
+              "DotNetName": "controller"
+            },
+            {
+              "TypeFullName": "out Leap.Controller",
+              "PinDirection": 1,
+              "DotNetName": "controllerOut"
+            },
+            {
+              "TypeFullName": "LeapVLWrapper.GestureType",
+              "DotNetName": "gestureType"
+            }
+          ],
+          "DotNetName": "EnableGesture"
+        },
+        {
+          "NodeAttribute": {
             "Name": "GetBone"
           },
           "Parameters": [

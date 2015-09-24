@@ -25,77 +25,25 @@ namespace LeapVLWrapper
     public class LeapHelper
     {
         //NOTE: I'm giving all inputs of mutable data (like a Leap.finger in GetJointPosition) also as an output of the method, to avoid timing ambiguity in VL
-        #region Enum Typecasts
-        private static FingerType ToFingerType(Leap.Finger.FingerType leapFingerType)
-        {
-            return (FingerType)Enum.Parse(typeof(FingerType), leapFingerType.ToString());
-        }
-
-        private static Leap.Finger.FingerType ToLeapFingerType(FingerType fingerType)
-        {
-            return (Leap.Finger.FingerType)Enum.Parse(typeof(Leap.Finger.FingerType), fingerType.ToString());
-        }
-
-        private static FingerJoint ToFingerJoint(Leap.Finger.FingerJoint leapFingerJoint)
-        {
-            return (FingerJoint)Enum.Parse(typeof(FingerJoint), leapFingerJoint.ToString());
-        }
-
-        private static Leap.Finger.FingerJoint ToLeapFingerJoint(FingerJoint fingerJoint)
-        {
-            return (Leap.Finger.FingerJoint)Enum.Parse(typeof(Leap.Finger.FingerJoint), fingerJoint.ToString());
-        }
-
-        private static Leap.Bone.BoneType ToLeapBoneType(BoneType boneType)
-        {
-            return (Leap.Bone.BoneType)Enum.Parse(typeof(Leap.Bone.BoneType), boneType.ToString());
-        }
-
-        private static BoneType ToBoneType(Leap.Bone.BoneType leapBoneType)
-        {
-            return (BoneType)Enum.Parse(typeof(BoneType), leapBoneType.ToString());
-        }
-
-        private static Leap.Gesture.GestureType ToLeapGestureType(GestureType gestureType)
-        {
-            return (Leap.Gesture.GestureType)Enum.Parse(typeof(Leap.Gesture.GestureType), gestureType.ToString());
-        }
-
-        private static GestureType ToGestureType (Leap.Gesture.GestureType leapGestureType)
-        {
-            return (GestureType)Enum.Parse(typeof(GestureType), leapGestureType.ToString());
-        }
-
-        private static Leap.Gesture.GestureState ToLeapGestureState(GestureState gestureState)
-        {
-            return (Leap.Gesture.GestureState)Enum.Parse(typeof(Leap.Gesture.GestureState), gestureState.ToString());
-        }
-
-        private static GestureState ToGestureState(Leap.Gesture.GestureState leapGestureState)
-        {
-            return (GestureState)Enum.Parse(typeof(GestureState), leapGestureState.ToString());
-        }
-        #endregion
-
         #region FINGER methods
         public static Leap.Vector GetJointPosition(Leap.Finger finger, out Leap.Finger fingerOut, FingerJoint fingerJoint)
         {
             fingerOut = finger;
-            return finger.JointPosition(ToLeapFingerJoint(fingerJoint));
+            return finger.JointPosition((Leap.Finger.FingerJoint) fingerJoint );
         }
 
         public static Leap.Bone GetBone(Leap.Finger finger, out Leap.Finger fingerOut, BoneType type)
         {
             fingerOut = finger;
-            return finger.Bone(ToLeapBoneType(type));
+            return finger.Bone((Leap.Bone.BoneType) type);
         }
 
         public static void GetBones(Leap.Finger finger, out Leap.Finger fingerOut, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
         {
-            metacarpal = finger.Bone(ToLeapBoneType(BoneType.TYPE_METACARPAL));
-            proximal = finger.Bone(ToLeapBoneType(BoneType.TYPE_PROXIMAL));
-            intermediate = finger.Bone(ToLeapBoneType(BoneType.TYPE_INTERMEDIATE));
-            distal = finger.Bone(ToLeapBoneType(BoneType.TYPE_DISTAL));
+            metacarpal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_METACARPAL);
+            proximal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_PROXIMAL);
+            intermediate = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_INTERMEDIATE);
+            distal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_DISTAL);
 
             fingerOut = finger;
         }
@@ -104,27 +52,43 @@ namespace LeapVLWrapper
         public static FingerType GetFingerType(Leap.Finger finger, out Leap.Finger fingerOut)
         {
             fingerOut = finger;
-            return ToFingerType(finger.Type);
+            return (FingerType) finger.Type;
         }
         #endregion
 
+        #region BONE methods
         public static BoneType GetBoneType(Leap.Bone bone, out Leap.Bone boneOut)
         {
             boneOut = bone;
-            return ToBoneType(bone.Type);
+            return (BoneType) bone.Type;
         }
+        #endregion
 
+        #region GESTURE methods
         public static GestureType GetGestureType(Leap.Gesture gesture, out Leap.Gesture gestureOut)
         {
             gestureOut = gesture;
-            return ToGestureType(gesture.Type);
+            return (GestureType)gesture.Type;
         }
 
         public static GestureState GetGestureState(Leap.Gesture gesture, out Leap.Gesture gestureOut)
         {
             gestureOut = gesture;
-            return ToGestureState(gesture.State);
+            return (GestureState) gesture.State;
         }
+
+        public static void EnableGesture (Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
+        {
+            controller.EnableGesture((Leap.Gesture.GestureType) gestureType);
+            controllerOut = controller;
+        }
+
+        public static void DisableGesture(Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
+        {
+            controller.EnableGesture((Leap.Gesture.GestureType)gestureType, false);
+            controllerOut = controller;
+        }
+        #endregion
 
         // Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.
         // Therefore explicetly pipe data from subscribe to unsubscribe. This data we call "TDataForUnsubscribe"

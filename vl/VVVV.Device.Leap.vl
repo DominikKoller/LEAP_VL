@@ -455,13 +455,16 @@
             <POSITION x="366.4767" y="1827.97974" />
           </OUTLET>
           <OUTLET Name="Bones" Layer="Finger">
-            <POSITION x="394.985321" y="1326.14172" />
+            <POSITION x="368.987457" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Direction" Layer="Hand">
             <POSITION x="413.249268" y="823.25885" />
           </OUTLET>
           <OUTLET Name="Horizontal Axis" Layer="Screen">
             <POSITION x="416.9052" y="542.1682" />
+          </OUTLET>
+          <OUTLET Name="FingerType" Layer="Finger">
+            <POSITION x="420.2779" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="StabilizedTipPosition#1" Layer="Tool">
             <POSITION x="444.264221" y="1512.46411" />
@@ -470,7 +473,7 @@
             <POSITION x="477.035583" y="1827.97974" />
           </OUTLET>
           <OUTLET Name="TipPosition" Layer="Finger">
-            <POSITION x="491.304352" y="1326.14172" />
+            <POSITION x="491.304352" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Palm Position" Layer="Hand">
             <POSITION x="520.865234" y="823.25885" />
@@ -482,7 +485,7 @@
             <POSITION x="560.3093" y="542.1682" />
           </OUTLET>
           <OUTLET Name="StabilizedTipPosition" Layer="Finger">
-            <POSITION x="567.260437" y="1326.14172" />
+            <POSITION x="567.260437" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Center" Layer="Bone">
             <POSITION x="576.796631" y="1827.97974" />
@@ -500,7 +503,7 @@
             <POSITION x="677.3429" y="1827.97974" />
           </OUTLET>
           <OUTLET Name="Direction#2" Layer="Finger">
-            <POSITION x="687.036743" y="1326.14172" />
+            <POSITION x="687.036743" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Bottom Left Corner" Layer="Screen">
             <POSITION x="741.9585" y="542.1682" />
@@ -509,7 +512,7 @@
             <POSITION x="748.686035" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="TipVelocity" Layer="Finger">
-            <POSITION x="751.753845" y="1326.14172" />
+            <POSITION x="751.753845" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Direction#3" Layer="Bone">
             <POSITION x="797.334351" y="1827.97974" />
@@ -521,13 +524,13 @@
             <POSITION x="824.6229" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="Width#1" Layer="Finger">
-            <POSITION x="833.967468" y="1326.14172" />
+            <POSITION x="833.967468" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Id#4" Layer="Screen">
             <POSITION x="852.353638" y="542.1682" />
           </OUTLET>
           <OUTLET Name="Length" Layer="Finger">
-            <POSITION x="878.774231" y="1326.14172" />
+            <POSITION x="878.774231" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Length#1" Layer="Bone">
             <POSITION x="886.2816" y="1827.97974" />
@@ -536,7 +539,7 @@
             <POSITION x="905.053162" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="Touch Distance" Layer="Finger">
-            <POSITION x="936.8739" y="1326.14172" />
+            <POSITION x="936.8739" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Palm Velocity" Layer="Hand">
             <POSITION x="942.9221" y="823.25885" />
@@ -548,7 +551,7 @@
             <POSITION x="1015.13922" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="Is Extended" Layer="Finger">
-            <POSITION x="1034.78723" y="1326.14172" />
+            <POSITION x="1034.78723" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Palm Width" Layer="Hand">
             <POSITION x="1056.45679" y="823.25885" />
@@ -557,13 +560,13 @@
             <POSITION x="1108.60083" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="Is Tool" Layer="Finger">
-            <POSITION x="1116.64014" y="1326.14172" />
+            <POSITION x="1116.64014" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Wrist Position" Layer="Hand">
             <POSITION x="1135.57373" y="823.25885" />
           </OUTLET>
           <OUTLET Name="Time Visible#1" Layer="Finger">
-            <POSITION x="1172.68164" y="1326.14172" />
+            <POSITION x="1172.68164" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Time Visible#2" Layer="Tool">
             <POSITION x="1182.29114" y="1512.46411" />
@@ -575,7 +578,7 @@
             <POSITION x="1238.60938" y="823.25885" />
           </OUTLET>
           <OUTLET Name="Id#1" Layer="Finger">
-            <POSITION x="1248.89233" y="1326.14172" />
+            <POSITION x="1248.89233" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Id#2" Layer="Tool">
             <POSITION x="1276.20129" y="1512.46411" />
@@ -2022,6 +2025,19 @@
               <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
+          <OPERATION Name="GetFingerType" Layer="Finger">
+            <POSITION x="550.9761" y="1186.13489" />
+            <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
+              <OPERATIONNODE Name="GetFingerType" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Finger" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+              <OUPUT Name="Finger Out" />
+            </OUTPUTS>
+          </OPERATION>
         </NODES>
         <LINKS>
           <Link source="Nodes/Basis/Outputs/Basis" sink="Nodes/ToMatrix/Inputs/Matrix Leap" />
@@ -2174,7 +2190,6 @@
           <Link source="Constants/cm to m#3" sink="Nodes/*#19/Inputs/Input" />
           <Link source="Constants/cm to m#3" sink="Nodes/*#18/Inputs/Input" />
           <Link source="Constants/cm to m#3" sink="Nodes/*#17/Inputs/Input" />
-          <Link source="Nodes/GetBones/Outputs/Finger Out" sink="Nodes/Pointable/Inputs/Pointable" />
           <Link source="Nodes/GetBones/Outputs/Metacarpal" sink="Nodes/Cons/Inputs/Input" />
           <Link source="Nodes/GetBones/Outputs/Proximal" sink="Nodes/Cons/Inputs/Input 2" />
           <Link source="Nodes/GetBones/Outputs/Intermediate" sink="Nodes/Add/Inputs/Item" />
@@ -2212,6 +2227,9 @@
           <Link source="Nodes/Height/Outputs/Height" sink="Nodes/Vector#1/Inputs/Y" />
           <Link source="Nodes/Depth/Outputs/Depth" sink="Nodes/Vector#1/Inputs/Z" />
           <Link source="Nodes/Vector#1/Outputs/Output" sink="Outlets/Size" />
+          <Link source="Nodes/GetBones/Outputs/Finger Out" sink="Nodes/GetFingerType/Inputs/Finger" />
+          <Link source="Nodes/GetFingerType/Outputs/Finger Out" sink="Nodes/Pointable/Inputs/Pointable" />
+          <Link source="Nodes/GetFingerType/Outputs/Result" sink="Outlets/FingerType" />
         </LINKS>
       </BODY>
     </PATCH>
@@ -2756,8 +2774,9 @@
           </OPERATION>
           <OPERATION Name="InteractionBox#1" Layer="Update">
             <POSITION x="751.6298" y="473.3651" />
-            <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
               <OPERATIONNODE Name="InteractionBox" />
+              <CATEGORYPATH Name="Leap.Frame" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Input" />

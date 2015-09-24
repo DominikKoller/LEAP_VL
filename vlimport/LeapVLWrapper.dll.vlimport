@@ -111,6 +111,134 @@
     },
     {
       "TypeAttribute": {
+        "Name": "GestureState",
+        "Category": "LeapVLWrapper",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "STATEINVALID"
+          },
+          "DotNetName": "STATEINVALID"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "STATESTART"
+          },
+          "DotNetName": "STATESTART"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "STATESTOP"
+          },
+          "DotNetName": "STATESTOP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "STATEUPDATE"
+          },
+          "DotNetName": "STATEUPDATE"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "STATE_INVALID"
+          },
+          "DotNetName": "STATE_INVALID"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "STATE_START"
+          },
+          "DotNetName": "STATE_START"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "STATE_STOP"
+          },
+          "DotNetName": "STATE_STOP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "STATE_UPDATE"
+          },
+          "DotNetName": "STATE_UPDATE"
+        }
+      ],
+      "DotNetName": "LeapVLWrapper.GestureState"
+    },
+    {
+      "TypeAttribute": {
+        "Name": "GestureType",
+        "Category": "LeapVLWrapper",
+        "IsImmutable": true
+      },
+      "Members": [
+        {
+          "NodeAttribute": {
+            "Name": "TYPECIRCLE"
+          },
+          "DotNetName": "TYPECIRCLE"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPEINVALID"
+          },
+          "DotNetName": "TYPEINVALID"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPEKEYTAP"
+          },
+          "DotNetName": "TYPEKEYTAP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPESCREENTAP"
+          },
+          "DotNetName": "TYPESCREENTAP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPESWIPE"
+          },
+          "DotNetName": "TYPESWIPE"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_CIRCLE"
+          },
+          "DotNetName": "TYPE_CIRCLE"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_INVALID"
+          },
+          "DotNetName": "TYPE_INVALID"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_KEY_TAP"
+          },
+          "DotNetName": "TYPE_KEY_TAP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_SCREEN_TAP"
+          },
+          "DotNetName": "TYPE_SCREEN_TAP"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "TYPE_SWIPE"
+          },
+          "DotNetName": "TYPE_SWIPE"
+        }
+      ],
+      "DotNetName": "LeapVLWrapper.GestureType"
+    },
+    {
+      "TypeAttribute": {
         "Name": "LeapHelper",
         "Category": "LeapVLWrapper",
         "IsImmutable": true
@@ -247,6 +375,50 @@
             "DotNetName": "return"
           },
           "DotNetName": "GetFingerType"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetGestureState"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "gesture"
+            },
+            {
+              "TypeFullName": "out Leap.Gesture",
+              "PinDirection": 1,
+              "DotNetName": "gestureOut"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "LeapVLWrapper.GestureState",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetGestureState"
+        },
+        {
+          "NodeAttribute": {
+            "Name": "GetGestureType"
+          },
+          "Parameters": [
+            {
+              "TypeFullName": "Leap.Gesture",
+              "DotNetName": "gesture"
+            },
+            {
+              "TypeFullName": "out Leap.Gesture",
+              "PinDirection": 1,
+              "DotNetName": "gestureOut"
+            }
+          ],
+          "ReturnValue": {
+            "TypeFullName": "LeapVLWrapper.GestureType",
+            "PinDirection": 1,
+            "DotNetName": "return"
+          },
+          "DotNetName": "GetGestureType"
         },
         {
           "NodeAttribute": {

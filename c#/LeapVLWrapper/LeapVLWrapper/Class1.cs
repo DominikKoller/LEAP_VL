@@ -55,6 +55,26 @@ namespace LeapVLWrapper
         {
             return (BoneType)Enum.Parse(typeof(BoneType), leapBoneType.ToString());
         }
+
+        private static Leap.Gesture.GestureType ToLeapGestureType(GestureType gestureType)
+        {
+            return (Leap.Gesture.GestureType)Enum.Parse(typeof(Leap.Gesture.GestureType), gestureType.ToString());
+        }
+
+        private static GestureType ToGestureType (Leap.Gesture.GestureType leapGestureType)
+        {
+            return (GestureType)Enum.Parse(typeof(GestureType), leapGestureType.ToString());
+        }
+
+        private static Leap.Gesture.GestureState ToLeapGestureState(GestureState gestureState)
+        {
+            return (Leap.Gesture.GestureState)Enum.Parse(typeof(Leap.Gesture.GestureState), gestureState.ToString());
+        }
+
+        private static GestureState ToGestureState(Leap.Gesture.GestureState leapGestureState)
+        {
+            return (GestureState)Enum.Parse(typeof(GestureState), leapGestureState.ToString());
+        }
         #endregion
 
         #region FINGER methods
@@ -92,6 +112,18 @@ namespace LeapVLWrapper
         {
             boneOut = bone;
             return ToBoneType(bone.Type);
+        }
+
+        public static GestureType GetGestureType(Leap.Gesture gesture, out Leap.Gesture gestureOut)
+        {
+            gestureOut = gesture;
+            return ToGestureType(gesture.Type);
+        }
+
+        public static GestureState GetGestureState(Leap.Gesture gesture, out Leap.Gesture gestureOut)
+        {
+            gestureOut = gesture;
+            return ToGestureState(gesture.State);
         }
 
         // Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.
@@ -133,6 +165,32 @@ namespace LeapVLWrapper
         TYPE_PROXIMAL,
         TYPE_INTERMEDIATE,
         TYPE_DISTAL,
+    }
+
+    public enum GestureType
+    {
+        TYPE_INVALID = -1,
+        TYPEINVALID = -1,
+        TYPE_SWIPE = 1,
+        TYPESWIPE = 1,
+        TYPE_CIRCLE = 4,
+        TYPECIRCLE = 4,
+        TYPE_SCREEN_TAP = 5,
+        TYPESCREENTAP = 5,
+        TYPE_KEY_TAP = 6,
+        TYPEKEYTAP = 6
+    }
+
+    public enum GestureState
+    {
+        STATE_INVALID = -1,
+        STATEINVALID = -1,
+        STATE_START = 1,
+        STATESTART = 1,
+        STATE_UPDATE = 2,
+        STATEUPDATE = 2,
+        STATE_STOP = 3,
+        STATESTOP = 3
     }
     #endregion
 }

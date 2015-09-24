@@ -24,6 +24,7 @@ namespace LeapVLWrapper
 
     public class LeapHelper
     {
+        //NOTE: I'm giving all inputs of mutable data (like a Leap.finger in GetJointPosition) also as an output of the method, to avoid timing ambiguity in VL
         #region Enum Typecasts
         private static FingerType ToFingerType(Leap.Finger.FingerType leapFingerType)
         {
@@ -57,34 +58,40 @@ namespace LeapVLWrapper
         #endregion
 
         #region FINGER methods
-        public static Leap.Vector GetJointPosition(Leap.Finger finger, FingerJoint fingerJoint)
+        public static Leap.Vector GetJointPosition(Leap.Finger finger, Leap.Finger fingerOut, FingerJoint fingerJoint)
         {
+            fingerOut = finger;
             return finger.JointPosition(ToLeapFingerJoint(fingerJoint));
         }
 
-        public static Leap.Bone GetBone(Leap.Finger finger, BoneType type)
+        public static Leap.Bone GetBone(Leap.Finger finger, Leap.Finger fingerOut, BoneType type)
         {
+            fingerOut = finger;
             return finger.Bone(ToLeapBoneType(type));
         }
 
-        public static void GetBones(Leap.Finger finger, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
+        public static void GetBones(Leap.Finger finger, out Leap.Finger fingerOut, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
         {
             metacarpal = finger.Bone(ToLeapBoneType(BoneType.TYPE_METACARPAL));
             proximal = finger.Bone(ToLeapBoneType(BoneType.TYPE_PROXIMAL));
             intermediate = finger.Bone(ToLeapBoneType(BoneType.TYPE_INTERMEDIATE));
             distal = finger.Bone(ToLeapBoneType(BoneType.TYPE_DISTAL));
+
+            fingerOut = finger;
         }
         
         
-        public static FingerType GetFingerType(Leap.Finger f)
+        public static FingerType GetFingerType(Leap.Finger finger, Leap.Finger fingerOut)
         {
-            return ToFingerType(f.Type);
+            fingerOut = finger;
+            return ToFingerType(finger.Type);
         }
         #endregion
 
-        public static BoneType GetBoneType(Leap.Bone b)
+        public static BoneType GetBoneType(Leap.Bone bone, Leap.Bone boneOut)
         {
-            return ToBoneType(b.Type);
+            boneOut = bone;
+            return ToBoneType(bone.Type);
         }
 
         // Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.

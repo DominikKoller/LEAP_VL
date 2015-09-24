@@ -58,13 +58,13 @@ namespace LeapVLWrapper
         #endregion
 
         #region FINGER methods
-        public static Leap.Vector GetJointPosition(Leap.Finger finger, Leap.Finger fingerOut, FingerJoint fingerJoint)
+        public static Leap.Vector GetJointPosition(Leap.Finger finger, out Leap.Finger fingerOut, FingerJoint fingerJoint)
         {
             fingerOut = finger;
             return finger.JointPosition(ToLeapFingerJoint(fingerJoint));
         }
 
-        public static Leap.Bone GetBone(Leap.Finger finger, Leap.Finger fingerOut, BoneType type)
+        public static Leap.Bone GetBone(Leap.Finger finger, out Leap.Finger fingerOut, BoneType type)
         {
             fingerOut = finger;
             return finger.Bone(ToLeapBoneType(type));
@@ -81,14 +81,14 @@ namespace LeapVLWrapper
         }
         
         
-        public static FingerType GetFingerType(Leap.Finger finger, Leap.Finger fingerOut)
+        public static FingerType GetFingerType(Leap.Finger finger, out Leap.Finger fingerOut)
         {
             fingerOut = finger;
             return ToFingerType(finger.Type);
         }
         #endregion
 
-        public static BoneType GetBoneType(Leap.Bone bone, Leap.Bone boneOut)
+        public static BoneType GetBoneType(Leap.Bone bone, out Leap.Bone boneOut)
         {
             boneOut = bone;
             return ToBoneType(bone.Type);

@@ -151,7 +151,8 @@
               "DotNetName": "finger"
             },
             {
-              "TypeFullName": "Leap.Finger",
+              "TypeFullName": "out Leap.Finger",
+              "PinDirection": 1,
               "DotNetName": "fingerOut"
             },
             {
@@ -176,7 +177,8 @@
               "DotNetName": "bone"
             },
             {
-              "TypeFullName": "Leap.Bone",
+              "TypeFullName": "out Leap.Bone",
+              "PinDirection": 1,
               "DotNetName": "boneOut"
             }
           ],
@@ -234,7 +236,8 @@
               "DotNetName": "finger"
             },
             {
-              "TypeFullName": "Leap.Finger",
+              "TypeFullName": "out Leap.Finger",
+              "PinDirection": 1,
               "DotNetName": "fingerOut"
             }
           ],
@@ -255,7 +258,8 @@
               "DotNetName": "finger"
             },
             {
-              "TypeFullName": "Leap.Finger",
+              "TypeFullName": "out Leap.Finger",
+              "PinDirection": 1,
               "DotNetName": "fingerOut"
             },
             {

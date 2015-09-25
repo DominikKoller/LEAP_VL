@@ -883,6 +883,8 @@
           <LAYER Name="Tool" />
           <LAYER Name="Bone" />
           <LAYER Name="InteractionBox" />
+          <LAYER Name="Swipe" />
+          <LAYER Name="Circle" />
         </LAYERS>
         <INLETS>
           <INLET Name="Hand" Layer="Hand">
@@ -906,8 +908,14 @@
           <INLET Name="Finger" Layer="Finger">
             <POSITION x="442.7198" y="1153.88867" />
           </INLET>
-          <INLET Name="Gesture" Layer="Gestures">
-            <POSITION x="1786.13782" y="936.5741" />
+          <INLET Name="CircleGesture" Layer="Circle">
+            <POSITION x="1753.19177" y="1339.41809" />
+          </INLET>
+          <INLET Name="SwipeGesture" Layer="Swipe">
+            <POSITION x="1754.387" y="1130.53809" />
+          </INLET>
+          <INLET Name="Gesture" Layer="Gestures" Type="Spread&lt;Gesture&gt;">
+            <POSITION x="1754.69421" y="880.2781" />
           </INLET>
         </INLETS>
         <OUTLETS>
@@ -1088,26 +1096,41 @@
           <OUTLET Name="Sphere Radius" Layer="Hand">
             <POSITION x="1415.71436" y="823.25885" />
           </OUTLET>
-          <OUTLET Name="Swipe" Layer="Gestures">
-            <POSITION x="1814.9248" y="1265.22534" />
+          <OUTLET Name="Direction#5" Layer="Swipe">
+            <POSITION x="1746.75732" y="1252.61938" />
+          </OUTLET>
+          <OUTLET Name="Swipe" Layer="Gestures" Type="Spread&lt;SwipeGesture&gt;">
+            <POSITION x="1753.36108" y="1004.46985" />
+          </OUTLET>
+          <OUTLET Name="Circle" Layer="Gestures" Type="Spread&lt;CircleGesture&gt;">
+            <POSITION x="1825.00647" y="1004.46985" />
+          </OUTLET>
+          <OUTLET Name="Speed" Layer="Swipe">
+            <POSITION x="1833.39038" y="1252.61938" />
           </OUTLET>
           <OUTLET Name="Confidence" Layer="Hand">
             <POSITION x="1849.28711" y="823.25885" />
           </OUTLET>
-          <OUTLET Name="Circle" Layer="Gestures">
-            <POSITION x="1899.39563" y="1265.22534" />
+          <OUTLET Name="Screen Tap" Layer="Gestures" Type="Spread&lt;ScreenTapGesture&gt;">
+            <POSITION x="1891.60986" y="1004.46985" />
+          </OUTLET>
+          <OUTLET Name="Start Position" Layer="Swipe">
+            <POSITION x="1896.43384" y="1252.61938" />
           </OUTLET>
           <OUTLET Name="Grab Strength" Layer="Hand">
             <POSITION x="1944.09058" y="823.25885" />
           </OUTLET>
-          <OUTLET Name="Screen Tap" Layer="Gestures">
-            <POSITION x="1979.71021" y="1265.22534" />
+          <OUTLET Name="Key Tap" Layer="Gestures" Type="Spread&lt;KeyTapGesture&gt;">
+            <POSITION x="1969.38379" y="1004.46985" />
+          </OUTLET>
+          <OUTLET Name="Position" Layer="Swipe">
+            <POSITION x="1983.41736" y="1252.61938" />
           </OUTLET>
           <OUTLET Name="Pinch Strength" Layer="Hand">
             <POSITION x="2057.41479" y="823.25885" />
           </OUTLET>
-          <OUTLET Name="Key Tap" Layer="Gestures">
-            <POSITION x="2060.09546" y="1265.22534" />
+          <OUTLET Name="Duration" Layer="Swipe">
+            <POSITION x="2093.385" y="1252.61938" />
           </OUTLET>
           <OUTLET Name="Id" Layer="Hand">
             <POSITION x="2157.70825" y="823.25885" />
@@ -1143,159 +1166,7 @@
             <VALUE><![CDATA["z * -1 !!"]]></VALUE>
           </CONST>
         </CONSTS>
-        <REGIONS>
-          <REGION Name="ForEachLoop" Layer="Gestures" Kind="ForEachLoop">
-            <POSITION x="1783.49792" y="966.213867" />
-            <SIZE x="80" y="80" />
-            <INPUTS>
-              <INPUT Name="gestures" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Gestures" />
-              <OUPUT Name="Swipes" />
-              <OUPUT Name="Circles" />
-              <OUPUT Name="Screen Taps" />
-              <OUPUT Name="Key Taps" />
-            </OUTPUTS>
-            <BODY Name="ForEachLoopBody">
-              <LAYERS>
-                <LAYER Name="Update" />
-              </LAYERS>
-              <INLETS>
-                <INLET Name="gesture" Layer="Update">
-                  <POSITION x="1788.34546" y="967.842041" />
-                </INLET>
-              </INLETS>
-              <OUTLETS>
-                <OUTLET Name="Gesture" Layer="Update">
-                  <POSITION x="1809.8385" y="1154.74109" />
-                </OUTLET>
-                <OUTLET Name="Swipe" Layer="Update">
-                  <POSITION x="1867.61389" y="1154.74109" />
-                </OUTLET>
-                <OUTLET Name="Circle" Layer="Update">
-                  <POSITION x="1947.36389" y="1154.74109" />
-                </OUTLET>
-                <OUTLET Name="Screen Tap" Layer="Update">
-                  <POSITION x="2028.81091" y="1154.74109" />
-                </OUTLET>
-                <OUTLET Name="Key Tap" Layer="Update">
-                  <POSITION x="2107.43018" y="1154.74109" />
-                </OUTLET>
-              </OUTLETS>
-              <CONSTS>
-                <CONST Name="swipe" Layer="Update">
-                  <POSITION x="1891.93494" y="997.2303" />
-                  <SIZE width="88.7699356" height="15.50846" />
-                  <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":1}]]></VALUE>
-                </CONST>
-                <CONST Name="circle" Layer="Update">
-                  <POSITION x="1962.2738" y="1030.23914" />
-                  <SIZE width="88.7699356" height="15.50846" />
-                  <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":4}]]></VALUE>
-                </CONST>
-                <CONST Name="screen tap" Layer="Update">
-                  <POSITION x="2045.05566" y="1063.8136" />
-                  <SIZE width="88.7699356" height="15.50846" />
-                  <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":5}]]></VALUE>
-                </CONST>
-                <CONST Name="key tap" Layer="Update">
-                  <POSITION x="2123.879" y="1093.99426" />
-                  <SIZE width="88.7699356" height="15.50846" />
-                  <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":6}]]></VALUE>
-                </CONST>
-              </CONSTS>
-              <REGIONS />
-              <NODES>
-                <OPERATION Name="GetGestureType" Layer="Update">
-                  <POSITION x="1789.56067" y="994.4022" />
-                  <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="GetGestureType" />
-                  </NODEREF>
-                  <INPUTS>
-                    <INPUT Name="Gesture" />
-                  </INPUTS>
-                  <OUTPUTS>
-                    <OUPUT Name="Result" />
-                    <OUPUT Name="Gesture Out" />
-                  </OUTPUTS>
-                </OPERATION>
-                <OPERATION Name="=" Layer="Update">
-                  <POSITION x="1869.87634" y="1070.75891" />
-                  <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-                    <OPERATIONNODE Name="=" />
-                    <CATEGORY Name="Adaptive" IsDirectParent="true" />
-                  </NODEREF>
-                  <INPUTS>
-                    <INPUT Name="Input" />
-                    <INPUT Name="Input 2" />
-                  </INPUTS>
-                  <OUTPUTS>
-                    <OUPUT Name="Result" />
-                  </OUTPUTS>
-                </OPERATION>
-                <OPERATION Name="=#1" Layer="Update">
-                  <POSITION x="1947.56812" y="1089.62842" />
-                  <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-                    <OPERATIONNODE Name="=" />
-                    <CATEGORY Name="Adaptive" IsDirectParent="true" />
-                  </NODEREF>
-                  <INPUTS>
-                    <INPUT Name="Input" />
-                    <INPUT Name="Input 2" />
-                  </INPUTS>
-                  <OUTPUTS>
-                    <OUPUT Name="Result" />
-                  </OUTPUTS>
-                </OPERATION>
-                <OPERATION Name="=#2" Layer="Update">
-                  <POSITION x="2027.52222" y="1107.3656" />
-                  <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-                    <OPERATIONNODE Name="=" />
-                    <CATEGORY Name="Adaptive" IsDirectParent="true" />
-                  </NODEREF>
-                  <INPUTS>
-                    <INPUT Name="Input" />
-                    <INPUT Name="Input 2" />
-                  </INPUTS>
-                  <OUTPUTS>
-                    <OUPUT Name="Result" />
-                  </OUTPUTS>
-                </OPERATION>
-                <OPERATION Name="=#3" Layer="Update">
-                  <POSITION x="2108.608" y="1126.23413" />
-                  <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-                    <OPERATIONNODE Name="=" />
-                    <CATEGORY Name="Adaptive" IsDirectParent="true" />
-                  </NODEREF>
-                  <INPUTS>
-                    <INPUT Name="Input" />
-                    <INPUT Name="Input 2" />
-                  </INPUTS>
-                  <OUTPUTS>
-                    <OUPUT Name="Result" />
-                  </OUTPUTS>
-                </OPERATION>
-              </NODES>
-              <LINKS>
-                <Link source="Inlets/gesture" sink="Nodes/GetGestureType/Inputs/Gesture" />
-                <Link source="Nodes/GetGestureType/Outputs/Result" sink="Nodes/=/Inputs/Input" />
-                <Link source="Constants/swipe" sink="Nodes/=/Inputs/Input 2" />
-                <Link source="Nodes/GetGestureType/Outputs/Gesture Out" sink="Outlets/Gesture" />
-                <Link source="Nodes/=/Outputs/Result" sink="Outlets/Swipe" />
-                <Link source="Constants/circle" sink="Nodes/=#1/Inputs/Input 2" />
-                <Link source="Constants/screen tap" sink="Nodes/=#2/Inputs/Input 2" />
-                <Link source="Constants/key tap" sink="Nodes/=#3/Inputs/Input 2" />
-                <Link source="Nodes/GetGestureType/Outputs/Result" sink="Nodes/=#1/Inputs/Input" />
-                <Link source="Nodes/GetGestureType/Outputs/Result" sink="Nodes/=#2/Inputs/Input" />
-                <Link source="Nodes/GetGestureType/Outputs/Result" sink="Nodes/=#3/Inputs/Input" />
-                <Link source="Nodes/=#1/Outputs/Result" sink="Outlets/Circle" />
-                <Link source="Nodes/=#2/Outputs/Result" sink="Outlets/Screen Tap" />
-                <Link source="Nodes/=#3/Outputs/Result" sink="Outlets/Key Tap" />
-              </LINKS>
-            </BODY>
-          </REGION>
-        </REGIONS>
+        <REGIONS />
         <NODES>
           <OPERATION Name="Basis" Layer="Hand">
             <POSITION x="291.648956" y="674.4649" />
@@ -2606,108 +2477,274 @@
               <OUPUT Name="Finger Out" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="Select" Layer="Gestures">
-            <POSITION x="1820.10315" y="1235.91516" />
-            <NODEREF LastCat="Collections.Spread" LastFile="Basics.vl">
-              <OPERATIONNODE Name="Select" />
+          <OPERATION Name="Direction#2" Layer="Swipe">
+            <POSITION x="1749.09106" y="1167.46436" />
+            <NODEREF LastCat="Leap.SwipeGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <CATEGORY Name="SwipeGesture" />
+              <OPERATIONNODE Name="Direction" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Input" />
-              <INPUT Name="Alive Values" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Output" />
+              <OUPUT Name="Direction" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ShareInstance" Layer="Gestures">
-            <POSITION x="1819.53748" y="1188.40454" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Instance" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output 1" />
-              <OUPUT Name="Output 2" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Select#1" Layer="Gestures">
-            <POSITION x="1901.754" y="1235.55334" />
-            <NODEREF LastCat="Collections.Spread" LastFile="Basics.vl">
-              <OPERATIONNODE Name="Select" />
+          <OPERATION Name="Position" Layer="Swipe">
+            <POSITION x="1970.64917" y="1172.833" />
+            <NODEREF LastCat="Leap.SwipeGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <CATEGORY Name="SwipeGesture" />
+              <OPERATIONNODE Name="Position" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Input" />
-              <INPUT Name="Alive Values" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Output" />
+              <OUPUT Name="Position" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ShareInstance#1" Layer="Gestures">
-            <POSITION x="1901.18835" y="1188.04272" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Instance" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output 1" />
-              <OUPUT Name="Output 2" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ShareInstance#2" Layer="Gestures">
-            <POSITION x="1981.14258" y="1188.81238" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Instance" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output 1" />
-              <OUPUT Name="Output 2" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Select#2" Layer="Gestures">
-            <POSITION x="1981.708" y="1236.323" />
-            <NODEREF LastCat="Collections.Spread" LastFile="Basics.vl">
-              <OPERATIONNODE Name="Select" />
+          <OPERATION Name="Speed" Layer="Swipe">
+            <POSITION x="1827.80408" y="1169.64063" />
+            <NODEREF LastCat="Leap.SwipeGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <CATEGORY Name="SwipeGesture" />
+              <OPERATIONNODE Name="Speed" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Input" />
-              <INPUT Name="Alive Values" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Output" />
+              <OUPUT Name="Speed" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ShareInstance#3" Layer="Gestures">
-            <POSITION x="2061.66138" y="1190.14734" />
-            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Instance" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output 1" />
-              <OUPUT Name="Output 2" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Select#3" Layer="Gestures">
-            <POSITION x="2062.22681" y="1237.658" />
-            <NODEREF LastCat="Collections.Spread" LastFile="Basics.vl">
-              <OPERATIONNODE Name="Select" />
+          <OPERATION Name="StartPosition" Layer="Swipe">
+            <POSITION x="1895.63562" y="1172.83289" />
+            <NODEREF LastCat="Leap.SwipeGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="StartPosition" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Input" />
-              <INPUT Name="Alive Values" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Output" />
+              <OUPUT Name="Start Position" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#11" Layer="Swipe">
+            <POSITION x="1748.976" y="1208.01978" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#12" Layer="Swipe">
+            <POSITION x="1891.42273" y="1215.69922" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#13" Layer="Swipe">
+            <POSITION x="1970.912" y="1213.61572" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="DurationSeconds" Layer="Swipe">
+            <POSITION x="2086.36084" y="1170.43884" />
+            <NODEREF LastCat="Leap.Gesture" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="DurationSeconds" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Duration Seconds" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Center#2" Layer="Circle">
+            <POSITION x="1755.27686" y="1371.8" />
+            <NODEREF LastCat="Leap.CircleGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <CATEGORY Name="CircleGesture" />
+              <OPERATIONNODE Name="Center" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Center" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Normal#1" Layer="Circle">
+            <POSITION x="1831.55481" y="1373.31055" />
+            <NODEREF LastCat="Leap.CircleGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <CATEGORY Name="CircleGesture" />
+              <OPERATIONNODE Name="Normal" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Normal" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Progress" Layer="Circle">
+            <POSITION x="1910.85376" y="1374.0658" />
+            <NODEREF LastCat="Leap.CircleGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <CATEGORY Name="CircleGesture" />
+              <OPERATIONNODE Name="Progress" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Progress" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Radius" Layer="Circle">
+            <POSITION x="2007.46289" y="1378.93823" />
+            <NODEREF LastCat="Leap.CircleGesture" LastFile="LeapCSharp.NET4.0.dll">
+              <CATEGORY Name="CircleGesture" />
+              <OPERATIONNODE Name="Radius" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Radius" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="DurationSeconds#1" Layer="Circle">
+            <POSITION x="2090.27051" y="1380.65857" />
+            <NODEREF LastCat="Leap.Gesture" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="DurationSeconds" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Duration Seconds" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="OfType" Layer="Gestures">
+            <POSITION x="1756.82727" y="920.3392" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="System.Core.dll">
+              <OPERATIONNODE Name="OfType" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread" Layer="Gestures">
+            <POSITION x="1756.18921" y="959.8956" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#1" Layer="Gestures">
+            <POSITION x="1827.117" y="960.960938" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="OfType#1" Layer="Gestures">
+            <POSITION x="1827.755" y="921.4045" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="System.Core.dll">
+              <OPERATIONNODE Name="OfType" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#3" Layer="Gestures">
+            <POSITION x="1894.12732" y="963.332031" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="OfType#2" Layer="Gestures">
+            <POSITION x="1894.76538" y="923.7756" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="System.Core.dll">
+              <OPERATIONNODE Name="OfType" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#4" Layer="Gestures">
+            <POSITION x="1970.9314" y="961.1327" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="OfType#3" Layer="Gestures">
+            <POSITION x="1971.56958" y="921.576233" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="System.Core.dll">
+              <OPERATIONNODE Name="OfType" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
             </OUTPUTS>
           </OPERATION>
         </NODES>
@@ -2892,23 +2929,36 @@
           <Link source="Nodes/GetBones/Outputs/Finger Out" sink="Nodes/GetFingerType/Inputs/Finger" />
           <Link source="Nodes/GetFingerType/Outputs/Finger Out" sink="Nodes/Pointable/Inputs/Pointable" />
           <Link source="Nodes/GetFingerType/Outputs/Result" sink="Outlets/FingerType" />
-          <Link source="Inlets/Gesture" sink="Regions/ForEachLoop/Inputs/gestures" />
-          <Link source="Nodes/Select/Outputs/Output" sink="Outlets/Swipe" />
-          <Link source="Regions/ForEachLoop/Outputs/Gestures" sink="Nodes/ShareInstance/Inputs/Instance" />
-          <Link source="Nodes/ShareInstance/Outputs/Output 1" sink="Nodes/Select/Inputs/Input" />
-          <Link source="Regions/ForEachLoop/Outputs/Swipes" sink="Nodes/Select/Inputs/Alive Values" />
-          <Link source="Nodes/ShareInstance/Outputs/Output 2" sink="Nodes/ShareInstance#1/Inputs/Instance" />
-          <Link source="Nodes/ShareInstance#1/Outputs/Output 1" sink="Nodes/Select#1/Inputs/Input" />
-          <Link source="Regions/ForEachLoop/Outputs/Circles" sink="Nodes/Select#1/Inputs/Alive Values" />
-          <Link source="Nodes/Select#1/Outputs/Output" sink="Outlets/Circle" />
-          <Link source="Nodes/ShareInstance#2/Outputs/Output 1" sink="Nodes/Select#2/Inputs/Input" />
-          <Link source="Nodes/ShareInstance#3/Outputs/Output 1" sink="Nodes/Select#3/Inputs/Input" />
-          <Link source="Regions/ForEachLoop/Outputs/Screen Taps" sink="Nodes/Select#2/Inputs/Alive Values" />
-          <Link source="Regions/ForEachLoop/Outputs/Key Taps" sink="Nodes/Select#3/Inputs/Alive Values" />
-          <Link source="Nodes/Select#3/Outputs/Output" sink="Outlets/Key Tap" />
-          <Link source="Nodes/Select#2/Outputs/Output" sink="Outlets/Screen Tap" />
-          <Link source="Nodes/ShareInstance#1/Outputs/Output 2" sink="Nodes/ShareInstance#2/Inputs/Instance" />
-          <Link source="Nodes/ShareInstance#2/Outputs/Output 2" sink="Nodes/ShareInstance#3/Inputs/Instance" />
+          <Link source="Inlets/SwipeGesture" sink="Nodes/Direction#2/Inputs/Input" />
+          <Link source="Nodes/Direction#2/Outputs/Direction" sink="Nodes/ToVector3#11/Inputs/Vector" />
+          <Link source="Nodes/StartPosition/Outputs/Start Position" sink="Nodes/ToVector3#12/Inputs/Vector" />
+          <Link source="Nodes/Position/Outputs/Position" sink="Nodes/ToVector3#13/Inputs/Vector" />
+          <Link source="Nodes/DurationSeconds/Outputs/Duration Seconds" sink="Outlets/Duration" />
+          <Link source="Nodes/ToVector3#13/Outputs/Vector3" sink="Outlets/Position" />
+          <Link source="Nodes/ToVector3#12/Outputs/Vector3" sink="Outlets/Start Position" />
+          <Link source="Nodes/Speed/Outputs/Speed" sink="Outlets/Speed" />
+          <Link source="Nodes/ToVector3#11/Outputs/Vector3" sink="Outlets/Direction#5" />
+          <Link source="Inlets/Gesture" sink="Nodes/OfType/Inputs/Input" />
+          <Link source="Nodes/OfType/Outputs/Result" sink="Nodes/ToSpread/Inputs/Input" />
+          <Link source="Nodes/ToSpread/Outputs/Result" sink="Outlets/Swipe" />
+          <Link source="Nodes/OfType#1/Outputs/Result" sink="Nodes/ToSpread#1/Inputs/Input" />
+          <Link source="Nodes/OfType#2/Outputs/Result" sink="Nodes/ToSpread#3/Inputs/Input" />
+          <Link source="Nodes/OfType#3/Outputs/Result" sink="Nodes/ToSpread#4/Inputs/Input" />
+          <Link source="Inlets/Gesture" sink="Nodes/OfType#1/Inputs/Input" />
+          <Link source="Inlets/Gesture" sink="Nodes/OfType#2/Inputs/Input" />
+          <Link source="Inlets/Gesture" sink="Nodes/OfType#3/Inputs/Input" />
+          <Link source="Nodes/ToSpread#3/Outputs/Result" sink="Outlets/Screen Tap" />
+          <Link source="Nodes/ToSpread#1/Outputs/Result" sink="Outlets/Circle" />
+          <Link source="Nodes/ToSpread#4/Outputs/Result" sink="Outlets/Key Tap" />
+          <Link source="Inlets/SwipeGesture" sink="Nodes/Speed/Inputs/Input" />
+          <Link source="Inlets/SwipeGesture" sink="Nodes/StartPosition/Inputs/Input" />
+          <Link source="Inlets/SwipeGesture" sink="Nodes/Position/Inputs/Input" />
+          <Link source="Inlets/SwipeGesture" sink="Nodes/DurationSeconds/Inputs/Input" />
+          <Link source="Inlets/CircleGesture" sink="Nodes/Normal#1/Inputs/Input" />
+          <Link source="Inlets/CircleGesture" sink="Nodes/Progress/Inputs/Input" />
+          <Link source="Inlets/CircleGesture" sink="Nodes/Radius/Inputs/Input" />
+          <Link source="Inlets/CircleGesture" sink="Nodes/DurationSeconds#1/Inputs/Input" />
+          <Link source="Inlets/CircleGesture" sink="Nodes/Center#2/Inputs/Input" />
         </LINKS>
       </BODY>
     </PATCH>

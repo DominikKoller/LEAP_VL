@@ -389,7 +389,8 @@
     {
       "TypeAttribute": {
         "Name": "CircleGesture",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -2121,7 +2122,8 @@
     {
       "TypeAttribute": {
         "Name": "Gesture",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -3591,7 +3593,8 @@
     {
       "TypeAttribute": {
         "Name": "KeyTapGesture",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -5420,7 +5423,8 @@
     {
       "TypeAttribute": {
         "Name": "ScreenTapGesture",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -5527,7 +5531,8 @@
     {
       "TypeAttribute": {
         "Name": "SwipeGesture",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {

@@ -314,7 +314,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -415,7 +416,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -511,7 +513,8 @@
       "Members": [
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -789,7 +792,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -1068,7 +1072,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -1276,7 +1281,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -1479,8 +1485,7 @@
     {
       "TypeAttribute": {
         "Name": "FingerList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -1509,7 +1514,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -2294,8 +2300,7 @@
     {
       "TypeAttribute": {
         "Name": "GestureList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -2324,7 +2329,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -2860,8 +2866,7 @@
     {
       "TypeAttribute": {
         "Name": "HandList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -2890,7 +2895,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -3269,8 +3275,7 @@
     {
       "TypeAttribute": {
         "Name": "ImageList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -3299,7 +3304,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -3561,7 +3567,8 @@
       "Members": [
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "Parameters": [
             {
@@ -3621,7 +3628,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -3717,7 +3725,8 @@
       "Members": [
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -3749,7 +3758,8 @@
       "Members": [
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -4106,8 +4116,7 @@
     {
       "TypeAttribute": {
         "Name": "MaskList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -4136,7 +4145,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -4238,7 +4248,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -4806,8 +4817,7 @@
     {
       "TypeAttribute": {
         "Name": "PointableList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -4872,7 +4882,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -5297,8 +5308,7 @@
     {
       "TypeAttribute": {
         "Name": "ScreenList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -5366,7 +5376,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -5458,7 +5469,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -5566,7 +5578,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -5751,8 +5764,7 @@
     {
       "TypeAttribute": {
         "Name": "ToolList",
-        "Category": "Leap",
-        "IsImmutable": true
+        "Category": "Leap"
       },
       "Members": [
         {
@@ -5781,7 +5793,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },
@@ -6191,7 +6204,8 @@
         },
         {
           "NodeAttribute": {
-            "Name": "Create"
+            "Name": "Create",
+            "IsDefaultValue": true
           },
           "DotNetName": ".ctor"
         },

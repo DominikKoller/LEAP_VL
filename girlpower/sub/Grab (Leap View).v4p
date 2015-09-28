@@ -119,9 +119,9 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1095" top="485" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="0" dstpinname="Hand">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Sphere Radius" dstnodeid="3" dstpinname="XYZ">
@@ -131,5 +131,17 @@
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform In 2">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Sphere CenterXYZ" dstnodeid="1" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1110" top="1050" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="0" dstpinname="Hand">
    </LINK>
    </PATCH>

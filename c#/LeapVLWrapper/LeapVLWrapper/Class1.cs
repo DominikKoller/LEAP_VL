@@ -4,40 +4,96 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VL.Core;
 
 namespace LeapVLWrapper
 {
+    // Abstract classes are not supported in VL
+    [Type]
     public class ListenerWrapper : Leap.Listener
     {
         IObserver<Leap.Frame> observer;
 
+        [Node]
         public ListenerWrapper(IObserver<Leap.Frame> observer)
         {
             this.observer = observer;
         }
 
+        [Node]
         public override void OnFrame(Leap.Controller controller)
         {
             observer.OnNext(controller.Frame());
         }
     }
 
+    // VL calls Dispose on all fields which are IDisposable. In this case we need to ensure that
+    // the controller gets disposed AFTER the subscription of the IConnectableObservable.
+    // To tell VL to execute Controller.Dispose before subscription.Dispose is also not possible yet.
+    // Therefor (for now) much easier to put this logic here.
+    // Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.
+    // Therefore explicetly pipe data from subscribe to unsubscribe. This data we call "TDataForUnsubscribe"
+    [Type]
+    [Node(OperationsOfProcessNode = "Create, Controller, Notifications")]
+    public class Observable<TController, TData, TDataForUnsubscribe> : IDisposable
+        where TController : class
+    {
+        [Node]
+        public TController Controller { get; }
+
+        [Node]
+        public IObservable<TData> Notifications { get; }
+
+        IDisposable _subscription;
+
+        [Node]
+        public Observable(
+            TController controller,
+            Func<Tuple<TController, IObserver<TData>>, TDataForUnsubscribe> onSubscribe,
+            Action<TDataForUnsubscribe> onUnsubscribe)
+        {
+            Controller = controller;
+            var n =
+              Observable.Create<TData>((observer) =>
+              {
+                  var dataForUnsubscribe = onSubscribe(Tuple.Create(controller, observer));
+                  return () => { onUnsubscribe(dataForUnsubscribe); };
+              })
+              .Publish();
+            _subscription = n.Connect();
+            Notifications = n;
+        }
+
+        [Node]
+        public void Dispose()
+        {
+            _subscription.Dispose();
+            var disposable = Controller as IDisposable;
+            if (disposable != null)
+                disposable.Dispose();
+        }
+    }
+
+    [Type]
     public class LeapHelper
     {
         //NOTE: I'm giving all inputs of mutable data (like a Leap.finger in GetJointPosition) also as an output of the method, to avoid timing ambiguity in VL
         #region FINGER methods
+        [Node]
         public static Leap.Vector GetJointPosition(Leap.Finger finger, out Leap.Finger fingerOut, FingerJoint fingerJoint)
         {
             fingerOut = finger;
             return finger.JointPosition((Leap.Finger.FingerJoint) fingerJoint );
         }
 
+        [Node]
         public static Leap.Bone GetBone(Leap.Finger finger, out Leap.Finger fingerOut, BoneType type)
         {
             fingerOut = finger;
             return finger.Bone((Leap.Bone.BoneType) type);
         }
 
+        [Node]
         public static void GetBones(Leap.Finger finger, out Leap.Finger fingerOut, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
         {
             metacarpal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_METACARPAL);
@@ -47,8 +103,8 @@ namespace LeapVLWrapper
 
             fingerOut = finger;
         }
-        
-        
+
+        [Node]
         public static FingerType GetFingerType(Leap.Finger finger, out Leap.Finger fingerOut)
         {
             fingerOut = finger;
@@ -57,6 +113,7 @@ namespace LeapVLWrapper
         #endregion
 
         #region BONE methods
+        [Node]
         public static BoneType GetBoneType(Leap.Bone bone, out Leap.Bone boneOut)
         {
             boneOut = bone;
@@ -65,24 +122,28 @@ namespace LeapVLWrapper
         #endregion
 
         #region GESTURE methods
+        [Node]
         public static GestureType GetGestureType(Leap.Gesture gesture, out Leap.Gesture gestureOut)
         {
             gestureOut = gesture;
             return (GestureType)gesture.Type;
         }
 
+        [Node]
         public static GestureState GetGestureState(Leap.Gesture gesture, out Leap.Gesture gestureOut)
         {
             gestureOut = gesture;
             return (GestureState) gesture.State;
         }
 
+        [Node]
         public static void EnableGesture (Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
         {
             controller.EnableGesture((Leap.Gesture.GestureType) gestureType);
             controllerOut = controller;
         }
 
+        [Node]
         public static void DisableGesture(Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
         {
             controller.EnableGesture((Leap.Gesture.GestureType)gestureType, false);
@@ -90,22 +151,24 @@ namespace LeapVLWrapper
         }
         #endregion
 
-        // Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.
-        // Therefore explicetly pipe data from subscribe to unsubscribe. This data we call "TDataForUnsubscribe"
-        public static IObservable<TData> CreateObservable<TDataForSubscribe, TData, TDataForUnsubscribe>(
-            TDataForSubscribe dataForSubscribe,
-            Func<Tuple<TDataForSubscribe, IObserver<TData>>, TDataForUnsubscribe> onSubscribe,
-            Action<TDataForUnsubscribe> onUnsubscribe)
-        {
-            return
-              Observable.Create<TData>((observer) =>
-              {
-                  var dataForUnsubscribe = onSubscribe(Tuple.Create(dataForSubscribe, observer));
-                  return () => { onUnsubscribe(dataForUnsubscribe); };
-              });
-        }
+        //// Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.
+        //// Therefore explicetly pipe data from subscribe to unsubscribe. This data we call "TDataForUnsubscribe"
+        //[Node]
+        //public static IObservable<TData> CreateObservable<TDataForSubscribe, TData, TDataForUnsubscribe>(
+        //    TDataForSubscribe dataForSubscribe,
+        //    Func<Tuple<TDataForSubscribe, IObserver<TData>>, TDataForUnsubscribe> onSubscribe,
+        //    Action<TDataForUnsubscribe> onUnsubscribe)
+        //{
+        //    return
+        //      Observable.Create<TData>((observer) =>
+        //      {
+        //          var dataForUnsubscribe = onSubscribe(Tuple.Create(dataForSubscribe, observer));
+        //          return () => { onUnsubscribe(dataForUnsubscribe); };
+        //      });
+        //}
     }
     #region ENUMS
+    [Type]
     public enum FingerType
     {
         TYPE_THUMB = 0,
@@ -115,6 +178,7 @@ namespace LeapVLWrapper
         TYPE_PINKY = 4
     }
 
+    [Type]
     public enum FingerJoint
     {
         JOINT_MCP = 0,
@@ -123,6 +187,7 @@ namespace LeapVLWrapper
         JOINT_TIP = 3
     }
 
+    [Type]
     public enum BoneType
     {
         TYPE_METACARPAL,
@@ -131,6 +196,7 @@ namespace LeapVLWrapper
         TYPE_DISTAL,
     }
 
+    [Type]
     public enum GestureType
     {
         TYPE_INVALID = -1,
@@ -140,6 +206,7 @@ namespace LeapVLWrapper
         TYPE_KEY_TAP = 6,
     }
 
+    [Type]
     public enum GestureState
     {
         STATE_INVALID = -1,

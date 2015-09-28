@@ -5,7 +5,7 @@
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1170" top="4440" width="100" height="100">
+   <BOUNDS type="Node" left="1170" top="4860" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -21,7 +21,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Finger (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1500" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="1635" top="1965" width="100" height="100">
    </BOUNDS>
    <PIN pinname="StabilizedTipPositionXYZ" visible="1">
    </PIN>
@@ -35,7 +35,7 @@
    </PIN>
    </NODE>
    <NODE systemname="LineStrip (DX11.Geometry 3d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="LineStrip (DX11.Geometry 3d)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="2130" top="3165" width="100" height="100">
+   <BOUNDS type="Node" left="2130" top="3585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
@@ -47,7 +47,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="390" top="3495" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="3915" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Mode" slicecount="1" values="LineAlpha">
    </PIN>
@@ -55,7 +55,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="375" top="3075" width="100" height="100">
+   <BOUNDS type="Node" left="375" top="3495" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -63,7 +63,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Select (Value Vector)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="Select (Value Vector)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="2130" top="2535" width="100" height="100">
+   <BOUNDS type="Node" left="2130" top="2955" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Vector Size" slicecount="1" visible="1" values="3">
    </PIN>
@@ -75,9 +75,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2280" top="2175" width="285" height="240">
+   <BOUNDS type="Box" left="2280" top="2595" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2280" top="2175" width="0" height="0">
+   <BOUNDS type="Node" left="2280" top="2595" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
@@ -89,7 +89,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Enum2Ord (Enumerations)" nodename="Enum2Ord (Enumerations)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="3360" top="2070" width="100" height="100">
+   <BOUNDS type="Node" left="3360" top="2490" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Enum" visible="1">
    </PIN>
@@ -97,7 +97,7 @@
    </PIN>
    </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="3360" top="2835" width="100" height="100">
+   <BOUNDS type="Node" left="3360" top="3255" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -105,9 +105,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3555" top="2505" width="285" height="240">
+   <BOUNDS type="Box" left="3555" top="2925" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3555" top="2505" width="0" height="0">
+   <BOUNDS type="Node" left="3555" top="2925" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -119,7 +119,7 @@
    </PIN>
    </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="3885" top="2835" width="100" height="100">
+   <BOUNDS type="Node" left="3885" top="3255" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -129,9 +129,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4080" top="2505" width="285" height="240">
+   <BOUNDS type="Box" left="4080" top="2925" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="2505" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="2925" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -143,7 +143,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="3360" top="3180" width="100" height="100">
+   <BOUNDS type="Node" left="3360" top="3600" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -153,17 +153,17 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="13" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="2025" top="3510" width="510" height="285">
+   <BOUNDS type="Box" left="2025" top="3930" width="510" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="2025" top="3510" width="0" height="0">
+   <BOUNDS type="Node" left="2025" top="3930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.49505,1.00000,1.00000|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4485" top="2820" width="3195" height="270">
+   <BOUNDS type="Node" left="4485" top="3240" width="3195" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4485" top="2820" width="3195" height="270">
+   <BOUNDS type="Box" left="4485" top="3240" width="3195" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Check out microdee&apos;s FingerList instead!!|">
    </PIN>
@@ -175,7 +175,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Hand (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="1500" top="825" width="100" height="100">
+   <BOUNDS type="Node" left="1500" top="1245" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Fingers" visible="1">
    </PIN>
@@ -195,14 +195,12 @@
    <NODE id="16" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="1170" top="5040" width="750" height="240">
+   <BOUNDS type="Box" left="1170" top="5460" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1170" top="5040" width="750" height="240">
+   <BOUNDS type="Node" left="1170" top="5460" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="16" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Fingers" dstnodeid="1" dstpinname="Finger">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="2" dstpinname="VerticesXYZ">
    </LINK>
@@ -227,17 +225,41 @@
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="17" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1485" top="435" width="795" height="240">
+   <BOUNDS type="Box" left="1485" top="480" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1485" top="435" width="0" height="0">
+   <BOUNDS type="Node" left="1485" top="480" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Hand">
    </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="15" dstpinname="Hand">
-   </LINK>
    <LINK srcnodeid="15" srcpinname="Pinch Strength" dstnodeid="0" dstpinname="Alpha">
+   </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="1485" top="855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="15" dstpinname="Hand">
+   </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="1635" top="1635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Fingers" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="1" dstpinname="Finger">
    </LINK>
    </PATCH>

@@ -118,30 +118,6 @@
       "Members": [
         {
           "NodeAttribute": {
-            "Name": "STATEINVALID"
-          },
-          "DotNetName": "STATEINVALID"
-        },
-        {
-          "NodeAttribute": {
-            "Name": "STATESTART"
-          },
-          "DotNetName": "STATESTART"
-        },
-        {
-          "NodeAttribute": {
-            "Name": "STATESTOP"
-          },
-          "DotNetName": "STATESTOP"
-        },
-        {
-          "NodeAttribute": {
-            "Name": "STATEUPDATE"
-          },
-          "DotNetName": "STATEUPDATE"
-        },
-        {
-          "NodeAttribute": {
             "Name": "STATE_INVALID"
           },
           "DotNetName": "STATE_INVALID"
@@ -174,36 +150,6 @@
         "IsImmutable": true
       },
       "Members": [
-        {
-          "NodeAttribute": {
-            "Name": "TYPECIRCLE"
-          },
-          "DotNetName": "TYPECIRCLE"
-        },
-        {
-          "NodeAttribute": {
-            "Name": "TYPEINVALID"
-          },
-          "DotNetName": "TYPEINVALID"
-        },
-        {
-          "NodeAttribute": {
-            "Name": "TYPEKEYTAP"
-          },
-          "DotNetName": "TYPEKEYTAP"
-        },
-        {
-          "NodeAttribute": {
-            "Name": "TYPESCREENTAP"
-          },
-          "DotNetName": "TYPESCREENTAP"
-        },
-        {
-          "NodeAttribute": {
-            "Name": "TYPESWIPE"
-          },
-          "DotNetName": "TYPESWIPE"
-        },
         {
           "NodeAttribute": {
             "Name": "TYPE_CIRCLE"

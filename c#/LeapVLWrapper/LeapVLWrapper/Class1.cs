@@ -134,27 +134,18 @@ namespace LeapVLWrapper
     public enum GestureType
     {
         TYPE_INVALID = -1,
-        TYPEINVALID = -1,
         TYPE_SWIPE = 1,
-        TYPESWIPE = 1,
         TYPE_CIRCLE = 4,
-        TYPECIRCLE = 4,
         TYPE_SCREEN_TAP = 5,
-        TYPESCREENTAP = 5,
         TYPE_KEY_TAP = 6,
-        TYPEKEYTAP = 6
     }
 
     public enum GestureState
     {
         STATE_INVALID = -1,
-        STATEINVALID = -1,
         STATE_START = 1,
-        STATESTART = 1,
         STATE_UPDATE = 2,
-        STATEUPDATE = 2,
         STATE_STOP = 3,
-        STATESTOP = 3
     }
     #endregion
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap girlpower.v4p" scrollx="0" scrolly="1650" systemname="Leap girlpower" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap girlpower.v4p">
-   <BOUNDS type="Window" left="3135" top="1950" width="23550" height="13860">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap girlpower.v4p" scrollx="0" scrolly="0" systemname="Leap girlpower" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap girlpower.v4p">
+   <BOUNDS type="Window" left="5970" top="1950" width="23550" height="13860">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -33,22 +33,6 @@
    </BOUNDS>
    <BOUNDS type="Window" left="22920" top="516" width="8304" height="8700">
    </BOUNDS>
-   </NODE>
-   <NODE systemname="LeapFrame (Leap)" filename="..\vl\VVVV.Device.Leap.vl" nodename="LeapFrame (Leap)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="2007" top="3096" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Hands" visible="1">
-   </PIN>
-   <PIN pinname="Pointables" visible="1">
-   </PIN>
-   <PIN pinname="Images" visible="1">
-   </PIN>
-   <PIN pinname="Gestures" visible="1">
-   </PIN>
-   <PIN pinname="Fingers" visible="1">
-   </PIN>
    </NODE>
    <NODE systemname="Screen (Leap)" filename="..\vl\VVVV.Device.Leap.vl" nodename="Screen (Leap)" componentmode="Hidden" id="77">
    <BOUNDS type="Node" left="3927" top="2496" width="100" height="100">
@@ -117,7 +101,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1440" top="11115" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="28680" top="-120" width="29040" height="16440">
+   <BOUNDS type="Window" left="28560" top="0" width="29040" height="16440">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -128,12 +112,6 @@
    <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
    </PIN>
    <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
-   </PIN>
-   </NODE>
-   <NODE systemname="AxisAndGrid (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" nodename="AxisAndGrid (DX11)" componentmode="Hidden" id="93">
-   <BOUNDS type="Node" left="225" top="9735" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="107">
@@ -168,12 +146,6 @@
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="93" srcpinname="Layer" dstnodeid="107" dstpinname="Layer 1" linkstyle="Bezier">
-   <LINKPOINT x="285" y="10110">
-   </LINKPOINT>
-   <LINKPOINT x="1545" y="10110">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="108" srcpinname="Layer" dstnodeid="107" dstpinname="Layer 3" linkstyle="Bezier">
    <LINKPOINT x="2325" y="10170">
    </LINKPOINT>
@@ -373,27 +345,13 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4005" top="10335" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.64">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.62">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="184">
-   <BOUNDS type="Node" left="2595" top="10695" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="184" dstpinname="Initial Yaw">
-   </LINK>
-   <LINK srcnodeid="182" srcpinname="Y Output Value" dstnodeid="184" dstpinname="Initial Pitch">
-   </LINK>
-   <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="184" dstpinname="Initial Distance">
-   </LINK>
-   <LINK srcnodeid="184" srcpinname="View" dstnodeid="89" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="184" srcpinname="Projection" dstnodeid="89" dstpinname="Projection">
-   </LINK>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="236">
    <BOUNDS type="Node" left="510" top="8265" width="4230" height="270">
    </BOUNDS>
@@ -416,44 +374,10 @@
    </NODE>
    <LINK srcnodeid="236" srcpinname="Layer Out" dstnodeid="107" dstpinname="Layer 2">
    </LINK>
-   <NODE systemname="Gestures (Leap)" filename="..\vl\VVVV.Device.Leap.vl" nodename="Gesture (Leap)" componentmode="Hidden" id="266">
-   <BOUNDS type="Node" left="7098" top="4968" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="74" srcpinname="Gestures" dstnodeid="266" dstpinname="Gesture">
-   </LINK>
-   <NODE systemname="Leap (Devices VL)" filename="..\vl\VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden" id="268">
-   <BOUNDS type="Node" left="1851" top="1740" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Circle Gesture" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Swipe Gesture" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="268" srcpinname="Frame" dstnodeid="74" dstpinname="Observable" linkstyle="VHV">
-   <LINKPOINT x="1930" y="2548">
-   </LINKPOINT>
-   <LINKPOINT x="1985" y="2553">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="268" srcpinname="Located Screens" dstnodeid="77" dstpinname="Screen">
-   </LINK>
-   <NODE systemname="Hands (Leap View)" filename="sub\Hands (Leap View).v4p" nodename="sub\Hands (Leap View).v4p" componentmode="Hidden" id="269">
-   <BOUNDS type="Node" left="513" top="7701" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="0" top="3287" width="20190" height="8829">
-   </BOUNDS>
-   <BOUNDS type="Window" left="7845" top="2910" width="20190" height="8820">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="269" srcpinname="Layer Out" dstnodeid="236" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="74" srcpinname="Hands" dstnodeid="269" dstpinname="Hand">
-   </LINK>
    <NODE systemname="NodeList (VVVV)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="NodeList (VVVV)" componentmode="Hidden" id="-13">
-   <BOUNDS type="Node" left="8835" top="1455" width="100" height="100">
+   <BOUNDS type="Node" left="8865" top="1665" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Search Paths" visible="1" slicecount="1" values="..\">
+   <PIN pinname="Search Paths" visible="1" slicecount="1" values="sub\">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="271" systemname="IOBox (String)">
@@ -471,23 +395,25 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Pinch (Leap View)" filename="sub\Pinch (Leap View).v4p" nodename="sub\Pinch (Leap View).v4p" componentmode="Hidden" id="276">
-   <BOUNDS type="Node" left="3288" top="7587" width="0" height="0">
+   <BOUNDS type="Node" left="3273" top="7707" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="4507" width="10305" height="6160">
+   <BOUNDS type="Box" left="0" top="4627" width="10305" height="6160">
    </BOUNDS>
    <BOUNDS type="Window" left="13920" top="4515" width="8040" height="6780">
    </BOUNDS>
-   <PIN pinname="Hand" visible="1">
+   <PIN pinname="Hand" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="277" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9810" top="675" width="795" height="240">
+   <BOUNDS type="Box" left="9825" top="615" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9810" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="9825" top="615" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="sub\">
    </PIN>
@@ -499,9 +425,9 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="277" srcpinname="Output String" dstnodeid="-13" dstpinname="Search Paths">
-   </LINK>
    <NODE systemname="Grab (Leap View)" filename="sub\Grab (Leap View).v4p" nodename="Grab (Leap View)" componentmode="Hidden" id="274">
    <BOUNDS type="Node" left="1920" top="7665" width="100" height="100">
    </BOUNDS>
@@ -511,13 +437,219 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
+   <PIN pinname="Hand" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="74" srcpinname="Hands" dstnodeid="274" dstpinname="Hand">
-   </LINK>
-   <LINK srcnodeid="74" srcpinname="Hands" dstnodeid="276" dstpinname="Hand">
-   </LINK>
    <LINK srcnodeid="274" srcpinname="Layer" dstnodeid="236" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="276" srcpinname="Layer" dstnodeid="236" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="278">
+   <BOUNDS type="Node" left="8850" top="1185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="271" srcpinname="Output String" dstnodeid="278" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="277" srcpinname="Output String" dstnodeid="278" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="278" srcpinname="Output" dstnodeid="-13" dstpinname="Search Paths">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="280" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="14085" top="5430" width="1725" height="690">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14085" top="5430" width="1725" height="690">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Importer:&cr;&lf;Gestures Default value&cr;&lf;Vector immutable|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE systemname="LeapFrame (Leap)" filename="..\vl\VVVV.Device.Leap.vl" nodename="LeapFrame (Leap)" componentmode="Hidden" id="291">
+   <BOUNDS type="Node" left="2712" top="3861" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Images" visible="1">
+   </PIN>
+   <PIN pinname="Hands" visible="1">
+   </PIN>
+   <PIN pinname="Gestures" visible="1">
+   </PIN>
+   <PIN pinname="Images Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Observable" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="291" srcpinname="Hands" dstnodeid="274" dstpinname="Hand">
+   </LINK>
+   <LINK srcnodeid="291" srcpinname="Hands" dstnodeid="276" dstpinname="Hand">
+   </LINK>
+   <NODE systemname="AsTexture (Raw)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsTexture (Raw)" componentmode="Hidden" id="293">
+   <BOUNDS type="Node" left="3720" top="5235" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="291" srcpinname="Images" dstnodeid="293" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AxisAndGrid (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" nodename="AxisAndGrid (DX11)" componentmode="Hidden" id="294">
+   <BOUNDS type="Node" left="225" top="9735" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="294" srcpinname="Layer" dstnodeid="107" dstpinname="Layer 1" linkstyle="Bezier">
+   <LINKPOINT x="285" y="10110">
+   </LINKPOINT>
+   <LINKPOINT x="1545" y="10110">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Hands (Leap View)" filename="sub\Hands (Leap View).v4p" nodename="sub\Hands (Leap View).v4p" componentmode="Hidden" id="269">
+   <BOUNDS type="Node" left="513" top="7626" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="3212" width="20190" height="8829">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1395" top="3060" width="20190" height="8820">
+   </BOUNDS>
+   <PIN pinname="Hand" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="291" srcpinname="Hands" dstnodeid="269" dstpinname="Hand">
+   </LINK>
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="295">
+   <BOUNDS type="Node" left="2595" top="10695" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="295" dstpinname="Initial Yaw">
+   </LINK>
+   <LINK srcnodeid="182" srcpinname="Y Output Value" dstnodeid="295" dstpinname="Initial Pitch">
+   </LINK>
+   <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="295" dstpinname="Initial Distance">
+   </LINK>
+   <LINK srcnodeid="295" srcpinname="View" dstnodeid="89" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="295" srcpinname="Projection" dstnodeid="89" dstpinname="Projection">
+   </LINK>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="296">
+   <BOUNDS type="Node" left="210" top="9345" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="296" srcpinname="Transform Out" dstnodeid="294" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="297" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="360" top="9045" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="360" top="9045" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="297" srcpinname="Y Output Value" dstnodeid="296" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="269" srcpinname="Layer Out" dstnodeid="236" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="Occurrence (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Occurrence.dll" nodename="Occurrence (Value)" componentmode="Hidden" id="331">
+   <BOUNDS type="Node" left="10590" top="10125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Unique" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="332" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10920" top="11535" width="1530" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10920" top="11535" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="331" srcpinname="Unique" dstnodeid="332" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="329" componentmode="Hidden" systemname="Gestures (Leap View)" filename="sub\Gestures (Leap View).v4p" nodename="sub\Gestures (Leap View).v4p" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Window" left="14220" top="2370" width="12015" height="8070">
+   </BOUNDS>
+   <PIN pinname="Gesture" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="4663" top="7608" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="3567" width="9915" height="8082">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="329" srcpinname="Layer" dstnodeid="236" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="291" srcpinname="Gestures" dstnodeid="329" dstpinname="Gesture">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="333" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7095" top="4920" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7095" top="4920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="291" srcpinname="Images Bin Size" dstnodeid="333" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="335" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5325" top="2130" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5325" top="2130" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Leap (Devices VL)" filename="..\vl\VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden" id="336">
+   <BOUNDS type="Node" left="1851" top="1740" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="336" srcpinname="Located Screens" dstnodeid="77" dstpinname="Screen">
+   </LINK>
+   <LINK srcnodeid="336" srcpinname="Frame" dstnodeid="291" dstpinname="Observable" linkstyle="VHV">
+   <LINKPOINT x="2165" y="2803">
+   </LINKPOINT>
+   <LINKPOINT x="2455" y="3063">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="336" srcpinname="Count" dstnodeid="335" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

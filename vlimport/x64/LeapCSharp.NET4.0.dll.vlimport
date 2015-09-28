@@ -4,7 +4,8 @@
     {
       "TypeAttribute": {
         "Name": "Arm",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -143,7 +144,8 @@
     {
       "TypeAttribute": {
         "Name": "Bone",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -1349,7 +1351,8 @@
     {
       "TypeAttribute": {
         "Name": "Finger",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -1476,7 +1479,8 @@
     {
       "TypeAttribute": {
         "Name": "FingerList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -1629,7 +1633,8 @@
     {
       "TypeAttribute": {
         "Name": "Frame",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -2289,7 +2294,8 @@
     {
       "TypeAttribute": {
         "Name": "GestureList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -2393,7 +2399,8 @@
     {
       "TypeAttribute": {
         "Name": "Hand",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -2853,7 +2860,8 @@
     {
       "TypeAttribute": {
         "Name": "HandList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -2978,7 +2986,8 @@
     {
       "TypeAttribute": {
         "Name": "Image",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -3260,7 +3269,8 @@
     {
       "TypeAttribute": {
         "Name": "ImageList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -3364,7 +3374,8 @@
     {
       "TypeAttribute": {
         "Name": "InteractionBox",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -3920,7 +3931,8 @@
     {
       "TypeAttribute": {
         "Name": "Mask",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -4094,7 +4106,8 @@
     {
       "TypeAttribute": {
         "Name": "MaskList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -4198,7 +4211,8 @@
     {
       "TypeAttribute": {
         "Name": "Matrix",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -4589,7 +4603,8 @@
     {
       "TypeAttribute": {
         "Name": "Pointable",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -4791,7 +4806,8 @@
     {
       "TypeAttribute": {
         "Name": "PointableList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -4963,7 +4979,8 @@
     {
       "TypeAttribute": {
         "Name": "Screen",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -5280,7 +5297,8 @@
     {
       "TypeAttribute": {
         "Name": "ScreenList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -5646,7 +5664,8 @@
     {
       "TypeAttribute": {
         "Name": "Tool",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -5732,7 +5751,8 @@
     {
       "TypeAttribute": {
         "Name": "ToolList",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -5857,7 +5877,8 @@
     {
       "TypeAttribute": {
         "Name": "TrackedQuad",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {
@@ -6017,7 +6038,8 @@
     {
       "TypeAttribute": {
         "Name": "Vector",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {

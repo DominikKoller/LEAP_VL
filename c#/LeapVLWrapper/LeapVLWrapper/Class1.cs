@@ -77,77 +77,66 @@ namespace LeapVLWrapper
     [Type]
     public class LeapHelper
     {
-        //NOTE: I'm giving all inputs of mutable data (like a Leap.finger in GetJointPosition) also as an output of the method, to avoid timing ambiguity in VL
         #region FINGER methods
         [Node]
-        public static Leap.Vector GetJointPosition(Leap.Finger finger, out Leap.Finger fingerOut, FingerJoint fingerJoint)
+        public static Leap.Vector GetJointPosition(Leap.Finger finger, FingerJoint fingerJoint)
         {
-            fingerOut = finger;
             return finger.JointPosition((Leap.Finger.FingerJoint) fingerJoint );
         }
 
         [Node]
-        public static Leap.Bone GetBone(Leap.Finger finger, out Leap.Finger fingerOut, BoneType type)
+        public static Leap.Bone GetBone(Leap.Finger finger, BoneType type)
         {
-            fingerOut = finger;
             return finger.Bone((Leap.Bone.BoneType) type);
         }
 
         [Node]
-        public static void GetBones(Leap.Finger finger, out Leap.Finger fingerOut, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
+        public static void GetBones(Leap.Finger finger, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
         {
             metacarpal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_METACARPAL);
             proximal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_PROXIMAL);
             intermediate = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_INTERMEDIATE);
             distal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_DISTAL);
-
-            fingerOut = finger;
         }
 
         [Node]
-        public static FingerType GetFingerType(Leap.Finger finger, out Leap.Finger fingerOut)
+        public static FingerType GetFingerType(Leap.Finger finger)
         {
-            fingerOut = finger;
             return (FingerType) finger.Type;
         }
         #endregion
 
         #region BONE methods
         [Node]
-        public static BoneType GetBoneType(Leap.Bone bone, out Leap.Bone boneOut)
+        public static BoneType GetBoneType(Leap.Bone bone)
         {
-            boneOut = bone;
             return (BoneType) bone.Type;
         }
         #endregion
 
         #region GESTURE methods
         [Node]
-        public static GestureType GetGestureType(Leap.Gesture gesture, out Leap.Gesture gestureOut)
+        public static GestureType GetGestureType(Leap.Gesture gesture)
         {
-            gestureOut = gesture;
             return (GestureType)gesture.Type;
         }
 
         [Node]
-        public static GestureState GetGestureState(Leap.Gesture gesture, out Leap.Gesture gestureOut)
+        public static GestureState GetGestureState(Leap.Gesture gesture)
         {
-            gestureOut = gesture;
             return (GestureState) gesture.State;
         }
 
         [Node]
-        public static void EnableGesture (Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
+        public static void EnableGesture (Leap.Controller controller, GestureType gestureType)
         {
             controller.EnableGesture((Leap.Gesture.GestureType) gestureType);
-            controllerOut = controller;
         }
 
         [Node]
-        public static void DisableGesture(Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
+        public static void DisableGesture(Leap.Controller controller, GestureType gestureType)
         {
             controller.EnableGesture((Leap.Gesture.GestureType)gestureType, false);
-            controllerOut = controller;
         }
         #endregion
 

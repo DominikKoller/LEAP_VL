@@ -77,6 +77,17 @@ namespace LeapVLWrapper
     [Type]
     public class LeapHelper
     {
+        //we flagged Leap.Frame as an immutable type
+        //However, Leap.Frame.Deserialize returns void
+        //Therefore it cannot be used like the method of an immutable type, so here's the workaround:
+        [Node]
+        public static Leap.Frame Deserialize(byte[] data)
+        {
+            Leap.Frame frame = new Leap.Frame();
+            frame.Deserialize(data);
+            return frame;
+        }
+
         #region FINGER methods
         [Node]
         public static Leap.Vector GetJointPosition(Leap.Finger finger, FingerJoint fingerJoint)
@@ -127,16 +138,19 @@ namespace LeapVLWrapper
             return (GestureState) gesture.State;
         }
 
+        //NOTE: I'm giving all inputs of mutable data (like Leap.Controller) also as an output of the method, to avoid timing ambiguity in VL
         [Node]
-        public static void EnableGesture (Leap.Controller controller, GestureType gestureType)
+        public static void EnableGesture (Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
         {
             controller.EnableGesture((Leap.Gesture.GestureType) gestureType);
+            controllerOut = controller;
         }
 
         [Node]
-        public static void DisableGesture(Leap.Controller controller, GestureType gestureType)
+        public static void DisableGesture(Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
         {
             controller.EnableGesture((Leap.Gesture.GestureType)gestureType, false);
+            controllerOut = controller;
         }
         #endregion
 

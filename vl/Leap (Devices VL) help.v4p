@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Leap (Devices VL) help.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="10995" top="5625" width="16005" height="15030">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Leap (Devices VL) help.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8595" top="1905" width="16005" height="15030">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -35,7 +35,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Hand (Leap)" filename="VVVV.Device.Leap.vl" nodename="GetHands (Leap)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="1902" top="4521" width="100" height="100">
+   <BOUNDS type="Node" left="1752" top="4416" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Frame" visible="1" slicecount="1" values="||">
    </PIN>
@@ -381,7 +381,7 @@
    <LINK srcnodeid="26" srcpinname="Tools" dstnodeid="165" dstpinname="Pointable">
    </LINK>
    <NODE systemname="InteractionBox (Leap)" filename="VVVV.Device.Leap.vl" nodename="InteractionBox (Leap)" componentmode="Hidden" id="166">
-   <BOUNDS type="Node" left="6210" top="4530" width="100" height="100">
+   <BOUNDS type="Node" left="6165" top="4260" width="100" height="100">
    </BOUNDS>
    <PIN pinname="InteractionBox" visible="1" slicecount="1" values="||">
    </PIN>
@@ -448,12 +448,10 @@
    </NODE>
    <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="121" dstpinname="XYZ">
    </LINK>
-   <NODE id="180" systemname="Leap (Devices VL)" filename="VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden">
+   <NODE id="181" systemname="Leap (Devices VL)" filename="VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden">
    <BOUNDS type="Node" left="1755" top="2520" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Frame" visible="1">
-   </PIN>
    </NODE>
-   <LINK srcnodeid="180" srcpinname="Frame" dstnodeid="169" dstpinname="Observable">
+   <LINK srcnodeid="181" srcpinname="Frame" dstnodeid="169" dstpinname="Observable">
    </LINK>
    </PATCH>

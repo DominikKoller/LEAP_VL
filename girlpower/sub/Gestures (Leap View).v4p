@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Gestures (Leap View).v4p" systemname="Gestures (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Gestures (Leap View).v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Gestures (Leap View).v4p" systemname="Gestures (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Gestures (Leap View).v4p" scrollx="0" scrolly="90">
    <BOUNDS type="Window" left="840" top="975" width="17025" height="11505">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
@@ -353,7 +353,7 @@
    </PIN>
    <PIN pinname="Layer 3" visible="1">
    </PIN>
-   <PIN pinname="Render State" visible="-1" slicecount="1" values="||" pintype="Input">
+   <PIN pinname="Render State" visible="-1" slicecount="1" pintype="Input" values="||">
    </PIN>
    <PIN pinname="Layer 4" visible="1">
    </PIN>
@@ -381,7 +381,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Keep (Leap Gesture VL)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Keep (Leap Gesture VL)" componentmode="Hidden" id="42">
-   <BOUNDS type="Node" left="1440" top="1005" width="100" height="100">
+   <BOUNDS type="Node" left="1455" top="1260" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Gestures Bin Size" visible="1">
    </PIN>
@@ -419,7 +419,7 @@
    <LINK srcnodeid="52" srcpinname="Swipe" dstnodeid="37" dstpinname="Input">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="2100" top="1365" width="100" height="100">
+   <BOUNDS type="Node" left="2160" top="1635" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -447,7 +447,7 @@
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Power (Value)" nodename="Power (Value)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="2760" top="1365" width="100" height="100">
+   <BOUNDS type="Node" left="2820" top="1635" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -457,9 +457,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3435" top="1350" width="285" height="240">
+   <BOUNDS type="Box" left="3495" top="1620" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3435" top="1350" width="0" height="0">
+   <BOUNDS type="Node" left="3495" top="1620" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
@@ -608,8 +608,6 @@
    </LINK>
    <LINK srcnodeid="63" srcpinname="Output" dstnodeid="67" dstpinname="XYZ">
    </LINK>
-   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="64" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="72" srcpinname="Output" dstnodeid="66" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="52" srcpinname="Screen Tap Former Index" dstnodeid="72" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -619,9 +617,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="72" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="2820" y="3180">
+   <LINKPOINT x="2860" y="3360">
    </LINKPOINT>
-   <LINKPOINT x="9195" y="3180">
+   <LINKPOINT x="9215" y="3270">
    </LINKPOINT>
    </LINK>
    <NODE systemname="ScreenTap (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="ScreenTap (Leap)" componentmode="Hidden" id="60">
@@ -697,15 +695,15 @@
    <LINK srcnodeid="101" srcpinname="Output" dstnodeid="3" dstpinname="Alpha">
    </LINK>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="57" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="2760" y="2888">
+   <LINKPOINT x="2800" y="3068">
    </LINKPOINT>
-   <LINKPOINT x="1770" y="2888">
+   <LINKPOINT x="1790" y="2978">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="99" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="2820" y="2393">
+   <LINKPOINT x="2860" y="2573">
    </LINKPOINT>
-   <LINKPOINT x="6195" y="2393">
+   <LINKPOINT x="6215" y="2483">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="99" srcpinname="Output" dstnodeid="93" dstpinname="Input">
@@ -743,7 +741,7 @@
    <LINK srcnodeid="104" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Input 2">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="119">
-   <BOUNDS type="Node" left="13740" top="5610" width="100" height="100">
+   <BOUNDS type="Node" left="13650" top="5505" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" visible="1" slicecount="1" values="0">
    </PIN>
@@ -791,15 +789,15 @@
    <LINK srcnodeid="118" srcpinname="Layer" dstnodeid="28" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="119" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="2820" y="3608">
+   <LINKPOINT x="2830" y="3753">
    </LINKPOINT>
-   <LINKPOINT x="13740" y="3608">
+   <LINKPOINT x="13700" y="3628">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="52" srcpinname="Key Tap Former Index" dstnodeid="119" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="13680" y="4125">
+   <LINKPOINT x="13650" y="4090">
    </LINKPOINT>
-   <LINKPOINT x="14370" y="4125">
+   <LINKPOINT x="14310" y="4055">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="121">
@@ -821,7 +819,7 @@
    </PIN>
    <PIN pinname="Mapping" slicecount="1" values="Clamp">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0.5">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -837,8 +835,6 @@
    <LINK srcnodeid="123" srcpinname="Geometry Out" dstnodeid="118" dstpinname="Geometry">
    </LINK>
    <LINK srcnodeid="122" srcpinname="Output" dstnodeid="123" dstpinname="Inner Radius">
-   </LINK>
-   <LINK srcnodeid="119" srcpinname="Output" dstnodeid="122" dstpinname="Input">
    </LINK>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="124">
    <BOUNDS type="Node" left="14730" top="7020" width="100" height="100">
@@ -1098,4 +1094,28 @@
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
    </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="149">
+   <BOUNDS type="Node" left="9195" top="5340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="149" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Output" dstnodeid="64" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="150">
+   <BOUNDS type="Node" left="13665" top="5895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="Output" dstnodeid="150" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="150" srcpinname="Output" dstnodeid="122" dstpinname="Input">
+   </LINK>
    </PATCH>

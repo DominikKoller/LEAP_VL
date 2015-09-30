@@ -142,16 +142,74 @@ namespace LeapVLWrapper
         [Node]
         public static void EnableGesture (Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
         {
-            controller.EnableGesture((Leap.Gesture.GestureType) gestureType);
             controllerOut = controller;
+            controller.EnableGesture((Leap.Gesture.GestureType) gestureType);
         }
 
         [Node]
         public static void DisableGesture(Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType)
         {
-            controller.EnableGesture((Leap.Gesture.GestureType)gestureType, false);
             controllerOut = controller;
+            controller.EnableGesture((Leap.Gesture.GestureType)gestureType, false);
         }
+        #endregion
+
+        #region SET / GET POLICIES
+        /* Policy setting requests
+        A request to change a policy is subject to user approval and a policy can be changed by the user at any time 
+        (using the Leap Motion settings dialog). 
+        The desired policy flags must be set every time an application runs.
+        Policy changes are completed asynchronously and, because they are subject to user approval or system compatibility checks, may not complete successfully. 
+        Call Controller::isPolicySet() after a suitable interval to test whether the change was accepted.
+        */    
+        [Node]
+        public static void SetBackgroundFramesPolicy(Leap.Controller controller, out Leap.Controller controllerOut, bool set)
+        {
+            controllerOut = controller;
+            if(set)
+                controller.SetPolicy(Leap.Controller.PolicyFlag.POLICY_BACKGROUND_FRAMES);
+            else
+                controller.ClearPolicy(Leap.Controller.PolicyFlag.POLICY_BACKGROUND_FRAMES);
+        }
+        [Node]
+        public static bool IsBackgroundFramesPolicy(Leap.Controller controller, out Leap.Controller controllerOut)
+        {
+            controllerOut = controller;
+            return controller.IsPolicySet(Leap.Controller.PolicyFlag.POLICY_BACKGROUND_FRAMES);
+        }
+
+        [Node]
+        public static void SetImagesPolicy(Leap.Controller controller, out Leap.Controller controllerOut, bool set)
+        {
+            controllerOut = controller;
+            if (set)
+                controller.SetPolicy(Leap.Controller.PolicyFlag.POLICY_IMAGES);
+            else
+                controller.ClearPolicy(Leap.Controller.PolicyFlag.POLICY_IMAGES);
+        }
+        [Node]
+        public static bool IsImagesPolicy(Leap.Controller controller, out Leap.Controller controllerOut)
+        {
+            controllerOut = controller;
+            return controller.IsPolicySet(Leap.Controller.PolicyFlag.POLICY_IMAGES);
+        }
+
+        [Node]
+        public static void SetHeadMountPolicy(Leap.Controller controller, out Leap.Controller controllerOut, bool set)
+        {
+            controllerOut = controller;
+            if (set)
+                controller.SetPolicy(Leap.Controller.PolicyFlag.POLICY_OPTIMIZE_HMD);
+            else
+                controller.ClearPolicy(Leap.Controller.PolicyFlag.POLICY_OPTIMIZE_HMD);
+        }
+        [Node]
+        public static bool IsHeadMountPolicy(Leap.Controller controller, out Leap.Controller controllerOut)
+        {
+            controllerOut = controller;
+            return controller.IsPolicySet(Leap.Controller.PolicyFlag.POLICY_OPTIMIZE_HMD);
+        }
+
         #endregion
 
         //// Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.

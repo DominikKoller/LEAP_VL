@@ -1060,7 +1060,8 @@
     {
       "TypeAttribute": {
         "Name": "Device",
-        "Category": "Leap"
+        "Category": "Leap",
+        "IsImmutable": true
       },
       "Members": [
         {

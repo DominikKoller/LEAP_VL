@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Leap (Devices VL) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="6585" top="1155" width="16005" height="15030">
+   <BOUNDS type="Window" left="-330" top="1020" width="16005" height="15030">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -443,7 +443,7 @@
    <LINK srcnodeid="185" srcpinname="Frame" dstnodeid="187" dstpinname="Frame">
    </LINK>
    <NODE systemname="Gestures (Leap Observable)" filename="VVVV.Device.Leap.vl" nodename="Gestures (Leap Observable)" componentmode="Hidden" id="190">
-   <BOUNDS type="Node" left="4065" top="2955" width="100" height="100">
+   <BOUNDS type="Node" left="4920" top="3780" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Observable" visible="1">
    </PIN>
@@ -547,7 +547,7 @@
    <LINK srcnodeid="200" srcpinname="Output" dstnodeid="186" dstpinname="Serialized Data">
    </LINK>
    <NODE systemname="Image (Leap EX9 Texture)" filename="..\modules\Image (Leap EX9 Texture).v4p" nodename="Image (Leap EX9 Texture)" componentmode="Hidden" id="201">
-   <BOUNDS type="Node" left="6780" top="2835" width="100" height="100">
+   <BOUNDS type="Node" left="6720" top="2055" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Image" visible="1">
    </PIN>
@@ -559,11 +559,37 @@
    <LINK srcnodeid="185" srcpinname="Images" dstnodeid="201" dstpinname="Image">
    </LINK>
    <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="202">
-   <BOUNDS type="Node" left="6780" top="3210" width="100" height="100">
+   <BOUNDS type="Node" left="6765" top="3075" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="201" srcpinname="Texture Out" dstnodeid="202" dstpinname="Texture">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="203">
+   <BOUNDS type="Node" left="6795" top="3705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6795" top="3705" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15660" top="2955" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="202" srcpinname="Layer" dstnodeid="203" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="204">
+   <BOUNDS type="Node" left="6780" top="2535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="201" srcpinname="Texture Out" dstnodeid="204" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="204" srcpinname="Output Node" dstnodeid="202" dstpinname="Texture">
    </LINK>
    </PATCH>

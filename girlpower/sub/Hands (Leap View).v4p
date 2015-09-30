@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" systemname="Hands (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" scrollx="1500" scrolly="135">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" systemname="Hands (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" scrollx="0" scrolly="150">
    <BOUNDS type="Window" left="1500" top="2595" width="14775" height="10695">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
@@ -127,7 +127,7 @@
    </PIN>
    <PIN pinname="Alpha" visible="1">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="8">

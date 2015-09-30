@@ -34,25 +34,25 @@
             <POSITION x="509.596436" y="165.158356" />
           </INLET>
           <INLET Name="Enable Data in Background" Layer="Update">
-            <POSITION x="699.7059" y="121.353073" />
+            <POSITION x="686.657043" y="114.828659" />
           </INLET>
           <INLET Name="Enable Images" Layer="Update">
-            <POSITION x="925.739136" y="121.353073" />
+            <POSITION x="925.739136" y="114.828659" />
           </INLET>
           <INLET Name="Enable Head Mount Optimization" Layer="Update">
-            <POSITION x="1257.42908" y="121.353073" />
+            <POSITION x="1257.42908" y="114.828659" />
           </INLET>
           <INLET Name="Swipe Gesture" Layer="Update">
-            <POSITION x="1669.00378" y="121.353073" />
+            <POSITION x="1669.00378" y="114.828659" />
           </INLET>
           <INLET Name="Circle Gesture" Layer="Update">
-            <POSITION x="1963.61255" y="121.353073" />
+            <POSITION x="1963.61255" y="114.828659" />
           </INLET>
           <INLET Name="Screen Tap Gesture" Layer="Update">
-            <POSITION x="2245.306" y="121.353073" />
+            <POSITION x="2245.306" y="114.828659" />
           </INLET>
           <INLET Name="Key Tap Gesture" Layer="Update">
-            <POSITION x="2495.94482" y="121.353073" />
+            <POSITION x="2495.94482" y="114.828659" />
           </INLET>
         </INLETS>
         <OUTLETS>
@@ -87,7 +87,7 @@
         <CONSTS>
           <CONST Name="Gesture Type" Layer="Update">
             <POSITION x="1676.58289" y="280.080566" />
-            <SIZE width="88.7699356" height="15.7295189" />
+            <SIZE width="88.7699356" height="17.6491356" />
             <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":1}]]></VALUE>
           </CONST>
           <CONST Name="IsFirstFrame" Layer="Update">
@@ -105,17 +105,17 @@
           </CONST>
           <CONST Name="Policy#1" Layer="Update">
             <POSITION x="335.260651" y="423.330322" />
-            <SIZE width="149.126678" height="16.5021019" />
+            <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":2}]]></VALUE>
           </CONST>
           <CONST Name="Policy#2" Layer="Update">
-            <POSITION x="550.88916" y="430.681915" />
+            <POSITION x="551.540466" y="424.8202" />
             <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":4}]]></VALUE>
           </CONST>
           <CONST Name="Gesture Type#1" Layer="Update">
             <POSITION x="1970.41858" y="281.9632" />
-            <SIZE width="88.7699356" height="15.50846" />
+            <SIZE width="88.7699356" height="17.6491356" />
             <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":4}]]></VALUE>
           </CONST>
           <CONST Name="Gesture Type#2" Layer="Update">
@@ -340,7 +340,7 @@
             </BODY>
           </REGION>
           <REGION Name="IfElse#9" Layer="Update" Kind="IfElse">
-            <POSITION x="627.7641" y="221.511078" />
+            <POSITION x="620.3445" y="228.1886" />
             <SIZE x="232.398621" y="134.863419" />
             <INPUTS>
               <INPUT Name="Condition" />
@@ -355,17 +355,17 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Controller" Layer="True">
-                  <POSITION x="632.0928" y="223.182037" />
+                  <POSITION x="624.673157" y="229.85965" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Controller" Layer="True">
-                  <POSITION x="632.0928" y="302.889252" />
+                  <POSITION x="624.673157" y="309.566772" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS>
                 <CONST Name="Policy" Layer="True">
-                  <POSITION x="639.786438" y="247.1076" />
+                  <POSITION x="632.3668" y="253.785233" />
                   <SIZE width="149.126678" height="15.50846" />
                   <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":1}]]></VALUE>
                 </CONST>
@@ -373,7 +373,7 @@
               <REGIONS />
               <NODES>
                 <OPERATION Name="TogglePolicy" Layer="True">
-                  <POSITION x="632.7641" y="277.883179" />
+                  <POSITION x="625.3445" y="284.56073" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
                     <OPERATIONNODE Name="TogglePolicy" />
                   </NODEREF>
@@ -994,7 +994,7 @@
             </OUTPUTS>
           </OPERATION>
           <PROCESS Name="Changed#6">
-            <POSITION x="2444.70435" y="149.205048" />
+            <POSITION x="2441.44214" y="156.816864" />
             <NODEREF LastCat="Control" LastFile="VL.Lib.Basics.dll">
               <PROCESSNODE Name="Changed" />
             </NODEREF>
@@ -1114,6 +1114,9 @@
           <INLET Name="Arm" Layer="Arm">
             <POSITION x="-247.836243" y="968.874756" />
           </INLET>
+          <INLET Name="Image" Layer="Image">
+            <POSITION x="273.4836" y="395.226166" />
+          </INLET>
           <INLET Name="Pointable" Layer="Tool" Type="Tool">
             <POSITION x="358.960449" y="1397.66809" />
           </INLET>
@@ -1140,9 +1143,6 @@
           </INLET>
           <INLET Name="Gesture" Layer="Gestures" Type="Sequence&lt;Gesture&gt;">
             <POSITION x="1752.14111" y="868.8529" />
-          </INLET>
-          <INLET Name="Image" Layer="Image">
-            <POSITION x="253.487244" y="135.220917" />
           </INLET>
         </INLETS>
         <OUTLETS>
@@ -1206,8 +1206,14 @@
           <OUTLET Name="Width" Layer="Arm">
             <POSITION x="187.375366" y="1131.48474" />
           </OUTLET>
+          <OUTLET Name="Result" Layer="Image">
+            <POSITION x="273.4836" y="526.0771" />
+          </OUTLET>
           <OUTLET Name="Basis" Layer="Hand">
             <POSITION x="293.135254" y="823.25885" />
+          </OUTLET>
+          <OUTLET Name="Bytes Per Pixel" Layer="Image">
+            <POSITION x="324.8597" y="526.0771" />
           </OUTLET>
           <OUTLET Name="TipPosition#1" Layer="Tool">
             <POSITION x="358.037628" y="1512.46411" />
@@ -1227,6 +1233,9 @@
           <OUTLET Name="FingerType" Layer="Finger">
             <POSITION x="420.2779" y="1332.95361" />
           </OUTLET>
+          <OUTLET Name="Height" Layer="Image">
+            <POSITION x="421.282349" y="526.0771" />
+          </OUTLET>
           <OUTLET Name="StabilizedTipPosition#1" Layer="Tool">
             <POSITION x="444.264221" y="1512.46411" />
           </OUTLET>
@@ -1238,6 +1247,9 @@
           </OUTLET>
           <OUTLET Name="Size" Layer="InteractionBox">
             <POSITION x="491.5193" y="2102.21" />
+          </OUTLET>
+          <OUTLET Name="Width#4" Layer="Image">
+            <POSITION x="506.3938" y="526.0771" />
           </OUTLET>
           <OUTLET Name="Palm Position" Layer="Hand">
             <POSITION x="520.865234" y="823.25885" />
@@ -1445,18 +1457,6 @@
           </OUTLET>
           <OUTLET Name="Key Tap Former Index" Layer="Gestures">
             <POSITION x="2523.51953" y="1211.40271" />
-          </OUTLET>
-          <OUTLET Name="Result" Layer="Image">
-            <POSITION x="252.028381" y="274.5427" />
-          </OUTLET>
-          <OUTLET Name="Bytes Per Pixel" Layer="Image">
-            <POSITION x="314.0302" y="274.5427" />
-          </OUTLET>
-          <OUTLET Name="Height" Layer="Image">
-            <POSITION x="412.503723" y="274.5427" />
-          </OUTLET>
-          <OUTLET Name="Width#4" Layer="Image">
-            <POSITION x="483.2588" y="274.5427" />
           </OUTLET>
         </OUTLETS>
         <CONSTS>
@@ -2744,7 +2744,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Pointable#1" Layer="Tool">
-            <POSITION x="359.984924" y="1429.9386" />
+            <POSITION x="360.610748" y="1428.687" />
             <NODEREF LastCat="VVVV.Leap" LastFile="VVVV.Device.Leap.vl">
               <OPERATIONNODE Name="Pointable" />
               <CATEGORY Name="Leap" IsDirectParent="true">
@@ -3668,7 +3668,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Height#1" Layer="Image">
-            <POSITION x="397.087952" y="193.650833" />
+            <POSITION x="423.914459" y="432.716461" />
             <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Image" />
               <OPERATIONNODE Name="Height" />
@@ -3681,7 +3681,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Width#3" Layer="Image">
-            <POSITION x="480.59552" y="184.1682" />
+            <POSITION x="507.422119" y="432.716461" />
             <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
               <OPERATIONNODE Name="Width" />
               <CATEGORY Name="Image" IsDirectParent="true" />
@@ -3694,7 +3694,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="BytesPerPixel" Layer="Image">
-            <POSITION x="300.8995" y="185.24826" />
+            <POSITION x="327.726" y="432.716461" />
             <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Image" />
               <OPERATIONNODE Name="BytesPerPixel" />
@@ -3707,7 +3707,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToRaw" Layer="Image">
-            <POSITION x="250.266052" y="222.656143" />
+            <POSITION x="273.4836" y="475.831268" />
             <NODEREF LastCat="Collections.Array" LastFile="VL.Lib.Integration.dll">
               <OPERATIONNODE Name="ToRaw" Version="Byte" />
             </NODEREF>
@@ -3719,7 +3719,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Data" Layer="Image">
-            <POSITION x="250.180969" y="179.541351" />
+            <POSITION x="273.4836" y="432.716461" />
             <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
               <OPERATIONNODE Name="Data" />
               <CATEGORY Name="Image" IsDirectParent="true" />
@@ -4462,7 +4462,7 @@
         </LAYERS>
         <INLETS>
           <INLET Name="Observable" Layer="Update" Type="Observable&lt;Frame&gt;">
-            <POSITION x="367.011" y="-129.8659" />
+            <POSITION x="366.4418" y="-117.343994" />
           </INLET>
           <INLET Name="Frame" Layer="Update" PadType="Field">
             <POSITION x="474.0755" y="-70.5923157" />
@@ -4522,7 +4522,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Frame" Layer="Update">
-            <POSITION x="548.2025" y="18.2707062" />
+            <POSITION x="547.633362" y="23.9624786" />
             <NODEREF LastCat="VVVV.Leap" LastFile="VVVV.Device.Leap.vl">
               <OPERATIONNODE Name="Frame" />
               <CATEGORY Name="Leap" IsDirectParent="true">
@@ -5867,7 +5867,7 @@
             <POSITION x="692" y="374.775177" />
           </INLET>
           <INLET Name="Serialized Data" Layer="Deserialize">
-            <POSITION x="846.4451" y="367" />
+            <POSITION x="848.13855" y="367" />
           </INLET>
         </INLETS>
         <OUTLETS>

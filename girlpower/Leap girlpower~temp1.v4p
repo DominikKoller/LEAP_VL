@@ -671,9 +671,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="432" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="8370" top="1890" width="1500" height="270">
+   <BOUNDS type="Node" left="14130" top="930" width="1500" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8370" top="1890" width="1500" height="270">
+   <BOUNDS type="Box" left="14130" top="930" width="1500" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|image default value|">
    </PIN>

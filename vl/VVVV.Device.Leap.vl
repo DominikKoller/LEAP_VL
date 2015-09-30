@@ -661,20 +661,6 @@
               <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="TrackedQuad" Layer="Update">
-            <POSITION x="47.4960327" y="448.0094" />
-            <NODEREF LastCat="Leap.Controller" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Controller" />
-              <OPERATIONNODE Name="TrackedQuad" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-              <OUPUT Name="Tracked Quad" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="IsConnected" Layer="Update">
             <POSITION x="-339.415558" y="454.0622" />
             <NODEREF LastCat="Leap.Controller" LastFile="LeapCSharp.NET4.0.dll">
@@ -1019,13 +1005,11 @@
           <Link source="Nodes/Observable/Outputs/Controller" sink="Nodes/IsConnected/Inputs/Input" />
           <Link source="Nodes/Create#1/Outputs/Output" sink="Nodes/Observable/Inputs/Controller" />
           <Link source="Nodes/Observable/Outputs/Notifications" sink="Outlets/Frame" />
-          <Link source="Nodes/Devices/Outputs/Output" sink="Nodes/TrackedQuad/Inputs/Input" />
           <Link source="Nodes/Devices/Outputs/Devices" sink="Nodes/ToSpread/Inputs/Input" />
           <Link source="Nodes/ToSpread/Outputs/Result" sink="Outlets/Devices" />
           <Link source="Nodes/IsServiceConnected/Outputs/Output" sink="Nodes/Devices/Inputs/Input" />
           <Link source="Nodes/IsConnected/Outputs/Output" sink="Nodes/IsServiceConnected/Inputs/Input" />
           <Link source="Inlets/Enable Data in Background" sink="Nodes/Changed/Inputs/Value" />
-          <Link source="Nodes/TrackedQuad/Outputs/Output" sink="Nodes/IsPolicySet/Inputs/Controller" />
           <Link source="Nodes/IsPolicySet/Outputs/Result" sink="Outlets/Data in Background Enabled" />
           <Link source="Nodes/Changed/Outputs/Result" sink="Nodes/OR/Inputs/Input 2" />
           <Link source="Nodes/OR/Outputs/Output" sink="Regions/IfElse#9/Inputs/Condition" />
@@ -1080,6 +1064,7 @@
           <Link source="Regions/IfElse#1/Outputs/Controller" sink="Regions/IfElse/Inputs/Controller Default" />
           <Link source="Regions/IfElse/Outputs/Controller" sink="Regions/IfElse#2/Inputs/Controller Default" />
           <Link source="Regions/IfElse#2/Outputs/Controller" sink="Regions/IfElse#3/Inputs/Controller Default" />
+          <Link source="Nodes/Devices/Outputs/Output" sink="Nodes/IsPolicySet/Inputs/Controller" />
         </LINKS>
       </BODY>
     </PATCH>

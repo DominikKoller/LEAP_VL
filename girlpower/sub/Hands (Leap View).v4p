@@ -1,10 +1,10 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" systemname="Hands (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" scrollx="0" scrolly="150">
-   <BOUNDS type="Window" left="1500" top="2595" width="14775" height="10695">
+   <BOUNDS type="Window" left="14400" top="1665" width="14775" height="10695">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
-   <NODE systemname="Hand (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="GetHands (Leap)" componentmode="Hidden" id="0">
+   <NODE systemname="Hand (LeapVL)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="GetHands (Leap)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3057" top="1515" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Frame" visible="1" slicecount="1" values="||">
@@ -44,7 +44,7 @@
    <PIN pinname="Stabilized Palm PositionXYZ" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Finger (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="1" debug="0">
+   <NODE systemname="Finger (LeapVL)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="1" debug="0">
    <BOUNDS type="Node" left="9765" top="3924" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bones" visible="1">
@@ -80,7 +80,7 @@
    <PIN pinname="XYZ" visible="1" slicecount="60" values="0.0133658707141876,0.0160671186447144,-0.00674652993679047,0.0151916098594666,0.0149035489559174,-0.00797037363052368,0.0175591731071472,0.0127437317371368,-0.0104589200019836,0.0179813289642334,0.0110806214809418,-0.0126725888252258,0.014182802438736,0.0112869226932526,-0.00660898208618164,0.0160691249370575,0.00891773343086243,-0.00989072978496552,0.0157920527458191,0.0106481516361237,-0.0117881560325623,0.0147793054580688,0.0121983242034912,-0.011143456697464,0.0125814890861511,0.0107392656803131,-0.00681885719299316,0.014326788187027,0.00843562304973602,-0.0103203880786896,0.01470250248909,0.0105411076545715,-0.012341673374176,0.0140595185756683,0.0125720643997192,-0.0116042411327362,0.0108981692790985,0.0106500780582428,-0.0071535325050354,0.01213418841362,0.00846219778060913,-0.0104375076293945,0.012805587053299,0.0104329597949982,-0.0121893227100372,0.0125124371051788,0.0124091577529907,-0.0112786328792572,0.00936041057109833,0.0109824049472809,-0.00790221691131592,0.0102183306217194,0.00870202004909516,-0.010552304983139,0.0111425244808197,0.0100233805179596,-0.0118581819534302,0.0110996162891388,0.0115596294403076,-0.0110439825057983">
    </PIN>
    </NODE>
-   <NODE systemname="Bone (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Bone (Leap)" componentmode="Hidden" id="4" debug="0">
+   <NODE systemname="Bone (LeapVL)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Bone (Leap)" componentmode="Hidden" id="4" debug="0">
    <BOUNDS type="Node" left="9795" top="4749" width="1710" height="270">
    </BOUNDS>
    <PIN pinname="CenterXYZ" visible="1">
@@ -310,7 +310,7 @@
    <PIN pinname="Distance" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Arm (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Arm (Leap)" componentmode="Hidden" id="27">
+   <NODE systemname="Arm (LeapVL)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Arm (Leap)" componentmode="Hidden" id="27">
    <BOUNDS type="Node" left="5610" top="3999" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Arm" visible="1" slicecount="1" values="||">

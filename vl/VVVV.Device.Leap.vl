@@ -1068,7 +1068,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Splitters" Category="VVVV.Leap" IsClosed="true">
+    <PATCH Name="Splitters" Category="VVVV.LeapVL" IsClosed="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Arm" />
@@ -1204,7 +1204,7 @@
             <POSITION x="366.4767" y="1825.36011" />
           </OUTLET>
           <OUTLET Name="Result" Layer="Image">
-            <POSITION x="366.621826" y="515.3524" />
+            <POSITION x="366.621826" y="513.3834" />
           </OUTLET>
           <OUTLET Name="Bones" Layer="Finger">
             <POSITION x="368.987457" y="1332.95361" />
@@ -1219,7 +1219,7 @@
             <POSITION x="444.264221" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="Bytes Per Pixel" Layer="Image">
-            <POSITION x="473.793" y="515.3524" />
+            <POSITION x="473.793" y="513.3834" />
           </OUTLET>
           <OUTLET Name="Start" Layer="Bone">
             <POSITION x="477.035583" y="1825.36011" />
@@ -1236,8 +1236,8 @@
           <OUTLET Name="StabilizedTipPosition" Layer="Finger">
             <POSITION x="567.260437" y="1332.95361" />
           </OUTLET>
-          <OUTLET Name="Height" Layer="Image">
-            <POSITION x="570.2157" y="515.3524" />
+          <OUTLET Name="Width#4" Layer="Image">
+            <POSITION x="572.1384" y="513.3834" />
           </OUTLET>
           <OUTLET Name="Center" Layer="Bone">
             <POSITION x="576.796631" y="1825.36011" />
@@ -1245,8 +1245,8 @@
           <OUTLET Name="Direction#4" Layer="Tool">
             <POSITION x="583.3323" y="1512.46411" />
           </OUTLET>
-          <OUTLET Name="Width#4" Layer="Image">
-            <POSITION x="655.327148" y="515.3524" />
+          <OUTLET Name="Height" Layer="Image">
+            <POSITION x="627.3157" y="513.3834" />
           </OUTLET>
           <OUTLET Name="TipVelocity#1" Layer="Tool">
             <POSITION x="663.7625" y="1512.46411" />
@@ -1719,7 +1719,7 @@
               <NODES>
                 <OPERATION Name="SpecifyGestureType" Layer="Update">
                   <POSITION x="-355.92" y="308.184" />
-                  <NODEREF LastCat="Main" LastFile="VVVV.Device.Leap.vl">
+                  <NODEREF LastCat="Leap.Gesture" LastFile="VVVV.Device.Leap.vl">
                     <OPERATIONNODE Name="SpecifyGestureType" />
                   </NODEREF>
                   <INPUTS>
@@ -2751,11 +2751,9 @@
           </OPERATION>
           <OPERATION Name="Pointable" Layer="Finger">
             <POSITION x="764.714966" y="1188.28284" />
-            <NODEREF LastCat="VVVV.Leap" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Device.Leap.vl">
               <OPERATIONNODE Name="Pointable" />
-              <CATEGORY Name="Leap" IsDirectParent="true">
-                <CATEGORY Name="VVVV" IsDirectParent="true" />
-              </CATEGORY>
+              <CATEGORY Name="LeapVL" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Pointable" />
@@ -2776,11 +2774,9 @@
           </OPERATION>
           <OPERATION Name="Pointable#1" Layer="Tool">
             <POSITION x="360.610748" y="1428.687" />
-            <NODEREF LastCat="VVVV.Leap" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Device.Leap.vl">
               <OPERATIONNODE Name="Pointable" />
-              <CATEGORY Name="Leap" IsDirectParent="true">
-                <CATEGORY Name="VVVV" IsDirectParent="true" />
-              </CATEGORY>
+              <CATEGORY Name="LeapVL" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Pointable" />
@@ -3699,7 +3695,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Height#1" Layer="Image">
-            <POSITION x="572.8479" y="421.991455" />
+            <POSITION x="629.9479" y="420.0225" />
             <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Image" />
               <OPERATIONNODE Name="Height" />
@@ -3712,7 +3708,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Width#3" Layer="Image">
-            <POSITION x="656.355469" y="421.991455" />
+            <POSITION x="573.166748" y="422.4837" />
             <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
               <OPERATIONNODE Name="Width" />
               <CATEGORY Name="Image" IsDirectParent="true" />
@@ -3757,19 +3753,6 @@
             </NODEREF>
             <INPUTS>
               <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Rectify" Layer="Tool">
-            <POSITION x="242.403076" y="1225.05225" />
-            <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="Rectify" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Uv" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Result" />
@@ -4500,7 +4483,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="LastFrame" Category="VVVV.Leap" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="LastFrame" Category="VVVV.LeapVL" IsDatatype="true" IsClosed="true" IsMutable="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Create" />
@@ -4569,11 +4552,9 @@
           </OPERATION>
           <OPERATION Name="Frame" Layer="Update">
             <POSITION x="547.633362" y="23.9624786" />
-            <NODEREF LastCat="VVVV.Leap" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Device.Leap.vl">
               <OPERATIONNODE Name="Frame" />
-              <CATEGORY Name="Leap" IsDirectParent="true">
-                <CATEGORY Name="VVVV" IsDirectParent="true" />
-              </CATEGORY>
+              <CATEGORY Name="LeapVL" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Frame" />
@@ -4600,7 +4581,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Splitters2" Category="VVVV.Leap" IsClosed="true">
+    <PATCH Name="Splitters2" Category="VVVV.LeapVL" IsClosed="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Pointable" />
@@ -4980,7 +4961,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Keep" Category="VVVV.Leap" Version="Gesture VL" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="Keep" Category="VVVV.LeapVL" Version="Gesture VL" IsDatatype="true" IsClosed="true" IsMutable="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Create" />
@@ -5587,7 +5568,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Utils" Category="Main">
+    <PATCH Name="Utils" Category="Leap.Gesture">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="SpecifyGestureType" />
@@ -5902,7 +5883,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Serialize" Category="VVVV.Leap.Frame" IsClosed="true">
+    <PATCH Name="Serialize" Category="VVVV.LeapVL.Frame" IsClosed="true">
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="Deserialize" />
@@ -6027,7 +6008,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Gestures" Category="VVVV.Leap" Version="Observable" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="Gestures" Category="VVVV.LeapVL" Version="Observable" IsDatatype="true" IsClosed="true" IsMutable="true">
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="Update" />
@@ -6101,7 +6082,7 @@
               <NODES>
                 <OPERATION Name="SpecifyGestureType" Layer="Update">
                   <POSITION x="720.8488" y="845.1771" />
-                  <NODEREF LastCat="Main" LastFile="VVVV.Device.Leap.vl">
+                  <NODEREF LastCat="Leap.Gesture" LastFile="VVVV.Device.Leap.vl">
                     <OPERATIONNODE Name="SpecifyGestureType" />
                   </NODEREF>
                   <INPUTS>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Pinch (Leap View).v4p" systemname="Pinch (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Pinch (Leap View).v4p">
-   <BOUNDS type="Window" left="13920" top="4515" width="8040" height="6780">
+   <BOUNDS type="Window" left="2175" top="4500" width="8040" height="6780">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -18,20 +18,6 @@
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Color" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Finger (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1635" top="1965" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="StabilizedTipPositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Bones" visible="1">
-   </PIN>
-   <PIN pinname="FingerType" visible="1">
-   </PIN>
-   <PIN pinname="TipPositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Finger" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="LineStrip (DX11.Geometry 3d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="LineStrip (DX11.Geometry 3d)" componentmode="Hidden" id="2">
@@ -67,7 +53,7 @@
    </BOUNDS>
    <PIN pinname="Vector Size" slicecount="1" visible="1" values="3">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="15" values="-0.695367157459259,1.20152986049652,-0.119052454829216,-0.753908216953278,1.17023718357086,0.224197968840599,-0.956588923931122,1.04704058170319,0.280815303325653,-1.17060089111328,1.0533834695816,0.271071135997772,-1.68965446949005,1.09694862365723,0.477988988161087">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Select" visible="1">
    </PIN>
@@ -91,7 +77,7 @@
    <NODE systemname="Enum2Ord (Enumerations)" nodename="Enum2Ord (Enumerations)" componentmode="Hidden" id="7">
    <BOUNDS type="Node" left="3360" top="2490" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Enum" visible="1">
+   <PIN pinname="Enum" visible="1" slicecount="1" values="TYPE_THUMB">
    </PIN>
    <PIN pinname="Ord Value" visible="1">
    </PIN>
@@ -174,7 +160,7 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Hand (Leap)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="15">
+   <NODE systemname="Hand (LeapVL)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="1500" top="1245" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Fingers" visible="1">
@@ -204,13 +190,9 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="2" dstpinname="VerticesXYZ">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="TipPositionXYZ" dstnodeid="5" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Vector Size">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Output" dstnodeid="5" dstpinname="Select">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="FingerType" dstnodeid="7" dstpinname="Enum">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Ord Value" dstnodeid="8" dstpinname="Input 1">
    </LINK>
@@ -241,7 +223,7 @@
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="18">
    <BOUNDS type="Node" left="1485" top="855" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -260,6 +242,16 @@
    </NODE>
    <LINK srcnodeid="15" srcpinname="Fingers" dstnodeid="19" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="1" dstpinname="Finger">
+   <NODE systemname="Finger (LeapVL)" filename="..\..\vl\VVVV.Device.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="1635" top="1965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="TipPositionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="FingerType" dstnodeid="7" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="20" dstpinname="Finger">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="TipPositionXYZ" dstnodeid="5" dstpinname="Input">
    </LINK>
    </PATCH>

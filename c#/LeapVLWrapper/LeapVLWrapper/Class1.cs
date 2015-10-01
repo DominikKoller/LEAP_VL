@@ -81,10 +81,20 @@ namespace LeapVLWrapper
         //However, Leap.Frame.Deserialize returns void
         //Therefore it cannot be used like the method of an immutable type, so here's the workaround:
         [Node]
-        public static Leap.Frame Deserialize(byte[] data)
+        public static Leap.Frame Deserialize(byte[] data, out String errorMessage, out bool error)
         {
+            error = false;
+            errorMessage = "";
             Leap.Frame frame = new Leap.Frame();
-            frame.Deserialize(data);
+            try
+            {
+                frame.Deserialize(data);
+            }
+            catch(Exception e)
+            {
+                error = true;
+                errorMessage = e.ToString();
+            }
             return frame;
         }
 

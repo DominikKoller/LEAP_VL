@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Leap (Devices VL) help.v4p" scrollx="3495" scrolly="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Leap (Devices VL) help.v4p" scrollx="540" scrolly="0">
    <BOUNDS type="Window" left="6585" top="1155" width="16005" height="15030">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -423,7 +423,7 @@
    <LINK srcnodeid="181" srcpinname="Frame" dstnodeid="185" dstpinname="Observable">
    </LINK>
    <NODE systemname="Deserialize (Leap.Frame)" filename="VVVV.Device.Leap.vl" nodename="Deserialize (Leap.Frame)" componentmode="Hidden" id="186">
-   <BOUNDS type="Node" left="6555" top="7320" width="100" height="100">
+   <BOUNDS type="Node" left="6330" top="7320" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Serialized Data" visible="1" slicecount="1" values="||">
    </PIN>

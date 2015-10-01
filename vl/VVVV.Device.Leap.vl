@@ -1131,23 +1131,20 @@
           </INLET>
         </INLETS>
         <OUTLETS>
+          <OUTLET Name="View Angles" Layer="DeviceInfo">
+            <POSITION x="-547.557251" y="593.1875" />
+          </OUTLET>
           <OUTLET Name="Arm#1" Layer="Hand">
             <POSITION x="-480.9745" y="821.441956" />
           </OUTLET>
-          <OUTLET Name="Horizontal View Angle" Layer="DeviceInfo">
-            <POSITION x="-478.3352" y="548.654" />
-          </OUTLET>
           <OUTLET Name="Hands" Layer="Frame">
-            <POSITION x="-468.57666" y="395.920441" />
+            <POSITION x="-469.447327" y="383.7313" />
           </OUTLET>
           <OUTLET Name="Fingers#2" Layer="Hand">
             <POSITION x="-388.051331" y="821.441956" />
           </OUTLET>
           <OUTLET Name="Gestures" Layer="Frame">
-            <POSITION x="-360.3666" y="395.920441" />
-          </OUTLET>
-          <OUTLET Name="Vertical View Angle" Layer="DeviceInfo">
-            <POSITION x="-345.907776" y="548.654" />
+            <POSITION x="-360.3666" y="383.7313" />
           </OUTLET>
           <OUTLET Name="Tools#2" Layer="Hand">
             <POSITION x="-275.551331" y="821.441956" />
@@ -1156,34 +1153,34 @@
             <POSITION x="-231.6637" y="1131.48474" />
           </OUTLET>
           <OUTLET Name="Interaction Box" Layer="Frame">
-            <POSITION x="-223.79953" y="395.920441" />
+            <POSITION x="-223.79953" y="383.7313" />
           </OUTLET>
           <OUTLET Name="Range" Layer="DeviceInfo">
-            <POSITION x="-217.880554" y="548.654" />
+            <POSITION x="-217.880554" y="593.1875" />
           </OUTLET>
           <OUTLET Name="Pointables#1" Layer="Hand">
             <POSITION x="-184.819656" y="821.441956" />
           </OUTLET>
           <OUTLET Name="Baseline" Layer="DeviceInfo">
-            <POSITION x="-163.689453" y="548.654" />
+            <POSITION x="-163.689453" y="593.1875" />
           </OUTLET>
           <OUTLET Name="ElbowPosition" Layer="Arm">
             <POSITION x="-132.560211" y="1131.48474" />
           </OUTLET>
           <OUTLET Name="Is Embedded" Layer="DeviceInfo">
-            <POSITION x="-92.6294861" y="548.654" />
+            <POSITION x="-92.6294861" y="593.1875" />
           </OUTLET>
           <OUTLET Name="Images" Layer="Frame">
-            <POSITION x="-56.2366333" y="395.920441" />
+            <POSITION x="-56.2366333" y="383.7313" />
           </OUTLET>
           <OUTLET Name="WristPosition" Layer="Arm">
             <POSITION x="-8.834045" y="1131.48474" />
           </OUTLET>
           <OUTLET Name="Is Streaming" Layer="DeviceInfo">
-            <POSITION x="4.940796" y="548.654" />
+            <POSITION x="4.940796" y="593.1875" />
           </OUTLET>
           <OUTLET Name="Serial Number" Layer="DeviceInfo">
-            <POSITION x="84.6095" y="548.654" />
+            <POSITION x="84.6095" y="593.1875" />
           </OUTLET>
           <OUTLET Name="Direction#1" Layer="Arm">
             <POSITION x="92.55725" y="1131.48474" />
@@ -1198,7 +1195,7 @@
             <POSITION x="358.037628" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="Center#1" Layer="InteractionBox">
-            <POSITION x="361.276642" y="2102.21" />
+            <POSITION x="361.276642" y="2123.93677" />
           </OUTLET>
           <OUTLET Name="Basis#2" Layer="Bone">
             <POSITION x="366.4767" y="1825.36011" />
@@ -1228,7 +1225,7 @@
             <POSITION x="491.304352" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Size" Layer="InteractionBox">
-            <POSITION x="491.5193" y="2102.21" />
+            <POSITION x="492.2953" y="2123.93677" />
           </OUTLET>
           <OUTLET Name="Palm Position" Layer="Hand">
             <POSITION x="520.865234" y="823.25885" />
@@ -1500,6 +1497,27 @@
               <PRECISION><![CDATA[3]]></PRECISION>
             </CONFIGURATION>
             <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="comment#1" Layer="DeviceInfo" Type="String">
+            <POSITION x="-507.462067" y="565.4247" />
+            <SIZE width="80.84025" height="10.7563477" />
+            <VALUE><![CDATA["radians to cycles"]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#7" Layer="DeviceInfo">
+            <POSITION x="193.0166" y="542.871643" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#8" Layer="InteractionBox">
+            <POSITION x="645.314941" y="2061.49487" />
+            <SIZE width="40" height="15.50846" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.0009999984]]></VALUE>
           </CONST>
         </CONSTS>
         <REGIONS>
@@ -1811,7 +1829,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Direction#1" Layer="Hand">
-            <POSITION x="436.836761" y="697.1142" />
+            <POSITION x="418.4349" y="698.86676" />
             <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Hand" />
               <OPERATIONNODE Name="Direction" />
@@ -2796,7 +2814,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Center#1" Layer="InteractionBox">
-            <POSITION x="358.299744" y="2006.03577" />
+            <POSITION x="362.2595" y="2010.56128" />
             <NODEREF LastCat="Leap.InteractionBox" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="InteractionBox" />
               <OPERATIONNODE Name="Center" />
@@ -3618,7 +3636,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="HorizontalViewAngle" Layer="DeviceInfo">
-            <POSITION x="-473.4938" y="495.707367" />
+            <POSITION x="-542.559265" y="474.8439" />
             <NODEREF LastCat="Leap.Device" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Device" />
               <OPERATIONNODE Name="HorizontalViewAngle" />
@@ -3682,7 +3700,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="VerticalViewAngle" Layer="DeviceInfo">
-            <POSITION x="-348.873047" y="495.707367" />
+            <POSITION x="-417.9382" y="474.8439" />
             <NODEREF LastCat="Leap.Device" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Device" />
               <OPERATIONNODE Name="VerticalViewAngle" />
@@ -3769,6 +3787,108 @@
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Is Valid" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Vector" Layer="DeviceInfo">
+            <POSITION x="-544.686035" y="512.9211" />
+            <NODEREF LastCat="2D.Vector2" LastFile="SharpDX.dll">
+              <CATEGORY Name="Vector2" />
+              <OPERATIONNODE Name="Vector" Version="Join" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="X" />
+              <INPUT Name="Y" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="TwoPI" Layer="DeviceInfo">
+            <POSITION x="-531.1759" y="539.977966" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="TwoPI" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS />
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="/" Layer="DeviceInfo">
+            <POSITION x="-545.764343" y="566.410461" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="/" Version="Scale" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Scalar" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#25" Layer="DeviceInfo">
+            <POSITION x="-215.566559" y="549.7478" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="*" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+              <INPUT Name="Input 3" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#26" Layer="DeviceInfo">
+            <POSITION x="-164.888153" y="548.8604" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="*" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+              <INPUT Name="Input 3" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#29" Layer="InteractionBox">
+            <POSITION x="498.206543" y="2092.85718" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="*" Version="Scale" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Scalar" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#30" Layer="InteractionBox">
+            <POSITION x="363.789642" y="2091.13013" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="*" Version="Scale" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Scalar" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
         </NODES>
@@ -3892,11 +4012,9 @@
           <Link source="Nodes/Pointable#1/Outputs/Id" sink="Outlets/Id#2" />
           <Link source="Inlets/InteractionBox" sink="Nodes/Center#1/Inputs/Input" />
           <Link source="Nodes/Center#1/Outputs/Center" sink="Nodes/ToVector3#10/Inputs/Vector" />
-          <Link source="Nodes/ToVector3#10/Outputs/Vector3" sink="Outlets/Center#1" />
           <Link source="Nodes/Width#1/Outputs/Width" sink="Nodes/Vector#1/Inputs/X" />
           <Link source="Nodes/Height/Outputs/Height" sink="Nodes/Vector#1/Inputs/Y" />
           <Link source="Nodes/Depth/Outputs/Depth" sink="Nodes/Vector#1/Inputs/Z" />
-          <Link source="Nodes/Vector#1/Outputs/Output" sink="Outlets/Size" />
           <Link source="Nodes/GetFingerType/Outputs/Result" sink="Outlets/FingerType" />
           <Link source="Inlets/SwipeGesture" sink="Nodes/Direction#2/Inputs/Input" />
           <Link source="Nodes/Direction#2/Outputs/Direction" sink="Nodes/ToVector3#11/Inputs/Vector" />
@@ -4045,15 +4163,11 @@
           <Link source="Inlets/Device" sink="Nodes/IsEmbedded/Inputs/Input" />
           <Link source="Inlets/Device" sink="Nodes/IsStreaming/Inputs/Input" />
           <Link source="Inlets/Device" sink="Nodes/Range/Inputs/Input" />
-          <Link source="Nodes/Baseline/Outputs/Baseline" sink="Outlets/Baseline" />
-          <Link source="Nodes/HorizontalViewAngle/Outputs/Horizontal View Angle" sink="Outlets/Horizontal View Angle" />
           <Link source="Nodes/IsEmbedded/Outputs/Is Embedded" sink="Outlets/Is Embedded" />
           <Link source="Nodes/IsStreaming/Outputs/Is Streaming" sink="Outlets/Is Streaming" />
-          <Link source="Nodes/Range/Outputs/Range" sink="Outlets/Range" />
           <Link source="Inlets/Device" sink="Nodes/SerialNumber/Inputs/Input" />
           <Link source="Nodes/SerialNumber/Outputs/Serial Number" sink="Outlets/Serial Number" />
           <Link source="Inlets/Device" sink="Nodes/VerticalViewAngle/Inputs/Input" />
-          <Link source="Nodes/VerticalViewAngle/Outputs/Vertical View Angle" sink="Outlets/Vertical View Angle" />
           <Link source="Nodes/Images#1/Outputs/Images" sink="Nodes/ToSpread#6/Inputs/Input" />
           <Link source="Nodes/ToSpread#6/Outputs/Result" sink="Outlets/Images" />
           <Link source="Inlets/Image" sink="Regions/IfElse/IfElseBody/Nodes/Data/Inputs/Input" />
@@ -4067,6 +4181,23 @@
           <Link source="Inlets/Image" sink="Nodes/IsValid#2/Inputs/Input" />
           <Link source="Nodes/IsValid#2/Outputs/Is Valid" sink="Regions/IfElse/Inputs/Condition" />
           <Link source="Regions/IfElse/Outputs/Bytes" sink="Nodes/ToRaw/Inputs/Input" />
+          <Link source="Nodes/Vector/Outputs/Output" sink="Nodes/&amp;#47;/Inputs/Input" />
+          <Link source="Nodes/TwoPI/Outputs/Result" sink="Nodes/&amp;#47;/Inputs/Scalar" />
+          <Link source="Nodes/&amp;#47;/Outputs/Output" sink="Outlets/View Angles" />
+          <Link source="Nodes/HorizontalViewAngle/Outputs/Horizontal View Angle" sink="Nodes/Vector/Inputs/X" />
+          <Link source="Nodes/VerticalViewAngle/Outputs/Vertical View Angle" sink="Nodes/Vector/Inputs/Y" />
+          <Link source="Nodes/Range/Outputs/Range" sink="Nodes/*#25/Inputs/Input" />
+          <Link source="Nodes/*#25/Outputs/Output" sink="Outlets/Range" />
+          <Link source="Nodes/Baseline/Outputs/Baseline" sink="Nodes/*#26/Inputs/Input" />
+          <Link source="Nodes/*#26/Outputs/Output" sink="Outlets/Baseline" />
+          <Link source="Constants/mm to m#7" sink="Nodes/*#26/Inputs/Input 2" />
+          <Link source="Constants/mm to m#7" sink="Nodes/*#25/Inputs/Input 2" />
+          <Link source="Nodes/Vector#1/Outputs/Output" sink="Nodes/*#29/Inputs/Input" />
+          <Link source="Nodes/*#29/Outputs/Output" sink="Outlets/Size" />
+          <Link source="Nodes/ToVector3#10/Outputs/Vector3" sink="Nodes/*#30/Inputs/Input" />
+          <Link source="Nodes/*#30/Outputs/Output" sink="Outlets/Center#1" />
+          <Link source="Constants/mm to m#8" sink="Nodes/*#29/Inputs/Scalar" />
+          <Link source="Constants/mm to m#8" sink="Nodes/*#30/Inputs/Scalar" />
         </LINKS>
       </BODY>
     </PATCH>

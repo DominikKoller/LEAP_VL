@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\Image (LeapVL EX9.Texture).v4p" systemname="Image (EX9 Texture)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\Image (EX9 Texture).v4p">
-   <BOUNDS type="Window" left="3930" top="7110" width="3180" height="4335">
+   <BOUNDS type="Window" left="17430" top="1140" width="3225" height="4215">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>

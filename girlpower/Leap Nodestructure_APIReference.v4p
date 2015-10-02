@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap Nodestructure_APIReference.v4p" scrollx="0" scrolly="-360" systemname="Leap Nodestructure_APIReference" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap Nodestructure_APIReference.v4p">
-   <BOUNDS type="Window" left="4215" top="2445" width="10170" height="9450">
+   <BOUNDS type="Window" left="4215" top="2445" width="10170" height="8595">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -27,9 +27,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="89" stayontop="1" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="375" top="8340" width="100" height="100">
+   <BOUNDS type="Node" left="375" top="10290" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="375" top="8340" width="6000" height="4500">
+   <BOUNDS type="Box" left="375" top="10290" width="6000" height="4500">
    </BOUNDS>
    <BOUNDS type="Window" left="14160" top="2490" width="8940" height="6975">
    </BOUNDS>
@@ -45,7 +45,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="91" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="900" top="7620" width="100" height="100">
+   <BOUNDS type="Node" left="900" top="9570" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
    </PIN>
@@ -57,7 +57,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="120" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="1395" top="6765" width="100" height="100">
+   <BOUNDS type="Node" left="1395" top="8715" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
@@ -65,7 +65,7 @@
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="121" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="1395" top="7155" width="100" height="100">
+   <BOUNDS type="Node" left="1395" top="9105" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -79,7 +79,7 @@
    <LINK srcnodeid="121" srcpinname="Transform Out" dstnodeid="91" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="122" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="555" top="7170" width="100" height="100">
+   <BOUNDS type="Node" left="555" top="9120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
@@ -87,9 +87,9 @@
    <LINK srcnodeid="122" srcpinname="Geometry Out" dstnodeid="91" dstpinname="Geometry">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="127" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
-   <BOUNDS type="Box" left="3465" top="7740" width="525" height="240">
+   <BOUNDS type="Box" left="3465" top="9690" width="525" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3465" top="7740" width="0" height="0">
+   <BOUNDS type="Node" left="3465" top="9690" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.12">
    </PIN>
@@ -99,9 +99,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
-   <BOUNDS type="Box" left="3465" top="8055" width="525" height="240">
+   <BOUNDS type="Box" left="3465" top="10005" width="525" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3465" top="8055" width="0" height="0">
+   <BOUNDS type="Node" left="3465" top="10005" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.39">
    </PIN>
@@ -111,9 +111,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="129" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
-   <BOUNDS type="Box" left="3465" top="7485" width="525" height="240">
+   <BOUNDS type="Box" left="3465" top="9435" width="525" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3465" top="7485" width="0" height="0">
+   <BOUNDS type="Node" left="3465" top="9435" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.01">
    </PIN>
@@ -123,7 +123,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="130" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="2265" top="8340" width="100" height="100">
+   <BOUNDS type="Node" left="2265" top="10290" width="100" height="100">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="130" srcpinname="View" dstnodeid="89" dstpinname="View">
@@ -386,4 +386,116 @@
    <LINKPOINT x="8175" y="4380">
    </LINKPOINT>
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="298" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="855" top="6885" width="1905" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="855" top="6885" width="1905" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Check out the Girlpower:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="297" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4170" top="6885" width="2685" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4170" top="6885" width="2685" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get an overview of all LeapVL nodes:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="296" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4140" top="7425" width="2295" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4140" top="7425" width="2295" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|..and check their helppatches..|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="295">
+   <BOUNDS type="Node" left="945" top="7170" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="945" top="7170" width="2610" height="270">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|Leap Girlpower.v4p|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="294">
+   <BOUNDS type="Node" left="4170" top="7170" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4170" top="7170" width="2940" height="255">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|Leap Overview.v4p|">
+   </PIN>
+   </NODE>
+   <NODE id="293" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="870" top="7575" width="2910" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="870" top="7575" width="2865" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" pintype="Input" values="|Units: Meter, Seconds, Cycles (rotation)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
    </PATCH>

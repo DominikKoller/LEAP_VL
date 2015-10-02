@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Image (LeapVL) help.v4p" scrollx="0" scrolly="-1080">
-   <BOUNDS type="Window" left="6900" top="4815" width="7455" height="5895">
+   <BOUNDS type="Window" left="6900" top="4815" width="7455" height="5940">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -19,7 +19,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1275" top="2910" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Image" visible="1">
+   <PIN pinname="Image" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Leap (Devices VL)" filename="VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden" id="4">
@@ -30,18 +30,6 @@
    <PIN pinname="Enable Images" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="LastFrame (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="LastFrame (LeapVL)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="450" top="2460" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
-   </PIN>
-   <PIN pinname="Images" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Frame" dstnodeid="5" dstpinname="Observable">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="0" dstpinname="Image">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
    <BOUNDS type="Node" left="240" top="705" width="4725" height="270">
    </BOUNDS>
@@ -145,7 +133,7 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap girlpower.v4p|">
+   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Girlpower.v4p|">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="12">
@@ -155,17 +143,41 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Nodestructure.v4p|">
+   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Overview.v4p|">
    </PIN>
    </NODE>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2970" top="2925" width="1695" height="270">
+   <NODE systemname="Image (LeapVL EX9.Texture)" filename="..\modules\Image (LeapVL EX9.Texture).v4p" nodename="Image (LeapVL EX9.Texture)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2220" top="2925" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2970" top="2925" width="1695" height="270">
+   <PIN pinname="Image" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="LastFrame (LeapVL.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (LeapVL.Frame)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="450" top="2460" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; DX11 also available.|">
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Images" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Frame" dstnodeid="5" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="0" dstpinname="Image">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="6" dstpinname="Image">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2970" top="2940" width="1650" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2970" top="2940" width="1650" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; DX11 also available|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -174,16 +186,54 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Image (LeapVL EX9.Texture)" filename="..\modules\Image (LeapVL EX9.Texture).v4p" nodename="Image (LeapVL EX9.Texture)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2220" top="2925" width="100" height="100">
+   <NODE id="18" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="525" top="5040" width="2910" height="270">
    </BOUNDS>
-   <PIN pinname="Image" visible="1">
+   <BOUNDS type="Box" left="525" top="5040" width="2865" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" pintype="Input" values="|Units: Meter, Seconds, Cycles (rotation)|">
    </PIN>
-   <PIN pinname="Texture Out" visible="1">
+   <PIN pinname="Output String" visible="0" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="6" dstpinname="Image">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture">
-   </LINK>
    </PATCH>

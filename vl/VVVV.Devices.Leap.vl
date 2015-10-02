@@ -30,55 +30,55 @@
         </LAYERS>
         <INLETS>
           <INLET Name="Enable Data in Background" Layer="Update">
-            <POSITION x="-547.581" y="86.47772" />
+            <POSITION x="131.419" y="321.477722" />
           </INLET>
           <INLET Name="Enable Images" Layer="Update">
-            <POSITION x="-393.269745" y="86.47772" />
+            <POSITION x="285.730255" y="321.477722" />
           </INLET>
           <INLET Name="Enable Head Mount Optimization" Layer="Update">
-            <POSITION x="-297.2557" y="86.47772" />
+            <POSITION x="381.7443" y="321.477722" />
           </INLET>
           <INLET Name="Swipe Gesture" Layer="Update">
-            <POSITION x="-112.004547" y="86.47772" />
+            <POSITION x="566.9955" y="321.477722" />
           </INLET>
           <INLET Name="Circle Gesture" Layer="Update">
-            <POSITION x="-17.5329285" y="86.47772" />
+            <POSITION x="661.467041" y="321.477722" />
           </INLET>
           <INLET Name="Screen Tap Gesture" Layer="Update">
-            <POSITION x="86.46854" y="86.47772" />
+            <POSITION x="765.4685" y="321.477722" />
           </INLET>
           <INLET Name="Key Tap Gesture" Layer="Update">
-            <POSITION x="208.046356" y="86.47772" />
+            <POSITION x="887.0464" y="321.477722" />
           </INLET>
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Frame" Layer="Update">
-            <POSITION x="-544.3062" y="256.394684" />
+            <POSITION x="134.693787" y="491.394684" />
           </OUTLET>
           <OUTLET Name="Is Connected" Layer="Update">
-            <POSITION x="-487.697571" y="256.394684" />
+            <POSITION x="191.302429" y="491.394684" />
           </OUTLET>
           <OUTLET Name="IsServiceConnected" Layer="Update">
-            <POSITION x="-401.1315" y="256.394684" />
+            <POSITION x="277.8685" y="491.394684" />
           </OUTLET>
           <OUTLET Name="Devices" Layer="Update">
-            <POSITION x="-290.940216" y="256.394684" />
+            <POSITION x="388.059784" y="491.394684" />
           </OUTLET>
           <OUTLET Name="Data in Background Enabled" Layer="Update">
-            <POSITION x="-231.471924" y="256.394684" />
+            <POSITION x="447.528076" y="491.394684" />
           </OUTLET>
           <OUTLET Name="Images Enabled" Layer="Update">
-            <POSITION x="-60.99518" y="256.394684" />
+            <POSITION x="618.0048" y="491.394684" />
           </OUTLET>
           <OUTLET Name="Head Mount Optimization Enabled" Layer="Update">
-            <POSITION x="33.2756958" y="256.394684" />
+            <POSITION x="712.2757" y="491.394684" />
           </OUTLET>
         </OUTLETS>
         <CONSTS />
         <REGIONS />
         <NODES>
           <PROCESS Name="Leap">
-            <POSITION x="-540.568848" y="170.307709" />
+            <POSITION x="138.431152" y="405.3077" />
             <NODEREF LastCat="Devices" LastFile="VL.Devices.Leap.vl">
               <PROCESSNODE Name="Leap" />
             </NODEREF>
@@ -149,11 +149,11 @@
           <INLET Name="Device" Layer="DeviceInfo">
             <POSITION x="-472.241425" y="422.221619" />
           </INLET>
+          <INLET Name="Frame" Layer="Frame">
+            <POSITION x="-468.298553" y="290.6777" />
+          </INLET>
           <INLET Name="Hand" Layer="Hand">
             <POSITION x="-467.238068" y="553.5798" />
-          </INLET>
-          <INLET Name="Frame" Layer="Frame">
-            <POSITION x="-467.1578" y="285.5444" />
           </INLET>
           <INLET Name="Finger" Layer="Finger">
             <POSITION x="-445.8321" y="780.9062" />
@@ -167,10 +167,10 @@
           <INLET Name="Image" Layer="Image">
             <POSITION x="26.9112549" y="408.106171" />
           </INLET>
-          <INLET Name="Tool" Layer="Tool" Type="Tool">
+          <INLET Name="Tool" Layer="Tool">
             <POSITION x="455.3308" y="786.4778" />
           </INLET>
-          <INLET Name="Gesture" Layer="Gestures" Type="Sequence&lt;Gesture&gt;">
+          <INLET Name="Gesture" Layer="Gestures">
             <POSITION x="1052.889" y="762.1604" />
           </INLET>
           <INLET Name="ScreenTapGesture" Layer="ScreenTapGesture">
@@ -412,11 +412,11 @@
           <OUTLET Name="Id#2" Layer="Tool">
             <POSITION x="843.6808" y="879.9662" />
           </OUTLET>
-          <OUTLET Name="Swipe" Layer="Gestures" Type="Spread&lt;SwipeGesture&gt;">
-            <POSITION x="905.436035" y="880.2621" />
+          <OUTLET Name="Swipe" Layer="Gestures">
+            <POSITION x="905.436035" y="878.6534" />
           </OUTLET>
           <OUTLET Name="Swipe Former Index" Layer="Gestures">
-            <POSITION x="965.303955" y="880.2621" />
+            <POSITION x="965.303955" y="878.6534" />
           </OUTLET>
           <OUTLET Name="Start Position" Layer="SwipeGesture">
             <POSITION x="1001.56616" y="1019.6637" />
@@ -430,8 +430,8 @@
           <OUTLET Name="Direction#7" Layer="KeyTapGesture">
             <POSITION x="1063.62207" y="1475.43823" />
           </OUTLET>
-          <OUTLET Name="Circle" Layer="Gestures" Type="Spread&lt;CircleGesture&gt;">
-            <POSITION x="1080.04419" y="880.2621" />
+          <OUTLET Name="Circle" Layer="Gestures">
+            <POSITION x="1080.04419" y="878.6534" />
           </OUTLET>
           <OUTLET Name="Normal#1" Layer="CircleGesture">
             <POSITION x="1080.76453" y="1162.056" />
@@ -446,7 +446,7 @@
             <POSITION x="1124.186" y="1475.43823" />
           </OUTLET>
           <OUTLET Name="Circle Former Index" Layer="Gestures">
-            <POSITION x="1130.67639" y="880.2621" />
+            <POSITION x="1130.67639" y="878.6534" />
           </OUTLET>
           <OUTLET Name="Progress" Layer="CircleGesture">
             <POSITION x="1133.65637" y="1162.056" />
@@ -475,8 +475,8 @@
           <OUTLET Name="Duration#3" Layer="KeyTapGesture">
             <POSITION x="1240.60718" y="1475.43823" />
           </OUTLET>
-          <OUTLET Name="Screen Tap" Layer="Gestures" Type="Spread&lt;ScreenTapGesture&gt;">
-            <POSITION x="1242.50586" y="880.2621" />
+          <OUTLET Name="Screen Tap" Layer="Gestures">
+            <POSITION x="1242.50586" y="878.6534" />
           </OUTLET>
           <OUTLET Name="Duration" Layer="SwipeGesture">
             <POSITION x="1260.2489" y="1019.6637" />
@@ -494,13 +494,13 @@
             <POSITION x="1321.6842" y="1019.6637" />
           </OUTLET>
           <OUTLET Name="Screen Tap Former Index" Layer="Gestures">
-            <POSITION x="1332.26123" y="880.2621" />
+            <POSITION x="1332.26123" y="878.6534" />
           </OUTLET>
-          <OUTLET Name="Key Tap" Layer="Gestures" Type="Spread&lt;KeyTapGesture&gt;">
-            <POSITION x="1466.80518" y="880.2621" />
+          <OUTLET Name="Key Tap" Layer="Gestures">
+            <POSITION x="1470.8269" y="878.6534" />
           </OUTLET>
           <OUTLET Name="Key Tap Former Index" Layer="Gestures">
-            <POSITION x="1535.55371" y="880.2621" />
+            <POSITION x="1539.57544" y="878.6534" />
           </OUTLET>
         </OUTLETS>
         <CONSTS />
@@ -938,7 +938,7 @@
           <LAYER Name="Create" />
         </LAYERS>
         <INLETS>
-          <INLET Name="Observable" Layer="Update" Type="Observable&lt;Frame&gt;">
+          <INLET Name="Observable" Layer="Update">
             <POSITION x="474.4418" y="-17.3439941" />
           </INLET>
         </INLETS>
@@ -1052,28 +1052,28 @@
         </LAYERS>
         <INLETS>
           <INLET Name="Frame" Layer="AsRaw">
-            <POSITION x="16.1235657" y="188.967316" />
+            <POSITION x="608.123535" y="443.967316" />
           </INLET>
           <INLET Name="Raw" Layer="FromRaw">
-            <POSITION x="172.262115" y="181.192139" />
+            <POSITION x="764.2621" y="436.192139" />
           </INLET>
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Raw" Layer="AsRaw">
-            <POSITION x="19.1235657" y="243.627167" />
+            <POSITION x="611.123535" y="498.627167" />
           </OUTLET>
           <OUTLET Name="Frame" Layer="FromRaw">
-            <POSITION x="172.928253" y="249.8807" />
+            <POSITION x="764.9282" y="504.8807" />
           </OUTLET>
           <OUTLET Name="Success" Layer="FromRaw">
-            <POSITION x="262.8899" y="249.8807" />
+            <POSITION x="854.8899" y="504.8807" />
           </OUTLET>
         </OUTLETS>
         <CONSTS />
         <REGIONS />
         <NODES>
           <OPERATION Name="AsRaw" Layer="AsRaw">
-            <POSITION x="19" y="213" />
+            <POSITION x="611" y="468" />
             <NODEREF LastCat="Devices.Leap.Frame" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="AsRaw" />
               <CATEGORY Name="Frame" IsDirectParent="true">
@@ -1090,7 +1090,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="FromRaw" Layer="FromRaw">
-            <POSITION x="174" y="208" />
+            <POSITION x="766" y="463" />
             <NODEREF LastCat="Devices.Leap.Frame" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="FromRaw" />
               <CATEGORY Name="Frame" IsDirectParent="true">
@@ -1124,7 +1124,7 @@
           <LAYER Name="Create" />
         </LAYERS>
         <INLETS>
-          <INLET Name="Observable" Layer="Update" Type="Observable&lt;Frame&gt;">
+          <INLET Name="Observable" Layer="Update">
             <POSITION x="380.1648" y="67.85651" />
           </INLET>
         </INLETS>

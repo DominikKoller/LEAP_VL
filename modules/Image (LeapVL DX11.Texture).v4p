@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\Image (Leap EX11 Texture).v4p" systemname="Image (EX9 Texture)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\Image (EX9 Texture).v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\Image (LeapVL DX11.Texture).v4p" systemname="Image (EX9 Texture)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\Image (EX9 Texture).v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="6420" top="2085" width="4635" height="4440">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
@@ -38,34 +38,16 @@
    <PIN pinname="Channel Count" slicecount="1" values="3">
    </PIN>
    </NODE>
-   <NODE systemname="Image (LeapVL)" filename="..\vl\VVVV.Device.Leap.vl" nodename="Image (LeapVL)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="495" top="1035" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Width" visible="1">
-   </PIN>
-   <PIN pinname="Height" visible="1">
-   </PIN>
-   <PIN pinname="Result" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="8" dstpinname="Image">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Width" dstnodeid="6" dstpinname="Width">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Height" dstnodeid="6" dstpinname="Height">
-   </LINK>
    <NODE systemname="AsValue (Raw)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsValue (Raw)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="1305" top="1500" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Format" slicecount="1" values="Byte">
    </PIN>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Result" dstnodeid="20" dstpinname="Input">
-   </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="1290" top="1875" width="100" height="100">
    </BOUNDS>
@@ -140,4 +122,22 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Image (LeapVL)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Image (LeapVL)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="495" top="1035" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="8" dstpinname="Image">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Width" dstnodeid="6" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Height" dstnodeid="6" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Result" dstnodeid="20" dstpinname="Input">
+   </LINK>
    </PATCH>

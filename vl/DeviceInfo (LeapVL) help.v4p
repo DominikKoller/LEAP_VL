@@ -591,9 +591,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="84" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="645" top="1035" width="5835" height="270">
+   <BOUNDS type="Node" left="405" top="1230" width="5835" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="645" top="1035" width="5835" height="270">
+   <BOUNDS type="Box" left="405" top="1230" width="5835" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="https://developer.leapmotion.com/documentation/csharp/api/Leap.Device.html">
    </PIN>
@@ -660,4 +660,18 @@
    </NODE>
    <LINK srcnodeid="76" srcpinname="View AnglesXY" dstnodeid="86" dstpinname="Y Input Value">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="87" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="465" top="975" width="1500" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="465" top="975" width="1965" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|All info below taken from:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

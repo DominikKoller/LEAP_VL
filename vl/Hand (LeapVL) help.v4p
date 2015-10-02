@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Hand (LeapVL) help.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="0" top="1470" width="22470" height="13035">
+   <BOUNDS type="Window" left="0" top="1470" width="22470" height="13425">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -73,7 +73,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="345" top="2400" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Hand" visible="1">
+   <PIN pinname="Hand" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Time Visible" visible="1">
    </PIN>
@@ -124,18 +124,6 @@
    <PIN pinname="Enable Images" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="LastFrame (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="LastFrame (LeapVL)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="360" top="1815" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
-   </PIN>
-   <PIN pinname="Hands" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Frame" dstnodeid="9" dstpinname="Observable">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Hands" dstnodeid="0" dstpinname="Hand">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="10" systemname="IOBox (String)">
    <BOUNDS type="Node" left="360" top="825" width="13305" height="690">
    </BOUNDS>
@@ -899,11 +887,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="12360" top="345" width="2430" height="270">
+   <BOUNDS type="Node" left="12240" top="375" width="2430" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="12360" top="345" width="2430" height="270">
+   <BOUNDS type="Box" left="12240" top="375" width="3705" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Leap Motion Hand API Reference:|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|All info taken from Leap Motion Hand API Reference:|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -929,9 +917,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="96" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11670" top="9105" width="570" height="270">
+   <BOUNDS type="Node" left="11670" top="9255" width="570" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11670" top="9105" width="435" height="615">
+   <BOUNDS type="Box" left="11670" top="9255" width="435" height="615">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="3">
    </PIN>
@@ -945,9 +933,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="97" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="12150" top="9330" width="2400" height="270">
+   <BOUNDS type="Node" left="12150" top="9480" width="2400" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="12150" top="9330" width="4215" height="315">
+   <BOUNDS type="Box" left="12150" top="9480" width="4215" height="315">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Position Data of Palm and Wrist.|">
    </PIN>
@@ -959,9 +947,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="98" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="16590" top="9300" width="3345" height="480">
+   <BOUNDS type="Node" left="16590" top="9450" width="3345" height="480">
    </BOUNDS>
-   <BOUNDS type="Box" left="16590" top="9300" width="5595" height="1140">
+   <BOUNDS type="Box" left="16590" top="9450" width="5595" height="1140">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Direction&cr;&lf;Direction from the Palm towards the Fingers.&cr;&lf;The direction is expressed as a unit vector pointing in the same direction as the directed line from the palm position to the fingers.|">
    </PIN>
@@ -973,9 +961,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="99" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="12150" top="9750" width="17145" height="480">
+   <BOUNDS type="Node" left="12150" top="9900" width="17145" height="480">
    </BOUNDS>
-   <BOUNDS type="Box" left="12150" top="9750" width="4215" height="1320">
+   <BOUNDS type="Box" left="12150" top="9900" width="4215" height="1320">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Stabilized Palm Position&cr;&lf;Smoothing and stabilization is performed in order to make this value more suitable for interaction with 2D content. The stabilized position lags behind the palm position by a variable amount, depending primarily on the speed of movement.|">
    </PIN>
@@ -987,9 +975,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="100" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="12150" top="11190" width="4350" height="480">
+   <BOUNDS type="Node" left="12150" top="11340" width="4350" height="480">
    </BOUNDS>
-   <BOUNDS type="Box" left="12150" top="11190" width="4215" height="735">
+   <BOUNDS type="Box" left="12150" top="11340" width="4215" height="735">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Palm Velocity&cr;&lf;The rate of change of the palm position in meters / second.|">
    </PIN>
@@ -1001,9 +989,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="101" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="16590" top="10680" width="6795" height="900">
+   <BOUNDS type="Node" left="16590" top="10830" width="6795" height="900">
    </BOUNDS>
-   <BOUNDS type="Box" left="16590" top="10680" width="5505" height="1590">
+   <BOUNDS type="Box" left="16590" top="10830" width="5505" height="1590">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Palm Normal&cr;&lf;The normal vector to the palm.&cr;&lf;If your hand is flat, this vector will point downward, or “out” of the front surface of your palm.&cr;&lf;The direction is expressed as a unit vector pointing in the same direction as the palm normal (that is, a vector orthogonal to the palm).|">
    </PIN>
@@ -1095,5 +1083,17 @@
    <LINK srcnodeid="109" srcpinname="EndXYZ" dstnodeid="86" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="108" srcpinname="Bones" dstnodeid="109" dstpinname="Bone">
+   </LINK>
+   <NODE systemname="LastFrame (LeapVL.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (LeapVL.Frame)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="360" top="1815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Hands" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Frame" dstnodeid="9" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Hands" dstnodeid="0" dstpinname="Hand">
    </LINK>
    </PATCH>

@@ -78,7 +78,7 @@
             <POSITION x="302.023132" y="535.656433" />
           </OUTLET>
           <OUTLET Name="IsFirstFrame" Layer="Update" PadType="Field">
-            <POSITION x="420.735168" y="232.895279" />
+            <POSITION x="467.735168" y="238.895279" />
           </OUTLET>
           <OUTLET Name="Head Mount Optimization Enabled" Layer="Update">
             <POSITION x="543.7917" y="535.656433" />
@@ -87,11 +87,11 @@
         <CONSTS>
           <CONST Name="Gesture Type" Layer="Update">
             <POSITION x="1676.58289" y="280.080566" />
-            <SIZE width="88.7699356" height="17.6491356" />
+            <SIZE width="88.7699356" height="15.50846" />
             <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":1}]]></VALUE>
           </CONST>
           <CONST Name="IsFirstFrame" Layer="Update">
-            <POSITION x="389.108856" y="206.471725" />
+            <POSITION x="436.108856" y="212.471725" />
             <VALUE><![CDATA[false]]></VALUE>
           </CONST>
           <CONST Name="IsFirstFrame#1" Layer="Create">
@@ -99,23 +99,23 @@
             <VALUE><![CDATA[true]]></VALUE>
           </CONST>
           <CONST Name="Policy" Layer="Update">
-            <POSITION x="136.4966" y="419.351563" />
+            <POSITION x="133.4966" y="411.351563" />
             <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":1}]]></VALUE>
           </CONST>
           <CONST Name="Policy#1" Layer="Update">
-            <POSITION x="335.260651" y="423.330322" />
+            <POSITION x="332.260651" y="415.330322" />
             <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":2}]]></VALUE>
           </CONST>
           <CONST Name="Policy#2" Layer="Update">
-            <POSITION x="551.540466" y="424.8202" />
+            <POSITION x="548.540466" y="416.8202" />
             <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":4}]]></VALUE>
           </CONST>
           <CONST Name="Gesture Type#1" Layer="Update">
             <POSITION x="1970.41858" y="281.9632" />
-            <SIZE width="88.7699356" height="17.6491356" />
+            <SIZE width="88.7699356" height="15.50846" />
             <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":4}]]></VALUE>
           </CONST>
           <CONST Name="Gesture Type#2" Layer="Update">
@@ -127,6 +127,21 @@
             <POSITION x="2502.422" y="276.929352" />
             <SIZE width="88.7699356" height="15.50846" />
             <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":1}]]></VALUE>
+          </CONST>
+          <CONST Name="Policy#3" Layer="Update">
+            <POSITION x="641.3668" y="254.785233" />
+            <SIZE width="149.126678" height="15.8749962" />
+            <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":1}]]></VALUE>
+          </CONST>
+          <CONST Name="Policy#4" Layer="Update">
+            <POSITION x="945.4915" y="252.961914" />
+            <SIZE width="149.126678" height="15.50846" />
+            <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":2}]]></VALUE>
+          </CONST>
+          <CONST Name="Policy#5" Layer="Update">
+            <POSITION x="1286.72742" y="259.192078" />
+            <SIZE width="149.126678" height="15.50846" />
+            <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":4}]]></VALUE>
           </CONST>
         </CONSTS>
         <REGIONS>
@@ -340,7 +355,7 @@
             </BODY>
           </REGION>
           <REGION Name="IfElse#9" Layer="Update" Kind="IfElse">
-            <POSITION x="620.3445" y="228.1886" />
+            <POSITION x="629.3445" y="235.1886" />
             <SIZE x="232.398621" y="134.863419" />
             <INPUTS>
               <INPUT Name="Condition" />
@@ -355,25 +370,19 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Controller" Layer="True">
-                  <POSITION x="624.673157" y="229.85965" />
+                  <POSITION x="633.673157" y="236.85965" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Controller" Layer="True">
-                  <POSITION x="624.673157" y="309.566772" />
+                  <POSITION x="633.673157" y="316.566772" />
                 </OUTLET>
               </OUTLETS>
-              <CONSTS>
-                <CONST Name="Policy" Layer="True">
-                  <POSITION x="632.3668" y="253.785233" />
-                  <SIZE width="149.126678" height="15.50846" />
-                  <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":1}]]></VALUE>
-                </CONST>
-              </CONSTS>
+              <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="TogglePolicy" Layer="True">
-                  <POSITION x="625.3445" y="284.56073" />
+                  <POSITION x="634.3445" y="291.56073" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
                     <OPERATIONNODE Name="TogglePolicy" />
                   </NODEREF>
@@ -390,12 +399,11 @@
               <LINKS>
                 <Link source="Inlets/Controller" sink="Nodes/TogglePolicy/Inputs/Controller" />
                 <Link source="Nodes/TogglePolicy/Outputs/Controller Out" sink="Outlets/Controller" />
-                <Link source="Constants/Policy" sink="Nodes/TogglePolicy/Inputs/Policy" />
               </LINKS>
             </BODY>
           </REGION>
           <REGION Name="IfElse#8" Layer="Update" Kind="IfElse">
-            <POSITION x="926.4692" y="225.780991" />
+            <POSITION x="936.4692" y="237.780991" />
             <SIZE x="232.398621" y="134.863419" />
             <INPUTS>
               <INPUT Name="Condition" />
@@ -410,25 +418,19 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Controller" Layer="True">
-                  <POSITION x="929.3359" y="227.159164" />
+                  <POSITION x="939.3359" y="239.159164" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Controller" Layer="True">
-                  <POSITION x="929.3359" y="310.774475" />
+                  <POSITION x="939.3359" y="322.774475" />
                 </OUTLET>
               </OUTLETS>
-              <CONSTS>
-                <CONST Name="Policy" Layer="True">
-                  <POSITION x="938.4915" y="254.961914" />
-                  <SIZE width="149.126678" height="15.50846" />
-                  <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":2}]]></VALUE>
-                </CONST>
-              </CONSTS>
+              <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="TogglePolicy" Layer="True">
-                  <POSITION x="931.4692" y="285.7375" />
+                  <POSITION x="941.4692" y="297.7375" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
                     <OPERATIONNODE Name="TogglePolicy" />
                   </NODEREF>
@@ -443,14 +445,13 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Constants/Policy" sink="Nodes/TogglePolicy/Inputs/Policy" />
                 <Link source="Nodes/TogglePolicy/Outputs/Controller Out" sink="Outlets/Controller" />
                 <Link source="Inlets/Controller" sink="Nodes/TogglePolicy/Inputs/Controller" />
               </LINKS>
             </BODY>
           </REGION>
           <REGION Name="IfElse#10" Layer="Update" Kind="IfElse">
-            <POSITION x="1256.70508" y="236.334045" />
+            <POSITION x="1273.70508" y="248.334045" />
             <SIZE x="232.398621" y="134.863419" />
             <INPUTS>
               <INPUT Name="Condition" />
@@ -465,25 +466,19 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Controller" Layer="True">
-                  <POSITION x="1260.34839" y="237.8134" />
+                  <POSITION x="1277.34839" y="249.8134" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Controller" Layer="True">
-                  <POSITION x="1260.34839" y="317.712219" />
+                  <POSITION x="1277.34839" y="329.712219" />
                 </OUTLET>
               </OUTLETS>
-              <CONSTS>
-                <CONST Name="Policy" Layer="True">
-                  <POSITION x="1268.72742" y="258.192078" />
-                  <SIZE width="149.126678" height="15.50846" />
-                  <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":4}]]></VALUE>
-                </CONST>
-              </CONSTS>
+              <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="TogglePolicy" Layer="True">
-                  <POSITION x="1261.70508" y="288.967651" />
+                  <POSITION x="1278.70508" y="300.967651" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
                     <OPERATIONNODE Name="TogglePolicy" />
                   </NODEREF>
@@ -498,7 +493,6 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Constants/Policy" sink="Nodes/TogglePolicy/Inputs/Policy" />
                 <Link source="Inlets/Controller" sink="Nodes/TogglePolicy/Inputs/Controller" />
                 <Link source="Nodes/TogglePolicy/Outputs/Controller Out" sink="Outlets/Controller" />
               </LINKS>
@@ -1065,6 +1059,9 @@
           <Link source="Regions/IfElse/Outputs/Controller" sink="Regions/IfElse#2/Inputs/Controller Default" />
           <Link source="Regions/IfElse#2/Outputs/Controller" sink="Regions/IfElse#3/Inputs/Controller Default" />
           <Link source="Nodes/Devices/Outputs/Output" sink="Nodes/IsPolicySet/Inputs/Controller" />
+          <Link source="Constants/Policy#3" sink="Regions/IfElse#9/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
+          <Link source="Constants/Policy#4" sink="Regions/IfElse#8/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
+          <Link source="Constants/Policy#5" sink="Regions/IfElse#10/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
         </LINKS>
       </BODY>
     </PATCH>
@@ -1719,7 +1716,7 @@
               <NODES>
                 <OPERATION Name="SpecifyGestureType" Layer="Update">
                   <POSITION x="-355.92" y="308.184" />
-                  <NODEREF LastCat="Leap.Gesture" LastFile="VVVV.Device.Leap.vl">
+                  <NODEREF LastCat="Leap.Gesture" LastFile="VVVV.Devices.Leap.vl">
                     <OPERATIONNODE Name="SpecifyGestureType" />
                   </NODEREF>
                   <INPUTS>
@@ -2007,7 +2004,7 @@
           </OPERATION>
           <OPERATION Name="ToMatrix" Layer="Hand">
             <POSITION x="296.541382" y="739.5752" />
-            <NODEREF LastCat="Leap.Matrix" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Matrix" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToMatrix" />
             </NODEREF>
             <INPUTS>
@@ -2019,7 +2016,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3" Layer="Hand">
             <POSITION x="418.277649" y="735.408264" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2032,7 +2029,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#1" Layer="Hand">
             <POSITION x="524.6426" y="793.164246" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2045,7 +2042,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#2" Layer="Hand">
             <POSITION x="664.8136" y="793.164246" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2058,7 +2055,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#3" Layer="Hand">
             <POSITION x="805.810852" y="793.164246" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2071,7 +2068,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#4" Layer="Hand">
             <POSITION x="943.0509" y="793.164246" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2084,7 +2081,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#5" Layer="Hand">
             <POSITION x="1135.93945" y="793.164246" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2097,7 +2094,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#6" Layer="Hand">
             <POSITION x="1241.95581" y="793.164246" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2175,7 +2172,7 @@
           </OPERATION>
           <OPERATION Name="ToMatrix#1" Layer="Arm">
             <POSITION x="-227.884613" y="1096.05176" />
-            <NODEREF LastCat="Leap.Matrix" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Matrix" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToMatrix" />
             </NODEREF>
             <INPUTS>
@@ -2187,7 +2184,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#7" Layer="Arm">
             <POSITION x="-130.294189" y="1099.48474" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2200,7 +2197,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#8" Layer="Arm">
             <POSITION x="-6.3052063" y="1096.61182" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2213,7 +2210,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#9" Layer="Arm">
             <POSITION x="98.16095" y="1097.16272" />
-            <NODEREF LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORYPATH Name="Leap.Vector" />
             </NODEREF>
@@ -2434,7 +2431,7 @@
           </OPERATION>
           <OPERATION Name="ToMatrix#2" Layer="Bone">
             <POSITION x="369.07132" y="1801.699" />
-            <NODEREF LastCat="Leap.Matrix" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Matrix" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToMatrix" />
             </NODEREF>
             <INPUTS>
@@ -2446,7 +2443,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#18" Layer="Bone">
             <POSITION x="576.775146" y="1797.09021" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2459,7 +2456,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#19" Layer="Bone">
             <POSITION x="798.1279" y="1796.53625" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2472,7 +2469,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#20" Layer="Bone">
             <POSITION x="482.220367" y="1801.40662" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2485,7 +2482,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#21" Layer="Bone">
             <POSITION x="681.3993" y="1796.08093" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2751,7 +2748,7 @@
           </OPERATION>
           <OPERATION Name="Pointable" Layer="Finger">
             <POSITION x="764.714966" y="1188.28284" />
-            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="Pointable" />
               <CATEGORY Name="LeapVL" IsDirectParent="true" />
             </NODEREF>
@@ -2773,7 +2770,7 @@
           </OPERATION>
           <OPERATION Name="Pointable#1" Layer="Tool">
             <POSITION x="360.610748" y="1428.687" />
-            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="Pointable" />
               <CATEGORY Name="LeapVL" IsDirectParent="true" />
             </NODEREF>
@@ -2808,7 +2805,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#10" Layer="InteractionBox">
             <POSITION x="362.7071" y="2057.18359" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2937,7 +2934,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#11" Layer="SwipeGesture">
             <POSITION x="1919.08679" y="1530.47693" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2950,7 +2947,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#12" Layer="SwipeGesture">
             <POSITION x="1742.00562" y="1531.58826" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2963,7 +2960,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#13" Layer="SwipeGesture">
             <POSITION x="1819.6438" y="1530.89319" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3156,7 +3153,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#22" Layer="CircleGesture">
             <POSITION x="1733.16" y="1761.65381" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3169,7 +3166,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#23" Layer="CircleGesture">
             <POSITION x="1812.8916" y="1761.74329" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3233,7 +3230,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#24" Layer="ScreenTapGesture">
             <POSITION x="1741.48718" y="1959.09766" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -3246,7 +3243,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#25" Layer="ScreenTapGesture">
             <POSITION x="1839.49475" y="1959.12012" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -3310,7 +3307,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#26" Layer="KeyTapGesture">
             <POSITION x="1734.29565" y="2183.573" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3323,7 +3320,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#27" Layer="KeyTapGesture">
             <POSITION x="1825.5426" y="2181.27417" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4243,7 +4240,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3" Layer="ToMatrix">
             <POSITION x="273.1637" y="310.146637" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -4256,7 +4253,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#1" Layer="ToMatrix">
             <POSITION x="354.362061" y="308.6445" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -4269,7 +4266,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#2" Layer="ToMatrix">
             <POSITION x="438.868469" y="307.96936" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -4640,7 +4637,7 @@
           </OPERATION>
           <OPERATION Name="Frame" Layer="Update">
             <POSITION x="547.633362" y="23.9624786" />
-            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="VVVV.LeapVL" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="Frame" />
               <CATEGORY Name="LeapVL" IsDirectParent="true" />
             </NODEREF>
@@ -4812,7 +4809,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#10" Layer="Pointable">
             <POSITION x="304.0633" y="459.857239" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4825,7 +4822,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#11" Layer="Pointable">
             <POSITION x="401.346375" y="461.564636" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4838,7 +4835,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#12" Layer="Pointable">
             <POSITION x="528.3419" y="459.857239" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4851,7 +4848,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#13" Layer="Pointable">
             <POSITION x="617.8413" y="462.4184" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Device.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VVVV.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -5021,14 +5018,14 @@
           <INLET Name="Gesture" Layer="Update">
             <POSITION x="135.744659" y="62.36888" />
           </INLET>
-          <INLET Name="TDictionary" Layer="Update" PadType="Field">
-            <POSITION x="354.020233" y="144.5087" />
-          </INLET>
           <INLET Name="GDictionary" Layer="Update" PadType="Field">
-            <POSITION x="428.251465" y="145.1463" />
+            <POSITION x="371.57074" y="150.82048" />
+          </INLET>
+          <INLET Name="TDictionary" Layer="Update" PadType="Field">
+            <POSITION x="434.267181" y="152.95575" />
           </INLET>
           <INLET Name="LastTime" Layer="Update" PadType="Field">
-            <POSITION x="546.825562" y="171.573135" />
+            <POSITION x="558.0027" y="183.2583" />
           </INLET>
           <INLET Name="Keep Time" Layer="Update">
             <POSITION x="642.413269" y="62.36888" />
@@ -5036,34 +5033,34 @@
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Gestures" Layer="Update">
-            <POSITION x="368.9578" y="1207.76367" />
+            <POSITION x="345.5947" y="1176.53735" />
           </OUTLET>
           <OUTLET Name="Kept" Layer="Update">
-            <POSITION x="442.9735" y="1207.76367" />
+            <POSITION x="419.6104" y="1176.53735" />
           </OUTLET>
           <OUTLET Name="LastTime" Layer="Update" PadType="Field">
-            <POSITION x="496.001953" y="173.83374" />
-          </OUTLET>
-          <OUTLET Name="TDictionary" Layer="Update" PadType="Field">
-            <POSITION x="553.403442" y="950.842651" />
+            <POSITION x="501.082458" y="186.535019" />
           </OUTLET>
           <OUTLET Name="GDictionary" Layer="Update" PadType="Field">
-            <POSITION x="604.4242" y="939.75116" />
+            <POSITION x="619.543152" y="1016.04822" />
+          </OUTLET>
+          <OUTLET Name="TDictionary" Layer="Update" PadType="Field">
+            <POSITION x="686.6182" y="1017.52753" />
           </OUTLET>
         </OUTLETS>
         <CONSTS />
         <REGIONS>
           <REGION Name="ForEachLoop" Layer="Update" Kind="ForEachLoop">
-            <POSITION x="203.335358" y="582.742859" />
+            <POSITION x="119.495544" y="617.4144" />
             <SIZE x="133" y="108" />
             <INPUTS>
-              <INPUT Name="TDictionary" IsAccumulator="true" />
               <INPUT Name="GDictionary" IsAccumulator="true" />
+              <INPUT Name="TDictionary" IsAccumulator="true" />
               <INPUT Name="Gestures" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="TDictionary" IsAccumulator="true" />
               <OUPUT Name="GDictionary" IsAccumulator="true" />
+              <OUPUT Name="TDictionary" IsAccumulator="true" />
             </OUTPUTS>
             <BODY Name="ForEachLoopBody">
               <LAYERS>
@@ -5072,29 +5069,29 @@
                 <LAYER Name="Destroy" />
               </LAYERS>
               <INLETS>
-                <INLET Name="TDictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="207.948822" y="644.4471" />
+                <INLET Name="GDictionary" Layer="Update" PadType="Accumulator">
+                  <POSITION x="122.47644" y="702.996" />
                 </INLET>
                 <INLET Name="Gesture" Layer="Update">
-                  <POSITION x="261.382233" y="571.2033" />
+                  <POSITION x="134.697647" y="611.1888" />
                 </INLET>
-                <INLET Name="GDictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="395.7185" y="676.8561" />
+                <INLET Name="TDictionary" Layer="Update" PadType="Accumulator">
+                  <POSITION x="232.1242" y="700.978455" />
                 </INLET>
               </INLETS>
               <OUTLETS>
-                <OUTLET Name="TDictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="205.5841" y="880.791748" />
-                </OUTLET>
                 <OUTLET Name="GDictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="342.19342" y="872.408" />
+                  <POSITION x="122.790436" y="933.171936" />
+                </OUTLET>
+                <OUTLET Name="TDictionary" Layer="Update" PadType="Accumulator">
+                  <POSITION x="233.06189" y="933.171936" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="ContainsKey" Layer="Update">
-                  <POSITION x="305.0566" y="674.1318" />
+                  <POSITION x="326.47995" y="747.7255" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="ContainsKey" />
                   </NODEREF>
@@ -5107,7 +5104,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="NOT" Layer="Update">
-                  <POSITION x="262.5482" y="773.4747" />
+                  <POSITION x="325.251617" y="864.6813" />
                   <NODEREF LastCat="Control.Boolean" LastFile="VL.Lib.Basics.dll">
                     <OPERATIONNODE Name="NOT" />
                   </NODEREF>
@@ -5120,7 +5117,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Add" Layer="Update">
-                  <POSITION x="208.66214" y="839.9547" />
+                  <POSITION x="236.139923" y="897.719" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <CATEGORY Name="Dictionary" />
                     <OPERATIONNODE Name="Add" />
@@ -5136,7 +5133,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Id" Layer="Update">
-                  <POSITION x="222.07016" y="592.6941" />
+                  <POSITION x="443.94342" y="647.476135" />
                   <NODEREF LastCat="Leap.Gesture" LastFile="LeapCSharp.NET4.0.dll">
                     <OPERATIONNODE Name="Id" />
                     <CATEGORY Name="Gesture" IsDirectParent="true" />
@@ -5149,7 +5146,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="SetItem" Layer="Update">
-                  <POSITION x="208.335358" y="754.278259" />
+                  <POSITION x="235.813141" y="805.855957" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="SetItem" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5165,7 +5162,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Zero" Layer="Update">
-                  <POSITION x="232.216187" y="726.6211" />
+                  <POSITION x="259.69397" y="778.1988" />
                   <NODEREF LastCat="System.TimeSpan" LastFile="CommonLanguageRuntimeLibrary">
                     <CATEGORY Name="TimeSpan" />
                     <OPERATIONNODE Name="Zero" />
@@ -5176,7 +5173,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Zero#1" Layer="Update">
-                  <POSITION x="237.737946" y="812.7228" />
+                  <POSITION x="267.967743" y="863.7501" />
                   <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
                     <OPERATIONNODE Name="Zero" />
                     <CATEGORY Name="Adaptive" IsDirectParent="true" />
@@ -5187,7 +5184,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Add#1" Layer="Update">
-                  <POSITION x="344.30777" y="835.854248" />
+                  <POSITION x="124.904785" y="897.719" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="Add" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5203,7 +5200,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="SetItem#1" Layer="Update">
-                  <POSITION x="386.202332" y="761.8277" />
+                  <POSITION x="124.495544" y="809.332" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="SetItem" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5225,37 +5222,72 @@
                 <Link source="Nodes/Add/Outputs/Output" sink="Outlets/TDictionary" />
                 <Link source="Inlets/TDictionary" sink="Nodes/ContainsKey/Inputs/Input" />
                 <Link source="Inlets/Gesture" sink="Nodes/Id/Inputs/Input" />
-                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/ContainsKey/Inputs/Key" />
-                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/Add/Inputs/Key" />
                 <Link source="Nodes/ContainsKey/Outputs/Result" sink="Nodes/SetItem/Inputs/Enabled" />
-                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/SetItem/Inputs/Key" />
                 <Link source="Inlets/TDictionary" sink="Nodes/SetItem/Inputs/Input" />
                 <Link source="Nodes/SetItem/Outputs/Output" sink="Nodes/Add/Inputs/Input" />
                 <Link source="Nodes/Zero/Outputs/Zero" sink="Nodes/SetItem/Inputs/Value" />
                 <Link source="Nodes/Zero#1/Outputs/Zero" sink="Nodes/Add/Inputs/Value" />
-                <Link source="Inlets/Gesture" sink="Nodes/Add#1/Inputs/Value" />
-                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/Add#1/Inputs/Key" />
                 <Link source="Nodes/NOT/Outputs/Output" sink="Nodes/Add#1/Inputs/Enabled" />
                 <Link source="Nodes/Add#1/Outputs/Output" sink="Outlets/GDictionary" />
                 <Link source="Nodes/ContainsKey/Outputs/Result" sink="Nodes/SetItem#1/Inputs/Enabled" />
-                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/SetItem#1/Inputs/Key" />
                 <Link source="Inlets/GDictionary" sink="Nodes/SetItem#1/Inputs/Input" />
-                <Link source="Inlets/Gesture" sink="Nodes/SetItem#1/Inputs/Value" />
                 <Link source="Nodes/SetItem#1/Outputs/Output" sink="Nodes/Add#1/Inputs/Input" />
+                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/ContainsKey/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-1.62854" y="48.7236328" />
+                    <Point x="-53.916687" y="54.7780151" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/Add/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-1.62854" y="179.719116" />
+                    <Point x="-193.1681" y="180.819885" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/Add#1/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-4.380554" y="176.416687" />
+                    <Point x="-303.798767" y="187.9751" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/SetItem/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-3.27972412" y="44.3204346" />
+                    <Point x="-195.92012" y="60.2820435" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Nodes/Id/Outputs/Id" sink="Nodes/SetItem#1/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-3.83013916" y="44.3204346" />
+                    <Point x="-304.349182" y="60.83246" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Inlets/Gesture" sink="Nodes/SetItem#1/Inputs/Value">
+                  <SEGMENTS>
+                    <Point x="0.797699" y="69.86609" />
+                    <Point x="20.13028" y="69.2619" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Inlets/Gesture" sink="Nodes/Add#1/Inputs/Value">
+                  <SEGMENTS>
+                    <Point x="4.42254639" y="65.637085" />
+                    <Point x="27.3799744" y="65.637085" />
+                  </SEGMENTS>
+                </Link>
               </LINKS>
             </BODY>
           </REGION>
           <REGION Name="ForEachLoop#1" Layer="Update" Kind="ForEachLoop">
-            <POSITION x="233.722046" y="239.8352" />
+            <POSITION x="250.522308" y="239.8352" />
             <SIZE x="80" y="80" />
             <INPUTS>
-              <INPUT Name="Dictionary" IsAccumulator="true" />
               <INPUT Name="GDictionary" IsAccumulator="true" />
+              <INPUT Name="TDictionary" IsAccumulator="true" />
               <INPUT Name="Keyss" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Dictionary" IsAccumulator="true" />
               <OUPUT Name="GDictionary" IsAccumulator="true" />
+              <OUPUT Name="TDictionary" IsAccumulator="true" />
             </OUTPUTS>
             <BODY Name="ForEachLoopBody">
               <LAYERS>
@@ -5264,29 +5296,29 @@
                 <LAYER Name="Destroy" />
               </LAYERS>
               <INLETS>
-                <INLET Name="Dictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="239.594574" y="246.097656" />
+                <INLET Name="GDictionary" Layer="Update" PadType="Accumulator">
+                  <POSITION x="272.404419" y="373.754456" />
+                </INLET>
+                <INLET Name="TDictionary" Layer="Update" PadType="Accumulator">
+                  <POSITION x="347.27005" y="301.1052" />
                 </INLET>
                 <INLET Name="Keys" Layer="Update">
-                  <POSITION x="314.174652" y="241.463379" />
-                </INLET>
-                <INLET Name="GDictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="363.694031" y="382.9054" />
+                  <POSITION x="423.9863" y="241.463379" />
                 </INLET>
               </INLETS>
               <OUTLETS>
-                <OUTLET Name="Dictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="283.883118" y="518.8931" />
-                </OUTLET>
                 <OUTLET Name="GDictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="363.785034" y="513.717651" />
+                  <POSITION x="275.7265" y="558.2019" />
+                </OUTLET>
+                <OUTLET Name="TDictionary" Layer="Update" PadType="Accumulator">
+                  <POSITION x="396.925842" y="564.127563" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="GetItem" Layer="Update">
-                  <POSITION x="333.6869" y="298.141876" />
+                  <POSITION x="428.74585" y="335.77005" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="GetItem" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5300,7 +5332,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="+" Layer="Update">
-                  <POSITION x="333.686279" y="335.924683" />
+                  <POSITION x="428.9099" y="374.40097" />
                   <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
                     <OPERATIONNODE Name="+" />
                     <CATEGORY Name="Adaptive" IsDirectParent="true" />
@@ -5316,7 +5348,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="SetItem" Layer="Update">
-                  <POSITION x="246.167419" y="426.595551" />
+                  <POSITION x="351.755554" y="427.2995" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="SetItem" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5332,7 +5364,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="&gt;" Layer="Update">
-                  <POSITION x="332.585815" y="365.152985" />
+                  <POSITION x="429.4383" y="469.134216" />
                   <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
                     <OPERATIONNODE Name="&gt;" />
                     <CATEGORY Name="Adaptive" IsDirectParent="true" />
@@ -5346,7 +5378,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="Remove" Layer="Update">
-                  <POSITION x="284.253052" y="468.182434" />
+                  <POSITION x="389.552673" y="509.193237" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <CATEGORY Name="Dictionary" />
                     <OPERATIONNODE Name="Remove" />
@@ -5360,21 +5392,8 @@
                     <OUPUT Name="Output" />
                   </OUTPUTS>
                 </OPERATION>
-                <OPERATION Name="NOT" Layer="Update">
-                  <POSITION x="305.887421" y="398.526184" />
-                  <NODEREF LastCat="Control.Boolean" LastFile="VL.Lib.Basics.dll">
-                    <OPERATIONNODE Name="NOT" />
-                  </NODEREF>
-                  <INPUTS>
-                    <INPUT Name="Input" />
-                    <INPUT Name="Enabled" />
-                  </INPUTS>
-                  <OUTPUTS>
-                    <OUPUT Name="Output" />
-                  </OUTPUTS>
-                </OPERATION>
                 <OPERATION Name="Remove#1" Layer="Update">
-                  <POSITION x="366.037842" y="470.4165" />
+                  <POSITION x="277.9793" y="514.900635" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="Remove" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5390,28 +5409,46 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Inlets/Keys" sink="Nodes/GetItem/Inputs/Key" />
                 <Link source="Nodes/GetItem/Outputs/Item" sink="Nodes/+/Inputs/Input" />
                 <Link source="Nodes/+/Outputs/Output" sink="Nodes/SetItem/Inputs/Value" />
-                <Link source="Inlets/Keys" sink="Nodes/SetItem/Inputs/Key" />
-                <Link source="Inlets/Dictionary" sink="Nodes/SetItem/Inputs/Input" />
-                <Link source="Inlets/Dictionary" sink="Nodes/GetItem/Inputs/Input" />
+                <Link source="Inlets/TDictionary" sink="Nodes/SetItem/Inputs/Input" />
+                <Link source="Inlets/TDictionary" sink="Nodes/GetItem/Inputs/Input" />
                 <Link source="Nodes/+/Outputs/Output" sink="Nodes/&gt;/Inputs/Input" />
-                <Link source="Inlets/Keys" sink="Nodes/Remove/Inputs/Key" />
                 <Link source="Nodes/&gt;/Outputs/Result" sink="Nodes/Remove/Inputs/Enabled" />
-                <Link source="Nodes/&gt;/Outputs/Result" sink="Nodes/NOT/Inputs/Input" />
-                <Link source="Nodes/NOT/Outputs/Output" sink="Nodes/SetItem/Inputs/Enabled" />
                 <Link source="Nodes/SetItem/Outputs/Output" sink="Nodes/Remove/Inputs/Input" />
-                <Link source="Nodes/Remove/Outputs/Output" sink="Outlets/Dictionary" />
+                <Link source="Nodes/Remove/Outputs/Output" sink="Outlets/TDictionary" />
                 <Link source="Inlets/GDictionary" sink="Nodes/Remove#1/Inputs/Input" />
-                <Link source="Inlets/Keys" sink="Nodes/Remove#1/Inputs/Key" />
                 <Link source="Nodes/&gt;/Outputs/Result" sink="Nodes/Remove#1/Inputs/Enabled" />
                 <Link source="Nodes/Remove#1/Outputs/Output" sink="Outlets/GDictionary" />
+                <Link source="Inlets/Keys" sink="Nodes/GetItem/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="4.703003" y="27.409668" />
+                    <Point x="39.95056" y="32.216156" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Inlets/Keys" sink="Nodes/SetItem/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-0.10345459" y="33.81833" />
+                    <Point x="-58.3153076" y="38.09073" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Inlets/Keys" sink="Nodes/Remove/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-0.10345459" y="49.3058777" />
+                    <Point x="-25.20398" y="49.3058777" />
+                  </SEGMENTS>
+                </Link>
+                <Link source="Inlets/Keys" sink="Nodes/Remove#1/Inputs/Key">
+                  <SEGMENTS>
+                    <Point x="-2.77374268" y="29.5458984" />
+                    <Point x="-126.674133" y="27.9437256" />
+                  </SEGMENTS>
+                </Link>
               </LINKS>
             </BODY>
           </REGION>
           <REGION Name="ForEachLoop#2" Layer="Update" Kind="ForEachLoop">
-            <POSITION x="368.040833" y="1054.60107" />
+            <POSITION x="340.764435" y="1023.37476" />
             <SIZE x="80" y="80" />
             <INPUTS>
               <INPUT Name="Inputs" />
@@ -5428,22 +5465,22 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Input" Layer="Update">
-                  <POSITION x="501.619446" y="1056.22925" />
+                  <POSITION x="478.256348" y="1025.00293" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Gesture" Layer="Update">
-                  <POSITION x="366.627533" y="1172.6825" />
+                  <POSITION x="343.264435" y="1141.456" />
                 </OUTLET>
                 <OUTLET Name="KeptTime" Layer="Update">
-                  <POSITION x="443.430176" y="1172.6825" />
+                  <POSITION x="420.067078" y="1141.456" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="GetItem" Layer="Update">
-                  <POSITION x="444.8698" y="1097.92847" />
+                  <POSITION x="421.5067" y="1066.70215" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="GetItem" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5457,7 +5494,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="GetItem#1" Layer="Update">
-                  <POSITION x="373.040833" y="1099.2002" />
+                  <POSITION x="349.677734" y="1067.97388" />
                   <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
                     <OPERATIONNODE Name="GetItem" />
                     <CATEGORY Name="Dictionary" IsDirectParent="true" />
@@ -5471,7 +5508,7 @@
                   </OUTPUTS>
                 </OPERATION>
                 <OPERATION Name="TotalSeconds" Layer="Update">
-                  <POSITION x="444.8419" y="1131.3584" />
+                  <POSITION x="421.4788" y="1100.13208" />
                   <NODEREF LastCat="System.TimeSpan" LastFile="CommonLanguageRuntimeLibrary">
                     <CATEGORY Name="TimeSpan" />
                     <OPERATIONNODE Name="TotalSeconds" />
@@ -5496,7 +5533,7 @@
         </REGIONS>
         <NODES>
           <OPERATION Name="Keys" Layer="Update">
-            <POSITION x="316.61087" y="197.148743" />
+            <POSITION x="362.359619" y="198.360718" />
             <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
               <CATEGORY Name="Dictionary" />
               <OPERATIONNODE Name="Keys" />
@@ -5525,7 +5562,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="CurrentFrame" Layer="Update">
-            <POSITION x="528.2938" y="108.405357" />
+            <POSITION x="529.818" y="148.541367" />
             <NODEREF LastCat="Animation.Time" LastFile="VL.Core.dll">
               <CATEGORY Name="Time" />
               <OPERATIONNODE Name="CurrentFrame" />
@@ -5549,7 +5586,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Keys#1" Layer="Update">
-            <POSITION x="502.8636" y="1015.53778" />
+            <POSITION x="479.5005" y="984.3114" />
             <NODEREF LastCat="Collections.Dictionary" LastFile="System.Collections.Immutable.dll">
               <OPERATIONNODE Name="Keys" />
             </NODEREF>
@@ -5561,7 +5598,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToSpread" Layer="Update">
-            <POSITION x="133.706" y="277.6511" />
+            <POSITION x="134.88324" y="557.849365" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
               <OPERATIONNODE Name="ToSpread" />
               <CATEGORY Name="Sequence" IsDirectParent="true" />
@@ -5589,14 +5626,12 @@
         </NODES>
         <LINKS>
           <Link source="Nodes/Keys/Outputs/Keys" sink="Regions/ForEachLoop#1/Inputs/Keyss" />
-          <Link source="Inlets/TDictionary" sink="Regions/ForEachLoop#1/Inputs/Dictionary" />
-          <Link source="Inlets/TDictionary" sink="Nodes/Keys/Inputs/Input" />
-          <Link source="Regions/ForEachLoop#1/Outputs/Dictionary" sink="Regions/ForEachLoop/Inputs/TDictionary" />
+          <Link source="Inlets/TDictionary" sink="Regions/ForEachLoop#1/Inputs/TDictionary" />
+          <Link source="Regions/ForEachLoop#1/Outputs/TDictionary" sink="Regions/ForEachLoop/Inputs/TDictionary" />
           <Link source="Inlets/LastTime" sink="Nodes/-/Inputs/Input 2" />
           <Link source="Nodes/CurrentFrame/Outputs/Current Frame" sink="Nodes/-/Inputs/Input" />
           <Link source="Nodes/CurrentFrame/Outputs/Current Frame" sink="Outlets/LastTime" />
           <Link source="Nodes/-/Outputs/Output" sink="Nodes/ToTimeSpan/Inputs/Input" />
-          <Link source="Nodes/ToTimeSpan/Outputs/Result" sink="Regions/ForEachLoop#1/ForEachLoopBody/Nodes/+/Inputs/Input 2" />
           <Link source="Regions/ForEachLoop/Outputs/TDictionary" sink="Nodes/Keys#1/Inputs/Input" />
           <Link source="Nodes/Keys#1/Outputs/Keys" sink="Regions/ForEachLoop#2/Inputs/Inputs" />
           <Link source="Regions/ForEachLoop/Outputs/TDictionary" sink="Regions/ForEachLoop#2/ForEachLoopBody/Nodes/GetItem/Inputs/Input" />
@@ -5615,6 +5650,12 @@
           <Link source="Regions/ForEachLoop/Outputs/GDictionary" sink="Outlets/GDictionary" />
           <Link source="Regions/ForEachLoop/Outputs/TDictionary" sink="Outlets/TDictionary" />
           <Link source="Regions/ForEachLoop#2/Outputs/Gestures" sink="Outlets/Gestures" />
+          <Link source="Inlets/GDictionary" sink="Nodes/Keys/Inputs/Input" />
+          <Link source="Nodes/ToTimeSpan/Outputs/Result" sink="Regions/ForEachLoop#1/ForEachLoopBody/Nodes/+/Inputs/Input 2">
+            <SEGMENTS>
+              <Point x="-5.98339844" y="100.1824" />
+            </SEGMENTS>
+          </Link>
         </LINKS>
       </BODY>
     </PATCH>
@@ -6066,45 +6107,45 @@
         </LAYERS>
         <INLETS>
           <INLET Name="Observable" Layer="Update" Type="Observable&lt;Frame&gt;">
-            <POSITION x="677" y="295" />
+            <POSITION x="380.1648" y="67.85651" />
           </INLET>
           <INLET Name="Frame" Layer="Update" PadType="Field">
-            <POSITION x="781.186" y="349.671936" />
+            <POSITION x="484.350769" y="122.528442" />
           </INLET>
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Gestures" Layer="Update">
-            <POSITION x="717.9446" y="926.6391" />
+            <POSITION x="421.109375" y="699.4956" />
           </OUTLET>
           <OUTLET Name="Frame" Layer="Update" PadType="Field">
-            <POSITION x="783.1004" y="418.016571" />
+            <POSITION x="486.2652" y="190.873077" />
           </OUTLET>
         </OUTLETS>
         <CONSTS>
           <CONST Name="comment" Layer="Update" Type="String">
-            <POSITION x="834.1775" y="386.951965" />
+            <POSITION x="537.3423" y="159.808472" />
             <SIZE width="117.526443" height="10.7563477" />
             <VALUE><![CDATA["< saves the latest Frame"]]></VALUE>
           </CONST>
           <CONST Name="comment#1" Layer="Update" Type="String">
-            <POSITION x="823.546753" y="481.098846" />
+            <POSITION x="526.711548" y="253.955353" />
             <SIZE width="283.448273" height="14.9561768" />
             <VALUE><![CDATA["< uses either the incoming frames or the latest saved frame"]]></VALUE>
           </CONST>
           <CONST Name="comment#3" Layer="Update" Type="String">
-            <POSITION x="812.9301" y="601.003357" />
+            <POSITION x="516.0949" y="373.859863" />
             <SIZE width="98.13517" height="11.3852539" />
             <VALUE><![CDATA["< I all those Frames (either all incoming Frames or the latest saved frame), look for Gestures and store them in the GestureList"]]></VALUE>
           </CONST>
           <CONST Name="comment#5" Layer="Update" Type="String">
-            <POSITION x="847.126343" y="848.788757" />
+            <POSITION x="550.291138" y="621.645264" />
             <SIZE width="229.307724" height="10.7563477" />
             <VALUE><![CDATA["< Make sure the gestures are of their according subtypes"]]></VALUE>
           </CONST>
         </CONSTS>
         <REGIONS>
           <REGION Name="ForEachLoop#1" Layer="Update" Kind="ForEachLoop">
-            <POSITION x="715.8488" y="818.0089" />
+            <POSITION x="419.0136" y="590.865356" />
             <SIZE x="234.708252" y="22.97409" />
             <INPUTS>
               <INPUT Name="Gestures" />
@@ -6119,20 +6160,20 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Gesture" Layer="Update">
-                  <POSITION x="719.412842" y="820.1592" />
+                  <POSITION x="422.577637" y="593.0156" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Gesture" Layer="Update">
-                  <POSITION x="718.7087" y="899.6371" />
+                  <POSITION x="421.873474" y="672.4935" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="SpecifyGestureType" Layer="Update">
-                  <POSITION x="720.8488" y="845.1771" />
-                  <NODEREF LastCat="Leap.Gesture" LastFile="VVVV.Device.Leap.vl">
+                  <POSITION x="424.0136" y="618.033569" />
+                  <NODEREF LastCat="Leap.Gesture" LastFile="VVVV.Devices.Leap.vl">
                     <OPERATIONNODE Name="SpecifyGestureType" />
                   </NODEREF>
                   <INPUTS>
@@ -6150,7 +6191,7 @@
             </BODY>
           </REGION>
           <REGION Name="Project" Layer="Update" Kind="HigherOrderFunction">
-            <POSITION x="714.91864" y="563.8634" />
+            <POSITION x="418.083435" y="336.7199" />
             <SIZE x="100" y="100" />
             <NODEREF LastCat="Collections.Sequence" LastFile="System.Core.dll">
               <OPERATIONNODE Name="Project" Version="Many" />
@@ -6168,19 +6209,19 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Source" Layer="Transformer">
-                  <POSITION x="718.744568" y="564.2416" />
+                  <POSITION x="421.909363" y="337.098083" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Results" Layer="Transformer">
-                  <POSITION x="717.41864" y="646.3419" />
+                  <POSITION x="420.583435" y="419.1984" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="Gestures" Layer="Transformer">
-                  <POSITION x="720.733459" y="596.0633" />
+                  <POSITION x="423.898254" y="368.9198" />
                   <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
                     <OPERATIONNODE Name="Gestures" />
                     <CATEGORY Name="Frame" IsDirectParent="true">
@@ -6202,7 +6243,7 @@
             </BODY>
           </REGION>
           <REGION Name="Distinct" Layer="Update" Kind="HigherOrderFunction">
-            <POSITION x="715.5816" y="685.8464" />
+            <POSITION x="418.7464" y="458.7029" />
             <SIZE x="100" y="100" />
             <NODEREF LastCat="Collections.Sequence" LastFile="System.Interactive.dll">
               <OPERATIONNODE Name="Distinct" Version="Selector" />
@@ -6221,19 +6262,19 @@
               </LAYERS>
               <INLETS>
                 <INLET Name="Source" Layer="Key Selector">
-                  <POSITION x="718.0816" y="686.224548" />
+                  <POSITION x="421.2464" y="459.0811" />
                 </INLET>
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Key" Layer="Key Selector">
-                  <POSITION x="720.1941" y="767.2123" />
+                  <POSITION x="423.3589" y="540.0687" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
               <REGIONS />
               <NODES>
                 <OPERATION Name="Id" Layer="Key Selector">
-                  <POSITION x="720.6922" y="719.7053" />
+                  <POSITION x="423.857" y="492.561768" />
                   <NODEREF LastCat="Leap.Gesture" LastFile="LeapCSharp.NET4.0.dll">
                     <OPERATIONNODE Name="Id" />
                     <CATEGORY Name="Gesture" IsDirectParent="true" />
@@ -6255,7 +6296,7 @@
         </REGIONS>
         <NODES>
           <PROCESS Name="Sampler">
-            <POSITION x="678.303162" y="349.294281" />
+            <POSITION x="381.467957" y="122.150787" />
             <NODEREF LastCat="Reactive" LastFile="VL.Lib.Basics.dll">
               <PROCESSNODE Name="Sampler" />
             </NODEREF>
@@ -6271,7 +6312,7 @@
             </FRAGMENTS>
           </PROCESS>
           <OPERATION Name="DefaultIfEmpty" Layer="Update">
-            <POSITION x="717.3052" y="473.8759" />
+            <POSITION x="420.469971" y="246.732391" />
             <NODEREF LastCat="Collections.Sequence" LastFile="System.Core.dll">
               <CATEGORY Name="Sequence" />
               <OPERATIONNODE Name="DefaultIfEmpty" />
@@ -6286,7 +6327,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="LastOrDefault" Layer="Update">
-            <POSITION x="718.4168" y="384.9304" />
+            <POSITION x="421.5816" y="157.7869" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Lib.Basics.dll">
               <OPERATIONNODE Name="LastOrDefault" />
             </NODEREF>

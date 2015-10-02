@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Hand (Leap) help.v4p">
-   <BOUNDS type="Window" left="10635" top="4260" width="16950" height="9285">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Hand (LeapVL) help.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="0" top="1470" width="22470" height="13035">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -24,32 +24,12 @@
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    </NODE>
-   <NODE nodename="Hand (Leap)" componentmode="Hidden" id="0" systemname="Hand (Leap)" filename="VVVV.Device.Leap.vl">
-   <BOUNDS type="Node" left="2550" top="3600" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2550" top="3600" width="0" height="0">
-   </BOUNDS>
-   </NODE>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6495" top="3030" width="42012" height="240">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6495" top="3030" width="5376" height="2400">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|For people with a copy of Gray&apos;s Anatomy:&cr;&lf;&cr;&lf;Note that the thumb bone types match the types of the other fingers in the Leap Motion model. A real thumb has one fewer bone than the other fingers, so a zero-length bone is inserted for the thumb in the Leap Motion model. To keep the bone indexes and names consistent between the thumb and other fingers, the zero-length bone is added at the metacarpal position. However, in the standard anatomical naming system, the missing thumb bone is the intermediate phalanx. Thus, in the Leap Motion model, the anatomical metacarpal of the thumb is labeled as the proximal phalanx and the proximal phalanx is labeled as the intermediate phalanx.&cr;&lf;Source:&cr;&lf;|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6495" top="6558" width="9432" height="240">
+   <BOUNDS type="Node" left="12120" top="5295" width="9432" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="6495" top="6558" width="4320" height="264">
+   <BOUNDS type="Box" left="12120" top="5295" width="6465" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="https://developer.leapmotion.com/documentation/csharp/devguide/Intro_Skeleton_API.html?proglang=csharp#pointable-and-finger-classes">
    </PIN>
@@ -61,9 +41,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6495" top="5454" width="8568" height="240">
+   <BOUNDS type="Node" left="12150" top="4605" width="8568" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="6495" top="5454" width="8172" height="240">
+   <BOUNDS type="Box" left="12150" top="4605" width="5370" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="https://developer.leapmotion.com/documentation/objc/api/Leap.Finger.html?highlight=intermediate%20phalanx#leapfingerjoint">
    </PIN>
@@ -75,9 +55,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6495" top="6258" width="1272" height="240">
+   <BOUNDS type="Node" left="12120" top="4995" width="1272" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="6495" top="6258" width="1392" height="252">
+   <BOUNDS type="Box" left="12120" top="4995" width="1392" height="252">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|To make it visual:|">
    </PIN>
@@ -88,4 +68,1032 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="Hand (LeapVL)" componentmode="Hidden" id="0" systemname="Hand (LeapVL)" filename="VVVV.Device.Leap.vl">
+   <BOUNDS type="Node" left="345" top="2400" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="345" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Hand" visible="1">
+   </PIN>
+   <PIN pinname="Time Visible" visible="1">
+   </PIN>
+   <PIN pinname="Is Left" visible="1">
+   </PIN>
+   <PIN pinname="Id" visible="1">
+   </PIN>
+   <PIN pinname="Pinch Strength" visible="1">
+   </PIN>
+   <PIN pinname="Grab Strength" visible="1">
+   </PIN>
+   <PIN pinname="Confidence" visible="1">
+   </PIN>
+   <PIN pinname="Sphere Radius" visible="1">
+   </PIN>
+   <PIN pinname="Sphere CenterXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Wrist PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Palm Width" visible="1">
+   </PIN>
+   <PIN pinname="Palm VelocityXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Palm NormalXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Stabilized Palm PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Palm PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="DirectionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Pointables" visible="1">
+   </PIN>
+   <PIN pinname="Tools" visible="1">
+   </PIN>
+   <PIN pinname="Fingers" visible="1">
+   </PIN>
+   <PIN pinname="Arm" visible="1">
+   </PIN>
+   <PIN pinname="Basis" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Leap (Devices VL)" filename="VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="375" top="1410" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Frame" visible="1">
+   </PIN>
+   <PIN pinname="Enable Images" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="LastFrame (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="LastFrame (LeapVL)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="360" top="1815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Hands" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Frame" dstnodeid="9" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Hands" dstnodeid="0" dstpinname="Hand">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="10" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="360" top="825" width="13305" height="690">
+   </BOUNDS>
+   <BOUNDS type="Box" left="360" top="825" width="4020" height="360">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Reports the physical characteristics of a detected hand.&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7980" top="3270" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7980" top="3270" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Time Visible" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8880" top="3270" width="1365" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8880" top="3270" width="1365" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Time Visible (s)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7980" top="3780" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7980" top="3780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Is Left" dstnodeid="13" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8880" top="3780" width="675" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8880" top="3780" width="645" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; IsLeft|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7980" top="4245" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7980" top="4245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Id" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8880" top="4245" width="2040" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8880" top="4245" width="990" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; unique ID|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5640" top="3270" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5640" top="3270" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Pinch Strength" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6540" top="3270" width="255" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6540" top="3270" width="1320" height="300">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Pinch Strength&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5640" top="3750" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5640" top="3750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Grab Strength" dstnodeid="19" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6540" top="3750" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6540" top="3750" width="1230" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Grab Strength|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5640" top="4245" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5640" top="4245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Confidence" dstnodeid="21" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6540" top="4245" width="4245" height="1110">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6540" top="4245" width="1050" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Confidence|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5670" top="4785" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5670" top="4785" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Sphere Radius" dstnodeid="23" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="24" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6570" top="4785" width="9870" height="900">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6570" top="4785" width="1305" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Sphere Radius|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12150" top="6435" width="12840" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12150" top="6435" width="4230" height="1140">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Pinch Strength&cr;&lf;The strength is zero for an open hand, and blends to 1.0 when a pinching hand pose is recognized. Pinching can be done between the thumb and any other finger of the same hand.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="28" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="16590" top="6435" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16590" top="6435" width="4920" height="1020">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Grab Strength&cr;&lf;The strength of a grab hand pose.&cr;&lf;The strength is zero for an open hand, and blends to 1.0 when a grabbing hand pose is recognized.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12150" top="7815" width="4245" height="1110">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12150" top="7815" width="4200" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Confidence&cr;&lf;How confident we are with a given hand pose.&cr;&lf;The confidence level ranges between 0.0 and 1.0 inclusive.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="26" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="16590" top="7815" width="9870" height="900">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16590" top="7815" width="5295" height="1365">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Sphere Center / Radius&cr;&lf;The center and radius of a sphere fit to the curvature of this hand.&cr;&lf;This sphere is placed roughly as if the hand were holding a ball. Thus the size of the sphere decreases as the fingers are curled into a fist.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="45" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6570" top="5160" width="1290" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6570" top="5160" width="1290" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Sphere Center|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="47" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9660" top="6960" width="1290" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9660" top="6960" width="1290" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Wrist Position|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5670" top="5160" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5670" top="5160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Sphere CenterXYZ" dstnodeid="48" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8760" top="6960" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8760" top="6960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Wrist PositionXYZ" dstnodeid="49" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8760" top="7830" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8760" top="7830" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Palm Width" dstnodeid="50" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="51" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9660" top="7830" width="1065" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9660" top="7830" width="1065" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Palm width|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8760" top="8205" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8760" top="8205" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Palm VelocityXYZ" dstnodeid="52" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="53" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9660" top="8205" width="1230" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9660" top="8205" width="1230" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Palm Velocity|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8775" top="9075" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8775" top="9075" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Palm NormalXYZ" dstnodeid="54" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="55" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9675" top="9075" width="1200" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9675" top="9075" width="1200" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Palm Normal|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5730" top="6990" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5730" top="6990" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Stabilized Palm PositionXYZ" dstnodeid="56" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="57" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6630" top="6990" width="1965" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6630" top="6990" width="1965" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Stabilized Palm Position|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="58" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5730" top="7890" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5730" top="7890" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Palm PositionXYZ" dstnodeid="58" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="59" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6630" top="7890" width="1245" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6630" top="7890" width="1245" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Palm Position|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5730" top="8775" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5730" top="8775" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values=",,">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="DirectionXYZ" dstnodeid="60" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="61" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6585" top="8835" width="960" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6585" top="8835" width="960" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Direction|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="70" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12135" top="1395" width="26580" height="690">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12135" top="1395" width="9060" height="3195">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Pointable gives you the physical characteristics of a detected finger or tool.&cr;&lf;&cr;&lf;Both fingers and tools are classified as Pointable objects. The Leap Motion software classifies a detected entity as a tool when it is thinner, straighter, and longer than a typical finger.&cr;&lf;&cr;&lf;Per finger, there are 4 bones.&cr;&lf;For people with a copy of Gray&apos;s Anatomy:&cr;&lf;Note that the thumb bone types match the types of the other fingers in the Leap Motion model. A real thumb has one fewer bone than the other fingers, so a zero-length bone is inserted for the thumb in the Leap Motion model. To keep the bone indexes and names consistent between the thumb and other fingers, the zero-length bone is added at the metacarpal position. However, in the standard anatomical naming system, the missing thumb bone is the intermediate phalanx. Thus, in the Leap Motion model, the anatomical metacarpal of the thumb is labeled as the proximal phalanx and the proximal phalanx is labeled as the intermediate phalanx.&cr;&lf;&cr;&lf;Source:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Arm (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="Arm (LeapVL)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="1290" top="6105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Arm" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1290" top="6105">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Arm" dstnodeid="71" dstpinname="Arm">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="72" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="945" top="7140" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="945" top="7140" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Basis" dstnodeid="72" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="73" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1770" top="7125" width="2475" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1770" top="7125" width="2475" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Basis. Orientation of the hand.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="88" stayontop="1">
+   <BOUNDS type="Node" left="960" top="9705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="960" top="9705" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="21660" top="1365" width="6645" height="5805">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="1125" top="9285" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Layer Out" dstnodeid="88" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="86">
+   <BOUNDS type="Node" left="2505" top="8175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="2115" top="8175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="84">
+   <BOUNDS type="Node" left="2100" top="8535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="0.01">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Transform Out" dstnodeid="85" dstpinname="Transform In 2">
+   </LINK>
+   <NODE systemname="Axis (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\Axis (DX11).v4p" nodename="Axis (DX11)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="1830" top="8880" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Transform Out" dstnodeid="83" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="AxisAndGrid (DX11)" filename="%VVVV%\packs\leappack\nodes\modules\AxisAndGrid (DX11).v4p" nodename="AxisAndGrid (DX11)" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="480" top="8880" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="82" srcpinname="Layer" dstnodeid="87" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Layer Out" dstnodeid="87" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="85" srcpinname="Transform Out" dstnodeid="84" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3510" top="8340" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3510" top="8340" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.02">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="80" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3525" top="8625" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3525" top="8625" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.17">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="79" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3495" top="8955" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3495" top="8955" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.34">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="2085" top="9315" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="View" dstnodeid="88" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Projection" dstnodeid="88" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Initial Yaw">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Initial Pitch">
+   </LINK>
+   <LINK srcnodeid="79" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Initial Distance">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="89" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3195" top="4440" width="570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3195" top="4440" width="435" height="615">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="90" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="11655" top="1350" width="570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11655" top="1350" width="435" height="615">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5790" top="2640" width="570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5790" top="2640" width="435" height="615">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="11670" top="6435" width="570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11670" top="6435" width="435" height="615">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12210" top="675" width="8568" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12210" top="675" width="5370" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="https://developer.leapmotion.com/documentation/csharp/api/Leap.Hand.html?proglang=csharp">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12360" top="345" width="2430" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12360" top="345" width="2430" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Leap Motion Hand API Reference:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="95" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5835" top="6390" width="570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5835" top="6390" width="435" height="615">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="96" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="11670" top="9105" width="570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11670" top="9105" width="435" height="615">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="97" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12150" top="9330" width="2400" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12150" top="9330" width="4215" height="315">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Position Data of Palm and Wrist.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="98" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="16590" top="9300" width="3345" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16590" top="9300" width="5595" height="1140">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Direction&cr;&lf;Direction from the Palm towards the Fingers.&cr;&lf;The direction is expressed as a unit vector pointing in the same direction as the directed line from the palm position to the fingers.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="99" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12150" top="9750" width="17145" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12150" top="9750" width="4215" height="1320">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Stabilized Palm Position&cr;&lf;Smoothing and stabilization is performed in order to make this value more suitable for interaction with 2D content. The stabilized position lags behind the palm position by a variable amount, depending primarily on the speed of movement.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12150" top="11190" width="4350" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12150" top="11190" width="4215" height="735">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Palm Velocity&cr;&lf;The rate of change of the palm position in meters / second.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="101" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="16590" top="10680" width="6795" height="900">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16590" top="10680" width="5505" height="1590">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Palm Normal&cr;&lf;The normal vector to the palm.&cr;&lf;If your hand is flat, this vector will point downward, or “out” of the front surface of your palm.&cr;&lf;The direction is expressed as a unit vector pointing in the same direction as the palm normal (that is, a vector orthogonal to the palm).|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="105" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1020" top="10845" width="1905" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1020" top="10845" width="1905" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Check out the Girlpower:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="104" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1020" top="11685" width="2685" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1020" top="11685" width="2685" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get an overview of all LeapVL nodes:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="103">
+   <BOUNDS type="Node" left="1110" top="11130" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1110" top="11130" width="2610" height="270">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap girlpower.v4p|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="102">
+   <BOUNDS type="Node" left="1020" top="11955" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1020" top="11955" width="2940" height="255">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Nodestructure.v4p|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pointable (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="Pointable (LeapVL)" componentmode="Hidden" id="106">
+   <BOUNDS type="Node" left="1290" top="4080" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1290" top="4080">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Pointables" dstnodeid="106" dstpinname="Pointable">
+   </LINK>
+   <NODE systemname="Tool (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="Tool (LeapVL)" componentmode="Hidden" id="107">
+   <BOUNDS type="Node" left="1290" top="4590" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1290" top="4590">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Tools" dstnodeid="107" dstpinname="Pointable">
+   </LINK>
+   <NODE systemname="Finger (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="Finger (LeapVL)" componentmode="Hidden" id="108">
+   <BOUNDS type="Node" left="1290" top="5130" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1290" top="5130">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Fingers" dstnodeid="108" dstpinname="Finger">
+   </LINK>
+   <NODE systemname="Bone (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="Bone (LeapVL)" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="2130" top="5715" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="109" srcpinname="Basis" dstnodeid="85" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="109" srcpinname="EndXYZ" dstnodeid="86" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="108" srcpinname="Bones" dstnodeid="109" dstpinname="Bone">
+   </LINK>
    </PATCH>

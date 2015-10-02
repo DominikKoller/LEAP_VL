@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" systemname="Hands (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" scrollx="0" scrolly="150">
-   <BOUNDS type="Window" left="14400" top="1665" width="14775" height="10695">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" systemname="Hands (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View).v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="570" top="975" width="14775" height="10695">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>

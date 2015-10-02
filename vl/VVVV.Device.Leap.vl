@@ -1138,13 +1138,13 @@
             <POSITION x="-480.9745" y="821.441956" />
           </OUTLET>
           <OUTLET Name="Hands" Layer="Frame">
-            <POSITION x="-469.447327" y="383.7313" />
+            <POSITION x="-469.447327" y="382.7849" />
           </OUTLET>
           <OUTLET Name="Fingers#2" Layer="Hand">
             <POSITION x="-388.051331" y="821.441956" />
           </OUTLET>
           <OUTLET Name="Gestures" Layer="Frame">
-            <POSITION x="-360.3666" y="383.7313" />
+            <POSITION x="-360.3666" y="382.7849" />
           </OUTLET>
           <OUTLET Name="Tools#2" Layer="Hand">
             <POSITION x="-275.551331" y="821.441956" />
@@ -1152,11 +1152,11 @@
           <OUTLET Name="Basis#1" Layer="Arm">
             <POSITION x="-231.6637" y="1131.48474" />
           </OUTLET>
-          <OUTLET Name="Interaction Box" Layer="Frame">
-            <POSITION x="-223.79953" y="383.7313" />
-          </OUTLET>
           <OUTLET Name="Range" Layer="DeviceInfo">
             <POSITION x="-217.880554" y="593.1875" />
+          </OUTLET>
+          <OUTLET Name="Images" Layer="Frame">
+            <POSITION x="-191.569336" y="382.7849" />
           </OUTLET>
           <OUTLET Name="Pointables#1" Layer="Hand">
             <POSITION x="-184.819656" y="821.441956" />
@@ -1169,9 +1169,6 @@
           </OUTLET>
           <OUTLET Name="Is Embedded" Layer="DeviceInfo">
             <POSITION x="-92.6294861" y="593.1875" />
-          </OUTLET>
-          <OUTLET Name="Images" Layer="Frame">
-            <POSITION x="-56.2366333" y="383.7313" />
           </OUTLET>
           <OUTLET Name="WristPosition" Layer="Arm">
             <POSITION x="-8.834045" y="1131.48474" />
@@ -1192,7 +1189,7 @@
             <POSITION x="293.135254" y="823.25885" />
           </OUTLET>
           <OUTLET Name="TipPosition#1" Layer="Tool">
-            <POSITION x="358.037628" y="1512.46411" />
+            <POSITION x="358.037628" y="1508.86914" />
           </OUTLET>
           <OUTLET Name="Center#1" Layer="InteractionBox">
             <POSITION x="361.276642" y="2123.93677" />
@@ -1204,16 +1201,16 @@
             <POSITION x="366.621826" y="513.3834" />
           </OUTLET>
           <OUTLET Name="Bones" Layer="Finger">
-            <POSITION x="368.987457" y="1332.95361" />
+            <POSITION x="368.987457" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Direction" Layer="Hand">
             <POSITION x="413.249268" y="823.25885" />
           </OUTLET>
           <OUTLET Name="FingerType" Layer="Finger">
-            <POSITION x="420.2779" y="1332.95361" />
+            <POSITION x="420.2779" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="StabilizedTipPosition#1" Layer="Tool">
-            <POSITION x="444.264221" y="1512.46411" />
+            <POSITION x="444.264221" y="1508.86914" />
           </OUTLET>
           <OUTLET Name="Bytes Per Pixel" Layer="Image">
             <POSITION x="473.793" y="513.3834" />
@@ -1222,7 +1219,7 @@
             <POSITION x="477.035583" y="1825.36011" />
           </OUTLET>
           <OUTLET Name="TipPosition" Layer="Finger">
-            <POSITION x="491.304352" y="1332.95361" />
+            <POSITION x="491.304352" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Size" Layer="InteractionBox">
             <POSITION x="492.2953" y="2123.93677" />
@@ -1231,7 +1228,7 @@
             <POSITION x="520.865234" y="823.25885" />
           </OUTLET>
           <OUTLET Name="StabilizedTipPosition" Layer="Finger">
-            <POSITION x="567.260437" y="1332.95361" />
+            <POSITION x="567.260437" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Width#4" Layer="Image">
             <POSITION x="572.1384" y="513.3834" />
@@ -1240,13 +1237,13 @@
             <POSITION x="576.796631" y="1825.36011" />
           </OUTLET>
           <OUTLET Name="Direction#4" Layer="Tool">
-            <POSITION x="583.3323" y="1512.46411" />
+            <POSITION x="583.3323" y="1508.86914" />
           </OUTLET>
           <OUTLET Name="Height" Layer="Image">
             <POSITION x="627.3157" y="513.3834" />
           </OUTLET>
           <OUTLET Name="TipVelocity#1" Layer="Tool">
-            <POSITION x="663.7625" y="1512.46411" />
+            <POSITION x="663.7625" y="1508.86914" />
           </OUTLET>
           <OUTLET Name="Stabilized Palm Position" Layer="Hand">
             <POSITION x="664.618835" y="823.25885" />
@@ -1255,13 +1252,13 @@
             <POSITION x="677.3429" y="1825.36011" />
           </OUTLET>
           <OUTLET Name="Direction#2" Layer="Finger">
-            <POSITION x="687.036743" y="1332.95361" />
+            <POSITION x="687.036743" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Width#3" Layer="Tool">
-            <POSITION x="748.686035" y="1512.46411" />
+            <POSITION x="748.686035" y="1508.86914" />
           </OUTLET>
           <OUTLET Name="TipVelocity" Layer="Finger">
-            <POSITION x="751.753845" y="1332.95361" />
+            <POSITION x="751.753845" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Direction#3" Layer="Bone">
             <POSITION x="797.334351" y="1825.36011" />
@@ -1270,22 +1267,16 @@
             <POSITION x="802.119263" y="823.25885" />
           </OUTLET>
           <OUTLET Name="Length#2" Layer="Tool">
-            <POSITION x="824.6229" y="1512.46411" />
+            <POSITION x="824.6229" y="1508.86914" />
           </OUTLET>
           <OUTLET Name="Width#1" Layer="Finger">
-            <POSITION x="833.967468" y="1332.95361" />
+            <POSITION x="833.967468" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Length" Layer="Finger">
-            <POSITION x="878.774231" y="1332.95361" />
+            <POSITION x="878.774231" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Length#1" Layer="Bone">
             <POSITION x="886.2816" y="1825.36011" />
-          </OUTLET>
-          <OUTLET Name="Touch Distance#1" Layer="Tool">
-            <POSITION x="905.053162" y="1512.46411" />
-          </OUTLET>
-          <OUTLET Name="Touch Distance" Layer="Finger">
-            <POSITION x="936.8739" y="1332.95361" />
           </OUTLET>
           <OUTLET Name="Palm Velocity" Layer="Hand">
             <POSITION x="942.9221" y="823.25885" />
@@ -1293,11 +1284,11 @@
           <OUTLET Name="Width#2" Layer="Bone">
             <POSITION x="985.693848" y="1825.36011" />
           </OUTLET>
-          <OUTLET Name="Is Extended#1" Layer="Tool">
-            <POSITION x="1015.13922" y="1512.46411" />
+          <OUTLET Name="Time Visible#2" Layer="Tool">
+            <POSITION x="998.052" y="1508.86914" />
           </OUTLET>
           <OUTLET Name="Is Extended" Layer="Finger">
-            <POSITION x="1034.78723" y="1332.95361" />
+            <POSITION x="1034.78723" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Palm Width" Layer="Hand">
             <POSITION x="1056.45679" y="823.25885" />
@@ -1305,29 +1296,20 @@
           <OUTLET Name="Is Valid" Layer="Bone">
             <POSITION x="1057.43066" y="1825.36011" />
           </OUTLET>
-          <OUTLET Name="Is Tool#1" Layer="Tool">
-            <POSITION x="1108.60083" y="1512.46411" />
+          <OUTLET Name="Id#2" Layer="Tool">
+            <POSITION x="1091.96216" y="1508.86914" />
           </OUTLET>
-          <OUTLET Name="Is Tool" Layer="Finger">
-            <POSITION x="1116.64014" y="1332.95361" />
+          <OUTLET Name="Time Visible#1" Layer="Finger">
+            <POSITION x="1108.872" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Wrist Position" Layer="Hand">
             <POSITION x="1135.57373" y="823.25885" />
           </OUTLET>
-          <OUTLET Name="Time Visible#1" Layer="Finger">
-            <POSITION x="1172.68164" y="1332.95361" />
-          </OUTLET>
-          <OUTLET Name="Time Visible#2" Layer="Tool">
-            <POSITION x="1182.29114" y="1512.46411" />
+          <OUTLET Name="Id#1" Layer="Finger">
+            <POSITION x="1185.08264" y="1332.05493" />
           </OUTLET>
           <OUTLET Name="Sphere Center" Layer="Hand">
             <POSITION x="1238.60938" y="823.25885" />
-          </OUTLET>
-          <OUTLET Name="Id#1" Layer="Finger">
-            <POSITION x="1248.89233" y="1332.95361" />
-          </OUTLET>
-          <OUTLET Name="Id#2" Layer="Tool">
-            <POSITION x="1276.20129" y="1512.46411" />
           </OUTLET>
           <OUTLET Name="Sphere Radius" Layer="Hand">
             <POSITION x="1415.71436" y="823.25885" />
@@ -2783,7 +2765,6 @@
               <OUPUT Name="TipVelocity" />
               <OUPUT Name="Width" />
               <OUPUT Name="Length" />
-              <OUPUT Name="Touch Distance" />
               <OUPUT Name="Is Extended" />
               <OUPUT Name="Is Tool" />
               <OUPUT Name="Time Visible" />
@@ -2806,7 +2787,6 @@
               <OUPUT Name="TipVelocity" />
               <OUPUT Name="Width" />
               <OUPUT Name="Length" />
-              <OUPUT Name="Touch Distance" />
               <OUPUT Name="Is Extended" />
               <OUPUT Name="Is Tool" />
               <OUPUT Name="Time Visible" />
@@ -3555,19 +3535,6 @@
               <OUPUT Name="Result" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="InteractionBox#1" Layer="Frame">
-            <POSITION x="-221.818756" y="259.877838" />
-            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="InteractionBox" />
-              <CATEGORYPATH Name="Leap.Frame" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Interaction Box" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="ToSpread#13" Layer="Frame">
             <POSITION x="-465.974823" y="314.267853" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
@@ -3595,7 +3562,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Images#1" Layer="Frame">
-            <POSITION x="-67.4271545" y="217.332581" />
+            <POSITION x="-202.759857" y="216.3862" />
             <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Frame" />
               <OPERATIONNODE Name="Images" />
@@ -3764,7 +3731,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToSpread#6" Layer="Frame">
-            <POSITION x="-67.3819" y="271.1554" />
+            <POSITION x="-202.7146" y="270.209" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
               <OPERATIONNODE Name="ToSpread" />
               <CATEGORY Name="Sequence" IsDirectParent="true" />
@@ -3993,9 +3960,7 @@
           <Link source="Nodes/Pointable/Outputs/TipVelocity" sink="Outlets/TipVelocity" />
           <Link source="Nodes/Pointable/Outputs/Width" sink="Outlets/Width#1" />
           <Link source="Nodes/Pointable/Outputs/Length" sink="Outlets/Length" />
-          <Link source="Nodes/Pointable/Outputs/Touch Distance" sink="Outlets/Touch Distance" />
           <Link source="Nodes/Pointable/Outputs/Is Extended" sink="Outlets/Is Extended" />
-          <Link source="Nodes/Pointable/Outputs/Is Tool" sink="Outlets/Is Tool" />
           <Link source="Nodes/Pointable/Outputs/Time Visible" sink="Outlets/Time Visible#1" />
           <Link source="Nodes/Pointable/Outputs/Id" sink="Outlets/Id#1" />
           <Link source="Inlets/Pointable" sink="Nodes/Pointable#1/Inputs/Pointable" />
@@ -4005,9 +3970,6 @@
           <Link source="Nodes/Pointable#1/Outputs/TipVelocity" sink="Outlets/TipVelocity#1" />
           <Link source="Nodes/Pointable#1/Outputs/Width" sink="Outlets/Width#3" />
           <Link source="Nodes/Pointable#1/Outputs/Length" sink="Outlets/Length#2" />
-          <Link source="Nodes/Pointable#1/Outputs/Touch Distance" sink="Outlets/Touch Distance#1" />
-          <Link source="Nodes/Pointable#1/Outputs/Is Extended" sink="Outlets/Is Extended#1" />
-          <Link source="Nodes/Pointable#1/Outputs/Is Tool" sink="Outlets/Is Tool#1" />
           <Link source="Nodes/Pointable#1/Outputs/Time Visible" sink="Outlets/Time Visible#2" />
           <Link source="Nodes/Pointable#1/Outputs/Id" sink="Outlets/Id#2" />
           <Link source="Inlets/InteractionBox" sink="Nodes/Center#1/Inputs/Input" />
@@ -4147,7 +4109,6 @@
           <Link source="Regions/ForEachLoop#2/Outputs/Former Indexs" sink="Outlets/Screen Tap Former Index" />
           <Link source="Regions/ForEachLoop#3/Outputs/Former Indexs" sink="Outlets/Key Tap Former Index" />
           <Link source="Nodes/ToSpread#3/Outputs/Result" sink="Regions/ForEachLoop#2/Inputs/Gestures" />
-          <Link source="Nodes/InteractionBox#1/Outputs/Interaction Box" sink="Outlets/Interaction Box" />
           <Link source="Nodes/ToSpread#13/Outputs/Result" sink="Outlets/Hands" />
           <Link source="Nodes/Hands#1/Outputs/Hands" sink="Nodes/ToSpread#13/Inputs/Input" />
           <Link source="Inlets/Finger" sink="Nodes/GetFingerType/Inputs/Finger" />
@@ -4156,7 +4117,6 @@
           <Link source="Regions/ForEachLoop#5/Outputs/Gesturess" sink="Outlets/Gestures" />
           <Link source="Inlets/Frame" sink="Nodes/Hands#1/Inputs/Input" />
           <Link source="Inlets/Frame" sink="Nodes/Gestures/Inputs/Input" />
-          <Link source="Inlets/Frame" sink="Nodes/InteractionBox#1/Inputs/Input" />
           <Link source="Inlets/Frame" sink="Nodes/Images#1/Inputs/Input" />
           <Link source="Inlets/Device" sink="Nodes/Baseline/Inputs/Input" />
           <Link source="Inlets/Device" sink="Nodes/HorizontalViewAngle/Inputs/Input" />
@@ -4614,7 +4574,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="LastFrame" Category="VVVV.LeapVL" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="LastFrame" Category="VVVV.LeapVL.Frame" IsDatatype="true" IsClosed="true" IsMutable="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Create" />
@@ -4633,19 +4593,16 @@
             <POSITION x="430.815826" y="13.8527222" />
           </OUTLET>
           <OUTLET Name="Frame#1" Layer="Update">
-            <POSITION x="472.4601" y="74.52232" />
+            <POSITION x="472.4601" y="65.09123" />
           </OUTLET>
           <OUTLET Name="Hands" Layer="Update">
-            <POSITION x="544.9529" y="74.52232" />
+            <POSITION x="544.9529" y="65.09123" />
           </OUTLET>
           <OUTLET Name="Gestures" Layer="Update">
-            <POSITION x="615.516968" y="74.52232" />
-          </OUTLET>
-          <OUTLET Name="Interaction Box" Layer="Update">
-            <POSITION x="695.131348" y="74.52232" />
+            <POSITION x="615.516968" y="65.09123" />
           </OUTLET>
           <OUTLET Name="Images" Layer="Update">
-            <POSITION x="793.272461" y="74.52232" />
+            <POSITION x="690.256" y="65.09123" />
           </OUTLET>
         </OUTLETS>
         <CONSTS />
@@ -4693,7 +4650,6 @@
             <OUTPUTS>
               <OUPUT Name="Hands" />
               <OUPUT Name="Gestures" />
-              <OUPUT Name="Interaction Box" />
               <OUPUT Name="Images" />
             </OUTPUTS>
           </OPERATION>
@@ -4707,7 +4663,6 @@
           <Link source="Nodes/LastOrDefault/Outputs/Result" sink="Nodes/Frame/Inputs/Frame" />
           <Link source="Nodes/Frame/Outputs/Hands" sink="Outlets/Hands" />
           <Link source="Nodes/Frame/Outputs/Gestures" sink="Outlets/Gestures" />
-          <Link source="Nodes/Frame/Outputs/Interaction Box" sink="Outlets/Interaction Box" />
           <Link source="Nodes/Frame/Outputs/Images" sink="Outlets/Images" />
         </LINKS>
       </BODY>
@@ -4740,9 +4695,6 @@
           </OUTLET>
           <OUTLET Name="Length" Layer="Pointable">
             <POSITION x="799.049561" y="486.906067" />
-          </OUTLET>
-          <OUTLET Name="Touch Distance" Layer="Pointable">
-            <POSITION x="894.3533" y="486.906067" />
           </OUTLET>
           <OUTLET Name="Is Extended" Layer="Pointable">
             <POSITION x="1107.26978" y="486.906067" />
@@ -4968,35 +4920,6 @@
               <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="TouchDistance" Layer="Pointable">
-            <POSITION x="855.588867" y="357.188" />
-            <NODEREF LastCat="Leap.Pointable" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Pointable" />
-              <OPERATIONNODE Name="TouchDistance" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Touch Distance" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*#15" Layer="Pointable">
-            <POSITION x="895.8694" y="429.9433" />
-            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="*" />
-              <CATEGORY Name="Adaptive" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-              <INPUT Name="Input 3" />
-              <INPUT Name="Enabled" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="IsExtended" Layer="Pointable">
             <POSITION x="1078.52661" y="362.083618" />
             <NODEREF LastCat="Leap.Pointable" LastFile="LeapCSharp.NET4.0.dll">
@@ -5058,12 +4981,10 @@
           <Link source="Nodes/ToVector3#13/Outputs/Vector3" sink="Outlets/TipVelocity" />
           <Link source="Nodes/*#13/Outputs/Output" sink="Outlets/Width#1" />
           <Link source="Nodes/*#14/Outputs/Output" sink="Outlets/Length" />
-          <Link source="Nodes/*#15/Outputs/Output" sink="Outlets/Touch Distance" />
           <Link source="Nodes/IsExtended/Outputs/Is Extended" sink="Outlets/Is Extended" />
           <Link source="Nodes/IsTool/Outputs/Is Tool" sink="Outlets/Is Tool" />
           <Link source="Nodes/TimeVisible#1/Outputs/Time Visible" sink="Outlets/Time Visible#1" />
           <Link source="Nodes/Id#2/Outputs/Id" sink="Outlets/Id#2" />
-          <Link source="Constants/mm to m" sink="Nodes/*#15/Inputs/Input" />
           <Link source="Constants/mm to m" sink="Nodes/*#14/Inputs/Input" />
           <Link source="Constants/mm to m" sink="Nodes/*#13/Inputs/Input" />
           <Link source="Constants/mm to m" sink="Nodes/*#12/Inputs/Input" />
@@ -5078,13 +4999,11 @@
           <Link source="Nodes/*#12/Outputs/Result" sink="Nodes/ToVector3#13/Inputs/Vector" />
           <Link source="Nodes/Width#1/Outputs/Width" sink="Nodes/*#13/Inputs/Input 2" />
           <Link source="Nodes/Length/Outputs/Length" sink="Nodes/*#14/Inputs/Input 2" />
-          <Link source="Nodes/TouchDistance/Outputs/Touch Distance" sink="Nodes/*#15/Inputs/Input 2" />
           <Link source="Inlets/Pointable" sink="Nodes/StabilizedTipPosition/Inputs/Input" />
           <Link source="Inlets/Pointable" sink="Nodes/Direction#2/Inputs/Input" />
           <Link source="Inlets/Pointable" sink="Nodes/TipVelocity/Inputs/Input" />
           <Link source="Inlets/Pointable" sink="Nodes/Width#1/Inputs/Input" />
           <Link source="Inlets/Pointable" sink="Nodes/Length/Inputs/Input" />
-          <Link source="Inlets/Pointable" sink="Nodes/TouchDistance/Inputs/Input" />
           <Link source="Inlets/Pointable" sink="Nodes/IsExtended/Inputs/Input" />
           <Link source="Inlets/Pointable" sink="Nodes/IsTool/Inputs/Input" />
           <Link source="Inlets/Pointable" sink="Nodes/TimeVisible#1/Inputs/Input" />
@@ -6017,32 +5936,32 @@
     <PATCH Name="Serialize" Category="VVVV.LeapVL.Frame" IsClosed="true">
       <BODY Name="Utils2Body">
         <LAYERS>
-          <LAYER Name="Deserialize" />
-          <LAYER Name="Serialize" />
+          <LAYER Name="FromRaw" />
+          <LAYER Name="AsRaw" />
         </LAYERS>
         <INLETS>
-          <INLET Name="Frame" Layer="Serialize">
+          <INLET Name="Frame" Layer="AsRaw">
             <POSITION x="217.123566" y="356.967316" />
           </INLET>
-          <INLET Name="Serialized Data" Layer="Deserialize">
+          <INLET Name="Raw" Layer="FromRaw">
             <POSITION x="373.262115" y="349.192139" />
           </INLET>
         </INLETS>
         <OUTLETS>
-          <OUTLET Name="Serialized Data" Layer="Serialize">
+          <OUTLET Name="Raw" Layer="AsRaw">
             <POSITION x="217.123566" y="450.627167" />
           </OUTLET>
-          <OUTLET Name="Frame" Layer="Deserialize">
+          <OUTLET Name="Frame" Layer="FromRaw">
             <POSITION x="373.928253" y="499.8807" />
           </OUTLET>
-          <OUTLET Name="Success" Layer="Deserialize">
+          <OUTLET Name="Success" Layer="FromRaw">
             <POSITION x="463.8899" y="499.8807" />
           </OUTLET>
         </OUTLETS>
         <CONSTS />
         <REGIONS />
         <NODES>
-          <OPERATION Name="Deserialize" Layer="Deserialize">
+          <OPERATION Name="Deserialize" Layer="FromRaw">
             <POSITION x="375.777374" y="414.995331" />
             <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
               <OPERATIONNODE Name="Deserialize" />
@@ -6057,7 +5976,7 @@
               <OUPUT Name="Error" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ToBytes#1" Layer="Deserialize">
+          <OPERATION Name="ToBytes#1" Layer="FromRaw">
             <POSITION x="375.673981" y="373.668762" />
             <NODEREF LastCat="IO.Raw" LastFile="VL.Lib.Integration.dll">
               <CATEGORY Name="Raw" />
@@ -6071,7 +5990,7 @@
               <OUPUT Name="Success" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="Serialize" Layer="Serialize">
+          <OPERATION Name="Serialize" Layer="AsRaw">
             <POSITION x="217.123566" y="380.905273" />
             <NODEREF LastFile="LeapCSharp.NET4.0.dll">
               <OPERATIONNODE Name="Serialize" />
@@ -6084,7 +6003,7 @@
               <OUPUT Name="Serialize" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ToRaw" Layer="Serialize">
+          <OPERATION Name="ToRaw" Layer="AsRaw">
             <POSITION x="217.123566" y="417.765717" />
             <NODEREF LastCat="Collections.Array" LastFile="VL.Lib.Integration.dll">
               <OPERATIONNODE Name="ToRaw" Version="Byte" />
@@ -6096,7 +6015,7 @@
               <OUPUT Name="Result" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="NOT" Layer="Deserialize">
+          <OPERATION Name="NOT" Layer="FromRaw">
             <POSITION x="429.299957" y="447.095276" />
             <NODEREF LastCat="Control.Boolean" LastFile="VL.Lib.Basics.dll">
               <OPERATIONNODE Name="NOT" />
@@ -6109,7 +6028,7 @@
               <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="AND" Layer="Deserialize">
+          <OPERATION Name="AND" Layer="FromRaw">
             <POSITION x="466.012482" y="471.570221" />
             <NODEREF LastCat="Control.Boolean" LastFile="Builtin">
               <OPERATIONNODE Name="AND" />
@@ -6127,11 +6046,11 @@
         </NODES>
         <LINKS>
           <Link source="Nodes/Deserialize/Outputs/Result" sink="Outlets/Frame" />
-          <Link source="Nodes/ToRaw/Outputs/Result" sink="Outlets/Serialized Data" />
+          <Link source="Nodes/ToRaw/Outputs/Result" sink="Outlets/Raw" />
           <Link source="Inlets/Frame" sink="Nodes/Serialize/Inputs/Input" />
           <Link source="Nodes/ToBytes#1/Outputs/Result" sink="Nodes/Deserialize/Inputs/Data" />
           <Link source="Nodes/Serialize/Outputs/Serialize" sink="Nodes/ToRaw/Inputs/Input" />
-          <Link source="Inlets/Serialized Data" sink="Nodes/ToBytes#1/Inputs/Input" />
+          <Link source="Inlets/Raw" sink="Nodes/ToBytes#1/Inputs/Input" />
           <Link source="Nodes/Deserialize/Outputs/Error" sink="Nodes/NOT/Inputs/Input" />
           <Link source="Nodes/NOT/Outputs/Output" sink="Nodes/AND/Inputs/Input" />
           <Link source="Nodes/ToBytes#1/Outputs/Success" sink="Nodes/AND/Inputs/Input 2" />

@@ -213,7 +213,7 @@ namespace LeapVLWrapper
         TYPE_PINKY = 4
         */
         Thumb = 0,
-        Index = 2,
+        Index = 1,
         Middle = 2,
         Ring = 3,
         Pinky = 4
@@ -258,7 +258,7 @@ namespace LeapVLWrapper
         Invalid = -1,
         Swipe = 1,
         Circle = 4,
-        ScreenTap = 4,
+        ScreenTap = 5,
         KeyTap = 6
     }
 

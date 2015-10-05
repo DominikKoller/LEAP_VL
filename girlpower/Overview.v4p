@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Overview.v4p" scrollx="0" scrolly="-360" systemname="Leap Nodestructure" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap Nodestructure.v4p">
-   <BOUNDS type="Window" left="1785" top="1395" width="13755" height="10785">
+   <BOUNDS type="Window" left="6780" top="1725" width="13755" height="10785">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -644,4 +644,6 @@
    <LINKPOINT x="12485" y="5460">
    </LINKPOINT>
    </LINK>
+   <INFO author="dominikKoller" description="Overview of Leap Nodes" tags="">
+   </INFO>
    </PATCH>

@@ -21,7 +21,8 @@
   <PATCHES>
     <PATCH Name="Leap" Category="VVVV.Devices" IsDatatype="true" IsClosed="true" IsMutable="true">
       <INFO>
-        <SUMMARY>Basic template with one in/out</SUMMARY>
+        <SUMMARY>Leap Handtracking</SUMMARY>
+        <TAGS>tracking,,hand,,finger</TAGS>
       </INFO>
       <BODY Name="TemplatePatch">
         <LAYERS>
@@ -126,6 +127,9 @@
       </BODY>
     </PATCH>
     <PATCH Name="Splitters" Category="VVVV.Leap" IsClosed="true">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Arm" />
@@ -938,6 +942,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="LastFrame" Category="VVVV.Leap.Frame" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <INFO>
+        <SUMMARY>Last frame of Leap trackingdata</SUMMARY>
+        <TAGS>tracking,,observable</TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Update" />
@@ -998,6 +1006,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="Keep" Category="VVVV.Leap.Gesture" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <INFO>
+        <SUMMARY>Keeps Leap gestures in storage after they disappeared for a given time</SUMMARY>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Create" />
@@ -1051,6 +1063,9 @@
       </BODY>
     </PATCH>
     <PATCH Name="Serialize" Category="VVVV.Leap.Frame" IsClosed="true">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="FromRaw" />
@@ -1124,6 +1139,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="Gestures" Category="VVVV.Leap" Version="Observable" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <INFO>
+        <SUMMARY>Gets all gestures since the last frame.</SUMMARY>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="Update" />
@@ -1169,6 +1188,9 @@
       </BODY>
     </PATCH>
     <PATCH Name="Selectors" Category="VVVV.Leap" IsClosed="true">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="SelectHands" />
@@ -1309,7 +1331,8 @@
     </PATCH>
   </PATCHES>
   <INFO>
-    <AUTHORS>vvvv group</AUTHORS>
+    <SUMMARY>vvvvrapper for Leap VL Nodes</SUMMARY>
+    <AUTHORS>dominikKoller, vvvv group</AUTHORS>
     <LICENSEURL>https://www.gnu.org/licenses/lgpl.html</LICENSEURL>
     <PROJECTURL>http://vvvv.org/</PROJECTURL>
   </INFO>

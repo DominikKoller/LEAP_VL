@@ -22,7 +22,8 @@
   <PATCHES>
     <PATCH Name="Leap" Category="Devices" IsDatatype="true" IsClosed="true" IsMutable="true">
       <INFO>
-        <SUMMARY>Basic template with one in/out</SUMMARY>
+        <SUMMARY>Leap Handtracking</SUMMARY>
+        <TAGS>tracking,,hand,,finger</TAGS>
       </INFO>
       <BODY Name="TemplatePatch">
         <LAYERS>
@@ -1066,6 +1067,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="Splitters" Category="Devices.Leap" IsClosed="true">
+      <INFO>
+        <SUMMARY>Leap Datatype Splitters</SUMMARY>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Arm" />
@@ -4080,6 +4085,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="MatrixConverter" Category="Devices.Leap.Matrix" IsClosed="true">
+      <INFO>
+        <SUMMARY>Convect to / from Leap.Matrix</SUMMARY>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="ToMatrix" />
@@ -4319,6 +4328,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="VectorConverters" Category="Devices.Leap.Vector" IsClosed="true">
+      <INFO>
+        <SUMMARY>Convert to / from Leap.Vector</SUMMARY>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="ToVector3" />
@@ -4493,6 +4506,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="LastFrame" Category="Devices.Leap" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <INFO>
+        <SUMMARY>Get last frame of Leap tracking data</SUMMARY>
+        <TAGS>tracking,,observable</TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Create" />
@@ -4588,6 +4605,9 @@
       </BODY>
     </PATCH>
     <PATCH Name="Splitters2" Category="Devices.Leap" IsClosed="true">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Pointable" />
@@ -4932,6 +4952,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="Keep" Category="Devices.Leap.Gesture" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <INFO>
+        <SUMMARY>Holds Leap gestures in storage after they disappear for given time</SUMMARY>
+        <TAGS>gesture</TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Create" />
@@ -5583,6 +5607,9 @@
       </BODY>
     </PATCH>
     <PATCH Name="Utils" Category="Devices.Leap.Gesture">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="SpecifyGestureType" />
@@ -5898,6 +5925,9 @@
       </BODY>
     </PATCH>
     <PATCH Name="Serialize" Category="Devices.Leap.Frame" IsClosed="true">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="FromRaw" />
@@ -6023,6 +6053,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="Gestures" Category="Devices.Leap" Version="Observable" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <INFO>
+        <SUMMARY>Gets all detected Gestures since the last Leap frame</SUMMARY>
+        <TAGS>tracking,,gesture</TAGS>
+      </INFO>
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="Update" />
@@ -6279,9 +6313,16 @@
       </BODY>
     </PATCH>
     <PATCH Name="Selectors" Category="Devices.Leap" IsClosed="true">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="Utils2Body">
         <LAYERS>
-          <LAYER Name="SelectHands" />
+          <LAYER Name="SelectHands">
+            <INFO>
+              <TAGS></TAGS>
+            </INFO>
+          </LAYER>
           <LAYER Name="SelectFingers" />
           <LAYER Name="SelectBones" />
         </LAYERS>
@@ -6293,9 +6334,11 @@
             <POSITION x="479.8861" y="284.787872" />
           </INLET>
           <INLET Name="Hands" Layer="SelectHands">
+            <INFO />
             <POSITION x="610" y="282.181152" />
           </INLET>
           <INLET Name="Type" Layer="SelectHands" Type="HandSide">
+            <INFO />
             <POSITION x="719.1802" y="282.181152" />
           </INLET>
           <INLET Name="Fingers" Layer="SelectFingers">
@@ -6310,6 +6353,7 @@
             <POSITION x="370.705933" y="448.24472" />
           </OUTLET>
           <OUTLET Name="Fingers#1" Layer="SelectHands">
+            <INFO />
             <POSITION x="609.718262" y="443.365265" />
           </OUTLET>
           <OUTLET Name="Fingers" Layer="SelectFingers">
@@ -6611,7 +6655,8 @@
     </PATCH>
   </PATCHES>
   <INFO>
-    <AUTHORS>vvvv group</AUTHORS>
+    <SUMMARY>Leap implementation</SUMMARY>
+    <AUTHORS>dominikKoller, vvvv group</AUTHORS>
     <LICENSEURL>https://www.gnu.org/licenses/lgpl.html</LICENSEURL>
     <PROJECTURL>http://vvvv.org/</PROJECTURL>
   </INFO>

@@ -1,59 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View DX9).v4p" systemname="Hands (Leap View DX9)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Hands (Leap View DX9).v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="765" top="4590" width="14775" height="10695">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\HandView (Leap DX9).v4p" systemname="HandView (Leap DX9)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\HandView (Leap DX9).v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="495" top="3000" width="14775" height="10695">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
-   <NODE systemname="Hand (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="GetHands (Leap)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="3057" top="1515" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Frame" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Result" visible="1">
-   </PIN>
-   <PIN pinname="Result Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Fingers Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Tools Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Pointables Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Hand" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Arm" visible="1">
-   </PIN>
-   <PIN pinname="Pointables" visible="1">
-   </PIN>
-   <PIN pinname="Fingers" visible="1">
-   </PIN>
-   <PIN pinname="Is Left" visible="1">
-   </PIN>
-   <PIN pinname="Wrist PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Sphere Radius" visible="1">
-   </PIN>
-   <PIN pinname="DirectionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Palm PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Basis" visible="1">
-   </PIN>
-   <PIN pinname="Confidence" visible="1">
-   </PIN>
-   <PIN pinname="Stabilized Palm PositionXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Finger (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="1" debug="0">
-   <BOUNDS type="Node" left="9765" top="3924" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Bones" visible="1">
-   </PIN>
-   <PIN pinname="Finger" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Bones Bin Size" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="10080" top="5664" width="100" height="100">
    </BOUNDS>
@@ -62,34 +12,18 @@
    <PIN pinname="XYZ" visible="1" slicecount="60" values="0.0133658707141876,0.0160671186447144,-0.00674652993679047,0.0151916098594666,0.0149035489559174,-0.00797037363052368,0.0175591731071472,0.0127437317371368,-0.0104589200019836,0.0179813289642334,0.0110806214809418,-0.0126725888252258,0.014182802438736,0.0112869226932526,-0.00660898208618164,0.0160691249370575,0.00891773343086243,-0.00989072978496552,0.0157920527458191,0.0106481516361237,-0.0117881560325623,0.0147793054580688,0.0121983242034912,-0.011143456697464,0.0125814890861511,0.0107392656803131,-0.00681885719299316,0.014326788187027,0.00843562304973602,-0.0103203880786896,0.01470250248909,0.0105411076545715,-0.012341673374176,0.0140595185756683,0.0125720643997192,-0.0116042411327362,0.0108981692790985,0.0106500780582428,-0.0071535325050354,0.01213418841362,0.00846219778060913,-0.0104375076293945,0.012805587053299,0.0104329597949982,-0.0121893227100372,0.0125124371051788,0.0124091577529907,-0.0112786328792572,0.00936041057109833,0.0109824049472809,-0.00790221691131592,0.0102183306217194,0.00870202004909516,-0.010552304983139,0.0111425244808197,0.0100233805179596,-0.0118581819534302,0.0110996162891388,0.0115596294403076,-0.0110439825057983">
    </PIN>
    </NODE>
-   <NODE systemname="Bone (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Bone (Leap)" componentmode="Hidden" id="4" debug="0">
-   <BOUNDS type="Node" left="9795" top="4749" width="1710" height="270">
-   </BOUNDS>
-   <PIN pinname="CenterXYZ" visible="1">
-   </PIN>
-   <PIN pinname="DirectionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Width" visible="1">
-   </PIN>
-   <PIN pinname="Length" visible="1">
-   </PIN>
-   <PIN pinname="Basis" visible="1">
-   </PIN>
-   <PIN pinname="Bone" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
    <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="2085" top="5679" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="XYZ" visible="1">
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="1830" top="6114" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Transform In 1" visible="1">
+   <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform In 2" visible="1">
    </PIN>
@@ -99,7 +33,7 @@
    <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="9810" top="6084" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Transform In 1" visible="1">
+   <PIN pinname="Transform In 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform In 2" visible="1">
    </PIN>
@@ -109,7 +43,7 @@
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="14">
    <BOUNDS type="Node" left="5685" top="1989" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
@@ -131,7 +65,7 @@
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="12510" top="4719" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Select" visible="1">
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -143,7 +77,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Select" visible="1">
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -151,9 +85,9 @@
    <NODE systemname="Distance (3d)" filename="%VVVV%\lib\nodes\modules\3D\Distance (3d).v4p" nodename="Distance (3d)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="1485" top="5019" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="XYZ1" visible="1">
+   <PIN pinname="XYZ1" visible="1" slicecount="3" values="0,0,0">
    </PIN>
-   <PIN pinname="XYZ2" visible="1">
+   <PIN pinname="XYZ2" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Distance" visible="1">
    </PIN>
@@ -184,20 +118,6 @@
    <PIN pinname="XYZ2" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Distance" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Arm (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Arm (Leap)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="5610" top="3999" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Arm" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Basis" visible="1">
-   </PIN>
-   <PIN pinname="ElbowPositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="WristPositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Width" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Mean (Spectral Vector)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="Mean (Spectral Vector)" componentmode="Hidden" id="28">
@@ -243,9 +163,9 @@
    <NODE systemname="Zip (3d)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (3d)" componentmode="Hidden" id="31">
    <BOUNDS type="Node" left="6825" top="4479" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1XYZ" visible="1">
+   <PIN pinname="Input 1XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
-   <PIN pinname="Input 2XYZ" visible="1">
+   <PIN pinname="Input 2XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="OutputXYZ" visible="1">
    </PIN>
@@ -338,31 +258,13 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Stabilized Palm PositionXYZ" dstnodeid="19" dstpinname="XYZ1">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Wrist PositionXYZ" dstnodeid="19" dstpinname="XYZ2" hiddenwhenlocked="0">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Basis" dstnodeid="10" dstpinname="Transform In 1">
-   </LINK>
    <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="10" dstpinname="Transform In 2">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Wrist PositionXYZ" dstnodeid="8" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Confidence" dstnodeid="14" dstpinname="Go To Position">
    </LINK>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="14" dstpinname="FilterTime">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Width" dstnodeid="32" dstpinname="X">
-   </LINK>
    <LINK srcnodeid="26" srcpinname="Distance" dstnodeid="32" dstpinname="Z">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Basis" dstnodeid="25" dstpinname="Transform In 1">
-   </LINK>
    <LINK srcnodeid="23" srcpinname="Transform Out" dstnodeid="25" dstpinname="Transform In 2">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="ElbowPositionXYZ" dstnodeid="26" dstpinname="XYZ1">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="WristPositionXYZ" dstnodeid="26" dstpinname="XYZ2">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="23" dstpinname="XYZ">
    </LINK>
@@ -372,34 +274,18 @@
    </LINK>
    <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Bin Size">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="ElbowPositionXYZ" dstnodeid="31" dstpinname="Input 1XYZ">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="WristPositionXYZ" dstnodeid="31" dstpinname="Input 2XYZ">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Basis" dstnodeid="11" dstpinname="Transform In 1">
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="11" dstpinname="Transform In 2">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="CenterXYZ" dstnodeid="3" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="17" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Bones Bin Size" dstnodeid="17" dstpinname="Select">
-   </LINK>
    <LINK srcnodeid="14" srcpinname="Position Out" dstnodeid="16" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Fingers Bin Size" dstnodeid="16" dstpinname="Select" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="3905" y="2970">
-   </LINKPOINT>
-   <LINKPOINT x="11650" y="2655">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="4650" top="5205" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -418,8 +304,6 @@
    </NODE>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Width" dstnodeid="41" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="32" dstpinname="Y">
    </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="43">
@@ -432,42 +316,22 @@
    </NODE>
    <LINK srcnodeid="40" srcpinname="Output Node" dstnodeid="43" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="0" dstpinname="Hand">
-   </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="9765" top="3570" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="1" dstpinname="Finger">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Fingers" dstnodeid="45" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="3145" y="2488">
-   </LINKPOINT>
-   <LINKPOINT x="10055" y="2838">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="46">
    <BOUNDS type="Node" left="5610" top="3615" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="27" dstpinname="Arm">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Arm" dstnodeid="46" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="3270" y="2685">
-   </LINKPOINT>
-   <LINKPOINT x="5595" y="2685">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Bones" dstnodeid="4" dstpinname="Bone">
-   </LINK>
    <NODE systemname="Group (EX9)" filename="" nodename="Group (EX9)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1365" top="7623" width="8055" height="270">
    </BOUNDS>
@@ -593,7 +457,7 @@
    </PIN>
    <PIN pinname="Height" visible="1">
    </PIN>
-   <PIN pinname="Width" visible="1">
+   <PIN pinname="Width" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Depth" visible="1">
    </PIN>
@@ -601,8 +465,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="24" dstpinname="Height">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Width" dstnodeid="24" dstpinname="Width">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Distance" dstnodeid="24" dstpinname="Depth">
    </LINK>
@@ -631,25 +493,163 @@
    </PIN>
    <PIN pinname="SizeXYZ" visible="1">
    </PIN>
-   <PIN pinname="Width" visible="1">
+   <PIN pinname="Width" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Height" visible="1">
+   <PIN pinname="Height" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Depth" visible="1">
+   <PIN pinname="Depth" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Mesh" visible="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="5" srcpinname="Mesh" dstnodeid="49" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="49" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="Hand (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3057" top="1515" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Frame" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Result Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Fingers Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Tools Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Pointables Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Hand" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Arm" visible="1">
+   </PIN>
+   <PIN pinname="Pointables" visible="1">
+   </PIN>
+   <PIN pinname="Fingers" visible="1">
+   </PIN>
+   <PIN pinname="Is Left" visible="1">
+   </PIN>
+   <PIN pinname="Wrist PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Sphere Radius" visible="1">
+   </PIN>
+   <PIN pinname="DirectionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Palm PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Basis" visible="1">
+   </PIN>
+   <PIN pinname="Confidence" visible="1">
+   </PIN>
+   <PIN pinname="Stabilized Palm PositionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Stabilized Palm PositionXYZ" dstnodeid="19" dstpinname="XYZ1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Wrist PositionXYZ" dstnodeid="19" dstpinname="XYZ2" hiddenwhenlocked="0">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Basis" dstnodeid="10" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Wrist PositionXYZ" dstnodeid="8" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Confidence" dstnodeid="14" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Fingers Bin Size" dstnodeid="16" dstpinname="Select" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="3905" y="2970">
+   </LINKPOINT>
+   <LINKPOINT x="11650" y="2655">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="0" dstpinname="Hand">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Fingers" dstnodeid="45" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3145" y="2488">
+   </LINKPOINT>
+   <LINKPOINT x="10055" y="2838">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Arm" dstnodeid="46" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3270" y="2685">
+   </LINKPOINT>
+   <LINKPOINT x="5595" y="2685">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Arm (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Arm (Leap)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="5610" top="3999" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Arm" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Basis" visible="1">
+   </PIN>
+   <PIN pinname="ElbowPositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="WristPositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Width" dstnodeid="32" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Basis" dstnodeid="25" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="ElbowPositionXYZ" dstnodeid="26" dstpinname="XYZ1">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="WristPositionXYZ" dstnodeid="26" dstpinname="XYZ2">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="ElbowPositionXYZ" dstnodeid="31" dstpinname="Input 1XYZ">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="WristPositionXYZ" dstnodeid="31" dstpinname="Input 2XYZ">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Width" dstnodeid="41" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="27" dstpinname="Arm">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Width" dstnodeid="24" dstpinname="Width">
+   </LINK>
+   <NODE systemname="Finger (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="1" debug="0">
+   <BOUNDS type="Node" left="9765" top="3924" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bones" visible="1">
+   </PIN>
+   <PIN pinname="Finger" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Bones Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Bones Bin Size" dstnodeid="17" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="1" dstpinname="Finger">
+   </LINK>
+   <NODE systemname="Bone (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Bone (Leap)" componentmode="Hidden" id="4" debug="0">
+   <BOUNDS type="Node" left="9795" top="4749" width="1710" height="270">
+   </BOUNDS>
+   <PIN pinname="CenterXYZ" visible="1">
+   </PIN>
+   <PIN pinname="DirectionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Length" visible="1">
+   </PIN>
+   <PIN pinname="Basis" visible="1">
+   </PIN>
+   <PIN pinname="Bone" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Basis" dstnodeid="11" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="CenterXYZ" dstnodeid="3" dstpinname="XYZ">
+   </LINK>
    <LINK srcnodeid="4" srcpinname="Width" dstnodeid="5" dstpinname="Width">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Width" dstnodeid="5" dstpinname="Height">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Length" dstnodeid="5" dstpinname="Depth">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Mesh" dstnodeid="49" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="49" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="49" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 3">
+   <LINK srcnodeid="1" srcpinname="Bones" dstnodeid="4" dstpinname="Bone">
    </LINK>
    </PATCH>

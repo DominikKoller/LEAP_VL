@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Grab (Leap View DX11).v4p" systemname="Grab (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Grab (Leap View).v4p">
-   <BOUNDS type="Window" left="20910" top="1095" width="5385" height="5880">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GrabView (Leap DX11).v4p" systemname="GrabView (Leap DX11)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GrabView (Leap DX11).v4p">
+   <BOUNDS type="Window" left="6585" top="3195" width="5385" height="5880">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -116,7 +116,7 @@
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="10" dstpinname="Input">
    </LINK>
-   <NODE systemname="Hand (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="0">
+   <NODE systemname="Hand (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1095" top="1485" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Hand" visible="1" slicecount="1" values="||">

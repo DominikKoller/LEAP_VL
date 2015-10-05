@@ -19,7 +19,7 @@
     <DEPENDENCY Name="VL.Devices.Leap.vl" Location="./VL.Devices.Leap.vl" />
   </DEPENDENCIES>
   <PATCHES>
-    <PATCH Name="Leap" Category="VVVV.Devices" Version="VL" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="Leap" Category="VVVV.Devices" IsDatatype="true" IsClosed="true" IsMutable="true">
       <INFO>
         <SUMMARY>Basic template with one in/out</SUMMARY>
       </INFO>
@@ -79,8 +79,9 @@
         <NODES>
           <PROCESS Name="Leap">
             <POSITION x="138.431152" y="405.3077" />
-            <NODEREF LastCat="Devices" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastFile="VL.Devices.Leap.vl">
               <PROCESSNODE Name="Leap" />
+              <CATEGORYPATH Name="Devices" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Enable Data in Background" FragmentId="Update" />
@@ -124,7 +125,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Splitters" Category="VVVV.LeapVL" IsClosed="true">
+    <PATCH Name="Splitters" Category="VVVV.Leap" IsClosed="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Arm" />
@@ -936,7 +937,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="LastFrame" Category="VVVV.LeapVL.Frame" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="LastFrame" Category="VVVV.Leap.Frame" IsDatatype="true" IsClosed="true" IsMutable="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Update" />
@@ -996,7 +997,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Keep" Category="VVVV.LeapVL.Gesture" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="Keep" Category="VVVV.Leap.Gesture" IsDatatype="true" IsClosed="true" IsMutable="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="Create" />
@@ -1049,7 +1050,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Serialize" Category="VVVV.LeapVL.Frame" IsClosed="true">
+    <PATCH Name="Serialize" Category="VVVV.Leap.Frame" IsClosed="true">
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="FromRaw" />
@@ -1122,7 +1123,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Gestures" Category="VVVV.LeapVL" Version="Observable" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="Gestures" Category="VVVV.Leap" Version="Observable" IsDatatype="true" IsClosed="true" IsMutable="true">
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="Update" />
@@ -1167,7 +1168,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Selectors" Category="VVVV.LeapVL" IsClosed="true">
+    <PATCH Name="Selectors" Category="VVVV.Leap" IsClosed="true">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="SelectHands" />

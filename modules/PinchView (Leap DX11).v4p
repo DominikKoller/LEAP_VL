@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Pinch (Leap View DX11).v4p" systemname="Pinch (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Pinch (Leap View).v4p">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\PinchView (Leap DX11).v4p" systemname="PinchView (Leap DX11)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\PinchView (Leap DX11).v4p">
    <BOUNDS type="Window" left="2010" top="2070" width="8040" height="6780">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
@@ -226,7 +226,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Hand (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="15">
+   <NODE systemname="Hand (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="1500" top="1245" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Fingers" visible="1">
@@ -242,7 +242,7 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Fingers" dstnodeid="19" dstpinname="Input">
    </LINK>
-   <NODE systemname="Finger (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="20">
+   <NODE systemname="Finger (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="1635" top="1965" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TipPositionXYZ" visible="1">

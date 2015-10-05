@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Gestures (Leap View DX9).v4p" scrollx="0" scrolly="0" systemname="Gestures (Leap View DX9)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Gestures (Leap View DX9).v4p">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GesturesView (LeapDX9).v4p" scrollx="0" scrolly="0" systemname="GesturesView (LeapDX9)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GesturesView (LeapDX9).v4p">
    <BOUNDS type="Window" left="0" top="3165" width="18000" height="11175">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
@@ -192,30 +192,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Gestures (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Gesture (Leap)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="1176" top="2575" width="13110" height="270">
-   </BOUNDS>
-   <PIN pinname="Swipe Former Index" visible="1">
-   </PIN>
-   <PIN pinname="Screen Tap Former Index" visible="1">
-   </PIN>
-   <PIN pinname="Screen Tap" visible="1">
-   </PIN>
-   <PIN pinname="Swipe" visible="1">
-   </PIN>
-   <PIN pinname="Gesture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Circle Former Index" visible="1">
-   </PIN>
-   <PIN pinname="Key Tap Former Index" visible="1">
-   </PIN>
-   <PIN pinname="Circle" visible="1">
-   </PIN>
-   <PIN pinname="Key Tap" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="49" srcpinname="Swipe" dstnodeid="51" dstpinname="Input">
-   </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="1860" top="1840" width="100" height="100">
    </BOUNDS>
@@ -273,19 +249,13 @@
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="2850" top="5620" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Index" visible="1">
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Swipe Former Index" dstnodeid="44" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="2940" y="4238">
-   </LINKPOINT>
-   <LINKPOINT x="3480" y="4238">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="11925" top="5020" width="100" height="100">
    </BOUNDS>
@@ -366,12 +336,6 @@
    </LINK>
    <LINK srcnodeid="43" srcpinname="Output" dstnodeid="38" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="49" srcpinname="Screen Tap Former Index" dstnodeid="43" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="9930" y="3923">
-   </LINKPOINT>
-   <LINKPOINT x="12525" y="3923">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="43" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="2580" y="3555">
    </LINKPOINT>
@@ -399,17 +363,11 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Index" visible="1">
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Circle Former Index" dstnodeid="33" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="6450" y="3390">
-   </LINKPOINT>
-   <LINKPOINT x="8160" y="3390">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="32">
    <BOUNDS type="Node" left="2850" top="6025" width="100" height="100">
    </BOUNDS>
@@ -486,12 +444,6 @@
    <LINKPOINT x="2580" y="3983">
    </LINKPOINT>
    <LINKPOINT x="16440" y="3983">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="49" srcpinname="Key Tap Former Index" dstnodeid="29" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="13410" y="4343">
-   </LINKPOINT>
-   <LINKPOINT x="17040" y="4343">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="27">
@@ -660,8 +612,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Circle" dstnodeid="12" dstpinname="Input">
-   </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="10290" top="4555" width="100" height="100">
    </BOUNDS>
@@ -670,8 +620,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Screen Tap" dstnodeid="11" dstpinname="Input">
-   </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="14655" top="5140" width="100" height="100">
    </BOUNDS>
@@ -680,8 +628,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Key Tap" dstnodeid="10" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
    <BOUNDS type="Node" left="690" top="8700" width="780" height="270">
    </BOUNDS>
@@ -770,88 +716,14 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="26" dstpinname="Input">
    </LINK>
-   <NODE systemname="ScreenTapGesture (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="ScreenTapGesture (Leap)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="10275" top="4960" width="1410" height="270">
-   </BOUNDS>
-   <PIN pinname="Gestures" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="ID" visible="1">
-   </PIN>
-   <PIN pinname="ScreenTapGesture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="DirectionXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="PositionXYZ" dstnodeid="40" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="1" dstpinname="ScreenTapGesture">
-   </LINK>
-   <NODE systemname="KeyTapGesture (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="KeyTapGesture (Leap)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="14670" top="5545" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="KeyTapGesture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Id" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="0" srcpinname="PositionXYZ" dstnodeid="23" dstpinname="XYZ">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="0" dstpinname="KeyTapGesture">
-   </LINK>
-   <NODE systemname="CircleGesture (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="CircleGesture (Leap)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="5460" top="4417" width="1965" height="270">
-   </BOUNDS>
-   <PIN pinname="CircleGesture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="CenterXYZ" visible="1">
-   </PIN>
-   <PIN pinname="NormalXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Progress" visible="1">
-   </PIN>
-   <PIN pinname="Radius" visible="1">
-   </PIN>
-   <PIN pinname="Id" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="CenterXYZ" dstnodeid="66" dstpinname="Position XYZ">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="CenterXYZ" dstnodeid="65" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="NormalXYZ" dstnodeid="65" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="3" dstpinname="CircleGesture">
-   </LINK>
-   <NODE systemname="SwipeGesture (LeapVL)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="SwipeGesture (LeapVL)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1170" top="5992" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Id" visible="1">
-   </PIN>
-   <PIN pinname="SwipeGesture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Start PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="PositionXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="2" dstpinname="SwipeGesture">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Id" dstnodeid="15" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Id" dstnodeid="70" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="Line (EX9 FromTo)" filename="%VVVV%\lib\nodes\modules\EX9\Line (EX9 FromTo).v4p" nodename="Line (EX9 FromTo)" componentmode="Hidden" id="77">
    <BOUNDS type="Node" left="540" top="8355" width="1845" height="270">
    </BOUNDS>
    <PIN pinname="Color" visible="1">
    </PIN>
-   <PIN pinname="From" visible="1">
+   <PIN pinname="From" visible="1" slicecount="3" values="-0.5,0,0">
    </PIN>
-   <PIN pinname="To" visible="1">
+   <PIN pinname="To" visible="1" slicecount="3" values="0.5,0,0">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -859,10 +731,6 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="77" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Start PositionXYZ" dstnodeid="77" dstpinname="From">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="PositionXYZ" dstnodeid="77" dstpinname="To">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="71" dstpinname="Alpha">
    </LINK>
@@ -916,11 +784,7 @@
    </LINK>
    <LINK srcnodeid="78" srcpinname="Layer" dstnodeid="52" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Progress" dstnodeid="56" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Radius" dstnodeid="60" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Input 1">
    </LINK>
@@ -1050,7 +914,61 @@
    </NODE>
    <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="80" dstpinname="Resolution">
    </LINK>
-   <NODE systemname="Keep (LeapVL.Gesture)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Keep (LeapVL.Gesture)" componentmode="Hidden" id="50">
+   <NODE systemname="Gestures (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Gestures (Leap)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="1176" top="2575" width="13110" height="270">
+   </BOUNDS>
+   <PIN pinname="Swipe Former Index" visible="1">
+   </PIN>
+   <PIN pinname="Screen Tap Former Index" visible="1">
+   </PIN>
+   <PIN pinname="Screen Tap" visible="1">
+   </PIN>
+   <PIN pinname="Swipe" visible="1">
+   </PIN>
+   <PIN pinname="Gesture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Circle Former Index" visible="1">
+   </PIN>
+   <PIN pinname="Key Tap Former Index" visible="1">
+   </PIN>
+   <PIN pinname="Circle" visible="1">
+   </PIN>
+   <PIN pinname="Key Tap" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Swipe" dstnodeid="51" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Swipe Former Index" dstnodeid="44" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="2940" y="4238">
+   </LINKPOINT>
+   <LINKPOINT x="3480" y="4238">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Screen Tap Former Index" dstnodeid="43" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="9930" y="3923">
+   </LINKPOINT>
+   <LINKPOINT x="12525" y="3923">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Circle Former Index" dstnodeid="33" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6450" y="3390">
+   </LINKPOINT>
+   <LINKPOINT x="8160" y="3390">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Key Tap Former Index" dstnodeid="29" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="13410" y="4343">
+   </LINKPOINT>
+   <LINKPOINT x="17040" y="4343">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Circle" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Screen Tap" dstnodeid="11" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Key Tap" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Keep (Leap.Gesture)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Keep (Leap.Gesture)" componentmode="Hidden" id="50">
    <BOUNDS type="Node" left="1155" top="1465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Gestures Bin Size" visible="1">
@@ -1069,5 +987,87 @@
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Keep Time">
    </LINK>
    <LINK srcnodeid="50" srcpinname="Gestures" dstnodeid="49" dstpinname="Gesture">
+   </LINK>
+   <NODE systemname="CircleGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="CircleGesture (Leap)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="5460" top="4417" width="1965" height="270">
+   </BOUNDS>
+   <PIN pinname="CircleGesture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="CenterXYZ" visible="1">
+   </PIN>
+   <PIN pinname="NormalXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Progress" visible="1">
+   </PIN>
+   <PIN pinname="Radius" visible="1">
+   </PIN>
+   <PIN pinname="Id" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="CenterXYZ" dstnodeid="66" dstpinname="Position XYZ">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="CenterXYZ" dstnodeid="65" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="NormalXYZ" dstnodeid="65" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="3" dstpinname="CircleGesture">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Id" dstnodeid="15" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Progress" dstnodeid="56" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Radius" dstnodeid="60" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="SwipeGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="SwipeGesture (Leap)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1170" top="5992" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Id" visible="1">
+   </PIN>
+   <PIN pinname="SwipeGesture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Start PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="2" dstpinname="SwipeGesture">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Id" dstnodeid="70" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Start PositionXYZ" dstnodeid="77" dstpinname="From">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="PositionXYZ" dstnodeid="77" dstpinname="To">
+   </LINK>
+   <NODE systemname="ScreenTapGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="ScreenTapGesture (Leap)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="10275" top="4960" width="1410" height="270">
+   </BOUNDS>
+   <PIN pinname="Gestures" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="1">
+   </PIN>
+   <PIN pinname="ScreenTapGesture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="DirectionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="PositionXYZ" dstnodeid="40" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="1" dstpinname="ScreenTapGesture">
+   </LINK>
+   <NODE systemname="KeyTapGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="KeyTapGesture (Leap)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="14670" top="5545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="KeyTapGesture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Id" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="PositionXYZ" dstnodeid="23" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="0" dstpinname="KeyTapGesture">
    </LINK>
    </PATCH>

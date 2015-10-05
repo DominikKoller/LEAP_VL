@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\Gestures (Leap View DX11).v4p" scrollx="0" scrolly="-360" systemname="GesturesNew (Leap View)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\sub\GesturesNew (Leap View).v4p">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GesturesView (Leap DX11).v4p" scrollx="0" scrolly="-360" systemname="GesturesView (Leap DX11)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GesturesView (Leap DX11).v4p">
    <BOUNDS type="Window" left="0" top="1050" width="17025" height="11505">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
@@ -950,7 +950,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="26" dstpinname="Input">
    </LINK>
-   <NODE systemname="Keep (Leap.Gesture)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Keep (Leap.Gesture)" componentmode="Hidden" id="50">
+   <NODE systemname="Keep (Leap.Gesture)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Keep (Leap.Gesture)" componentmode="Hidden" id="50">
    <BOUNDS type="Node" left="1575" top="1465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Gestures Bin Size" visible="1">
@@ -968,7 +968,7 @@
    </LINK>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Keep Time">
    </LINK>
-   <NODE systemname="Gestures (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="Gestures (Leap)" componentmode="Hidden" id="49">
+   <NODE systemname="Gestures (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Gestures (Leap)" componentmode="Hidden" id="49">
    <BOUNDS type="Node" left="1596" top="2575" width="13110" height="270">
    </BOUNDS>
    <PIN pinname="Swipe Former Index" visible="1">
@@ -1024,7 +1024,7 @@
    </LINK>
    <LINK srcnodeid="50" srcpinname="Gestures" dstnodeid="49" dstpinname="Gesture">
    </LINK>
-   <NODE systemname="SwipeGesture (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="SwipeGesture (Leap)" componentmode="Hidden" id="2">
+   <NODE systemname="SwipeGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="SwipeGesture (Leap)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1590" top="5872" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Id" visible="1">
@@ -1042,7 +1042,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Id" dstnodeid="70" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="CircleGesture (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="CircleGesture (Leap)" componentmode="Hidden" id="3">
+   <NODE systemname="CircleGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="CircleGesture (Leap)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="5625" top="4349" width="2205" height="270">
    </BOUNDS>
    <PIN pinname="CircleGesture" visible="1" slicecount="1" values="||">
@@ -1072,7 +1072,7 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Id" dstnodeid="15" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="ScreenTapGesture (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="ScreenTapGesture (Leap)" componentmode="Hidden" id="1">
+   <NODE systemname="ScreenTapGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="ScreenTapGesture (Leap)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="10785" top="5035" width="1410" height="270">
    </BOUNDS>
    <PIN pinname="Gestures" visible="1" slicecount="1" values="||">
@@ -1090,7 +1090,7 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="1" dstpinname="ScreenTapGesture">
    </LINK>
-   <NODE systemname="KeyTapGesture (Leap)" filename="..\..\vl\VVVV.Devices.Leap.vl" nodename="KeyTapGesture (Leap)" componentmode="Hidden" id="0">
+   <NODE systemname="KeyTapGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="KeyTapGesture (Leap)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="15180" top="5260" width="100" height="100">
    </BOUNDS>
    <PIN pinname="KeyTapGesture" visible="1" slicecount="1" values="||">

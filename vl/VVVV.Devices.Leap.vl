@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<VLDOCUMENT Version="0.31.1248.0">
+<VLDOCUMENT Version="0.31.1259.0">
   <DEPENDENCIES>
     <DEPENDENCY Name="mscorlib.dll.vlimport" Location="mscorlib.dll.vlimport" />
     <DEPENDENCY Name="System.Core.dll.vlimport" Location="System.Core.dll.vlimport" />
@@ -502,6 +502,9 @@
           <OUTLET Name="Key Tap Former Index" Layer="Gestures">
             <POSITION x="1539.57544" y="878.6534" />
           </OUTLET>
+          <OUTLET Name="Type" Layer="Bone">
+            <POSITION x="-495.43692" y="1015.72253" />
+          </OUTLET>
         </OUTLETS>
         <CONSTS />
         <REGIONS />
@@ -673,6 +676,7 @@
               <INPUT Name="Bone" />
             </INPUTS>
             <OUTPUTS>
+              <OUPUT Name="Type" />
               <OUPUT Name="Basis" />
               <OUPUT Name="Start" />
               <OUPUT Name="Center" />
@@ -928,6 +932,7 @@
           <Link source="Nodes/Pointable/Outputs/Direction" sink="Outlets/Direction#8" />
           <Link source="Nodes/Pointable/Outputs/StabilizedTipPosition" sink="Outlets/StabilizedTipPosition#2" />
           <Link source="Nodes/Pointable/Outputs/TipPosition" sink="Outlets/TipPosition#2" />
+          <Link source="Nodes/Bone/Outputs/Type" sink="Outlets/Type" />
         </LINKS>
       </BODY>
     </PATCH>
@@ -1159,6 +1164,145 @@
         <LINKS>
           <Link source="Inlets/Observable" sink="Nodes/Gestures/Inputs/Observable" />
           <Link source="Nodes/Gestures/Outputs/Gestures" sink="Outlets/Gestures" />
+        </LINKS>
+      </BODY>
+    </PATCH>
+    <PATCH Name="Selectors" Category="VVVV.LeapVL" IsClosed="true">
+      <BODY Name="UtilsBody">
+        <LAYERS>
+          <LAYER Name="SelectHands" />
+          <LAYER Name="SelectFingers" />
+          <LAYER Name="SelectBones" />
+        </LAYERS>
+        <INLETS>
+          <INLET Name="Bones" Layer="SelectBones">
+            <POSITION x="638.576233" y="250.3873" />
+          </INLET>
+          <INLET Name="BoneType" Layer="SelectBones">
+            <POSITION x="712.681763" y="250.3873" />
+          </INLET>
+          <INLET Name="Hands" Layer="SelectHands">
+            <POSITION x="825.7256" y="248.952637" />
+          </INLET>
+          <INLET Name="Right" Layer="SelectHands">
+            <POSITION x="916.9646" y="248.952637" />
+          </INLET>
+          <INLET Name="Fingers" Layer="SelectFingers">
+            <POSITION x="1035.65308" y="253.609528" />
+          </INLET>
+          <INLET Name="FingerType" Layer="SelectFingers">
+            <POSITION x="1117.07263" y="253.609528" />
+          </INLET>
+        </INLETS>
+        <OUTLETS>
+          <OUTLET Name="Bones" Layer="SelectBones">
+            <POSITION x="638.576233" y="423.308563" />
+          </OUTLET>
+          <OUTLET Name="Hands" Layer="SelectHands">
+            <POSITION x="825.7256" y="387.2488" />
+          </OUTLET>
+          <OUTLET Name="Fingers" Layer="SelectFingers">
+            <POSITION x="1035.65308" y="400.713654" />
+          </OUTLET>
+        </OUTLETS>
+        <CONSTS />
+        <REGIONS />
+        <NODES>
+          <OPERATION Name="SelectHands" Layer="SelectHands">
+            <POSITION x="825.7256" y="345.481964" />
+            <NODEREF LastFile="VL.Devices.Leap.vl">
+              <CATEGORYPATH Name="Devices.Leap" />
+              <OPERATIONNODE Name="SelectHands" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Hands" />
+              <INPUT Name="Type" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Fingers" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread" Layer="SelectHands">
+            <POSITION x="825.7256" y="294.8865" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="SelectFingers" Layer="SelectFingers">
+            <POSITION x="1035.65308" y="332.4122" />
+            <NODEREF LastFile="VL.Devices.Leap.vl">
+              <CATEGORYPATH Name="Devices.Leap" />
+              <OPERATIONNODE Name="SelectFingers" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Fingers" />
+              <INPUT Name="Type" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Fingers" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#1" Layer="SelectFingers">
+            <POSITION x="1035.65308" y="289.46524" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="SelectBones" Layer="SelectBones">
+            <POSITION x="638.576233" y="365.4531" />
+            <NODEREF LastFile="VL.Devices.Leap.vl">
+              <CATEGORYPATH Name="Devices.Leap" />
+              <OPERATIONNODE Name="SelectBones" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Bones" />
+              <INPUT Name="Type" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Bones" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#2" Layer="SelectBones">
+            <POSITION x="638.576233" y="318.624359" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+        </NODES>
+        <LINKS>
+          <Link source="Nodes/ToSpread/Outputs/Result" sink="Nodes/SelectHands/Inputs/Hands" />
+          <Link source="Inlets/Hands" sink="Nodes/ToSpread/Inputs/Input" />
+          <Link source="Inlets/Right" sink="Nodes/SelectHands/Inputs/Type" />
+          <Link source="Nodes/SelectHands/Outputs/Fingers" sink="Outlets/Hands" />
+          <Link source="Inlets/FingerType" sink="Nodes/SelectFingers/Inputs/Type" />
+          <Link source="Nodes/SelectFingers/Outputs/Fingers" sink="Outlets/Fingers" />
+          <Link source="Inlets/Fingers" sink="Nodes/ToSpread#1/Inputs/Input" />
+          <Link source="Nodes/ToSpread#1/Outputs/Result" sink="Nodes/SelectFingers/Inputs/Fingers" />
+          <Link source="Inlets/BoneType" sink="Nodes/SelectBones/Inputs/Type" />
+          <Link source="Nodes/SelectBones/Outputs/Bones" sink="Outlets/Bones" />
+          <Link source="Inlets/Bones" sink="Nodes/ToSpread#2/Inputs/Input" />
+          <Link source="Nodes/ToSpread#2/Outputs/Result" sink="Nodes/SelectBones/Inputs/Bones" />
         </LINKS>
       </BODY>
     </PATCH>

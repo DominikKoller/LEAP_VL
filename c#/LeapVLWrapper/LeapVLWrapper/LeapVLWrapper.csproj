@@ -60,8 +60,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="VL.Core">
-      <HintPath>..\..\..\..\..\..\..\..\vvvv\vvvv_50alpha34.100_x64\packs\vlpack_0.31.1248\core\VL.Core.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\..\..\vvvv\vvvv_50alpha34.100_x64\packs\vlpack_0.31.1259\core\VL.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

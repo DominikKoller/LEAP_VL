@@ -114,10 +114,10 @@ namespace LeapVLWrapper
         [Node]
         public static void GetBones(Leap.Finger finger, out Leap.Bone metacarpal, out Leap.Bone proximal, out Leap.Bone intermediate, out Leap.Bone distal)
         {
-            metacarpal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_METACARPAL);
-            proximal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_PROXIMAL);
-            intermediate = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_INTERMEDIATE);
-            distal = finger.Bone((Leap.Bone.BoneType) BoneType.TYPE_DISTAL);
+            metacarpal = finger.Bone((Leap.Bone.BoneType) BoneType.Metacarpal);
+            proximal = finger.Bone((Leap.Bone.BoneType) BoneType.Proximal);
+            intermediate = finger.Bone((Leap.Bone.BoneType) BoneType.Intermediate);
+            distal = finger.Bone((Leap.Bone.BoneType) BoneType.Distal);
         }
 
         [Node]
@@ -200,15 +200,23 @@ namespace LeapVLWrapper
         //      });
         //}
     }
-    #region ENUMS
+    #region ENUMS directly from Leap API
     [Type]
     public enum FingerType
     {
+        //original, from Leap API
+        /*
         TYPE_THUMB = 0,
         TYPE_INDEX = 1,
         TYPE_MIDDLE = 2,
         TYPE_RING = 3,
         TYPE_PINKY = 4
+        */
+        Thumb = 0,
+        Index = 2,
+        Middle = 2,
+        Ring = 3,
+        Pinky = 4
     }
 
     [Type]
@@ -223,38 +231,84 @@ namespace LeapVLWrapper
     [Type]
     public enum BoneType
     {
+        //original, from Leap API
+        /*
         TYPE_METACARPAL,
         TYPE_PROXIMAL,
         TYPE_INTERMEDIATE,
         TYPE_DISTAL,
+        */
+        Metacarpal,
+        Proximal,
+        Intermediate,
+        Distal
     }
 
     [Type]
     public enum GestureType
     {
+        //original, from Leap API
+        /*
         TYPE_INVALID = -1,
         TYPE_SWIPE = 1,
         TYPE_CIRCLE = 4,
         TYPE_SCREEN_TAP = 5,
         TYPE_KEY_TAP = 6,
+        */
+        Invalid = -1,
+        Swipe = 1,
+        Circle = 4,
+        ScreenTap = 4,
+        KeyTap = 6
     }
 
     [Type]
     public enum GestureState
-    {
+    {   //original, from Leap API
+        /*
         STATE_INVALID = -1,
         STATE_START = 1,
         STATE_UPDATE = 2,
         STATE_STOP = 3,
+        */
+        Invalid = -1,
+        Start = 1,
+        Update = 2,
+        Stop = 3
     }
     
     [Type]
     public enum PolicyFlag
     {
+        //original, from Leap API
+        /*
         POLICY_DEFAULT = 0,
         POLICY_BACKGROUND_FRAMES = 1,
         POLICY_IMAGES = 2,
         POLICY_OPTIMIZE_HMD = 4
+        */
+        Default = 0,
+        BackgroundFrames = 1,
+        Images = 2,
+        OptimizeHMD = 4
+    }
+    #endregion
+    #region own ENUMS
+
+    //only used in 'Selectors' to be able to choose from a list (enum)
+    [Type]
+    public enum HandSide
+    {
+        Left,
+        Right
+    }
+    
+    [Type]
+    public enum PointableType
+    {
+        Finger,
+        Tool
     }
     #endregion
 }
+ 

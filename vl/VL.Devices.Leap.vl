@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<VLDOCUMENT Version="0.31.1248.0">
+<VLDOCUMENT Version="0.31.1259.0">
   <DEPENDENCIES>
     <DEPENDENCY Name="mscorlib.dll.vlimport" Location="mscorlib.dll.vlimport" />
     <DEPENDENCY Name="System.Core.dll.vlimport" Location="System.Core.dll.vlimport" />
@@ -1409,6 +1409,9 @@
           </OUTLET>
           <OUTLET Name="Key Tap Former Index" Layer="Gestures">
             <POSITION x="3536.01782" y="747.1793" />
+          </OUTLET>
+          <OUTLET Name="Type" Layer="Bone">
+            <POSITION x="128.8455" y="1150.68628" />
           </OUTLET>
         </OUTLETS>
         <CONSTS>
@@ -3773,6 +3776,18 @@
               <OUPUT Name="Output" />
             </OUTPUTS>
           </OPERATION>
+          <OPERATION Name="GetBoneType" Layer="Bone">
+            <POSITION x="129.588959" y="1022.9718" />
+            <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
+              <OPERATIONNODE Name="GetBoneType" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Bone" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
         </NODES>
         <LINKS>
           <Link source="Nodes/Basis/Outputs/Basis" sink="Nodes/ToMatrix/Inputs/Matrix Leap" />
@@ -4059,6 +4074,8 @@
           <Link source="Nodes/*#26/Outputs/Output" sink="Outlets/Baseline" />
           <Link source="Constants/mm to m#7" sink="Nodes/*#26/Inputs/Input 2" />
           <Link source="Constants/mm to m#7" sink="Nodes/*#25/Inputs/Input 2" />
+          <Link source="Inlets/Bone" sink="Nodes/GetBoneType/Inputs/Bone" />
+          <Link source="Nodes/GetBoneType/Outputs/Result" sink="Outlets/Type" />
         </LINKS>
       </BODY>
     </PATCH>
@@ -6258,6 +6275,276 @@
           <Link source="Regions/Project/Outputs/Output" sink="Regions/Distinct/Inputs/Input" />
           <Link source="Regions/Distinct/Outputs/Output" sink="Regions/ForEachLoop#1/Inputs/Gestures" />
           <Link source="Nodes/DefaultIfEmpty/Outputs/Output" sink="Regions/Project/Inputs/Input" />
+        </LINKS>
+      </BODY>
+    </PATCH>
+    <PATCH Name="Selectors" Category="Devices.Leap" IsClosed="true">
+      <BODY Name="Utils2Body">
+        <LAYERS>
+          <LAYER Name="SelectHands" />
+          <LAYER Name="SelectFingers" />
+          <LAYER Name="SelectBones" />
+        </LAYERS>
+        <INLETS>
+          <INLET Name="Bones" Layer="SelectBones">
+            <POSITION x="370.705933" y="284.787872" />
+          </INLET>
+          <INLET Name="Type#2" Layer="SelectBones">
+            <POSITION x="479.8861" y="284.787872" />
+          </INLET>
+          <INLET Name="Hands" Layer="SelectHands">
+            <POSITION x="610" y="282.181152" />
+          </INLET>
+          <INLET Name="Type" Layer="SelectHands" Type="HandSide">
+            <POSITION x="719.1802" y="282.181152" />
+          </INLET>
+          <INLET Name="Fingers" Layer="SelectFingers">
+            <POSITION x="945.5352" y="284.6471" />
+          </INLET>
+          <INLET Name="Type#1" Layer="SelectFingers">
+            <POSITION x="1092.91528" y="284.6471" />
+          </INLET>
+        </INLETS>
+        <OUTLETS>
+          <OUTLET Name="Bones" Layer="SelectBones">
+            <POSITION x="370.705933" y="448.24472" />
+          </OUTLET>
+          <OUTLET Name="Fingers#1" Layer="SelectHands">
+            <POSITION x="609.718262" y="443.365265" />
+          </OUTLET>
+          <OUTLET Name="Fingers" Layer="SelectFingers">
+            <POSITION x="944.350159" y="447.810883" />
+          </OUTLET>
+        </OUTLETS>
+        <CONSTS />
+        <REGIONS>
+          <REGION Name="Where" Layer="SelectHands" Kind="HigherOrderFunction">
+            <POSITION x="611.634033" y="316.870453" />
+            <SIZE x="100" y="100" />
+            <NODEREF LastCat="Collections.Spread" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="Where" />
+              <CATEGORY Name="Spread" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+            <BODY Name="WhereBody">
+              <LAYERS>
+                <LAYER Name="Predicate" />
+              </LAYERS>
+              <INLETS>
+                <INLET Name="Source" Layer="Predicate">
+                  <POSITION x="619.142761" y="317.248627" />
+                </INLET>
+              </INLETS>
+              <OUTLETS>
+                <OUTLET Name="Result" Layer="Predicate">
+                  <POSITION x="615.8815" y="416.245148" />
+                </OUTLET>
+              </OUTLETS>
+              <CONSTS>
+                <CONST Name="right" Layer="Predicate">
+                  <POSITION x="690.4701" y="375.300323" />
+                  <VALUE><![CDATA[{"type":"HandSide [LeapVLWrapper]","value":1}]]></VALUE>
+                </CONST>
+              </CONSTS>
+              <REGIONS />
+              <NODES>
+                <OPERATION Name="IsLeft" Layer="Predicate">
+                  <POSITION x="617.2611" y="344.845123" />
+                  <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
+                    <OPERATIONNODE Name="IsLeft" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Input" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Is Left" />
+                  </OUTPUTS>
+                </OPERATION>
+                <OPERATION Name="NOT" Layer="Predicate">
+                  <POSITION x="616.634033" y="383.7311" />
+                  <NODEREF LastCat="Control.Boolean" LastFile="VL.Lib.Basics.dll">
+                    <OPERATIONNODE Name="NOT" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Input" />
+                    <INPUT Name="Enabled" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Output" />
+                  </OUTPUTS>
+                </OPERATION>
+                <OPERATION Name="=" Layer="Predicate">
+                  <POSITION x="661.610046" y="383.629578" />
+                  <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+                    <OPERATIONNODE Name="=" />
+                    <CATEGORY Name="Adaptive" IsDirectParent="true" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Input" />
+                    <INPUT Name="Input 2" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Result" />
+                  </OUTPUTS>
+                </OPERATION>
+              </NODES>
+              <LINKS>
+                <Link source="Inlets/Source" sink="Nodes/IsLeft/Inputs/Input" />
+                <Link source="Nodes/IsLeft/Outputs/Is Left" sink="Nodes/NOT/Inputs/Input" />
+                <Link source="Nodes/NOT/Outputs/Output" sink="Outlets/Result" />
+                <Link source="Nodes/=/Outputs/Result" sink="Nodes/NOT/Inputs/Enabled" />
+                <Link source="Constants/right" sink="Nodes/=/Inputs/Input 2" />
+              </LINKS>
+            </BODY>
+          </REGION>
+          <REGION Name="Where#1" Layer="SelectFingers" Kind="HigherOrderFunction">
+            <POSITION x="942.344666" y="314.112671" />
+            <SIZE x="100" y="100" />
+            <NODEREF LastCat="Collections.Spread" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="Where" />
+              <CATEGORY Name="Spread" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+            <BODY Name="WhereBody">
+              <LAYERS>
+                <LAYER Name="Predicate" />
+              </LAYERS>
+              <INLETS>
+                <INLET Name="Source" Layer="Predicate">
+                  <POSITION x="949.8534" y="314.490845" />
+                </INLET>
+              </INLETS>
+              <OUTLETS>
+                <OUTLET Name="Result" Layer="Predicate">
+                  <POSITION x="949.9345" y="401.989838" />
+                </OUTLET>
+              </OUTLETS>
+              <CONSTS />
+              <REGIONS />
+              <NODES>
+                <OPERATION Name="GetFingerType" Layer="Predicate">
+                  <POSITION x="951.8077" y="336.0689" />
+                  <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
+                    <OPERATIONNODE Name="GetFingerType" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Finger" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Result" />
+                  </OUTPUTS>
+                </OPERATION>
+                <OPERATION Name="=" Layer="Predicate">
+                  <POSITION x="952.832458" y="369.136963" />
+                  <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+                    <OPERATIONNODE Name="=" />
+                    <CATEGORY Name="Adaptive" IsDirectParent="true" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Input" />
+                    <INPUT Name="Input 2" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Result" />
+                  </OUTPUTS>
+                </OPERATION>
+              </NODES>
+              <LINKS>
+                <Link source="Inlets/Source" sink="Nodes/GetFingerType/Inputs/Finger" />
+                <Link source="Nodes/GetFingerType/Outputs/Result" sink="Nodes/=/Inputs/Input" />
+                <Link source="Nodes/=/Outputs/Result" sink="Outlets/Result" />
+              </LINKS>
+            </BODY>
+          </REGION>
+          <REGION Name="Where#2" Layer="SelectBones" Kind="HigherOrderFunction">
+            <POSITION x="370.705933" y="319.477173" />
+            <SIZE x="100" y="100" />
+            <NODEREF LastCat="Collections.Spread" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="Where" />
+              <CATEGORY Name="Spread" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+            <BODY Name="WhereBody">
+              <LAYERS>
+                <LAYER Name="Predicate" />
+              </LAYERS>
+              <INLETS>
+                <INLET Name="Source" Layer="Predicate">
+                  <POSITION x="370.705933" y="319.855347" />
+                </INLET>
+              </INLETS>
+              <OUTLETS>
+                <OUTLET Name="Result" Layer="Predicate">
+                  <POSITION x="370.705933" y="405.973083" />
+                </OUTLET>
+              </OUTLETS>
+              <CONSTS />
+              <REGIONS />
+              <NODES>
+                <OPERATION Name="=" Layer="Predicate">
+                  <POSITION x="370.705933" y="377.145416" />
+                  <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+                    <OPERATIONNODE Name="=" />
+                    <CATEGORY Name="Adaptive" IsDirectParent="true" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Input" />
+                    <INPUT Name="Input 2" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Result" />
+                  </OUTPUTS>
+                </OPERATION>
+                <OPERATION Name="GetBoneType" Layer="Predicate">
+                  <POSITION x="370.705933" y="343.2879" />
+                  <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
+                    <OPERATIONNODE Name="GetBoneType" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Bone" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Result" />
+                  </OUTPUTS>
+                </OPERATION>
+              </NODES>
+              <LINKS>
+                <Link source="Inlets/Source" sink="Nodes/GetBoneType/Inputs/Bone" />
+                <Link source="Nodes/GetBoneType/Outputs/Result" sink="Nodes/=/Inputs/Input" />
+                <Link source="Nodes/=/Outputs/Result" sink="Outlets/Result" />
+              </LINKS>
+            </BODY>
+          </REGION>
+        </REGIONS>
+        <NODES />
+        <LINKS>
+          <Link source="Inlets/Hands" sink="Regions/Where/Inputs/Input" />
+          <Link source="Regions/Where/Outputs/Output" sink="Outlets/Fingers#1" />
+          <Link source="Inlets/Type" sink="Regions/Where/WhereBody/Nodes/=/Inputs/Input" />
+          <Link source="Inlets/Fingers" sink="Regions/Where#1/Inputs/Input" />
+          <Link source="Regions/Where#1/Outputs/Output" sink="Outlets/Fingers" />
+          <Link source="Inlets/Type#1" sink="Regions/Where#1/WhereBody/Nodes/=/Inputs/Input 2" />
+          <Link source="Inlets/Bones" sink="Regions/Where#2/Inputs/Input" />
+          <Link source="Regions/Where#2/Outputs/Output" sink="Outlets/Bones" />
+          <Link source="Inlets/Type#2" sink="Regions/Where#2/WhereBody/Nodes/=/Inputs/Input 2" />
         </LINKS>
       </BODY>
     </PATCH>

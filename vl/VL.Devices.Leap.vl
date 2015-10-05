@@ -6316,7 +6316,19 @@
             <POSITION x="944.350159" y="447.810883" />
           </OUTLET>
         </OUTLETS>
-        <CONSTS />
+        <CONSTS>
+          <CONST Name="Input" Layer="SelectFingers">
+            <POSITION x="1136.38916" y="363.711548" />
+            <VALUE><![CDATA["Index"]]></VALUE>
+          </CONST>
+          <CONST Name="Ignore Case" Layer="SelectFingers">
+            <POSITION x="1231.58508" y="368.118744" />
+            <VALUE><![CDATA[true]]></VALUE>
+          </CONST>
+          <CONST Name="Constant" Layer="SelectFingers" Type="FingerType">
+            <POSITION x="1214.397" y="471.24765" />
+          </CONST>
+        </CONSTS>
         <REGIONS>
           <REGION Name="Where" Layer="SelectHands" Kind="HigherOrderFunction">
             <POSITION x="611.634033" y="316.870453" />
@@ -6534,7 +6546,51 @@
             </BODY>
           </REGION>
         </REGIONS>
-        <NODES />
+        <NODES>
+          <OPERATION Name="Outbox" Layer="SelectFingers">
+            <POSITION x="1096.28345" y="327.131622" />
+            <NODEREF LastCat="IO" LastFile="VL.Lib.Basics.dll">
+              <ANYNODE Name="Outbox" />
+              <CATEGORY Name="IO" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="TryParse" Layer="SelectFingers">
+            <POSITION x="1135.94849" y="397.206421" />
+            <NODEREF LastCat="Primitive.Enum" LastFile="CommonLanguageRuntimeLibrary">
+              <CATEGORY Name="Enum" />
+              <OPERATIONNODE Name="TryParse" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Ignore Case" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Success" />
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ConstrainTypes" Layer="SelectFingers">
+            <POSITION x="1204.701" y="515.760559" />
+            <NODEREF LastCat="Primitive.TypeHelpers" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="ConstrainTypes" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+              <INPUT Name="Input 3" />
+              <INPUT Name="Input 4" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS />
+          </OPERATION>
+        </NODES>
         <LINKS>
           <Link source="Inlets/Hands" sink="Regions/Where/Inputs/Input" />
           <Link source="Regions/Where/Outputs/Output" sink="Outlets/Fingers#1" />
@@ -6545,6 +6601,11 @@
           <Link source="Inlets/Bones" sink="Regions/Where#2/Inputs/Input" />
           <Link source="Regions/Where#2/Outputs/Output" sink="Outlets/Bones" />
           <Link source="Inlets/Type#2" sink="Regions/Where#2/WhereBody/Nodes/=/Inputs/Input 2" />
+          <Link source="Inlets/Type#1" sink="Nodes/Outbox/Inputs/Input" />
+          <Link source="Constants/Input" sink="Nodes/TryParse/Inputs/Input" />
+          <Link source="Constants/Ignore Case" sink="Nodes/TryParse/Inputs/Ignore Case" />
+          <Link source="Constants/Constant" sink="Nodes/ConstrainTypes/Inputs/Input 2" />
+          <Link source="Nodes/TryParse/Outputs/Result" sink="Nodes/ConstrainTypes/Inputs/Input" />
         </LINKS>
       </BODY>
     </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Gestures (LeapVL Observable) help.v4p" scrollx="30" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Gestures (Leap Observable) help.v4p" scrollx="30" scrolly="-360">
    <BOUNDS type="Window" left="3210" top="1770" width="5145" height="7575">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -14,30 +14,6 @@
    <PIN pinname="Size" slicecount="1" visible="1" values="14">
    </PIN>
    </NODE>
-   <NODE systemname="Gestures (LeapVL Observable)" filename="VVVV.Device.Leap.vl" nodename="Gestures (LeapVL Observable)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="630" top="4620" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
-   </PIN>
-   <PIN pinname="Gestures" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Leap (Devices VL)" filename="VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="630" top="3885" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Frame" visible="1">
-   </PIN>
-   <PIN pinname="Swipe Gesture" visible="1">
-   </PIN>
-   <PIN pinname="Key Tap Gesture" visible="1">
-   </PIN>
-   <PIN pinname="Screen Tap Gesture" visible="1">
-   </PIN>
-   <PIN pinname="Circle Gesture" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="5" srcpinname="Frame" dstnodeid="4" dstpinname="Observable">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1740" top="2955" width="480" height="480">
    </BOUNDS>
@@ -58,14 +34,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Swipe Gesture">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Key Tap Gesture">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Screen Tap Gesture">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Circle Gesture">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2205" top="3075" width="1425" height="270">
    </BOUNDS>
@@ -80,22 +48,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Gestures (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="Gestures (LeapVL)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="630" top="5535" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Gesture" visible="1">
-   </PIN>
-   <PIN pinname="Swipe" visible="1">
-   </PIN>
-   <PIN pinname="Circle" visible="1">
-   </PIN>
-   <PIN pinname="Key Tap" visible="1">
-   </PIN>
-   <PIN pinname="Screen Tap" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Gestures" dstnodeid="8" dstpinname="Gesture">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
    <BOUNDS type="Node" left="345" top="810" width="10050" height="690">
    </BOUNDS>
@@ -178,4 +130,52 @@
    <PIN pinname="Input String" slicecount="1" values="..\girlpower\Overview.v4p">
    </PIN>
    </NODE>
+   <NODE systemname="Leap (Devices)" filename="VVVV.Devices.Leap.vl" nodename="Leap (Devices)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="630" top="3885" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Frame" visible="1">
+   </PIN>
+   <PIN pinname="Swipe Gesture" visible="1">
+   </PIN>
+   <PIN pinname="Key Tap Gesture" visible="1">
+   </PIN>
+   <PIN pinname="Screen Tap Gesture" visible="1">
+   </PIN>
+   <PIN pinname="Circle Gesture" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Swipe Gesture">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Key Tap Gesture">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Screen Tap Gesture">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Circle Gesture">
+   </LINK>
+   <NODE id="4" systemname="Gestures (Leap Observable)" filename="VVVV.Devices.Leap.vl" nodename="Gestures (Leap Observable)" componentmode="Hidden">
+   <BOUNDS type="Node" left="630" top="4620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Gestures" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Frame" dstnodeid="4" dstpinname="Observable">
+   </LINK>
+   <NODE id="8" systemname="Gestures (Leap)" filename="VVVV.Devices.Leap.vl" nodename="Gestures (Leap)" componentmode="Hidden">
+   <BOUNDS type="Node" left="630" top="5535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Gesture" visible="1">
+   </PIN>
+   <PIN pinname="Swipe" visible="1">
+   </PIN>
+   <PIN pinname="Circle" visible="1">
+   </PIN>
+   <PIN pinname="Key Tap" visible="1">
+   </PIN>
+   <PIN pinname="Screen Tap" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Gestures" dstnodeid="8" dstpinname="Gesture">
+   </LINK>
    </PATCH>

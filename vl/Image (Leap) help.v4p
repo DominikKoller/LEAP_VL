@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Image (LeapVL) help.v4p" scrollx="0" scrolly="-1080">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Image (Leap) help.v4p" scrollx="0" scrolly="-1080">
    <BOUNDS type="Window" left="6900" top="4815" width="5310" height="6090">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -12,22 +12,6 @@
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    <PIN pinname="Size" slicecount="1" visible="1" values="14">
-   </PIN>
-   </NODE>
-   <NODE nodename="Image (LeapVL)" componentmode="Hidden" id="0" systemname="Image (LeapVL)" filename="VVVV.Device.Leap.vl">
-   <BOUNDS type="Node" left="1275" top="2910" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1275" top="2910" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Image" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="Leap (Devices VL)" filename="VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="435" top="1950" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Frame" visible="1">
-   </PIN>
-   <PIN pinname="Enable Images" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
@@ -82,8 +66,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enable Images">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1695" top="1470" width="1290" height="270">
    </BOUNDS>
@@ -100,30 +82,6 @@
    </NODE>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
-   <NODE systemname="Image (LeapVL EX9.Texture)" filename="..\modules\Image (LeapVL EX9.Texture).v4p" nodename="Image (LeapVL EX9.Texture)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2220" top="2925" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Image" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="LastFrame (LeapVL.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (LeapVL.Frame)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="450" top="2460" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
-   </PIN>
-   <PIN pinname="Images" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Frame" dstnodeid="5" dstpinname="Observable">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="0" dstpinname="Image">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="6" dstpinname="Image">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2970" top="2940" width="1650" height="270">
    </BOUNDS>
@@ -176,4 +134,46 @@
    <PIN pinname="Input String" slicecount="1" values="..\girlpower\Overview.v4p">
    </PIN>
    </NODE>
+   <NODE systemname="Leap (Devices)" filename="VVVV.Devices.Leap.vl" nodename="Leap (Devices)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="435" top="1950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Frame" visible="1">
+   </PIN>
+   <PIN pinname="Enable Images" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enable Images">
+   </LINK>
+   <NODE systemname="LastFrame (Leap.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap.Frame)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="450" top="2460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Images" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Frame" dstnodeid="5" dstpinname="Observable">
+   </LINK>
+   <NODE nodename="Image (Leap)" componentmode="Hidden" id="0" systemname="Image (Leap)" filename="VVVV.Devices.Leap.vl">
+   <BOUNDS type="Node" left="1275" top="2910" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1275" top="2910" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Image" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="0" dstpinname="Image">
+   </LINK>
+   <NODE systemname="Image (Leap EX9.Texture)" filename="..\modules\Image (Leap EX9.Texture).v4p" nodename="Image (Leap EX9.Texture)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2220" top="2925" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Image" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="6" dstpinname="Image">
+   </LINK>
    </PATCH>

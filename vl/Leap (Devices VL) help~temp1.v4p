@@ -999,7 +999,7 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="..\girlpower\Overview.v4p">
+   <PIN pinname="Input String" slicecount="1" values="..\girlpower\Demo.v4p">
    </PIN>
    </NODE>
    <NODE systemname="LastFrame (LeapVL.Frame)" filename="VVVV.Device.Leap.vl" nodename="LastFrame (LeapVL.Frame)" componentmode="Hidden" id="256">

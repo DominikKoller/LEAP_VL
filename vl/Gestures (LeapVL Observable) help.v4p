@@ -1,31 +1,21 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Gestures (LeapVL Observable) help.v4p" scrollx="30" scrolly="-360">
-   <BOUNDS type="Window" left="3210" top="1770" width="8715" height="6045">
+   <BOUNDS type="Window" left="3210" top="1770" width="5145" height="7575">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
    </BOUNDS>
    <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|Gestures (LeapVL Observable)|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Gestures (Leap Observable)|">
    </PIN>
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    <PIN pinname="Size" slicecount="1" visible="1" values="14">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="225" top="600" width="5100" height="600">
-   </BOUNDS>
-   <BOUNDS type="Box" left="225" top="600" width="5100" height="600">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="||">
-   </PIN>
-   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
-   </PIN>
-   </NODE>
    <NODE systemname="Gestures (LeapVL Observable)" filename="VVVV.Device.Leap.vl" nodename="Gestures (LeapVL Observable)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="480" top="2925" width="100" height="100">
+   <BOUNDS type="Node" left="630" top="4620" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Observable" visible="1">
    </PIN>
@@ -33,7 +23,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Leap (Devices VL)" filename="VVVV.Device.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="480" top="2190" width="100" height="100">
+   <BOUNDS type="Node" left="630" top="3885" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Frame" visible="1">
    </PIN>
@@ -49,9 +39,9 @@
    <LINK srcnodeid="5" srcpinname="Frame" dstnodeid="4" dstpinname="Observable">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1590" top="1260" width="480" height="480">
+   <BOUNDS type="Box" left="1740" top="2955" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1590" top="1260" width="0" height="0">
+   <BOUNDS type="Node" left="1740" top="2955" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -77,9 +67,9 @@
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Circle Gesture">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2055" top="1380" width="1425" height="270">
+   <BOUNDS type="Node" left="2205" top="3075" width="1425" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2055" top="1380" width="1425" height="270">
+   <BOUNDS type="Box" left="2205" top="3075" width="1425" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Enable Gestures|">
    </PIN>
@@ -91,7 +81,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Gestures (LeapVL)" filename="VVVV.Device.Leap.vl" nodename="Gestures (LeapVL)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="480" top="3840" width="100" height="100">
+   <BOUNDS type="Node" left="630" top="5535" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Gesture" visible="1">
    </PIN>
@@ -107,9 +97,9 @@
    <LINK srcnodeid="4" srcpinname="Gestures" dstnodeid="8" dstpinname="Gesture">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3960" top="1365" width="10050" height="690">
+   <BOUNDS type="Node" left="345" top="810" width="10050" height="690">
    </BOUNDS>
-   <BOUNDS type="Box" left="3960" top="1365" width="3945" height="1830">
+   <BOUNDS type="Box" left="345" top="810" width="3945" height="1830">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Alternative to using the Gestures output of LastFrame&cr;&lf;&cr;&lf;Uses the Observable of Leap.Frame to receive all the Gestures since the last Frame.&cr;&lf;&cr;&lf;When using the Gestures of LastFrame, it might happen that you miss a gesture that happened very briefly between the frames you received.|">
    </PIN>
@@ -121,9 +111,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2895" top="3840" width="1695" height="270">
+   <BOUNDS type="Node" left="3045" top="5535" width="1695" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2895" top="3840" width="1695" height="270">
+   <BOUNDS type="Box" left="3045" top="5535" width="1695" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; check the helppatch|">
    </PIN>
@@ -134,60 +124,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="465" top="4410" width="1905" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="465" top="4410" width="3390" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|To see things visualized, check the Girlpower!|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4110" top="4485" width="2685" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4110" top="4485" width="2685" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get an overview of all LeapVL nodes:|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="16">
-   <BOUNDS type="Node" left="555" top="4695" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="555" top="4695" width="2610" height="270">
-   </BOUNDS>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Girlpower (DX9).v4p|">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="15">
-   <BOUNDS type="Node" left="4110" top="4755" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4110" top="4755" width="2940" height="255">
-   </BOUNDS>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Overview.v4p|">
-   </PIN>
-   </NODE>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="1440" top="2910" width="255" height="270">
+   <BOUNDS type="Node" left="1590" top="4605" width="255" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1440" top="2910" width="255" height="270">
+   <BOUNDS type="Box" left="1590" top="4605" width="255" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="&lt;">
    </PIN>
@@ -198,54 +140,42 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE id="20" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="495" top="5115" width="2910" height="270">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="735" top="6090" width="2685" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="495" top="5115" width="2865" height="270">
+   <BOUNDS type="Box" left="735" top="6090" width="2685" height="270">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" pintype="Input" values="|Units: Meter, Seconds, Cycles (rotation)|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get an Overview of all Leap Nodes:|">
    </PIN>
-   <PIN pinname="Output String" visible="0" pintype="Output">
+   <PIN pinname="Output String" visible="0">
    </PIN>
-   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="0">
+   <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="705" top="6615" width="2295" height="270">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   <BOUNDS type="Box" left="705" top="6615" width="2295" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|..and check their helppatches..|">
    </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   <PIN pinname="Output String" visible="0">
    </PIN>
-   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="21">
+   <BOUNDS type="Node" left="735" top="6360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="735" top="6360" width="2940" height="255">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
-   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
-   </PIN>
-   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
-   </PIN>
-   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Changed" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
+   <PIN pinname="Input String" slicecount="1" values="..\girlpower\Overview.v4p">
    </PIN>
    </NODE>
    </PATCH>

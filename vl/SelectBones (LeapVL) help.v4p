@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\SelectBones (LeapVL) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4605" top="2085" width="6315" height="10500">
+   <BOUNDS type="Window" left="4605" top="2085" width="6210" height="9300">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -61,7 +61,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="885" top="6945" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="10725" top="2100" width="6240" height="5085">
+   <BOUNDS type="Window" left="10620" top="2100" width="6240" height="5085">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -107,6 +107,8 @@
    </PIN>
    <BOUNDS type="Box" left="1095" top="5295">
    </BOUNDS>
+   <PIN pinname="StartXYZ" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Finger (LeapVL)" filename="VVVV.Devices.Leap.vl" nodename="Finger (LeapVL)" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="1095" top="3105" width="100" height="100">
@@ -118,8 +120,6 @@
    <BOUNDS type="Box" left="1095" top="3105">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="18" srcpinname="EndXYZ" dstnodeid="23" dstpinname="XYZ">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
    <BOUNDS type="Node" left="240" top="795" width="6720" height="270">
    </BOUNDS>
@@ -134,104 +134,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="540" top="7905" width="1905" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="540" top="7905" width="2295" height="285">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Check out the Leap Girlpower:|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="540" top="8745" width="2685" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="540" top="8745" width="2685" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get an overview of all LeapVL nodes:|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="13">
-   <BOUNDS type="Node" left="540" top="8190" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="540" top="8190" width="2610" height="270">
-   </BOUNDS>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Girlpower.v4p|">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="12">
-   <BOUNDS type="Node" left="540" top="9015" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="540" top="9015" width="2940" height="255">
-   </BOUNDS>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|..\girlpower\Leap Overview.v4p|">
-   </PIN>
-   </NODE>
-   <NODE id="11" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="540" top="9375" width="2910" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="540" top="9375" width="2910" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" pintype="Input" values="|Units: Meter, Seconds, Cycles (rotation)|">
-   </PIN>
-   <PIN pinname="Output String" visible="0" pintype="Output">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
-   </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
-   </PIN>
-   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
-   </PIN>
-   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
-   </PIN>
-   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
-   </PIN>
-   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Changed" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="24" srcpinname="Hands" dstnodeid="19" dstpinname="Hand">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="9" systemname="IOBox (Enumerations)">
@@ -239,7 +141,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2640" top="4005" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="2" visible="1" values="Metacarpal,Intermediate">
+   <PIN pinname="Input Enum" slicecount="2" visible="1" values="Distal,Metacarpal">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -406,6 +308,46 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="StartXYZ" dstnodeid="23" dstpinname="XYZ">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="36" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="840" top="7665" width="2685" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="840" top="7665" width="2685" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Get an Overview of all Leap Nodes:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="35" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="840" top="8190" width="2295" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="840" top="8190" width="2295" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|..and check their helppatches..|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="840" top="7935" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="840" top="7935" width="2940" height="255">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="..\girlpower\Overview.v4p">
    </PIN>
    </NODE>
    </PATCH>

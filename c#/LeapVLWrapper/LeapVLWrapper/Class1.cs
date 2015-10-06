@@ -97,7 +97,6 @@ namespace LeapVLWrapper
             }
             return frame;
         }
-
         #region FINGER methods
         [Node]
         public static Leap.Bone GetBone(Leap.Finger finger, BoneType type)
@@ -292,6 +291,14 @@ namespace LeapVLWrapper
     {
         Finger,
         Tool
+    }
+
+    [Type]
+    public enum RelativePosition
+    {
+        Frontmost,
+        Leftmost,
+        Rightmost
     }
     #endregion
 }

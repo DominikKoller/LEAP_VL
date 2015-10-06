@@ -423,7 +423,7 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="..\girlpower\Overview.v4p">
+   <PIN pinname="Input String" slicecount="1" values="Overview.v4p">
    </PIN>
    </NODE>
    </PATCH>

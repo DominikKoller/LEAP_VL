@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\SelectHands (Leap) help.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\SelectHands (Leap) help.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="4365" top="5280" width="8505" height="9060">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -22,6 +22,8 @@
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Left">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="34" hiddenwhenlocked="0">
@@ -96,58 +98,6 @@
    </NODE>
    <LINK srcnodeid="42" srcpinname="Transform Out" dstnodeid="41" dstpinname="Transform In">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="40" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="7500" top="5670" width="525" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7500" top="5670" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.12">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="7500" top="5985" width="525" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7500" top="5985" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.39">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="7500" top="5415" width="525" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7500" top="5415" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.01">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="37" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="6345" top="6300" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="View Projection" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Initial Pitch">
-   </LINK>
-   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Initial Distance">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Initial Yaw">
-   </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="36" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="4215" top="6675" width="100" height="100">
    </BOUNDS>
@@ -194,10 +144,6 @@
    </NODE>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
-   <LINK srcnodeid="37" srcpinname="View Projection" dstnodeid="36" dstpinname="Projection" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="37" srcpinname="View Projection" dstnodeid="28" dstpinname="Projection" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="50" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="750" width="6720" height="270">
    </BOUNDS>
@@ -279,6 +225,8 @@
    </PIN>
    <PIN pinname="Right" visible="1">
    </PIN>
+   <PIN pinname="Side" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="0" dstpinname="Right">
    </LINK>
@@ -329,6 +277,8 @@
    </PIN>
    <PIN pinname="Right" visible="1" slicecount="1" values="Right">
    </PIN>
+   <PIN pinname="Side" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Output Enum" dstnodeid="10" dstpinname="Right">
    </LINK>
@@ -373,5 +323,65 @@
    <LINK srcnodeid="48" srcpinname="EndXYZ" dstnodeid="42" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="47" srcpinname="Bones" dstnodeid="48" dstpinname="Bone">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="0" dstpinname="Side">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output Enum" dstnodeid="10" dstpinname="Side">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="7440" top="5685" width="525" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7440" top="5685" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.21">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="7440" top="6000" width="525" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7440" top="6000" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.39">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="7440" top="5430" width="525" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7440" top="5430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.02">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="64" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="6345" top="6300" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="View Projection" dstnodeid="36" dstpinname="Projection" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="View Projection" dstnodeid="28" dstpinname="Projection" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Initial Yaw">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Initial Pitch">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Initial Distance">
    </LINK>
    </PATCH>

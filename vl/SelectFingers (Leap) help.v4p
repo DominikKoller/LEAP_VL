@@ -7,7 +7,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|SelectFingers (LeapVL)|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|SelectFingers (Leap)|">
    </PIN>
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
@@ -95,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2340" top="2820" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="2" visible="1" values="Index,Ring">
+   <PIN pinname="Input Enum" slicecount="2" visible="1" values="Index,Pinky">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\vl\Image (Leap) help.v4p" scrollx="0" scrolly="-1080">
-   <BOUNDS type="Window" left="6900" top="4815" width="5310" height="6090">
+   <BOUNDS type="Window" left="6585" top="4815" width="5310" height="6090">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2220" top="3780" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="14160" top="4815" width="6240" height="5085">
+   <BOUNDS type="Window" left="11700" top="4815" width="6240" height="5085">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>

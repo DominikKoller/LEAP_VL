@@ -100,12 +100,6 @@ namespace LeapVLWrapper
 
         #region FINGER methods
         [Node]
-        public static Leap.Vector GetJointPosition(Leap.Finger finger, FingerJoint fingerJoint)
-        {
-            return finger.JointPosition((Leap.Finger.FingerJoint) fingerJoint );
-        }
-
-        [Node]
         public static Leap.Bone GetBone(Leap.Finger finger, BoneType type)
         {
             return finger.Bone((Leap.Bone.BoneType) type);
@@ -220,15 +214,6 @@ namespace LeapVLWrapper
     }
 
     [Type]
-    public enum FingerJoint
-    {
-        JOINT_MCP = 0,
-        JOINT_PIP = 1,
-        JOINT_DIP = 2,
-        JOINT_TIP = 3
-    }
-
-    [Type]
     public enum BoneType
     {
         //original, from Leap API
@@ -294,7 +279,6 @@ namespace LeapVLWrapper
     }
     #endregion
     #region own ENUMS
-
     //only used in 'Selectors' to be able to choose from a list (enum)
     [Type]
     public enum HandSide

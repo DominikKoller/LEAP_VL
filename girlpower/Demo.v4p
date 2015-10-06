@@ -536,20 +536,18 @@
    </LINK>
    <LINK srcnodeid="499" srcpinname="Gestures" dstnodeid="380" dstpinname="Gesture">
    </LINK>
-   <NODE systemname="Image (Leap EX9.Texture)" filename="..\modules\Image (Leap EX9.Texture).v4p" nodename="Image (Leap EX9.Texture)" componentmode="Hidden" id="475">
+   <NODE systemname="Image (Leap EX9.Texture)" filename="..\modules\Image (Leap EX9.Texture).v4p" nodename="Image (Leap EX9.Texture)" componentmode="Hidden" id="501">
    <BOUNDS type="Node" left="6090" top="4920" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="17430" top="1140" width="3225" height="4215">
    </BOUNDS>
-   <PIN pinname="Image" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
    <BOUNDS type="Box" left="6090" top="4920">
    </BOUNDS>
+   <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="475" srcpinname="Texture Out" dstnodeid="477" dstpinname="Texture">
+   <LINK srcnodeid="501" srcpinname="Texture Out" dstnodeid="477" dstpinname="Texture">
    </LINK>
-   <LINK srcnodeid="344" srcpinname="Images" dstnodeid="475" dstpinname="Image">
+   <LINK srcnodeid="344" srcpinname="Images" dstnodeid="501" dstpinname="Image">
    </LINK>
    </PATCH>

@@ -15,7 +15,6 @@
     <DEPENDENCY Name="Integration.vl" Location="Integration.vl" />
     <DEPENDENCY Name="VL.Core.dll" Location="VL.Core.dll" />
     <DEPENDENCY Name="System.Reactive.Linq.dll.vlimport" Location="System.Reactive.Linq.dll.vlimport" />
-    <DEPENDENCY Name="System.Reactive.Interfaces.dll.vlimport" Location="System.Reactive.Interfaces.dll.vlimport" />
     <DEPENDENCY Name="VL.Devices.Leap.vl" Location="./VL.Devices.Leap.vl" />
   </DEPENDENCIES>
   <PATCHES>

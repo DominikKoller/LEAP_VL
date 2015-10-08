@@ -643,6 +643,8 @@
    </BOUNDS>
    <PIN pinname="Devices" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE systemname="DeviceInfo (Leap)" filename="VVVV.Devices.Leap.vl" nodename="DeviceInfo (Leap)" componentmode="Hidden" id="76">
    <BOUNDS type="Node" left="4470" top="2280" width="100" height="100">
@@ -667,5 +669,23 @@
    <LINK srcnodeid="76" srcpinname="View AnglesXY" dstnodeid="86" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Devices" dstnodeid="76" dstpinname="Device">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="103" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5760" top="1605" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5760" top="1605" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="103" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enabled">
    </LINK>
    </PATCH>

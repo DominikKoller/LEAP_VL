@@ -49,9 +49,9 @@
    <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="8" dstpinname="Layers">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1170" top="1395" width="480" height="480">
+   <BOUNDS type="Box" left="630" top="1005" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1170" top="1395" width="0" height="0">
+   <BOUNDS type="Node" left="630" top="1005" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="1695" top="1470" width="1290" height="270">
+   <BOUNDS type="Node" left="1155" top="1080" width="1290" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1695" top="1470" width="2910" height="765">
+   <BOUNDS type="Box" left="1155" top="1080" width="2910" height="765">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Enable Images.&cr;&lf;For performance reasons, only enable images when you really need them.|">
    </PIN>
@@ -141,18 +141,10 @@
    </PIN>
    <PIN pinname="Enable Images" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enable Images">
-   </LINK>
-   <NODE systemname="LastFrame (Leap.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap.Frame)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="450" top="2460" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
-   </PIN>
-   <PIN pinname="Images" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Frame" dstnodeid="5" dstpinname="Observable">
    </LINK>
    <NODE nodename="Image (Leap)" componentmode="Hidden" id="0" systemname="Image (Leap)" filename="VVVV.Devices.Leap.vl">
    <BOUNDS type="Node" left="1275" top="2910" width="0" height="0">
@@ -162,8 +154,6 @@
    <PIN pinname="Image" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="0" dstpinname="Image">
-   </LINK>
    <NODE systemname="Image (Leap EX9.Texture)" filename="..\modules\Image (Leap EX9.Texture).v4p" nodename="Image (Leap EX9.Texture)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="2220" top="2925" width="100" height="100">
    </BOUNDS>
@@ -174,6 +164,52 @@
    </NODE>
    <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture">
    </LINK>
+   <NODE systemname="LastFrame (Leap)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="450" top="2460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Images" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Frame" dstnodeid="5" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Images" dstnodeid="0" dstpinname="Image">
+   </LINK>
    <LINK srcnodeid="5" srcpinname="Images" dstnodeid="6" dstpinname="Image">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1710" top="1875" width="435" height="390">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1710" top="1875" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2160" top="1875" width="840" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2160" top="1875" width="840" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Enabled|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

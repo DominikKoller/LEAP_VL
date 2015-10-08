@@ -282,18 +282,6 @@
    <BOUNDS type="Box" left="630" top="1890">
    </BOUNDS>
    </NODE>
-   <NODE systemname="LastFrame (Leap.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap.Frame)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="630" top="2295" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
-   </PIN>
-   <PIN pinname="Hands" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="630" top="2295">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="25" srcpinname="Frame" dstnodeid="24" dstpinname="Observable">
-   </LINK>
    <NODE systemname="Hand (Leap)" filename="VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="780" top="2745" width="100" height="100">
    </BOUNDS>
@@ -304,8 +292,6 @@
    <PIN pinname="Hand" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Hands" dstnodeid="19" dstpinname="Hand">
-   </LINK>
    <NODE systemname="Finger (Leap)" filename="VVVV.Devices.Leap.vl" nodename="Finger (Leap)" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="1095" top="3105" width="100" height="100">
    </BOUNDS>
@@ -349,5 +335,19 @@
    <LINK srcnodeid="18" srcpinname="StartXYZ" dstnodeid="23" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Bones" dstnodeid="18" dstpinname="Bone">
+   </LINK>
+   <NODE systemname="LastFrame (Leap)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="630" top="2295" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Hands" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="630" top="2295">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Frame" dstnodeid="24" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Hands" dstnodeid="19" dstpinname="Hand">
    </LINK>
    </PATCH>

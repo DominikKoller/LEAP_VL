@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GesturesView (Leap DX9).v4p" scrollx="0" scrolly="0" systemname="GesturesView (LeapDX9)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\GesturesView (LeapDX9).v4p">
-   <BOUNDS type="Window" left="900" top="825" width="19380" height="10980">
+   <BOUNDS type="Window" left="-120" top="-120" width="19380" height="10980">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="71">
-   <BOUNDS type="Node" left="2325" top="7492" width="100" height="100">
+   <BOUNDS type="Node" left="2325" top="7792" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -17,7 +17,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="70">
-   <BOUNDS type="Node" left="2325" top="7117" width="100" height="100">
+   <BOUNDS type="Node" left="2325" top="7417" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -27,9 +27,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="69" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2415" top="6802" width="285" height="240">
+   <BOUNDS type="Box" left="2415" top="7102" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2415" top="6802" width="0" height="0">
+   <BOUNDS type="Node" left="2415" top="7102" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
    </PIN>
@@ -97,7 +97,7 @@
    </PIN>
    </NODE>
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="59" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="7065" top="7012" width="600" height="270">
+   <BOUNDS type="Node" left="7020" top="7267" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Hue" visible="1">
    </PIN>
@@ -184,6 +184,14 @@
    </LINK>
    <LINK srcnodeid="60" srcpinname="Output" dstnodeid="61" dstpinname="XYZ">
    </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="1185" top="5545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="1860" top="1840" width="100" height="100">
    </BOUNDS>
@@ -195,11 +203,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2055" top="745" width="600" height="240">
+   <BOUNDS type="Box" left="2190" top="760" width="600" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2055" top="745" width="0" height="0">
+   <BOUNDS type="Node" left="2190" top="760" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -571,7 +579,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="7065" top="6625" width="100" height="100">
+   <BOUNDS type="Node" left="7020" top="6880" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -581,9 +589,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7200" top="6295" width="285" height="240">
+   <BOUNDS type="Box" left="7155" top="6550" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7200" top="6295" width="0" height="0">
+   <BOUNDS type="Node" left="7155" top="6550" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
    </PIN>
@@ -596,6 +604,14 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="59" dstpinname="Hue">
    </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="5100" top="3970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
    <BOUNDS type="Node" left="690" top="8700" width="780" height="270">
    </BOUNDS>
@@ -661,7 +677,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="11895" top="7945" width="100" height="100">
+   <BOUNDS type="Node" left="11880" top="7975" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -690,6 +706,8 @@
    <BOUNDS type="Box" left="540" top="8355">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="71" srcpinname="Output" dstnodeid="77" dstpinname="Color">
+   </LINK>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="71" dstpinname="Alpha">
    </LINK>
    <NODE systemname="Group (EX9)" filename="" nodename="Group (EX9)" componentmode="Hidden" id="52">
@@ -723,7 +741,7 @@
    <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="5070" top="8355" width="2715" height="270">
    </BOUNDS>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   <PIN pinname="Transform" visible="1">
    </PIN>
    <PIN pinname="Color" visible="1">
    </PIN>
@@ -736,6 +754,8 @@
    <PIN pinname="Cycles" slicecount="1" values="0.85">
    </PIN>
    </NODE>
+   <LINK srcnodeid="61" srcpinname="Transform Out" dstnodeid="78" dstpinname="Transform">
+   </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="59" dstpinname="Alpha">
    </LINK>
    <LINK srcnodeid="78" srcpinname="Layer" dstnodeid="52" dstpinname="Layer 2">
@@ -743,6 +763,24 @@
    <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="60" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="9555" top="8355" width="2970" height="270">
+   </BOUNDS>
+   <PIN pinname="Inner Radius" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Color Output" dstnodeid="79" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="79" srcpinname="Layer" dstnodeid="52" dstpinname="Layer 3">
    </LINK>
    <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="80">
    <BOUNDS type="Node" left="14040" top="8355" width="3060" height="270">
@@ -763,7 +801,7 @@
    <LINK srcnodeid="80" srcpinname="Layer" dstnodeid="52" dstpinname="Layer 4">
    </LINK>
    <NODE systemname="Select (Color)" nodename="Select (Color)" componentmode="Hidden" id="82">
-   <BOUNDS type="Node" left="7050" top="7425" width="100" height="100">
+   <BOUNDS type="Node" left="7005" top="7680" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -774,10 +812,12 @@
    </NODE>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="82" dstpinname="Input">
    </LINK>
+   <LINK srcnodeid="82" srcpinname="Output" dstnodeid="78" dstpinname="Color">
+   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="84" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7755" top="7035" width="420" height="240">
+   <BOUNDS type="Box" left="7710" top="7290" width="420" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7755" top="7035" width="0" height="0">
+   <BOUNDS type="Node" left="7710" top="7290" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
    </PIN>
@@ -808,6 +848,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
+   <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="79" dstpinname="Resolution">
+   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="86" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="14520" top="6750" width="375" height="240">
    </BOUNDS>
@@ -862,6 +904,8 @@
    <PIN pinname="Key Tap" visible="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="49" srcpinname="Swipe" dstnodeid="51" dstpinname="Input">
+   </LINK>
    <LINK srcnodeid="49" srcpinname="Swipe Former Index" dstnodeid="44" dstpinname="Index" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="2940" y="4238">
    </LINKPOINT>
@@ -886,6 +930,28 @@
    <LINKPOINT x="17040" y="4343">
    </LINKPOINT>
    </LINK>
+   <LINK srcnodeid="49" srcpinname="Circle" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Keep (Leap.Gesture)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Keep (Leap.Gesture)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="1155" top="1465" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Gestures Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Kept" visible="1">
+   </PIN>
+   <PIN pinname="Keep Time" visible="1" slicecount="1" values="1.06">
+   </PIN>
+   <PIN pinname="Gestures" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Output Node" dstnodeid="50" dstpinname="Gesture">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Kept" dstnodeid="48" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Keep Time">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Gestures" dstnodeid="49" dstpinname="Gesture">
+   </LINK>
    <NODE systemname="CircleGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="CircleGesture (Leap)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="5460" top="4417" width="1965" height="270">
    </BOUNDS>
@@ -908,6 +974,8 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="NormalXYZ" dstnodeid="65" dstpinname="Input 2">
    </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="3" dstpinname="CircleGesture">
+   </LINK>
    <LINK srcnodeid="3" srcpinname="Id" dstnodeid="15" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Progress" dstnodeid="56" dstpinname="Input 2">
@@ -915,7 +983,7 @@
    <LINK srcnodeid="3" srcpinname="Radius" dstnodeid="60" dstpinname="Input 2">
    </LINK>
    <NODE systemname="SwipeGesture (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="SwipeGesture (Leap)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1170" top="6134" width="1200" height="270">
+   <BOUNDS type="Node" left="1170" top="5992" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Id" visible="1">
    </PIN>
@@ -926,6 +994,8 @@
    <PIN pinname="PositionXYZ" visible="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="2" dstpinname="SwipeGesture">
+   </LINK>
    <LINK srcnodeid="2" srcpinname="Id" dstnodeid="70" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Start PositionXYZ" dstnodeid="77" dstpinname="From">
@@ -964,82 +1034,40 @@
    </LINK>
    <LINK srcnodeid="49" srcpinname="Key Tap" dstnodeid="0" dstpinname="KeyTapGesture">
    </LINK>
-   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="26" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="4" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="80" dstpinname="Inner Radius">
-   </LINK>
-   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="36" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="5" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="49" srcpinname="Circle" dstnodeid="3" dstpinname="CircleGesture">
-   </LINK>
-   <LINK srcnodeid="24" srcpinname="Transform Out" dstnodeid="80" dstpinname="Transform">
-   </LINK>
-   <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="90">
-   <BOUNDS type="Node" left="9555" top="8355" width="2970" height="270">
-   </BOUNDS>
-   <PIN pinname="Inner Radius" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="16" srcpinname="Color Output" dstnodeid="90" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="52" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Resolution">
-   </LINK>
-   <LINK srcnodeid="39" srcpinname="Transform Out" dstnodeid="90" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="90" dstpinname="Inner Radius">
-   </LINK>
-   <NODE systemname="AvoidNIL (Color)" filename="%VVVV%\lib\nodes\modules\Color\AvoidNIL (Color).v4p" nodename="AvoidNIL (Color)" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="6660" top="7920" width="100" height="100">
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="14340" top="7935" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="82" srcpinname="Output" dstnodeid="91" dstpinname="Input">
+   <LINK srcnodeid="24" srcpinname="Transform Out" dstnodeid="88" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="78" dstpinname="Color">
+   <LINK srcnodeid="88" srcpinname="Output" dstnodeid="80" dstpinname="Transform">
    </LINK>
-   <NODE systemname="AvoidNIL (Color)" filename="%VVVV%\lib\nodes\modules\Color\AvoidNIL (Color).v4p" nodename="AvoidNIL (Color)" componentmode="Hidden" id="92">
-   <BOUNDS type="Node" left="1530" top="7950" width="100" height="100">
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="26" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="80" dstpinname="Inner Radius">
+   </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="9840" top="8010" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|0.00000,1.00000,0.00000,1.00000|">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="71" srcpinname="Output" dstnodeid="92" dstpinname="Input">
+   <LINK srcnodeid="39" srcpinname="Transform Out" dstnodeid="89" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="77" dstpinname="Color">
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="79" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="61" srcpinname="Transform Out" dstnodeid="78" dstpinname="Transform">
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="36" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="49" srcpinname="Swipe" dstnodeid="2" dstpinname="SwipeGesture">
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="5" dstpinname="Input">
    </LINK>
-   <NODE systemname="Keep (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Keep (Leap)" componentmode="Hidden" id="50">
-   <BOUNDS type="Node" left="1155" top="1465" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Gestures Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Kept" visible="1">
-   </PIN>
-   <PIN pinname="Keep Time" visible="1" slicecount="1" values="1.06">
-   </PIN>
-   <PIN pinname="Gestures" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="53" srcpinname="Output Node" dstnodeid="50" dstpinname="Gesture">
-   </LINK>
-   <LINK srcnodeid="50" srcpinname="Kept" dstnodeid="48" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Keep Time">
-   </LINK>
-   <LINK srcnodeid="50" srcpinname="Gestures" dstnodeid="49" dstpinname="Gesture">
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="79" dstpinname="Inner Radius">
    </LINK>
    </PATCH>

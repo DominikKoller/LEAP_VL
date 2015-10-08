@@ -737,8 +737,6 @@
    </PIN>
    <BOUNDS type="Box" left="2655" top="6945">
    </BOUNDS>
-   <BOUNDS type="Window" left="9270" top="1470" width="14775" height="10980">
-   </BOUNDS>
    </NODE>
    <LINK srcnodeid="368" srcpinname="Hands" dstnodeid="374" dstpinname="Hand">
    </LINK>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\HandView (Leap DX9).v4p" systemname="HandView (Leap DX9)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\HandView (Leap DX9).v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="495" top="3000" width="14775" height="10695">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\HandView (Leap DX9).v4p" systemname="HandView (Leap DX9)" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\modules\HandView (Leap DX9).v4p" scrollx="0" scrolly="-300">
+   <BOUNDS type="Window" left="9270" top="1470" width="14775" height="10980">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -170,18 +170,6 @@
    <PIN pinname="OutputXYZ" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="4755" top="5829" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Z" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1" slicecount="1" values="0.021">
-   </PIN>
-   <PIN pinname="XYZ" visible="1">
-   </PIN>
-   <PIN pinname="X" slicecount="1" visible="1" values="0.03">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="34" systemname="IOBox (String)">
    <BOUNDS type="Node" left="13050" top="4689" width="1845" height="270">
    </BOUNDS>
@@ -262,8 +250,6 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="14" dstpinname="FilterTime">
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Distance" dstnodeid="32" dstpinname="Z">
-   </LINK>
    <LINK srcnodeid="23" srcpinname="Transform Out" dstnodeid="25" dstpinname="Transform In 2">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="23" dstpinname="XYZ">
@@ -281,7 +267,7 @@
    <LINK srcnodeid="14" srcpinname="Position Out" dstnodeid="16" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="4650" top="5205" width="100" height="100">
+   <BOUNDS type="Node" left="4770" top="5400" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -291,9 +277,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5070" top="5220" width="285" height="240">
+   <BOUNDS type="Box" left="5190" top="5415" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5070" top="5220" width="0" height="0">
+   <BOUNDS type="Node" left="5190" top="5415" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
    </PIN>
@@ -303,8 +289,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="32" dstpinname="Y">
    </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="3060" top="1065" width="100" height="100">
@@ -345,7 +329,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Enabled" visible="-1" pintype="Input" slicecount="1" values="1">
+   <PIN pinname="Enabled" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -354,30 +338,6 @@
    <PIN pinname="Layer Template Count" slicecount="1" values="3">
    </PIN>
    </NODE>
-   <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="1365" top="6840" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Alpha" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Mesh" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="14" srcpinname="Position Out" dstnodeid="7" dstpinname="Alpha" hiddenwhenlocked="0">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Transform Out" dstnodeid="7" dstpinname="Transform">
-   </LINK>
    <NODE systemname="Box (EX9.Geometry)" filename="" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="870" top="6189" width="690" height="270">
    </BOUNDS>
@@ -394,8 +354,6 @@
    <PIN pinname="Width" visible="1" slicecount="1" values="0.06">
    </PIN>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="Mesh" dstnodeid="7" dstpinname="Mesh">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
    <BOUNDS type="Node" left="600" top="5880" width="100" height="100">
    </BOUNDS>
@@ -422,31 +380,7 @@
    </LINK>
    <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Width">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Layer" dstnodeid="39" dstpinname="Input Node">
-   </LINK>
-   <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="5250" top="6840" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Alpha" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Mesh" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="14" srcpinname="Position Out" dstnodeid="22" dstpinname="Alpha" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Transform Out" dstnodeid="22" dstpinname="Transform">
    </LINK>
    <NODE systemname="Box (EX9.Geometry)" filename="" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="4755" top="6249" width="100" height="100">
@@ -468,24 +402,6 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Distance" dstnodeid="24" dstpinname="Depth">
    </LINK>
-   <LINK srcnodeid="24" srcpinname="Mesh" dstnodeid="22" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 2">
-   </LINK>
-   <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="9360" top="6840" width="4050" height="270">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Mesh" visible="1">
-   </PIN>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="49" dstpinname="Alpha">
-   </LINK>
    <NODE systemname="Box (EX9.Geometry)" filename="" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="11055" top="5979" width="100" height="100">
    </BOUNDS>
@@ -502,12 +418,6 @@
    <PIN pinname="Mesh" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Mesh" dstnodeid="49" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="49" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="49" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 3">
-   </LINK>
    <NODE systemname="Hand (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3057" top="1515" width="100" height="100">
    </BOUNDS>
@@ -592,8 +502,6 @@
    <PIN pinname="Width" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="27" srcpinname="Width" dstnodeid="32" dstpinname="X">
-   </LINK>
    <LINK srcnodeid="27" srcpinname="Basis" dstnodeid="25" dstpinname="Transform In 1">
    </LINK>
    <LINK srcnodeid="27" srcpinname="ElbowPositionXYZ" dstnodeid="26" dstpinname="XYZ1">
@@ -651,5 +559,117 @@
    <LINK srcnodeid="4" srcpinname="Length" dstnodeid="5" dstpinname="Depth">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Bones" dstnodeid="4" dstpinname="Bone">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13950" top="690" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13950" top="690" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="13980" y="7485">
+   </LINKPOINT>
+   <LINKPOINT x="9390" y="7485">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="72" systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Specular Color" slicecount="1" pintype="Input" visible="1" values="|0.35000,0.35000,0.35000,1.00000|">
+   </PIN>
+   <PIN pinname="Diffuse Color" slicecount="1" pintype="Input" visible="1" values="|0.85000,0.85000,0.85000,1.00000|">
+   </PIN>
+   <PIN pinname="Ambient Color" slicecount="1" pintype="Input" visible="1" values="|0.15000,0.15000,0.15000,1.00000|">
+   </PIN>
+   <BOUNDS type="Node" left="1365" top="6840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Select Next Valid Technique" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Render State" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mesh" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Transform" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Light Direction XYZ" pintype="Input" visible="1" slicecount="3" values="0,-5,2">
+   </PIN>
+   <PIN pinname="Power" pintype="Input" visible="1" slicecount="1" values="25">
+   </PIN>
+   <PIN pinname="Texture" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Alpha" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Technique" pintype="Input" visible="1" slicecount="1" values="| TPhongDirectional|">
+   </PIN>
+   <PIN pinname="Technique Pass" pintype="Input" visible="1" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Space" pintype="Input" slicecount="1" values="World">
+   </PIN>
+   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layer" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Compiled" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Technique Valid" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Description" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Mesh" dstnodeid="72" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Transform Out" dstnodeid="72" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Position Out" dstnodeid="72" dstpinname="Alpha" hiddenwhenlocked="0">
+   </LINK>
+   <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="5250" top="6840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Ambient Color" visible="1" slicecount="1" values="|0.15000,0.15000,0.15000,1.00000|">
+   </PIN>
+   <PIN pinname="Diffuse Color" visible="1" slicecount="1" values="|0.85000,0.85000,0.85000,1.00000|">
+   </PIN>
+   <PIN pinname="Specular Color" visible="1" slicecount="1" values="|0.35000,0.35000,0.35000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Position Out" dstnodeid="73" dstpinname="Alpha" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Transform Out" dstnodeid="73" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Mesh" dstnodeid="73" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="81">
+   <BOUNDS type="Node" left="9360" top="6840" width="4050" height="270">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="81" dstpinname="Alpha">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Mesh" dstnodeid="81" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="81" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 3">
    </LINK>
    </PATCH>

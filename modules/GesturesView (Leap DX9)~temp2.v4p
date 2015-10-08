@@ -693,7 +693,7 @@
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="71" dstpinname="Alpha">
    </LINK>
    <NODE systemname="Group (EX9)" filename="" nodename="Group (EX9)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="555" top="9145" width="13545" height="270">
+   <BOUNDS type="Node" left="555" top="9145" width="18030" height="270">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -703,7 +703,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Enabled" visible="-1" pintype="Input" slicecount="1" values="1">
+   <PIN pinname="Enabled" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1041,5 +1041,25 @@
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Keep Time">
    </LINK>
    <LINK srcnodeid="50" srcpinname="Gestures" dstnodeid="49" dstpinname="Gesture">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="18540" top="945" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18540" top="945" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Enabled">
    </LINK>
    </PATCH>

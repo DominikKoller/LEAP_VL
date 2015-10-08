@@ -1001,17 +1001,9 @@
    </PIN>
    <PIN pinname="Enable Images" slicecount="1" values="0">
    </PIN>
-   </NODE>
-   <NODE systemname="LastFrame (Leap.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap.Frame)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="360" top="1815" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
-   </PIN>
-   <PIN pinname="Hands" visible="1">
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Frame" dstnodeid="9" dstpinname="Observable">
-   </LINK>
    <NODE nodename="Hand (Leap)" componentmode="Hidden" id="121" systemname="Hand (Leap)" filename="VVVV.Devices.Leap.vl">
    <BOUNDS type="Node" left="345" top="2400" width="0" height="0">
    </BOUNDS>
@@ -1049,8 +1041,6 @@
    <LINK srcnodeid="121" srcpinname="DirectionXYZ" dstnodeid="60" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="121" srcpinname="Basis" dstnodeid="72" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Hands" dstnodeid="121" dstpinname="Hand">
    </LINK>
    <NODE systemname="Pointable (Leap)" filename="VVVV.Devices.Leap.vl" nodename="Pointable (Leap)" componentmode="Hidden" id="106">
    <BOUNDS type="Node" left="1290" top="4080" width="100" height="100">
@@ -1102,4 +1092,50 @@
    </NODE>
    <LINK srcnodeid="121" srcpinname="Arm" dstnodeid="71" dstpinname="Arm">
    </LINK>
+   <NODE systemname="LastFrame (Leap)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="360" top="1815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Hands" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Frame" dstnodeid="9" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Hands" dstnodeid="121" dstpinname="Hand">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="122" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1665" top="1230" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1665" top="1230" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="122" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="123" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2175" top="1260" width="840" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2175" top="1260" width="840" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Enabled|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -576,7 +576,7 @@
             <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Hand" />
               <CATEGORY Name="Leap" IsDirectParent="true">
-                <CATEGORY Name="Devices" IsDirectParent="true" />
+                <CATEGORY Name="Devices" IsDirectParent="true" IsGlobal="true" />
               </CATEGORY>
             </NODEREF>
             <INPUTS>
@@ -1095,12 +1095,10 @@
         <NODES>
           <OPERATION Name="AsRaw" Layer="AsRaw">
             <POSITION x="611" y="468" />
-            <NODEREF>
+            <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="AsRaw" />
-              <CATEGORY Name="Frame" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
+              <CATEGORY Name="Leap" IsDirectParent="true">
+                <CATEGORY Name="Devices" IsDirectParent="true" IsGlobal="true" />
               </CATEGORY>
             </NODEREF>
             <INPUTS>
@@ -1112,12 +1110,10 @@
           </OPERATION>
           <OPERATION Name="FromRaw" Layer="FromRaw">
             <POSITION x="766" y="463" />
-            <NODEREF>
+            <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="FromRaw" />
-              <CATEGORY Name="Frame" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
+              <CATEGORY Name="Leap" IsDirectParent="true">
+                <CATEGORY Name="Devices" IsDirectParent="true" IsGlobal="true" />
               </CATEGORY>
             </NODEREF>
             <INPUTS>
@@ -1187,6 +1183,9 @@
       </BODY>
     </PATCH>
     <PATCH Name="Selectors" Category="VVVV.Leap" IsClosed="true">
+      <INFO>
+        <TAGS></TAGS>
+      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="SelectHands" />
@@ -1194,6 +1193,7 @@
           <LAYER Name="SelectBones" />
           <LAYER Name="SelectFingers#1" Version="Position" />
           <LAYER Name="SelectHands#1" Version="Position" />
+          <LAYER Name="SelectBones#1" Version="Position" />
         </LAYERS>
         <INLETS>
           <INLET Name="Bones" Layer="SelectBones">
@@ -1226,6 +1226,12 @@
           <INLET Name="Position#1" Layer="SelectHands (Position)">
             <POSITION x="1563.15137" y="249.86319" />
           </INLET>
+          <INLET Name="Bones#1" Layer="SelectBones (Position)">
+            <POSITION x="1683.64331" y="247.278076" />
+          </INLET>
+          <INLET Name="Position#2" Layer="SelectBones (Position)">
+            <POSITION x="1759.47119" y="247.278076" />
+          </INLET>
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Bones" Layer="SelectBones">
@@ -1242,6 +1248,9 @@
           </OUTLET>
           <OUTLET Name="Hands#1" Layer="SelectHands (Position)">
             <POSITION x="1489.63525" y="381.224274" />
+          </OUTLET>
+          <OUTLET Name="Bones#1" Layer="SelectBones (Position)">
+            <POSITION x="1685.95508" y="378.639282" />
           </OUTLET>
         </OUTLETS>
         <CONSTS />
@@ -1275,7 +1284,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="SelectFingers" Layer="SelectFingers">
-            <POSITION x="1035.65308" y="332.4122" />
+            <POSITION x="1032.38867" y="340.0292" />
             <NODEREF LastFile="VL.Devices.Leap.vl">
               <CATEGORYPATH Name="Devices.Leap" />
               <OPERATIONNODE Name="SelectFingers" />
@@ -1289,7 +1298,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToSpread#1" Layer="SelectFingers">
-            <POSITION x="1035.65308" y="289.46524" />
+            <POSITION x="1031.30054" y="286.744873" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
               <OPERATIONNODE Name="ToSpread" />
               <CATEGORY Name="Sequence" IsDirectParent="true" />
@@ -1339,7 +1348,7 @@
               <INPUT Name="Position" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Finger" />
+              <OUPUT Name="Fingers" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToSpread#3" Layer="SelectFingers (Position)">
@@ -1362,15 +1371,42 @@
               <OPERATIONNODE Name="SelectHands" Version="Position" />
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hands" />
               <INPUT Name="Position" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Hand" />
+              <OUPUT Name="Hands" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToSpread#4" Layer="SelectHands (Position)">
             <POSITION x="1489.63525" y="288.861969" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="SelectBones#1" Layer="SelectBones (Position)">
+            <POSITION x="1685.95508" y="336.872437" />
+            <NODEREF LastFile="VL.Devices.Leap.vl">
+              <CATEGORYPATH Name="Devices.Leap" />
+              <OPERATIONNODE Name="SelectBones" Version="Position" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Bones" />
+              <INPUT Name="Position" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Bones" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#5" Layer="SelectBones (Position)">
+            <POSITION x="1685.95508" y="286.276978" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
               <OPERATIONNODE Name="ToSpread" />
               <CATEGORY Name="Sequence" IsDirectParent="true" />
@@ -1399,11 +1435,15 @@
           <Link source="Inlets/Fingers#1" sink="Nodes/ToSpread#3/Inputs/Input" />
           <Link source="Nodes/ToSpread#3/Outputs/Result" sink="Nodes/SelectFingers#1/Inputs/Fingers" />
           <Link source="Inlets/Position" sink="Nodes/SelectFingers#1/Inputs/Position" />
-          <Link source="Nodes/SelectFingers#1/Outputs/Finger" sink="Outlets/Fingers#1" />
+          <Link source="Nodes/SelectFingers#1/Outputs/Fingers" sink="Outlets/Fingers#1" />
           <Link source="Inlets/Hands#1" sink="Nodes/ToSpread#4/Inputs/Input" />
-          <Link source="Nodes/ToSpread#4/Outputs/Result" sink="Nodes/SelectHands#1/Inputs/Input" />
-          <Link source="Nodes/SelectHands#1/Outputs/Hand" sink="Outlets/Hands#1" />
+          <Link source="Nodes/ToSpread#4/Outputs/Result" sink="Nodes/SelectHands#1/Inputs/Hands" />
+          <Link source="Nodes/SelectHands#1/Outputs/Hands" sink="Outlets/Hands#1" />
           <Link source="Inlets/Position#1" sink="Nodes/SelectHands#1/Inputs/Position" />
+          <Link source="Inlets/Bones#1" sink="Nodes/ToSpread#5/Inputs/Input" />
+          <Link source="Inlets/Position#2" sink="Nodes/SelectBones#1/Inputs/Position" />
+          <Link source="Nodes/SelectBones#1/Outputs/Bones" sink="Outlets/Bones#1" />
+          <Link source="Nodes/ToSpread#5/Outputs/Result" sink="Nodes/SelectBones#1/Inputs/Bones" />
         </LINKS>
       </BODY>
     </PATCH>

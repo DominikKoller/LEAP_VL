@@ -203,19 +203,9 @@
    </PIN>
    <BOUNDS type="Box" left="2805" top="1455">
    </BOUNDS>
-   </NODE>
-   <NODE systemname="LastFrame (Leap.Frame)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap.Frame)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2805" top="1860" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Observable" visible="1">
+   <PIN pinname="Enabled" visible="1">
    </PIN>
-   <PIN pinname="Hands" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="2805" top="1860">
-   </BOUNDS>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Frame" dstnodeid="6" dstpinname="Observable">
-   </LINK>
    <NODE nodename="SelectHands (Leap)" componentmode="Hidden" id="0" systemname="SelectHands (Leap)" filename="VVVV.Devices.Leap.vl">
    <BOUNDS type="Node" left="405" top="3045" width="0" height="0">
    </BOUNDS>
@@ -229,8 +219,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="0" dstpinname="Right">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Hands" dstnodeid="0" dstpinname="Hands">
    </LINK>
    <NODE systemname="Hand (Leap)" filename="VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="405" top="3750" width="100" height="100">
@@ -281,8 +269,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Output Enum" dstnodeid="10" dstpinname="Right">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Hands" dstnodeid="10" dstpinname="Hands">
    </LINK>
    <NODE systemname="Hand (Leap)" filename="VVVV.Devices.Leap.vl" nodename="Hand (Leap)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="4140" top="3750" width="100" height="100">
@@ -384,4 +370,54 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Initial Distance">
    </LINK>
+   <NODE systemname="LastFrame (Leap)" filename="VVVV.Devices.Leap.vl" nodename="LastFrame (Leap)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2805" top="1860" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Observable" visible="1">
+   </PIN>
+   <PIN pinname="Hands" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="2805" top="1860">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Frame" dstnodeid="6" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Hands" dstnodeid="0" dstpinname="Hands">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Hands" dstnodeid="10" dstpinname="Hands">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4110" top="1245" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4110" top="1245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="66" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4635" top="1320" width="840" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4635" top="1320" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Enabled|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

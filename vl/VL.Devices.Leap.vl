@@ -687,10 +687,10 @@
               <OUPUT Name="Result" />
             </OUTPUTS>
           </OPERATION>
-          <PROCESS Name="Observable">
-            <POSITION x="-470.690857" y="313.92688" />
+          <PROCESS Name="ObservableDisposeManager">
+            <POSITION x="-506.690857" y="317.92688" />
             <NODEREF LastCat="LeapVLWrapper" LastFile="LeapVLWrapper.dll">
-              <PROCESSNODE Name="Observable" />
+              <PROCESSNODE Name="ObservableDisposeManager" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Controller" FragmentId="Create" />
@@ -1012,10 +1012,10 @@
           <Link source="Nodes/IsServiceConnected/Outputs/Result" sink="Outlets/IsServiceConnected" />
           <Link source="Nodes/IsConnected/Outputs/Is Connected" sink="Outlets/Is Connected" />
           <Link source="Constants/Gesture Type" sink="Regions/IfElse#1/IfElseBody/Nodes/SetGestureEnabled/Inputs/Gesture Type" />
-          <Link source="Regions/Abstraction/Outputs/Functionality" sink="Nodes/Observable/Inputs/On Subscribe" />
-          <Link source="Regions/Abstraction#1/Outputs/Functionality" sink="Nodes/Observable/Inputs/On Unsubscribe" />
-          <Link source="Nodes/Observable/Outputs/Controller" sink="Nodes/IsConnected/Inputs/Input" />
-          <Link source="Nodes/Create#1/Outputs/Output" sink="Nodes/Observable/Inputs/Controller" />
+          <Link source="Regions/Abstraction/Outputs/Functionality" sink="Nodes/ObservableDisposeManager/Inputs/On Subscribe" />
+          <Link source="Regions/Abstraction#1/Outputs/Functionality" sink="Nodes/ObservableDisposeManager/Inputs/On Unsubscribe" />
+          <Link source="Nodes/ObservableDisposeManager/Outputs/Controller" sink="Nodes/IsConnected/Inputs/Input" />
+          <Link source="Nodes/Create#1/Outputs/Output" sink="Nodes/ObservableDisposeManager/Inputs/Controller" />
           <Link source="Nodes/Devices/Outputs/Devices" sink="Nodes/ToSpread/Inputs/Input" />
           <Link source="Nodes/ToSpread/Outputs/Result" sink="Outlets/Devices" />
           <Link source="Nodes/IsServiceConnected/Outputs/Output" sink="Nodes/Devices/Inputs/Input" />
@@ -1071,7 +1071,7 @@
           <Link source="Nodes/Devices/Outputs/Output" sink="Nodes/IsPolicySet/Inputs/Controller" />
           <Link source="Constants/Policy#3" sink="Regions/IfElse#9/IfElseBody/Nodes/SetPolicy/Inputs/Policy" />
           <Link source="Constants/Policy#5" sink="Regions/IfElse#10/IfElseBody/Nodes/SetPolicy/Inputs/Policy" />
-          <Link source="Nodes/Observable/Outputs/Notifications" sink="Nodes/SwitchInput/Inputs/True" />
+          <Link source="Nodes/ObservableDisposeManager/Outputs/Notifications" sink="Nodes/SwitchInput/Inputs/True" />
           <Link source="Nodes/SwitchInput/Outputs/Output" sink="Outlets/Frame" />
           <Link source="Inlets/Enabled" sink="Nodes/SwitchInput/Inputs/Condition">
             <SEGMENTS>

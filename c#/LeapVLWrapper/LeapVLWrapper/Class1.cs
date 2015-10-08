@@ -33,9 +33,11 @@ namespace LeapVLWrapper
     // Therefor (for now) much easier to put this logic here.
     // Workaround: VL is very strict in regards to mutablility: Data linked into delegate regions needs to be immutable.
     // Therefore explicetly pipe data from subscribe to unsubscribe. This data we call "TDataForUnsubscribe"
+    
+        //its name should be reconsidered
     [Type]
     [Node(OperationsOfProcessNode = "Create, Controller, Notifications")]
-    public class Observable<TController, TData, TDataForUnsubscribe> : IDisposable
+    public class ObservableDisposeManager<TController, TData, TDataForUnsubscribe> : IDisposable
         where TController : class
     {
         [Node]
@@ -47,7 +49,7 @@ namespace LeapVLWrapper
         IDisposable _subscription;
 
         [Node]
-        public Observable(
+        public ObservableDisposeManager(
             TController controller,
             Func<Tuple<TController, IObserver<TData>>, TDataForUnsubscribe> onSubscribe,
             Action<TDataForUnsubscribe> onUnsubscribe)

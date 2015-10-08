@@ -604,16 +604,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE id="362" systemname="Leap (Devices)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden">
-   <BOUNDS type="Node" left="720" top="3405" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="362" srcpinname="Devices" dstnodeid="294" dstpinname="Device">
-   </LINK>
-   <LINK srcnodeid="362" srcpinname="Frame" dstnodeid="300" dstpinname="Observable">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="363" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2025" top="3195" width="480" height="480">
    </BOUNDS>
@@ -632,8 +622,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="363" srcpinname="Y Output Value" dstnodeid="362" dstpinname="Enabled">
-   </LINK>
    <NODE systemname="SelectBones (Leap Position)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="SelectBones (Leap Position)" componentmode="Hidden" id="364">
    <BOUNDS type="Node" left="6645" top="9990" width="100" height="100">
    </BOUNDS>
@@ -689,6 +677,8 @@
    </PIN>
    <PIN pinname="Gestures" visible="1">
    </PIN>
+   <PIN pinname="Observable" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="368" srcpinname="Images" dstnodeid="302" dstpinname="Image" linkstyle="PolyLine">
    </LINK>
@@ -697,8 +687,6 @@
    <LINK srcnodeid="368" srcpinname="Images" dstnodeid="281" dstpinname="Image" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="368" srcpinname="Hands" dstnodeid="346" dstpinname="Hands" linkstyle="PolyLine" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="362" srcpinname="Frame" dstnodeid="368" dstpinname="Observable">
    </LINK>
    <LINK srcnodeid="368" srcpinname="Gestures" dstnodeid="366" dstpinname="Gesture" linkstyle="PolyLine">
    </LINK>
@@ -742,7 +730,7 @@
    <BOUNDS type="Window" left="9270" top="1470" width="14775" height="10980">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="368" srcpinname="Hands" dstnodeid="374" dstpinname="Hand">
+   <LINK srcnodeid="368" srcpinname="Hands" dstnodeid="374" dstpinname="Hand" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="PinchView (Leap DX9)" filename="..\modules\PinchView (Leap DX9).v4p" nodename="PinchView (Leap DX9)" componentmode="Hidden" id="375">
    <BOUNDS type="Node" left="2655" top="7380" width="100" height="100">
@@ -760,7 +748,7 @@
    <PIN pinname="Gesture" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="368" srcpinname="Hands" dstnodeid="375" dstpinname="Hand">
+   <LINK srcnodeid="368" srcpinname="Hands" dstnodeid="375" dstpinname="Hand" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="368" srcpinname="Gestures" dstnodeid="376" dstpinname="Gesture">
    </LINK>
@@ -857,5 +845,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="381" srcpinname="Y Output Value" dstnodeid="366" dstpinname="Keep Time">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="382" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2520" top="3270" width="840" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2520" top="3270" width="840" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Enabled|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="383" systemname="Leap (Devices)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden">
+   <BOUNDS type="Node" left="720" top="3405" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="383" srcpinname="Devices" dstnodeid="294" dstpinname="Device">
+   </LINK>
+   <LINK srcnodeid="383" srcpinname="Frame" dstnodeid="300" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="363" srcpinname="Y Output Value" dstnodeid="383" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="383" srcpinname="Frame" dstnodeid="368" dstpinname="Observable">
    </LINK>
    </PATCH>

@@ -1183,9 +1183,6 @@
       </BODY>
     </PATCH>
     <PATCH Name="Selectors" Category="VVVV.Leap" IsClosed="true">
-      <INFO>
-        <TAGS></TAGS>
-      </INFO>
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="SelectHands" />

@@ -16,7 +16,6 @@
     <DEPENDENCY Name="VL.Core.dll" Location="VL.Core.dll" />
     <DEPENDENCY Name="LeapCSharp.NET4.0.dll.vlimport" Location="..\vlimport\x64\LeapCSharp.NET4.0.dll.vlimport" />
     <DEPENDENCY Name="System.Reactive.Linq.dll.vlimport" Location="System.Reactive.Linq.dll.vlimport" />
-    <DEPENDENCY Name="System.Reactive.Interfaces.dll.vlimport" Location="System.Reactive.Interfaces.dll.vlimport" />
     <DEPENDENCY Name="LeapVLWrapper.dll" Location="..\vlimport\LeapVLWrapper.dll" />
   </DEPENDENCIES>
   <PATCHES>
@@ -688,7 +687,7 @@
             </OUTPUTS>
           </OPERATION>
           <PROCESS Name="ObservableDisposeManager">
-            <POSITION x="-506.690857" y="317.92688" />
+            <POSITION x="-511.690857" y="318.92688" />
             <NODEREF LastCat="LeapVLWrapper" LastFile="LeapVLWrapper.dll">
               <PROCESSNODE Name="ObservableDisposeManager" />
             </NODEREF>

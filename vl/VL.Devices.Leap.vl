@@ -4331,22 +4331,13 @@
             <POSITION x="354.526855" y="497.1136" />
           </OUTLET>
           <OUTLET Name="Vector3" Layer="ToVector3">
-            <POSITION x="357.4319" y="309.198975" />
+            <POSITION x="359.484528" y="291.238434" />
           </OUTLET>
         </OUTLETS>
         <CONSTS>
-          <CONST Name="nOne" Layer="ToVector3" Type="Integer32">
-            <POSITION x="466.046539" y="189.804153" />
-            <VALUE><![CDATA[-1.0]]></VALUE>
-          </CONST>
           <CONST Name="comment" Layer="ToVector3" Type="String">
-            <POSITION x="543.944" y="190.9331" />
+            <POSITION x="470.049225" y="226.341019" />
             <VALUE><![CDATA["< Leap Vectors are in a Right Handed coordinate system, vvvv uses left handed."]]></VALUE>
-          </CONST>
-          <CONST Name="nOne#1" Layer="FromVector3" Type="Integer32">
-            <POSITION x="408.6215" y="403.1999" />
-            <SIZE width="40" height="15.50846" />
-            <VALUE><![CDATA[-1]]></VALUE>
           </CONST>
         </CONSTS>
         <REGIONS />
@@ -4403,22 +4394,6 @@
               <OUPUT Name="Z" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="*" Layer="ToVector3">
-            <POSITION x="429.355774" y="224.801529" />
-            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="*" />
-              <CATEGORY Name="Adaptive" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-              <INPUT Name="Input 3" />
-              <INPUT Name="Enabled" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="Create" Layer="FromVector3">
             <POSITION x="357.532074" y="461.8022" />
             <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
@@ -4449,10 +4424,26 @@
               <OUPUT Name="Z" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="*#1" Layer="FromVector3">
-            <POSITION x="392.09256" y="430.998474" />
+          <OPERATION Name="-" Layer="ToVector3">
+            <POSITION x="416.4738" y="226.263275" />
             <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="*" />
+              <OPERATIONNODE Name="-" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+              <INPUT Name="Input 3" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="-#1" Layer="FromVector3">
+            <POSITION x="389.2764" y="428.4477" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="-" />
               <CATEGORY Name="Adaptive" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
@@ -4471,18 +4462,16 @@
           <Link source="Nodes/x/Outputs/X" sink="Nodes/Vector/Inputs/X" />
           <Link source="Inlets/Vector" sink="Nodes/z/Inputs/Input" />
           <Link source="Nodes/Vector/Outputs/Output" sink="Outlets/Vector3" />
-          <Link source="Nodes/z/Outputs/Z" sink="Nodes/*/Inputs/Input" />
-          <Link source="Constants/nOne" sink="Nodes/*/Inputs/Input 2" />
-          <Link source="Nodes/*/Outputs/Output" sink="Nodes/Vector/Inputs/Z" />
           <Link source="Inlets/Vector" sink="Nodes/y/Inputs/Input" />
           <Link source="Inlets/Vector" sink="Nodes/x/Inputs/Input" />
           <Link source="Inlets/Vector3" sink="Nodes/Vector#1/Inputs/Input" />
           <Link source="Nodes/Vector#1/Outputs/X" sink="Nodes/Create/Inputs/_x" />
           <Link source="Nodes/Vector#1/Outputs/Y" sink="Nodes/Create/Inputs/_y" />
           <Link source="Nodes/Create/Outputs/Output" sink="Outlets/Vector" />
-          <Link source="Nodes/Vector#1/Outputs/Z" sink="Nodes/*#1/Inputs/Input" />
-          <Link source="Nodes/*#1/Outputs/Output" sink="Nodes/Create/Inputs/_z" />
-          <Link source="Constants/nOne#1" sink="Nodes/*#1/Inputs/Input 2" />
+          <Link source="Nodes/z/Outputs/Z" sink="Nodes/-/Inputs/Input 2" />
+          <Link source="Nodes/-/Outputs/Output" sink="Nodes/Vector/Inputs/Z" />
+          <Link source="Nodes/Vector#1/Outputs/Z" sink="Nodes/-#1/Inputs/Input 2" />
+          <Link source="Nodes/-#1/Outputs/Output" sink="Nodes/Create/Inputs/_z" />
         </LINKS>
       </BODY>
     </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Overview.v4p" scrollx="0" scrolly="0" systemname="Leap Nodestructure" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap Nodestructure.v4p">
-   <BOUNDS type="Window" left="1785" top="1410" width="13755" height="11955">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Overview.v4p" scrollx="0" scrolly="-210" systemname="Leap Nodestructure" filename="C:\Users\vvvv_2\Documents\DOMINIK\LEAP_VL\girlpower\Leap Nodestructure.v4p">
+   <BOUNDS type="Window" left="1095" top="0" width="13755" height="10980">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.100.0">
    </PACK>
@@ -183,6 +183,8 @@
    </PIN>
    <BOUNDS type="Box" left="1230" top="3900">
    </BOUNDS>
+   <PIN pinname="Serial Number" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Gestures (Leap Observable)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Gestures (LeapVL Observable)" componentmode="Hidden" id="300">
    <BOUNDS type="Node" left="1230" top="4275" width="100" height="100">
@@ -215,7 +217,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AsRaw (Leap.Frame)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="AsRaw (LeapVL.Frame)" componentmode="Hidden" id="296">
-   <BOUNDS type="Node" left="735" top="5925" width="100" height="100">
+   <BOUNDS type="Node" left="720" top="5655" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Frame" visible="1">
    </PIN>
@@ -223,17 +225,17 @@
    </PIN>
    <PIN pinname="Raw" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="735" top="5925">
+   <BOUNDS type="Box" left="720" top="5655">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="185" srcpinname="Frame" dstnodeid="296" dstpinname="Frame" linkstyle="VHV">
-   <LINKPOINT x="755" y="5520">
+   <LINKPOINT x="750" y="5430">
    </LINKPOINT>
-   <LINKPOINT x="760" y="5520">
+   <LINKPOINT x="750" y="5340">
    </LINKPOINT>
    </LINK>
    <NODE systemname="FromRaw (Leap.Frame)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="FromRaw (LeapVL.Frame)" componentmode="Hidden" id="297">
-   <BOUNDS type="Node" left="735" top="6360" width="100" height="100">
+   <BOUNDS type="Node" left="720" top="6165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Serialized Data" visible="1">
    </PIN>
@@ -476,20 +478,10 @@
    </NODE>
    <LINK srcnodeid="284" srcpinname="Tools" dstnodeid="165" dstpinname="Tool">
    </LINK>
-   <NODE id="319" systemname="Leap (Devices)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden">
-   <BOUNDS type="Node" left="720" top="3405" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="319" srcpinname="Devices" dstnodeid="294" dstpinname="Device">
-   </LINK>
-   <LINK srcnodeid="319" srcpinname="Frame" dstnodeid="300" dstpinname="Observable">
-   </LINK>
-   <LINK srcnodeid="319" srcpinname="Frame" dstnodeid="185" dstpinname="Observable">
-   </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="322" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="5760" top="8280" width="810" height="240">
+   <BOUNDS type="Box" left="5790" top="8115" width="1425" height="405">
    </BOUNDS>
-   <BOUNDS type="Node" left="5760" top="8280" width="0" height="0">
+   <BOUNDS type="Node" left="5790" top="8115" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Thumb">
    </PIN>
@@ -497,11 +489,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="324" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="4620" top="5415" width="750" height="255">
+   <BOUNDS type="Box" left="5730" top="5385" width="750" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="4620" top="5415" width="0" height="0">
+   <BOUNDS type="Node" left="5730" top="5385" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Left">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Right">
    </PIN>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
@@ -525,9 +517,9 @@
    <LINK srcnodeid="284" srcpinname="Fingers" dstnodeid="87" dstpinname="Finger">
    </LINK>
    <LINK srcnodeid="185" srcpinname="Hands" dstnodeid="284" dstpinname="Hand" linkstyle="VHV">
-   <LINKPOINT x="4360" y="5385">
+   <LINKPOINT x="2565" y="5910">
    </LINKPOINT>
-   <LINKPOINT x="3275" y="5565">
+   <LINKPOINT x="3270" y="5910">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="332" systemname="IOBox (String)">
@@ -629,17 +621,17 @@
    <LINK srcnodeid="322" srcpinname="Output Enum" dstnodeid="325" dstpinname="FingerType">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="343" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="5805" top="8685" width="1050" height="240">
+   <BOUNDS type="Box" left="5775" top="8625" width="1335" height="300">
    </BOUNDS>
-   <BOUNDS type="Node" left="5805" top="8685" width="0" height="0">
+   <BOUNDS type="Node" left="5775" top="8625" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Frontmost">
    </PIN>
    </NODE>
    <NODE systemname="SelectHands (Leap)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="SelectHand (LeapVL)" componentmode="Hidden" id="346">
-   <BOUNDS type="Node" left="3390" top="5400" width="100" height="100">
+   <BOUNDS type="Node" left="4500" top="5370" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3390" top="5400">
+   <BOUNDS type="Box" left="4500" top="5370">
    </BOUNDS>
    <PIN pinname="Side" visible="1">
    </PIN>
@@ -647,15 +639,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="185" srcpinname="Hands" dstnodeid="346" dstpinname="Hands" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="2565" y="5175">
+   <LINKPOINT x="2935" y="5165">
    </LINKPOINT>
-   <LINKPOINT x="3420" y="5175">
+   <LINKPOINT x="4160" y="5155">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="324" srcpinname="Output Enum" dstnodeid="346" dstpinname="Side">
    </LINK>
    <NODE systemname="SelectHands (Leap Position)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="SelectHands (Leap Position)" componentmode="Hidden" id="347">
-   <BOUNDS type="Node" left="3390" top="5790" width="100" height="100">
+   <BOUNDS type="Node" left="4590" top="5805" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Hands" visible="1" slicecount="1" values="||">
    </PIN>
@@ -663,9 +655,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="348" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="4635" top="5805" width="1095" height="240">
+   <BOUNDS type="Box" left="5835" top="5820" width="1095" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4635" top="5805" width="0" height="0">
+   <BOUNDS type="Node" left="5835" top="5820" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Frontmost">
    </PIN>
@@ -745,9 +737,41 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="185" srcpinname="Hands" dstnodeid="347" dstpinname="Hands" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="2565" y="5310">
+   <LINKPOINT x="4315" y="5735">
    </LINKPOINT>
-   <LINKPOINT x="3420" y="5310">
+   <LINKPOINT x="4670" y="5695">
    </LINKPOINT>
+   </LINK>
+   <NODE id="362" systemname="Leap (Devices)" filename="..\vl\VVVV.Devices.Leap.vl" nodename="Leap (Devices VL)" componentmode="Hidden">
+   <BOUNDS type="Node" left="720" top="3405" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="362" srcpinname="Devices" dstnodeid="294" dstpinname="Device">
+   </LINK>
+   <LINK srcnodeid="362" srcpinname="Frame" dstnodeid="300" dstpinname="Observable">
+   </LINK>
+   <LINK srcnodeid="362" srcpinname="Frame" dstnodeid="185" dstpinname="Observable">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="363" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2025" top="3195" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2025" top="3195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="363" srcpinname="Y Output Value" dstnodeid="362" dstpinname="Enabled">
    </LINK>
    </PATCH>

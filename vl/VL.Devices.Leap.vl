@@ -35,54 +35,57 @@
             <POSITION x="509.596436" y="165.158356" />
           </INLET>
           <INLET Name="Enable Data in Background" Layer="Update">
-            <POSITION x="686.657043" y="114.828659" />
+            <POSITION x="686.657043" y="120.326729" />
           </INLET>
           <INLET Name="Enable Images" Layer="Update">
-            <POSITION x="925.739136" y="114.828659" />
+            <POSITION x="925.739136" y="120.326729" />
           </INLET>
           <INLET Name="Enable Head Mount Optimization" Layer="Update">
-            <POSITION x="1257.42908" y="114.828659" />
+            <POSITION x="1257.42908" y="120.326729" />
           </INLET>
           <INLET Name="Swipe Gesture" Layer="Update">
-            <POSITION x="1669.00378" y="114.828659" />
+            <POSITION x="1669.00378" y="120.326729" />
           </INLET>
           <INLET Name="Circle Gesture" Layer="Update">
-            <POSITION x="1963.61255" y="114.828659" />
+            <POSITION x="1963.61255" y="120.326729" />
           </INLET>
           <INLET Name="Screen Tap Gesture" Layer="Update">
-            <POSITION x="2245.306" y="114.828659" />
+            <POSITION x="2245.306" y="120.326729" />
           </INLET>
           <INLET Name="Key Tap Gesture" Layer="Update">
-            <POSITION x="2495.94482" y="114.828659" />
+            <POSITION x="2495.94482" y="120.326729" />
+          </INLET>
+          <INLET Name="Enabled" Layer="Update">
+            <POSITION x="2668.31226" y="120.326729" />
           </INLET>
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Frame" Layer="Update">
-            <POSITION x="-412.406158" y="535.656433" />
+            <POSITION x="-496.400848" y="585.690552" />
           </OUTLET>
           <OUTLET Name="Is Connected" Layer="Update">
-            <POSITION x="-286.113647" y="535.656433" />
+            <POSITION x="-286.113647" y="585.690552" />
           </OUTLET>
           <OUTLET Name="IsFirstFrame#1" Layer="Create" PadType="Field">
             <POSITION x="-250.2127" y="48.21866" />
           </OUTLET>
           <OUTLET Name="IsServiceConnected" Layer="Update">
-            <POSITION x="-197.224762" y="535.656433" />
+            <POSITION x="-197.224762" y="585.690552" />
           </OUTLET>
           <OUTLET Name="Devices" Layer="Update">
-            <POSITION x="-49.8687439" y="535.656433" />
+            <POSITION x="-49.8687439" y="585.690552" />
           </OUTLET>
           <OUTLET Name="Data in Background Enabled" Layer="Update">
-            <POSITION x="108.31842" y="535.656433" />
+            <POSITION x="108.31842" y="585.690552" />
           </OUTLET>
           <OUTLET Name="Images Enabled" Layer="Update">
-            <POSITION x="302.023132" y="535.656433" />
+            <POSITION x="302.023132" y="585.690552" />
           </OUTLET>
           <OUTLET Name="IsFirstFrame" Layer="Update" PadType="Field">
             <POSITION x="467.735168" y="238.895279" />
           </OUTLET>
           <OUTLET Name="Head Mount Optimization Enabled" Layer="Update">
-            <POSITION x="543.7917" y="535.656433" />
+            <POSITION x="543.7917" y="585.690552" />
           </OUTLET>
         </OUTLETS>
         <CONSTS>
@@ -990,6 +993,20 @@
               <FRAGMENT Name="Update" />
             </FRAGMENTS>
           </PROCESS>
+          <OPERATION Name="SwitchInput" Layer="Update">
+            <POSITION x="-495.017639" y="558.6034" />
+            <NODEREF LastCat="Control" LastFile="Basics.vl">
+              <OPERATIONNODE Name="SwitchInput" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Condition" />
+              <INPUT Name="False" />
+              <INPUT Name="True" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
         </NODES>
         <LINKS>
           <Link source="Nodes/IsServiceConnected/Outputs/Result" sink="Outlets/IsServiceConnected" />
@@ -999,7 +1016,6 @@
           <Link source="Regions/Abstraction#1/Outputs/Functionality" sink="Nodes/Observable/Inputs/On Unsubscribe" />
           <Link source="Nodes/Observable/Outputs/Controller" sink="Nodes/IsConnected/Inputs/Input" />
           <Link source="Nodes/Create#1/Outputs/Output" sink="Nodes/Observable/Inputs/Controller" />
-          <Link source="Nodes/Observable/Outputs/Notifications" sink="Outlets/Frame" />
           <Link source="Nodes/Devices/Outputs/Devices" sink="Nodes/ToSpread/Inputs/Input" />
           <Link source="Nodes/ToSpread/Outputs/Result" sink="Outlets/Devices" />
           <Link source="Nodes/IsServiceConnected/Outputs/Output" sink="Nodes/Devices/Inputs/Input" />
@@ -1063,6 +1079,14 @@
           <Link source="Constants/Policy#3" sink="Regions/IfElse#9/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
           <Link source="Constants/Policy#4" sink="Regions/IfElse#8/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
           <Link source="Constants/Policy#5" sink="Regions/IfElse#10/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
+          <Link source="Nodes/Observable/Outputs/Notifications" sink="Nodes/SwitchInput/Inputs/True" />
+          <Link source="Nodes/SwitchInput/Outputs/Output" sink="Outlets/Frame" />
+          <Link source="Inlets/Enabled" sink="Nodes/SwitchInput/Inputs/Condition">
+            <SEGMENTS>
+              <Point x="18.730957" y="422.613953" />
+              <Point x="-3167.50024" y="416.1421" />
+            </SEGMENTS>
+          </Link>
         </LINKS>
       </BODY>
     </PATCH>
@@ -1125,7 +1149,7 @@
             <POSITION x="2758.31519" y="1388.39868" />
           </INLET>
           <INLET Name="Gesture" Layer="Gestures" Type="Sequence&lt;Gesture&gt;">
-            <POSITION x="2764.6394" y="404.6295" />
+            <POSITION x="2765.47217" y="404.6295" />
           </INLET>
         </INLETS>
         <OUTLETS>
@@ -3003,7 +3027,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="OfType" Layer="Gestures">
-            <POSITION x="2769.326" y="479.457672" />
+            <POSITION x="2770.15845" y="484.453979" />
             <NODEREF LastCat="Collections.Sequence" LastFile="System.Core.dll">
               <OPERATIONNODE Name="OfType" />
               <CATEGORY Name="Sequence" IsDirectParent="true" />
@@ -4960,10 +4984,10 @@
             <POSITION x="135.744659" y="62.36888" />
           </INLET>
           <INLET Name="GDictionary" Layer="Update" PadType="Field">
-            <POSITION x="371.57074" y="150.82048" />
+            <POSITION x="363.57074" y="152.82048" />
           </INLET>
           <INLET Name="TDictionary" Layer="Update" PadType="Field">
-            <POSITION x="434.267181" y="152.95575" />
+            <POSITION x="457.267181" y="153.95575" />
           </INLET>
           <INLET Name="LastTime" Layer="Update" PadType="Field">
             <POSITION x="558.0027" y="183.2583" />
@@ -4974,10 +4998,10 @@
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Gestures" Layer="Update">
-            <POSITION x="345.5947" y="1176.53735" />
+            <POSITION x="342.839874" y="1168.27283" />
           </OUTLET>
           <OUTLET Name="Kept" Layer="Update">
-            <POSITION x="419.6104" y="1176.53735" />
+            <POSITION x="419.6104" y="1168.27283" />
           </OUTLET>
           <OUTLET Name="LastTime" Layer="Update" PadType="Field">
             <POSITION x="501.082458" y="186.535019" />
@@ -5241,7 +5265,7 @@
                   <POSITION x="272.404419" y="373.754456" />
                 </INLET>
                 <INLET Name="TDictionary" Layer="Update" PadType="Accumulator">
-                  <POSITION x="347.27005" y="301.1052" />
+                  <POSITION x="349.737366" y="300.282745" />
                 </INLET>
                 <INLET Name="Keys" Layer="Update">
                   <POSITION x="423.9863" y="241.463379" />
@@ -5539,7 +5563,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToSpread" Layer="Update">
-            <POSITION x="134.88324" y="557.849365" />
+            <POSITION x="134.88324" y="561.7643" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
               <OPERATIONNODE Name="ToSpread" />
               <CATEGORY Name="Sequence" IsDirectParent="true" />
@@ -6608,8 +6632,8 @@
           </CONST>
           <CONST Name="comment#3" Layer="Update" Type="String">
             <POSITION x="516.0949" y="373.859863" />
-            <SIZE width="98.13517" height="11.3852539" />
-            <VALUE><![CDATA["< I all those Frames (either all incoming Frames or the latest saved frame), look for Gestures and store them in the GestureList"]]></VALUE>
+            <SIZE width="603.2681" height="11.3852539" />
+            <VALUE><![CDATA["< In all those Frames (either all incoming Frames or the latest saved frame), look for Gestures and store them in the GestureList"]]></VALUE>
           </CONST>
           <CONST Name="comment#5" Layer="Update" Type="String">
             <POSITION x="550.291138" y="621.645264" />

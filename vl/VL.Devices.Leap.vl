@@ -82,7 +82,7 @@
             <POSITION x="302.023132" y="585.690552" />
           </OUTLET>
           <OUTLET Name="IsFirstFrame" Layer="Update" PadType="Field">
-            <POSITION x="467.735168" y="238.895279" />
+            <POSITION x="473.6093" y="222.447647" />
           </OUTLET>
           <OUTLET Name="Head Mount Optimization Enabled" Layer="Update">
             <POSITION x="543.7917" y="585.690552" />
@@ -95,7 +95,7 @@
             <VALUE><![CDATA[{"type":"GestureType [LeapVLWrapper]","value":1}]]></VALUE>
           </CONST>
           <CONST Name="IsFirstFrame" Layer="Update">
-            <POSITION x="436.108856" y="212.471725" />
+            <POSITION x="441.983" y="196.0241" />
             <VALUE><![CDATA[false]]></VALUE>
           </CONST>
           <CONST Name="IsFirstFrame#1" Layer="Create">
@@ -103,17 +103,17 @@
             <VALUE><![CDATA[true]]></VALUE>
           </CONST>
           <CONST Name="Policy" Layer="Update">
-            <POSITION x="133.4966" y="411.351563" />
+            <POSITION x="95.90199" y="439.5475" />
             <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":1}]]></VALUE>
           </CONST>
           <CONST Name="Policy#1" Layer="Update">
-            <POSITION x="332.260651" y="415.330322" />
+            <POSITION x="300.540253" y="442.35144" />
             <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":2}]]></VALUE>
           </CONST>
           <CONST Name="Policy#2" Layer="Update">
-            <POSITION x="548.540466" y="416.8202" />
+            <POSITION x="516.820068" y="443.8413" />
             <SIZE width="149.126678" height="15.50846" />
             <VALUE><![CDATA[{"type":"PolicyFlag [LeapVLWrapper]","value":4}]]></VALUE>
           </CONST>
@@ -751,7 +751,7 @@
             </FRAGMENTS>
           </PROCESS>
           <OPERATION Name="IsPolicySet" Layer="Update">
-            <POSITION x="137.159058" y="454.424438" />
+            <POSITION x="99.56445" y="482.620361" />
             <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
               <OPERATIONNODE Name="IsPolicySet" />
             </NODEREF>
@@ -842,7 +842,7 @@
             </FRAGMENTS>
           </PROCESS>
           <OPERATION Name="IsPolicySet#1" Layer="Update">
-            <POSITION x="335.923126" y="458.4032" />
+            <POSITION x="304.202728" y="485.424316" />
             <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
               <OPERATIONNODE Name="IsPolicySet" />
             </NODEREF>
@@ -856,7 +856,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="IsPolicySet#2" Layer="Update">
-            <POSITION x="551.551636" y="465.7548" />
+            <POSITION x="519.831238" y="492.7759" />
             <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
               <OPERATIONNODE Name="IsPolicySet" />
             </NODEREF>
@@ -1730,7 +1730,7 @@
               <NODES>
                 <OPERATION Name="SpecifyGestureType" Layer="Update">
                   <POSITION x="-443.054352" y="210.157867" />
-                  <NODEREF LastCat="Devices.Leap.Gesture" LastFile="VL.Devices.Leap.vl">
+                  <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
                     <OPERATIONNODE Name="SpecifyGestureType" />
                   </NODEREF>
                   <INPUTS>
@@ -2018,7 +2018,7 @@
           </OPERATION>
           <OPERATION Name="ToMatrix" Layer="Hand">
             <POSITION x="209.4123" y="537.1677" />
-            <NODEREF LastCat="Devices.Leap.Matrix" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Matrix" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToMatrix" />
             </NODEREF>
             <INPUTS>
@@ -2030,13 +2030,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3" Layer="Hand">
             <POSITION x="331.14856" y="533.000732" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2047,13 +2043,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#1" Layer="Hand">
             <POSITION x="437.5135" y="590.7567" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2064,13 +2056,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#2" Layer="Hand">
             <POSITION x="577.6845" y="590.7567" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2081,13 +2069,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#3" Layer="Hand">
             <POSITION x="718.681763" y="590.7567" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2098,13 +2082,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#4" Layer="Hand">
             <POSITION x="855.9218" y="590.7567" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2115,13 +2095,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#5" Layer="Hand">
             <POSITION x="1048.81042" y="590.7567" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2132,13 +2108,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#6" Layer="Hand">
             <POSITION x="1154.82678" y="590.7567" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2214,7 +2186,7 @@
           </OPERATION>
           <OPERATION Name="ToMatrix#1" Layer="Arm">
             <POSITION x="-531.4037" y="857.5802" />
-            <NODEREF LastCat="Devices.Leap.Matrix" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Matrix" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToMatrix" />
             </NODEREF>
             <INPUTS>
@@ -2226,13 +2198,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#7" Layer="Arm">
             <POSITION x="-433.813232" y="861.0133" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2243,13 +2211,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#8" Layer="Arm">
             <POSITION x="-309.824249" y="858.140259" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2260,13 +2224,9 @@
           </OPERATION>
           <OPERATION Name="ToVector3#9" Layer="Arm">
             <POSITION x="-205.3581" y="858.6913" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true">
-                  <CATEGORY Name="Devices" IsDirectParent="true" />
-                </CATEGORY>
-              </CATEGORY>
+              <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
             <INPUTS>
               <INPUT Name="Vector" />
@@ -2484,8 +2444,8 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToMatrix#2" Layer="Bone">
-            <POSITION x="209.3953" y="1127.02515" />
-            <NODEREF LastCat="Devices.Leap.Matrix" LastFile="VL.Devices.Leap.vl">
+            <POSITION x="208.559662" y="1112.82007" />
+            <NODEREF LastCat="Leap.Matrix" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToMatrix" />
             </NODEREF>
             <INPUTS>
@@ -2496,8 +2456,8 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToVector3#18" Layer="Bone">
-            <POSITION x="417.099121" y="1122.4165" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <POSITION x="420.716431" y="1122.01453" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2510,7 +2470,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#19" Layer="Bone">
             <POSITION x="638.4519" y="1121.86255" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2522,8 +2482,8 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToVector3#20" Layer="Bone">
-            <POSITION x="322.544342" y="1126.73291" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <POSITION x="320.1328" y="1115.8811" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2536,7 +2496,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#21" Layer="Bone">
             <POSITION x="521.723267" y="1121.40723" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2913,7 +2873,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#11" Layer="SwipeGesture">
             <POSITION x="2931.58521" y="1066.25391" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2926,7 +2886,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#12" Layer="SwipeGesture">
             <POSITION x="2754.50415" y="1067.36523" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -2939,7 +2899,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#13" Layer="SwipeGesture">
             <POSITION x="2832.14233" y="1066.67017" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3132,7 +3092,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#22" Layer="CircleGesture">
             <POSITION x="2745.65845" y="1297.43066" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3145,7 +3105,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#23" Layer="CircleGesture">
             <POSITION x="2825.39" y="1297.52026" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3209,7 +3169,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#24" Layer="ScreenTapGesture">
             <POSITION x="2753.9856" y="1494.87451" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -3222,7 +3182,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#25" Layer="ScreenTapGesture">
             <POSITION x="2851.99341" y="1494.897" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -3286,7 +3246,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#26" Layer="KeyTapGesture">
             <POSITION x="2746.79419" y="1719.35083" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3299,7 +3259,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#27" Layer="KeyTapGesture">
             <POSITION x="2838.04126" y="1717.052" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -3538,7 +3498,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Images#1" Layer="Frame">
-            <POSITION x="-289.8942" y="118.360077" />
+            <POSITION x="-275.144562" y="134.748535" />
             <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
               <CATEGORY Name="Frame" />
               <OPERATIONNODE Name="Images" />
@@ -3707,7 +3667,7 @@
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="ToSpread#6" Layer="Frame">
-            <POSITION x="-289.848938" y="172.182892" />
+            <POSITION x="-275.0993" y="188.57135" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
               <OPERATIONNODE Name="ToSpread" />
               <CATEGORY Name="Sequence" IsDirectParent="true" />
@@ -4107,7 +4067,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="MatrixConverter" Category="Devices.Leap.Matrix" IsClosed="true">
+    <PATCH Name="MatrixConverter" Category="Leap.Matrix" IsClosed="true">
       <INFO>
         <SUMMARY>Convect to / from Leap.Matrix</SUMMARY>
       </INFO>
@@ -4192,7 +4152,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3" Layer="ToMatrix">
             <POSITION x="273.1637" y="310.146637" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -4205,7 +4165,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#1" Layer="ToMatrix">
             <POSITION x="354.362061" y="308.6445" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -4218,7 +4178,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#2" Layer="ToMatrix">
             <POSITION x="438.868469" y="307.96936" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <CATEGORY Name="Vector" />
               <OPERATIONNODE Name="ToVector3" />
             </NODEREF>
@@ -4349,7 +4309,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="VectorConverters" Category="Devices.Leap.Vector" IsClosed="true">
+    <PATCH Name="VectorConverters" Category="Leap.Vector" IsClosed="true">
       <INFO>
         <SUMMARY>Convert to / from Leap.Vector</SUMMARY>
       </INFO>
@@ -4770,7 +4730,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#10" Layer="Pointable">
             <POSITION x="304.0633" y="459.857239" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4783,7 +4743,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#11" Layer="Pointable">
             <POSITION x="401.346375" y="461.564636" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4796,7 +4756,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#12" Layer="Pointable">
             <POSITION x="528.3419" y="459.857239" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4809,7 +4769,7 @@
           </OPERATION>
           <OPERATION Name="ToVector3#13" Layer="Pointable">
             <POSITION x="617.8413" y="462.4184" />
-            <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="ToVector3" />
               <CATEGORY Name="Vector" IsDirectParent="true" />
             </NODEREF>
@@ -4969,7 +4929,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Keep" Category="Devices.Leap.Gesture" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="Keep" Category="Devices.Leap" IsDatatype="true" IsClosed="true" IsMutable="true">
       <INFO>
         <SUMMARY>Holds Leap gestures in storage after they disappear for given time</SUMMARY>
         <TAGS>gesture</TAGS>
@@ -5624,7 +5584,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Utils" Category="Devices.Leap.Gesture">
+    <PATCH Name="Utils" Category="Devices.Leap">
       <BODY Name="UtilsBody">
         <LAYERS>
           <LAYER Name="SpecifyGestureType" />
@@ -6468,7 +6428,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Serialize" Category="Devices.Leap.Frame" IsClosed="true">
+    <PATCH Name="Serialize" Category="Devices.Leap" IsClosed="true">
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="FromRaw" />
@@ -6671,7 +6631,7 @@
               <NODES>
                 <OPERATION Name="SpecifyGestureType" Layer="Update">
                   <POSITION x="424.0136" y="618.033569" />
-                  <NODEREF LastCat="Devices.Leap.Gesture" LastFile="VL.Devices.Leap.vl">
+                  <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
                     <OPERATIONNODE Name="SpecifyGestureType" />
                   </NODEREF>
                   <INPUTS>
@@ -7239,7 +7199,7 @@
                       </OPERATION>
                       <OPERATION Name="ToVector3" Layer="Predicate">
                         <POSITION x="1256.07007" y="536.3703" />
-                        <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                        <NODEREF>
                           <OPERATIONNODE Name="ToVector3" />
                           <CATEGORY Name="Vector" IsDirectParent="true">
                             <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7303,7 +7263,7 @@
                       </OPERATION>
                       <OPERATION Name="ToVector3" Layer="Update">
                         <POSITION x="1382.66382" y="471.325623" />
-                        <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                        <NODEREF>
                           <OPERATIONNODE Name="ToVector3" />
                           <CATEGORY Name="Vector" IsDirectParent="true">
                             <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7431,7 +7391,7 @@
                       </OPERATION>
                       <OPERATION Name="ToVector3" Layer="Selector">
                         <POSITION x="1665.69348" y="473.855" />
-                        <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                        <NODEREF>
                           <OPERATIONNODE Name="ToVector3" />
                           <CATEGORY Name="Vector" IsDirectParent="true">
                             <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7540,7 +7500,7 @@
                       </OPERATION>
                       <OPERATION Name="ToVector3" Layer="Predicate">
                         <POSITION x="1569.89038" y="527.934448" />
-                        <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                        <NODEREF>
                           <OPERATIONNODE Name="ToVector3" />
                           <CATEGORY Name="Vector" IsDirectParent="true">
                             <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7642,7 +7602,7 @@
                       </OPERATION>
                       <OPERATION Name="ToVector3" Layer="Selector">
                         <POSITION x="1989.39685" y="474.233643" />
-                        <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                        <NODEREF>
                           <OPERATIONNODE Name="ToVector3" />
                           <CATEGORY Name="Vector" IsDirectParent="true">
                             <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7751,7 +7711,7 @@
                       </OPERATION>
                       <OPERATION Name="ToVector3" Layer="Predicate">
                         <POSITION x="1870.23083" y="517.3405" />
-                        <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                        <NODEREF>
                           <OPERATIONNODE Name="ToVector3" />
                           <CATEGORY Name="Vector" IsDirectParent="true">
                             <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7833,7 +7793,7 @@
                 </OPERATION>
                 <OPERATION Name="ToVector3" Layer="Predicate">
                   <POSITION x="2414.40161" y="527.8623" />
-                  <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                  <NODEREF>
                     <OPERATIONNODE Name="ToVector3" />
                     <CATEGORY Name="Vector" IsDirectParent="true">
                       <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7911,7 +7871,7 @@
                 </OPERATION>
                 <OPERATION Name="ToVector3" Layer="Update">
                   <POSITION x="2477.72217" y="351.468933" />
-                  <NODEREF LastCat="Devices.Leap.Vector" LastFile="VL.Devices.Leap.vl">
+                  <NODEREF>
                     <OPERATIONNODE Name="ToVector3" />
                     <CATEGORY Name="Vector" IsDirectParent="true">
                       <CATEGORY Name="Leap" IsDirectParent="true">
@@ -7984,7 +7944,7 @@
           </OPERATION>
           <OPERATION Name="SelectVector" Layer="SelectHands (Position)">
             <POSITION x="2563.653" y="408.4574" />
-            <NODEREF LastCat="Devices.Leap.Gesture" LastFile="VL.Devices.Leap.vl">
+            <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="SelectVector" Version="Position" />
             </NODEREF>
             <INPUTS>

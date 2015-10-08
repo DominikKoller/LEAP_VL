@@ -51,6 +51,9 @@
           <INLET Name="Key Tap Gesture" Layer="Update">
             <POSITION x="887.0464" y="321.477722" />
           </INLET>
+          <INLET Name="Enabled" Layer="Update">
+            <POSITION x="1014.64655" y="321.477722" />
+          </INLET>
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Frame" Layer="Update">
@@ -92,6 +95,7 @@
               <INPUT Name="Circle Gesture" FragmentId="Update" />
               <INPUT Name="Screen Tap Gesture" FragmentId="Update" />
               <INPUT Name="Key Tap Gesture" FragmentId="Update" />
+              <INPUT Name="Enabled" FragmentId="Update" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Frame" FragmentId="Update" />
@@ -123,6 +127,7 @@
           <Link source="Nodes/Leap/Outputs/Data in Background Enabled" sink="Outlets/Data in Background Enabled" />
           <Link source="Nodes/Leap/Outputs/Images Enabled" sink="Outlets/Images Enabled" />
           <Link source="Nodes/Leap/Outputs/Head Mount Optimization Enabled" sink="Outlets/Head Mount Optimization Enabled" />
+          <Link source="Inlets/Enabled" sink="Nodes/Leap/Inputs/Enabled" />
         </LINKS>
       </BODY>
     </PATCH>
@@ -938,7 +943,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="LastFrame" Category="VVVV.Leap.Frame" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="LastFrame" Category="VVVV.Leap" IsDatatype="true" IsClosed="true" IsMutable="true">
       <INFO>
         <SUMMARY>Last frame of Leap trackingdata</SUMMARY>
         <TAGS>tracking,,observable</TAGS>
@@ -1002,7 +1007,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Keep" Category="VVVV.Leap.Gesture" IsDatatype="true" IsClosed="true" IsMutable="true">
+    <PATCH Name="Keep" Category="VVVV.Leap" IsDatatype="true" IsClosed="true" IsMutable="true">
       <INFO>
         <SUMMARY>Keeps Leap gestures in storage after they disappeared for a given time</SUMMARY>
       </INFO>
@@ -1031,10 +1036,12 @@
         <REGIONS />
         <NODES>
           <PROCESS Name="Keep">
-            <POSITION x="136.513763" y="99.60489" />
-            <NODEREF LastFile="VL.Devices.Leap.vl">
+            <POSITION x="135.513763" y="95.60489" />
+            <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
               <PROCESSNODE Name="Keep" />
-              <CATEGORYPATH Name="Devices.Leap.Gesture" />
+              <CATEGORY Name="Leap" IsDirectParent="true">
+                <CATEGORY Name="Devices" IsDirectParent="true" IsGlobal="true" />
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
               <INPUT Name="Gesture" FragmentId="Update" />
@@ -1058,7 +1065,7 @@
         </LINKS>
       </BODY>
     </PATCH>
-    <PATCH Name="Serialize" Category="VVVV.Leap.Frame" IsClosed="true">
+    <PATCH Name="Serialize" Category="VVVV.Leap" IsClosed="true">
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="FromRaw" />
@@ -1088,7 +1095,7 @@
         <NODES>
           <OPERATION Name="AsRaw" Layer="AsRaw">
             <POSITION x="611" y="468" />
-            <NODEREF LastCat="Devices.Leap.Frame" LastFile="VL.Devices.Leap.vl">
+            <NODEREF>
               <OPERATIONNODE Name="AsRaw" />
               <CATEGORY Name="Frame" IsDirectParent="true">
                 <CATEGORY Name="Leap" IsDirectParent="true">
@@ -1105,7 +1112,7 @@
           </OPERATION>
           <OPERATION Name="FromRaw" Layer="FromRaw">
             <POSITION x="766" y="463" />
-            <NODEREF LastCat="Devices.Leap.Frame" LastFile="VL.Devices.Leap.vl">
+            <NODEREF>
               <OPERATIONNODE Name="FromRaw" />
               <CATEGORY Name="Frame" IsDirectParent="true">
                 <CATEGORY Name="Leap" IsDirectParent="true">

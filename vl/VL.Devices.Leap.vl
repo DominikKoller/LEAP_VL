@@ -1154,16 +1154,16 @@
         </INLETS>
         <OUTLETS>
           <OUTLET Name="Result" Layer="Image">
-            <POSITION x="-1261.5979" y="600.441956" />
+            <POSITION x="-1266.07458" y="587.396667" />
           </OUTLET>
           <OUTLET Name="Bytes Per Pixel" Layer="Image">
-            <POSITION x="-1154.42651" y="600.441956" />
+            <POSITION x="-1158.81238" y="587.396667" />
           </OUTLET>
           <OUTLET Name="Width#4" Layer="Image">
-            <POSITION x="-1056.081" y="600.441956" />
+            <POSITION x="-1060.46692" y="587.396667" />
           </OUTLET>
           <OUTLET Name="Height" Layer="Image">
-            <POSITION x="-1000.90381" y="600.441956" />
+            <POSITION x="-1005.28967" y="587.396667" />
           </OUTLET>
           <OUTLET Name="Arm#1" Layer="Hand">
             <POSITION x="-568.1036" y="619.0344" />
@@ -1218,6 +1218,9 @@
           </OUTLET>
           <OUTLET Name="Serial Number" Layer="DeviceInfo">
             <POSITION x="71.29736" y="8.661377" />
+          </OUTLET>
+          <OUTLET Name="Type" Layer="Bone">
+            <POSITION x="128.8455" y="1150.68628" />
           </OUTLET>
           <OUTLET Name="Bones" Layer="Finger">
             <POSITION x="198.828369" y="897.546143" />
@@ -1437,9 +1440,6 @@
           </OUTLET>
           <OUTLET Name="Key Tap Former Index" Layer="Gestures">
             <POSITION x="3536.01782" y="747.1793" />
-          </OUTLET>
-          <OUTLET Name="Type" Layer="Bone">
-            <POSITION x="128.8455" y="1150.68628" />
           </OUTLET>
         </OUTLETS>
         <CONSTS>
@@ -1768,7 +1768,7 @@
               </INLETS>
               <OUTLETS>
                 <OUTLET Name="Bytes" Layer="True">
-                  <POSITION x="-1264.17725" y="525.195862" />
+                  <POSITION x="-1263.73865" y="529.1432" />
                 </OUTLET>
               </OUTLETS>
               <CONSTS />
@@ -3654,18 +3654,6 @@
               <OUPUT Name="Bytes Per Pixel" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ToRaw" Layer="Image">
-            <POSITION x="-1261.5979" y="552.164734" />
-            <NODEREF LastCat="Collections.Array" LastFile="VL.Lib.Integration.dll">
-              <OPERATIONNODE Name="ToRaw" Version="Byte" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="ToSpread#6" Layer="Frame">
             <POSITION x="-275.0993" y="188.57135" />
             <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
@@ -3771,6 +3759,18 @@
             </NODEREF>
             <INPUTS>
               <INPUT Name="Bone" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToRaw" Layer="Image">
+            <POSITION x="-1263.17993" y="560.943237" />
+            <NODEREF LastCat="Collections.Array" LastFile="VL.Lib.Integration.dll">
+              <OPERATIONNODE Name="ToRaw" Version="Byte" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Result" />
@@ -4044,13 +4044,11 @@
           <Link source="Inlets/Image" sink="Nodes/BytesPerPixel/Inputs/Input" />
           <Link source="Inlets/Image" sink="Nodes/Height#1/Inputs/Input" />
           <Link source="Inlets/Image" sink="Nodes/Width#3/Inputs/Input" />
-          <Link source="Nodes/ToRaw/Outputs/Result" sink="Outlets/Result" />
           <Link source="Nodes/BytesPerPixel/Outputs/Bytes Per Pixel" sink="Outlets/Bytes Per Pixel" />
           <Link source="Nodes/Height#1/Outputs/Height" sink="Outlets/Height" />
           <Link source="Nodes/Width#3/Outputs/Width" sink="Outlets/Width#4" />
           <Link source="Inlets/Image" sink="Nodes/IsValid#2/Inputs/Input" />
           <Link source="Nodes/IsValid#2/Outputs/Is Valid" sink="Regions/IfElse/Inputs/Condition" />
-          <Link source="Regions/IfElse/Outputs/Bytes" sink="Nodes/ToRaw/Inputs/Input" />
           <Link source="Nodes/Vector/Outputs/Output" sink="Nodes/&amp;#47;/Inputs/Input" />
           <Link source="Nodes/TwoPI/Outputs/Result" sink="Nodes/&amp;#47;/Inputs/Scalar" />
           <Link source="Nodes/&amp;#47;/Outputs/Output" sink="Outlets/View Angles" />
@@ -4064,6 +4062,8 @@
           <Link source="Constants/mm to m#7" sink="Nodes/*#25/Inputs/Input 2" />
           <Link source="Inlets/Bone" sink="Nodes/GetBoneType/Inputs/Bone" />
           <Link source="Nodes/GetBoneType/Outputs/Result" sink="Outlets/Type" />
+          <Link source="Regions/IfElse/Outputs/Bytes" sink="Nodes/ToRaw/Inputs/Input" />
+          <Link source="Nodes/ToRaw/Outputs/Result" sink="Outlets/Result" />
         </LINKS>
       </BODY>
     </PATCH>

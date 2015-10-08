@@ -337,15 +337,15 @@
               <CONSTS />
               <REGIONS />
               <NODES>
-                <OPERATION Name="ToggleGesture" Layer="True">
+                <OPERATION Name="SetGestureEnabled" Layer="True">
                   <POSITION x="1642.57947" y="314.664368" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="ToggleGesture" />
+                    <OPERATIONNODE Name="SetGestureEnabled" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Controller" />
                     <INPUT Name="Gesture Type" />
-                    <INPUT Name="Toggle" />
+                    <INPUT Name="Set" />
                   </INPUTS>
                   <OUTPUTS>
                     <OUPUT Name="Controller Out" />
@@ -353,8 +353,8 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Nodes/ToggleGesture/Outputs/Controller Out" sink="Outlets/Controller" />
-                <Link source="Inlets/Controller" sink="Nodes/ToggleGesture/Inputs/Controller" />
+                <Link source="Nodes/SetGestureEnabled/Outputs/Controller Out" sink="Outlets/Controller" />
+                <Link source="Inlets/Controller" sink="Nodes/SetGestureEnabled/Inputs/Controller" />
               </LINKS>
             </BODY>
           </REGION>
@@ -385,15 +385,15 @@
               <CONSTS />
               <REGIONS />
               <NODES>
-                <OPERATION Name="TogglePolicy" Layer="True">
+                <OPERATION Name="SetPolicy" Layer="True">
                   <POSITION x="634.3445" y="291.56073" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="TogglePolicy" />
+                    <OPERATIONNODE Name="SetPolicy" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Controller" />
                     <INPUT Name="Policy" />
-                    <INPUT Name="Toggle" />
+                    <INPUT Name="Set" />
                   </INPUTS>
                   <OUTPUTS>
                     <OUPUT Name="Controller Out" />
@@ -401,8 +401,8 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Inlets/Controller" sink="Nodes/TogglePolicy/Inputs/Controller" />
-                <Link source="Nodes/TogglePolicy/Outputs/Controller Out" sink="Outlets/Controller" />
+                <Link source="Inlets/Controller" sink="Nodes/SetPolicy/Inputs/Controller" />
+                <Link source="Nodes/SetPolicy/Outputs/Controller Out" sink="Outlets/Controller" />
               </LINKS>
             </BODY>
           </REGION>
@@ -433,15 +433,15 @@
               <CONSTS />
               <REGIONS />
               <NODES>
-                <OPERATION Name="TogglePolicy" Layer="True">
+                <OPERATION Name="SetPolicy" Layer="True">
                   <POSITION x="941.4692" y="297.7375" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="TogglePolicy" />
+                    <OPERATIONNODE Name="SetPolicy" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Controller" />
                     <INPUT Name="Policy" />
-                    <INPUT Name="Toggle" />
+                    <INPUT Name="Set" />
                   </INPUTS>
                   <OUTPUTS>
                     <OUPUT Name="Controller Out" />
@@ -449,8 +449,8 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Nodes/TogglePolicy/Outputs/Controller Out" sink="Outlets/Controller" />
-                <Link source="Inlets/Controller" sink="Nodes/TogglePolicy/Inputs/Controller" />
+                <Link source="Nodes/SetPolicy/Outputs/Controller Out" sink="Outlets/Controller" />
+                <Link source="Inlets/Controller" sink="Nodes/SetPolicy/Inputs/Controller" />
               </LINKS>
             </BODY>
           </REGION>
@@ -481,15 +481,15 @@
               <CONSTS />
               <REGIONS />
               <NODES>
-                <OPERATION Name="TogglePolicy" Layer="True">
+                <OPERATION Name="SetPolicy" Layer="True">
                   <POSITION x="1278.70508" y="300.967651" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="TogglePolicy" />
+                    <OPERATIONNODE Name="SetPolicy" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Controller" />
                     <INPUT Name="Policy" />
-                    <INPUT Name="Toggle" />
+                    <INPUT Name="Set" />
                   </INPUTS>
                   <OUTPUTS>
                     <OUPUT Name="Controller Out" />
@@ -497,8 +497,8 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Inlets/Controller" sink="Nodes/TogglePolicy/Inputs/Controller" />
-                <Link source="Nodes/TogglePolicy/Outputs/Controller Out" sink="Outlets/Controller" />
+                <Link source="Inlets/Controller" sink="Nodes/SetPolicy/Inputs/Controller" />
+                <Link source="Nodes/SetPolicy/Outputs/Controller Out" sink="Outlets/Controller" />
               </LINKS>
             </BODY>
           </REGION>
@@ -529,15 +529,15 @@
               <CONSTS />
               <REGIONS />
               <NODES>
-                <OPERATION Name="ToggleGesture" Layer="True">
+                <OPERATION Name="SetGestureEnabled" Layer="True">
                   <POSITION x="1936.41516" y="316.547" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="ToggleGesture" />
+                    <OPERATIONNODE Name="SetGestureEnabled" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Controller" />
                     <INPUT Name="Gesture Type" />
-                    <INPUT Name="Toggle" />
+                    <INPUT Name="Set" />
                   </INPUTS>
                   <OUTPUTS>
                     <OUPUT Name="Controller Out" />
@@ -545,8 +545,8 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Nodes/ToggleGesture/Outputs/Controller Out" sink="Outlets/Controller" />
-                <Link source="Inlets/Controller" sink="Nodes/ToggleGesture/Inputs/Controller" />
+                <Link source="Nodes/SetGestureEnabled/Outputs/Controller Out" sink="Outlets/Controller" />
+                <Link source="Inlets/Controller" sink="Nodes/SetGestureEnabled/Inputs/Controller" />
               </LINKS>
             </BODY>
           </REGION>
@@ -577,15 +577,15 @@
               <CONSTS />
               <REGIONS />
               <NODES>
-                <OPERATION Name="ToggleGesture" Layer="True">
+                <OPERATION Name="SetGestureEnabled" Layer="True">
                   <POSITION x="2218.17627" y="313.092468" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="ToggleGesture" />
+                    <OPERATIONNODE Name="SetGestureEnabled" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Controller" />
                     <INPUT Name="Gesture Type" />
-                    <INPUT Name="Toggle" />
+                    <INPUT Name="Set" />
                   </INPUTS>
                   <OUTPUTS>
                     <OUPUT Name="Controller Out" />
@@ -593,8 +593,8 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Nodes/ToggleGesture/Outputs/Controller Out" sink="Outlets/Controller" />
-                <Link source="Inlets/Controller" sink="Nodes/ToggleGesture/Inputs/Controller" />
+                <Link source="Nodes/SetGestureEnabled/Outputs/Controller Out" sink="Outlets/Controller" />
+                <Link source="Inlets/Controller" sink="Nodes/SetGestureEnabled/Inputs/Controller" />
               </LINKS>
             </BODY>
           </REGION>
@@ -625,15 +625,15 @@
               <CONSTS />
               <REGIONS />
               <NODES>
-                <OPERATION Name="ToggleGesture" Layer="True">
+                <OPERATION Name="SetGestureEnabled" Layer="True">
                   <POSITION x="2468.4187" y="311.513153" />
                   <NODEREF LastCat="LeapVLWrapper.LeapHelper" LastFile="LeapVLWrapper.dll">
-                    <OPERATIONNODE Name="ToggleGesture" />
+                    <OPERATIONNODE Name="SetGestureEnabled" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Controller" />
                     <INPUT Name="Gesture Type" />
-                    <INPUT Name="Toggle" />
+                    <INPUT Name="Set" />
                   </INPUTS>
                   <OUTPUTS>
                     <OUPUT Name="Controller Out" />
@@ -641,8 +641,8 @@
                 </OPERATION>
               </NODES>
               <LINKS>
-                <Link source="Nodes/ToggleGesture/Outputs/Controller Out" sink="Outlets/Controller" />
-                <Link source="Inlets/Controller" sink="Nodes/ToggleGesture/Inputs/Controller" />
+                <Link source="Nodes/SetGestureEnabled/Outputs/Controller Out" sink="Outlets/Controller" />
+                <Link source="Inlets/Controller" sink="Nodes/SetGestureEnabled/Inputs/Controller" />
               </LINKS>
             </BODY>
           </REGION>
@@ -1011,7 +1011,7 @@
         <LINKS>
           <Link source="Nodes/IsServiceConnected/Outputs/Result" sink="Outlets/IsServiceConnected" />
           <Link source="Nodes/IsConnected/Outputs/Is Connected" sink="Outlets/Is Connected" />
-          <Link source="Constants/Gesture Type" sink="Regions/IfElse#1/IfElseBody/Nodes/ToggleGesture/Inputs/Gesture Type" />
+          <Link source="Constants/Gesture Type" sink="Regions/IfElse#1/IfElseBody/Nodes/SetGestureEnabled/Inputs/Gesture Type" />
           <Link source="Regions/Abstraction/Outputs/Functionality" sink="Nodes/Observable/Inputs/On Subscribe" />
           <Link source="Regions/Abstraction#1/Outputs/Functionality" sink="Nodes/Observable/Inputs/On Unsubscribe" />
           <Link source="Nodes/Observable/Outputs/Controller" sink="Nodes/IsConnected/Inputs/Input" />
@@ -1046,29 +1046,22 @@
           <Link source="Nodes/IsPolicySet/Outputs/Controller Out" sink="Nodes/IsPolicySet#1/Inputs/Controller" />
           <Link source="Nodes/IsPolicySet#1/Outputs/Controller Out" sink="Nodes/IsPolicySet#2/Inputs/Controller" />
           <Link source="Nodes/IsPolicySet#2/Outputs/Controller Out" sink="Regions/IfElse#9/Inputs/Controller Default" />
-          <Link source="Inlets/Enable Data in Background" sink="Regions/IfElse#9/IfElseBody/Nodes/TogglePolicy/Inputs/Toggle" />
-          <Link source="Inlets/Enable Images" sink="Regions/IfElse#8/IfElseBody/Nodes/TogglePolicy/Inputs/Toggle" />
-          <Link source="Inlets/Enable Head Mount Optimization" sink="Regions/IfElse#10/IfElseBody/Nodes/TogglePolicy/Inputs/Toggle" />
           <Link source="Inlets/Swipe Gesture" sink="Nodes/Changed#3/Inputs/Value" />
-          <Link source="Inlets/Swipe Gesture" sink="Regions/IfElse#1/IfElseBody/Nodes/ToggleGesture/Inputs/Toggle" />
           <Link source="Nodes/Changed#3/Outputs/Result" sink="Nodes/OR#6/Inputs/Input 2" />
           <Link source="Nodes/OR#6/Outputs/Output" sink="Regions/IfElse#1/Inputs/Condition" />
           <Link source="Inlets/IsFirstFrame" sink="Nodes/OR#6/Inputs/Input" />
-          <Link source="Constants/Gesture Type#1" sink="Regions/IfElse/IfElseBody/Nodes/ToggleGesture/Inputs/Gesture Type" />
+          <Link source="Constants/Gesture Type#1" sink="Regions/IfElse/IfElseBody/Nodes/SetGestureEnabled/Inputs/Gesture Type" />
           <Link source="Nodes/OR#3/Outputs/Output" sink="Regions/IfElse/Inputs/Condition" />
           <Link source="Nodes/Changed#4/Outputs/Result" sink="Nodes/OR#3/Inputs/Input 2" />
-          <Link source="Constants/Gesture Type#2" sink="Regions/IfElse#2/IfElseBody/Nodes/ToggleGesture/Inputs/Gesture Type" />
+          <Link source="Constants/Gesture Type#2" sink="Regions/IfElse#2/IfElseBody/Nodes/SetGestureEnabled/Inputs/Gesture Type" />
           <Link source="Nodes/OR#4/Outputs/Output" sink="Regions/IfElse#2/Inputs/Condition" />
           <Link source="Nodes/Changed#5/Outputs/Result" sink="Nodes/OR#4/Inputs/Input 2" />
-          <Link source="Constants/Gesture Type#3" sink="Regions/IfElse#3/IfElseBody/Nodes/ToggleGesture/Inputs/Gesture Type" />
+          <Link source="Constants/Gesture Type#3" sink="Regions/IfElse#3/IfElseBody/Nodes/SetGestureEnabled/Inputs/Gesture Type" />
           <Link source="Nodes/OR#5/Outputs/Output" sink="Regions/IfElse#3/Inputs/Condition" />
           <Link source="Nodes/Changed#6/Outputs/Result" sink="Nodes/OR#5/Inputs/Input 2" />
           <Link source="Inlets/Key Tap Gesture" sink="Nodes/Changed#6/Inputs/Value" />
-          <Link source="Inlets/Key Tap Gesture" sink="Regions/IfElse#3/IfElseBody/Nodes/ToggleGesture/Inputs/Toggle" />
           <Link source="Inlets/Screen Tap Gesture" sink="Nodes/Changed#5/Inputs/Value" />
-          <Link source="Inlets/Screen Tap Gesture" sink="Regions/IfElse#2/IfElseBody/Nodes/ToggleGesture/Inputs/Toggle" />
           <Link source="Inlets/Circle Gesture" sink="Nodes/Changed#4/Inputs/Value" />
-          <Link source="Inlets/Circle Gesture" sink="Regions/IfElse/IfElseBody/Nodes/ToggleGesture/Inputs/Toggle" />
           <Link source="Inlets/IsFirstFrame" sink="Nodes/OR#3/Inputs/Input" />
           <Link source="Inlets/IsFirstFrame" sink="Nodes/OR#4/Inputs/Input" />
           <Link source="Inlets/IsFirstFrame" sink="Nodes/OR#5/Inputs/Input" />
@@ -1076,9 +1069,8 @@
           <Link source="Regions/IfElse/Outputs/Controller" sink="Regions/IfElse#2/Inputs/Controller Default" />
           <Link source="Regions/IfElse#2/Outputs/Controller" sink="Regions/IfElse#3/Inputs/Controller Default" />
           <Link source="Nodes/Devices/Outputs/Output" sink="Nodes/IsPolicySet/Inputs/Controller" />
-          <Link source="Constants/Policy#3" sink="Regions/IfElse#9/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
-          <Link source="Constants/Policy#4" sink="Regions/IfElse#8/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
-          <Link source="Constants/Policy#5" sink="Regions/IfElse#10/IfElseBody/Nodes/TogglePolicy/Inputs/Policy" />
+          <Link source="Constants/Policy#3" sink="Regions/IfElse#9/IfElseBody/Nodes/SetPolicy/Inputs/Policy" />
+          <Link source="Constants/Policy#5" sink="Regions/IfElse#10/IfElseBody/Nodes/SetPolicy/Inputs/Policy" />
           <Link source="Nodes/Observable/Outputs/Notifications" sink="Nodes/SwitchInput/Inputs/True" />
           <Link source="Nodes/SwitchInput/Outputs/Output" sink="Outlets/Frame" />
           <Link source="Inlets/Enabled" sink="Nodes/SwitchInput/Inputs/Condition">
@@ -1087,6 +1079,14 @@
               <Point x="-3167.50024" y="416.1421" />
             </SEGMENTS>
           </Link>
+          <Link source="Inlets/Enable Data in Background" sink="Regions/IfElse#9/IfElseBody/Nodes/SetPolicy/Inputs/Set" />
+          <Link source="Constants/Policy#4" sink="Regions/IfElse#8/IfElseBody/Nodes/SetPolicy/Inputs/Policy" />
+          <Link source="Inlets/Enable Images" sink="Regions/IfElse#8/IfElseBody/Nodes/SetPolicy/Inputs/Set" />
+          <Link source="Inlets/Enable Head Mount Optimization" sink="Regions/IfElse#10/IfElseBody/Nodes/SetPolicy/Inputs/Set" />
+          <Link source="Inlets/Swipe Gesture" sink="Regions/IfElse#1/IfElseBody/Nodes/SetGestureEnabled/Inputs/Set" />
+          <Link source="Inlets/Circle Gesture" sink="Regions/IfElse/IfElseBody/Nodes/SetGestureEnabled/Inputs/Set" />
+          <Link source="Inlets/Key Tap Gesture" sink="Regions/IfElse#3/IfElseBody/Nodes/SetGestureEnabled/Inputs/Set" />
+          <Link source="Inlets/Screen Tap Gesture" sink="Regions/IfElse#2/IfElseBody/Nodes/SetGestureEnabled/Inputs/Set" />
         </LINKS>
       </BODY>
     </PATCH>
@@ -5589,7 +5589,6 @@
         <LAYERS>
           <LAYER Name="SpecifyGestureType" />
           <LAYER Name="SelectVector" Version="Position" />
-          <LAYER Name="SelectFingers" />
         </LAYERS>
         <INLETS>
           <INLET Name="Gestures" Layer="SpecifyGestureType">
@@ -6815,17 +6814,10 @@
       </BODY>
     </PATCH>
     <PATCH Name="Selectors" Category="Devices.Leap" IsClosed="true">
-      <INFO>
-        <TAGS></TAGS>
-      </INFO>
       <BODY Name="Utils2Body">
         <LAYERS>
           <LAYER Name="SelectHands" />
-          <LAYER Name="SelectFingers">
-            <INFO>
-              <TAGS></TAGS>
-            </INFO>
-          </LAYER>
+          <LAYER Name="SelectFingers" />
           <LAYER Name="SelectBones" />
           <LAYER Name="SelectFingers#1" Version="Position" />
           <LAYER Name="SelectHands#1" Version="Position" />
@@ -6845,11 +6837,9 @@
             <POSITION x="719.1802" y="282.181152" />
           </INLET>
           <INLET Name="Fingers" Layer="SelectFingers">
-            <INFO />
             <POSITION x="945.5352" y="284.6471" />
           </INLET>
           <INLET Name="Type#1" Layer="SelectFingers">
-            <INFO />
             <POSITION x="1092.91528" y="284.6471" />
           </INLET>
           <INLET Name="Fingers#1" Layer="SelectFingers (Position)" Type="Spread&lt;Finger&gt;">
@@ -6879,7 +6869,6 @@
             <POSITION x="609.718262" y="468.4292" />
           </OUTLET>
           <OUTLET Name="Fingers" Layer="SelectFingers">
-            <INFO />
             <POSITION x="944.350159" y="447.810883" />
           </OUTLET>
           <OUTLET Name="Fingers#2" Layer="SelectFingers (Position)">

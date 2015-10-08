@@ -143,10 +143,10 @@ namespace LeapVLWrapper
 
         //NOTE: I'm giving all inputs of mutable data (like Leap.Controller) also as an output of the method, to avoid timing ambiguity in VL
         [Node]
-        public static void ToggleGesture (Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType, bool toggle)
+        public static void SetGestureEnabled (Leap.Controller controller, out Leap.Controller controllerOut, GestureType gestureType, bool set)
         {
             controllerOut = controller;
-            controller.EnableGesture((Leap.Gesture.GestureType) gestureType, toggle);
+            controller.EnableGesture((Leap.Gesture.GestureType) gestureType, set);
         }
         #endregion
 
@@ -160,10 +160,10 @@ namespace LeapVLWrapper
         */    
 
         [Node]
-        public static void TogglePolicy(Leap.Controller controller, out Leap.Controller controllerOut, PolicyFlag policy, bool toggle)
+        public static void SetPolicy(Leap.Controller controller, out Leap.Controller controllerOut, PolicyFlag policy, bool set)
         {
             controllerOut = controller;
-            if (toggle)
+            if (set)
                 controller.SetPolicy((Leap.Controller.PolicyFlag) policy);
             else
                 controller.ClearPolicy((Leap.Controller.PolicyFlag) policy);

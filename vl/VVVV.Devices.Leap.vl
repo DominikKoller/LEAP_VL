@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<VLDOCUMENT Version="0.31.1259.0">
+<VLDOCUMENT Version="0.32.0.0">
   <DEPENDENCIES>
     <DEPENDENCY Name="mscorlib.dll.vlimport" Location="mscorlib.dll.vlimport" />
     <DEPENDENCY Name="System.Core.dll.vlimport" Location="System.Core.dll.vlimport" />
@@ -1440,6 +1440,85 @@
           <Link source="Inlets/Position#2" sink="Nodes/SelectBones#1/Inputs/Position" />
           <Link source="Nodes/SelectBones#1/Outputs/Bones" sink="Outlets/Bones#1" />
           <Link source="Nodes/ToSpread#5/Outputs/Result" sink="Nodes/SelectBones#1/Inputs/Bones" />
+        </LINKS>
+      </BODY>
+    </PATCH>
+    <PATCH Name="SampleGestureRecognition" Category="VVVV.Leap" IsDatatype="true" IsClosed="true" IsMutable="true">
+      <BODY Name="UtilsBody">
+        <LAYERS>
+          <LAYER Name="Create" />
+          <LAYER Name="Update" />
+          <LAYER Name="SetupObservable" />
+        </LAYERS>
+        <INLETS>
+          <INLET Name="Frame" Layer="Update">
+            <POSITION x="658.523865" y="169.298264" />
+          </INLET>
+        </INLETS>
+        <OUTLETS>
+          <OUTLET Name="Notifications" Layer="Update">
+            <POSITION x="669.98114" y="324.8299" />
+          </OUTLET>
+          <OUTLET Name="LastOrDefault" Layer="Update">
+            <POSITION x="815" y="324.8299" />
+          </OUTLET>
+        </OUTLETS>
+        <CONSTS />
+        <REGIONS />
+        <NODES>
+          <PROCESS Name="DetectKnock">
+            <POSITION x="666" y="272" />
+            <NODEREF>
+              <PROCESSNODE Name="DetectKnock" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Values" FragmentId="SetupObservable" />
+              <INPUT Name="SetupObservable Enabled" FragmentId="SetupObservable" IsEnabled="true" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="KnockGesture" FragmentId="OnFrame" />
+            </OUTPUTS>
+            <FRAGMENTS>
+              <FRAGMENT Name="Create" />
+              <FRAGMENT Name="SetupObservable" />
+              <FRAGMENT Name="OnFrame" />
+            </FRAGMENTS>
+          </PROCESS>
+          <OPERATION Name="ShareInstance" Layer="Update">
+            <POSITION x="668.896057" y="207.759125" />
+            <NODEREF LastCat="Primitive.Object" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="ShareInstance" Version="KillTheSystemsExpectations" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Instance" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output 1" />
+              <OUPUT Name="Output 2" />
+            </OUTPUTS>
+          </OPERATION>
+          <PROCESS Name="Changed">
+            <POSITION x="785.5038" y="244.679535" />
+            <NODEREF LastCat="Control" LastFile="VL.Lib.Basics.dll">
+              <PROCESSNODE Name="Changed" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Value" FragmentId="Update" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" FragmentId="Update" />
+              <OUPUT Name="Unchanged" FragmentId="Update" />
+            </OUTPUTS>
+            <FRAGMENTS>
+              <FRAGMENT Name="Update" />
+            </FRAGMENTS>
+          </PROCESS>
+        </NODES>
+        <LINKS>
+          <Link source="Inlets/Frame" sink="Nodes/ShareInstance/Inputs/Instance" />
+          <Link source="Nodes/ShareInstance/Outputs/Output 2" sink="Nodes/Changed/Inputs/Value" />
+          <Link source="Nodes/Changed/Outputs/Result" sink="Nodes/DetectKnock/Inputs/SetupObservable Enabled" />
+          <Link source="Nodes/ShareInstance/Outputs/Output 1" sink="Nodes/DetectKnock/Inputs/Values" />
         </LINKS>
       </BODY>
     </PATCH>

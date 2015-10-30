@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<VLDOCUMENT Version="0.31.1259.0">
+<VLDOCUMENT Version="0.32.0.0">
   <DEPENDENCIES>
     <DEPENDENCY Name="mscorlib.dll.vlimport" Location="mscorlib.dll.vlimport" />
     <DEPENDENCY Name="System.Core.dll.vlimport" Location="System.Core.dll.vlimport" />
@@ -1118,7 +1118,7 @@
             <POSITION x="-569.752869" y="425.884521" />
           </INLET>
           <INLET Name="Frame" Layer="Frame">
-            <POSITION x="-554.2922" y="66.71127" />
+            <POSITION x="-555.6953" y="85.6535339" />
           </INLET>
           <INLET Name="Arm" Layer="Arm">
             <POSITION x="-551.3553" y="730.4022" />
@@ -1165,37 +1165,37 @@
             <POSITION x="-1005.28967" y="587.396667" />
           </OUTLET>
           <OUTLET Name="Arm#1" Layer="Hand">
-            <POSITION x="-568.1036" y="619.0344" />
+            <POSITION x="-568.1036" y="534.2567" />
+          </OUTLET>
+          <OUTLET Name="Hands" Layer="Frame">
+            <POSITION x="-564.2989" y="192.85376" />
           </OUTLET>
           <OUTLET Name="View Angles" Layer="DeviceInfo">
             <POSITION x="-560.8694" y="8.661377" />
           </OUTLET>
-          <OUTLET Name="Hands" Layer="Frame">
-            <POSITION x="-556.581665" y="284.7588" />
-          </OUTLET>
           <OUTLET Name="Basis#1" Layer="Arm">
             <POSITION x="-535.182739" y="893.0134" />
           </OUTLET>
-          <OUTLET Name="Fingers#2" Layer="Hand">
-            <POSITION x="-475.18042" y="619.0344" />
-          </OUTLET>
           <OUTLET Name="Gestures" Layer="Frame">
-            <POSITION x="-447.500946" y="284.7588" />
+            <POSITION x="-499.416748" y="192.85376" />
+          </OUTLET>
+          <OUTLET Name="Fingers#2" Layer="Hand">
+            <POSITION x="-475.18042" y="534.2567" />
           </OUTLET>
           <OUTLET Name="ElbowPosition" Layer="Arm">
             <POSITION x="-436.079254" y="893.0134" />
           </OUTLET>
+          <OUTLET Name="Images" Layer="Frame">
+            <POSITION x="-395.163452" y="192.85376" />
+          </OUTLET>
           <OUTLET Name="Tools#2" Layer="Hand">
-            <POSITION x="-362.68042" y="619.0344" />
+            <POSITION x="-362.68042" y="534.2567" />
           </OUTLET>
           <OUTLET Name="WristPosition" Layer="Arm">
             <POSITION x="-312.3531" y="893.0134" />
           </OUTLET>
-          <OUTLET Name="Images" Layer="Frame">
-            <POSITION x="-278.703674" y="284.7588" />
-          </OUTLET>
           <OUTLET Name="Pointables#1" Layer="Hand">
-            <POSITION x="-271.94873" y="619.0344" />
+            <POSITION x="-271.94873" y="534.2567" />
           </OUTLET>
           <OUTLET Name="Range" Layer="DeviceInfo">
             <POSITION x="-231.192688" y="8.661377" />
@@ -1225,7 +1225,7 @@
             <POSITION x="198.828369" y="897.546143" />
           </OUTLET>
           <OUTLET Name="Basis" Layer="Hand">
-            <POSITION x="206.006165" y="620.8513" />
+            <POSITION x="206.006165" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Basis#2" Layer="Bone">
             <POSITION x="206.80069" y="1150.68628" />
@@ -1240,7 +1240,7 @@
             <POSITION x="321.145264" y="897.546143" />
           </OUTLET>
           <OUTLET Name="Direction" Layer="Hand">
-            <POSITION x="326.120178" y="620.8513" />
+            <POSITION x="326.120178" y="536.0736" />
           </OUTLET>
           <OUTLET Name="StabilizedTipPosition" Layer="Finger">
             <POSITION x="397.101349" y="897.546143" />
@@ -1249,7 +1249,7 @@
             <POSITION x="417.1206" y="1150.68628" />
           </OUTLET>
           <OUTLET Name="Palm Position" Layer="Hand">
-            <POSITION x="433.736145" y="620.8513" />
+            <POSITION x="433.736145" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Direction#2" Layer="Finger">
             <POSITION x="516.8777" y="897.546143" />
@@ -1258,7 +1258,7 @@
             <POSITION x="517.6669" y="1150.68628" />
           </OUTLET>
           <OUTLET Name="Stabilized Palm Position" Layer="Hand">
-            <POSITION x="577.489746" y="620.8513" />
+            <POSITION x="577.489746" y="536.0736" />
           </OUTLET>
           <OUTLET Name="TipVelocity" Layer="Finger">
             <POSITION x="581.5947" y="897.546143" />
@@ -1273,7 +1273,7 @@
             <POSITION x="708.6151" y="897.546143" />
           </OUTLET>
           <OUTLET Name="Palm Normal" Layer="Hand">
-            <POSITION x="714.9902" y="620.8513" />
+            <POSITION x="714.9902" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Length#1" Layer="Bone">
             <POSITION x="726.6056" y="1150.68628" />
@@ -1288,7 +1288,7 @@
             <POSITION x="835.7324" y="897.546143" />
           </OUTLET>
           <OUTLET Name="Palm Velocity" Layer="Hand">
-            <POSITION x="855.793" y="620.8513" />
+            <POSITION x="855.793" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Is Valid" Layer="Bone">
             <POSITION x="897.7546" y="1150.68628" />
@@ -1297,19 +1297,19 @@
             <POSITION x="911.943" y="897.546143" />
           </OUTLET>
           <OUTLET Name="Palm Width" Layer="Hand">
-            <POSITION x="969.3278" y="620.8513" />
+            <POSITION x="969.3278" y="536.0736" />
           </OUTLET>
           <OUTLET Name="TipPosition#1" Layer="Tool">
             <POSITION x="970.9389" y="886.0946" />
           </OUTLET>
           <OUTLET Name="Wrist Position" Layer="Hand">
-            <POSITION x="1048.4447" y="620.8513" />
+            <POSITION x="1048.4447" y="536.0736" />
           </OUTLET>
           <OUTLET Name="StabilizedTipPosition#1" Layer="Tool">
             <POSITION x="1057.16541" y="886.0946" />
           </OUTLET>
           <OUTLET Name="Sphere Center" Layer="Hand">
-            <POSITION x="1151.48035" y="620.8513" />
+            <POSITION x="1151.48035" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Direction#4" Layer="Tool">
             <POSITION x="1196.23352" y="886.0946" />
@@ -1318,7 +1318,7 @@
             <POSITION x="1276.6637" y="886.0946" />
           </OUTLET>
           <OUTLET Name="Sphere Radius" Layer="Hand">
-            <POSITION x="1328.58533" y="620.8513" />
+            <POSITION x="1328.58533" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Width#3" Layer="Tool">
             <POSITION x="1361.58728" y="886.0946" />
@@ -1333,22 +1333,22 @@
             <POSITION x="1595.50452" y="886.0946" />
           </OUTLET>
           <OUTLET Name="Confidence" Layer="Hand">
-            <POSITION x="1762.15808" y="620.8513" />
+            <POSITION x="1762.15808" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Grab Strength" Layer="Hand">
-            <POSITION x="1856.96155" y="620.8513" />
+            <POSITION x="1856.96155" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Pinch Strength" Layer="Hand">
-            <POSITION x="1970.28552" y="620.8513" />
+            <POSITION x="1970.28552" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Id" Layer="Hand">
-            <POSITION x="2070.57983" y="620.8513" />
+            <POSITION x="2070.57983" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Is Left" Layer="Hand">
-            <POSITION x="2132.92554" y="620.8513" />
+            <POSITION x="2132.92554" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Time Visible" Layer="Hand">
-            <POSITION x="2209.14722" y="620.8513" />
+            <POSITION x="2199.72754" y="536.0736" />
           </OUTLET>
           <OUTLET Name="Direction#7" Layer="KeyTapGesture">
             <POSITION x="2745.16235" y="1754.1875" />
@@ -1447,14 +1447,6 @@
             <SIZE width="261.760742" height="10.7563477" />
             <VALUE><![CDATA["left out all things with \"Since Frame\" - eg RotationAxis"]]></VALUE>
           </CONST>
-          <CONST Name="mm to m" Layer="Hand">
-            <POSITION x="2407.133" y="510.7285" />
-            <SIZE width="40" height="15.7645035" />
-            <CONFIGURATION>
-              <PRECISION><![CDATA[3]]></PRECISION>
-            </CONFIGURATION>
-            <VALUE><![CDATA[0.001]]></VALUE>
-          </CONST>
           <CONST Name="mm to m#3" Layer="Arm">
             <POSITION x="-23.2648926" y="791.0055" />
             <CONFIGURATION>
@@ -1510,6 +1502,11 @@
               <PRECISION><![CDATA[3]]></PRECISION>
             </CONFIGURATION>
             <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="comment#2" Layer="Hand" Type="String">
+            <POSITION x="-884.2507" y="574.812744" />
+            <SIZE width="261.760742" height="10.7563477" />
+            <VALUE><![CDATA["New layout with TypeWrappers packed away"]]></VALUE>
           </CONST>
         </CONSTS>
         <REGIONS>
@@ -1701,51 +1698,6 @@
               </LINKS>
             </BODY>
           </REGION>
-          <REGION Name="ForEachLoop#5" Layer="Frame" Kind="ForEachLoop">
-            <POSITION x="-448.054352" y="182.989624" />
-            <SIZE x="234.708252" y="22.97409" />
-            <INPUTS>
-              <INPUT Name="Gesturess" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Gesturess" />
-            </OUTPUTS>
-            <BODY Name="ForEachLoopBody">
-              <LAYERS>
-                <LAYER Name="Update" />
-              </LAYERS>
-              <INLETS>
-                <INLET Name="Gestures" Layer="Update">
-                  <POSITION x="-444.490326" y="185.139923" />
-                </INLET>
-              </INLETS>
-              <OUTLETS>
-                <OUTLET Name="Gestures#1" Layer="Update">
-                  <POSITION x="-444.490326" y="264.6178" />
-                </OUTLET>
-              </OUTLETS>
-              <CONSTS />
-              <REGIONS />
-              <NODES>
-                <OPERATION Name="SpecifyGestureType" Layer="Update">
-                  <POSITION x="-443.054352" y="210.157867" />
-                  <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
-                    <OPERATIONNODE Name="SpecifyGestureType" />
-                  </NODEREF>
-                  <INPUTS>
-                    <INPUT Name="Gestures" />
-                  </INPUTS>
-                  <OUTPUTS>
-                    <OUPUT Name="Gestures" />
-                  </OUTPUTS>
-                </OPERATION>
-              </NODES>
-              <LINKS>
-                <Link source="Inlets/Gestures" sink="Nodes/SpecifyGestureType/Inputs/Gestures" />
-                <Link source="Nodes/SpecifyGestureType/Outputs/Gestures" sink="Outlets/Gestures#1" />
-              </LINKS>
-            </BODY>
-          </REGION>
           <REGION Name="IfElse" Layer="Image" Kind="IfElse">
             <POSITION x="-1269.42749" y="443.817627" />
             <SIZE x="80" y="80" />
@@ -1795,327 +1747,275 @@
         </REGIONS>
         <NODES>
           <OPERATION Name="Basis" Layer="Hand">
-            <POSITION x="210.9736" y="499.40097" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="210.9736" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Basis" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Basis" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Confidence" Layer="Hand">
-            <POSITION x="1730.86438" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="1730.86438" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Confidence" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Confidence" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Direction#1" Layer="Hand">
-            <POSITION x="331.305817" y="496.459259" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="331.305817" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Direction" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Direction" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="GrabStrength" Layer="Hand">
-            <POSITION x="1817.14587" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="1817.14587" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="GrabStrength" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Grab Strength" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Id" Layer="Hand">
-            <POSITION x="2075.83569" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="2075.83569" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Id" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Id" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="IsLeft" Layer="Hand">
-            <POSITION x="2131.21118" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="2131.21118" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="IsLeft" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Is Left" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="IsValid" Layer="Hand">
-            <POSITION x="2304.99487" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
-              <OPERATIONNODE Name="IsValid" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Is Valid" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="PalmNormal" Layer="Hand">
-            <POSITION x="738.2916" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="738.2916" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="PalmNormal" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Palm Normal" />
+              <OUPUT Name="PalmNormal" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="PalmPosition" Layer="Hand">
-            <POSITION x="463.307373" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="463.307373" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="PalmPosition" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Palm Position" />
+              <OUPUT Name="PalmPosition" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="PalmVelocity" Layer="Hand">
-            <POSITION x="858.4699" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="858.4699" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="PalmVelocity" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Palm Velocity" />
+              <OUPUT Name="PalmVelocity" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="PalmWidth" Layer="Hand">
-            <POSITION x="963.3713" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="963.3713" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="PalmWidth" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand 2" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Palm Width" />
+              <OUPUT Name="PalmWidth" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="PinchStrength" Layer="Hand">
-            <POSITION x="1928.15808" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="1928.15808" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="PinchStrength" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Pinch Strength" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="SphereCenter" Layer="Hand">
-            <POSITION x="1166.0448" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="1166.0448" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="SphereCenter" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Sphere Center" />
+              <OUPUT Name="SphereCenter" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="SphereRadius" Layer="Hand">
-            <POSITION x="1290.297" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="1290.297" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="SphereRadius" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Sphere Radius" />
+              <OUPUT Name="SphereRadius" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="StabilizedPalmPosition" Layer="Hand">
-            <POSITION x="583.4856" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="583.4856" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="StabilizedPalmPosition" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Stabilized Palm Position" />
+              <OUPUT Name="StabilizedPalmPosition" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="TimeVisible" Layer="Hand">
-            <POSITION x="2201.1062" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="2210.75342" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="TimeVisible" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Time Visible" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="WristPosition" Layer="Hand">
-            <POSITION x="1052.996" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Hand" />
+            <POSITION x="1052.996" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="WristPosition" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
-              <OUPUT Name="Wrist Position" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToMatrix" Layer="Hand">
-            <POSITION x="209.4123" y="537.1677" />
-            <NODEREF LastCat="Leap.Matrix" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToMatrix" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Matrix Leap" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Matrix 3D" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToVector3" Layer="Hand">
-            <POSITION x="331.14856" y="533.000732" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Vector" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Vector3" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToVector3#1" Layer="Hand">
-            <POSITION x="437.5135" y="590.7567" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Vector" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Vector3" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToVector3#2" Layer="Hand">
-            <POSITION x="577.6845" y="590.7567" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Vector" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Vector3" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToVector3#3" Layer="Hand">
-            <POSITION x="718.681763" y="590.7567" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Vector" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Vector3" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToVector3#4" Layer="Hand">
-            <POSITION x="855.9218" y="590.7567" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Vector" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Vector3" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToVector3#5" Layer="Hand">
-            <POSITION x="1048.81042" y="590.7567" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Vector" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Vector3" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToVector3#6" Layer="Hand">
-            <POSITION x="1154.82678" y="590.7567" />
-            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
-              <OPERATIONNODE Name="ToVector3" />
-              <CATEGORY Name="Vector" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Vector" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Vector3" />
+              <OUPUT Name="WristPosition" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Direction" Layer="Arm">
@@ -2234,92 +2134,69 @@
               <OUPUT Name="Vector3" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ToSpread#10" Layer="Hand">
-            <POSITION x="-360.4147" y="539.5675" />
-            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
-              <OPERATIONNODE Name="ToSpread" />
-              <CATEGORY Name="Sequence" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToSpread#2" Layer="Hand">
-            <POSITION x="-472.791748" y="536.7455" />
-            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
-              <OPERATIONNODE Name="ToSpread" />
-              <CATEGORY Name="Sequence" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="ToSpread#9" Layer="Hand">
-            <POSITION x="-267.8554" y="533.223633" />
-            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
-              <OPERATIONNODE Name="ToSpread" />
-              <CATEGORY Name="Sequence" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="Arm#1" Layer="Hand">
-            <POSITION x="-566.70105" y="494.7067" />
-            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+            <POSITION x="-566.70105" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Arm" />
-              <CATEGORYPATH Name="Leap.Hand" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Arm" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Fingers#2" Layer="Hand">
-            <POSITION x="-488.112061" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
+            <POSITION x="-485.9682" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Fingers" />
-              <CATEGORY Name="Hand" IsDirectParent="true" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Fingers" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Tools#2" Layer="Hand">
-            <POSITION x="-379.0483" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
+            <POSITION x="-360.3427" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Tools" />
-              <CATEGORY Name="Hand" IsDirectParent="true" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Tools" />
             </OUTPUTS>
           </OPERATION>
           <OPERATION Name="Pointables#2" Layer="Hand">
-            <POSITION x="-296.563721" y="494.7067" />
-            <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
+            <POSITION x="-266.634827" y="488.471466" />
+            <NODEREF LastCat="Devices.Leap.Hand" LastFile="VL.Devices.Leap.vl">
               <OPERATIONNODE Name="Pointables" />
-              <CATEGORY Name="Hand" IsDirectParent="true" />
+              <CATEGORY Name="Hand" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
             </NODEREF>
             <INPUTS>
-              <INPUT Name="Input" />
+              <INPUT Name="Hand" />
             </INPUTS>
             <OUTPUTS>
               <OUPUT Name="Pointables" />
@@ -2543,103 +2420,6 @@
             <INPUTS>
               <INPUT Name="Input" />
               <INPUT Name="Item" />
-              <INPUT Name="Enabled" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*" Layer="Hand">
-            <POSITION x="437.096252" y="562.268555" />
-            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="*" Version="Single Vector" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*#1" Layer="Hand">
-            <POSITION x="578.865234" y="562.268555" />
-            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="*" Version="Single Vector" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*#3" Layer="Hand">
-            <POSITION x="857.297" y="563.3965" />
-            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="*" Version="Single Vector" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*#4" Layer="Hand">
-            <POSITION x="968.918152" y="564.5244" />
-            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="*" />
-              <CATEGORY Name="Adaptive" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-              <INPUT Name="Input 3" />
-              <INPUT Name="Enabled" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Output" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*#2" Layer="Hand">
-            <POSITION x="1048.21545" y="563.3965" />
-            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="*" Version="Single Vector" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*#5" Layer="Hand">
-            <POSITION x="1153.08679" y="562.268555" />
-            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="*" Version="Single Vector" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="*#6" Layer="Hand">
-            <POSITION x="1330.40686" y="565.6522" />
-            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
-              <OPERATIONNODE Name="*" />
-              <CATEGORY Name="Adaptive" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-              <INPUT Name="Input 2" />
-              <INPUT Name="Input 3" />
               <INPUT Name="Enabled" />
             </INPUTS>
             <OUTPUTS>
@@ -3470,60 +3250,6 @@
               <OUPUT Name="Result" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ToSpread#13" Layer="Frame">
-            <POSITION x="-553.1092" y="216.24173" />
-            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
-              <OPERATIONNODE Name="ToSpread" />
-              <CATEGORY Name="Sequence" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Hands#1" Layer="Frame">
-            <POSITION x="-551.897766" y="173.817932" />
-            <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="Hands" />
-              <CATEGORY Name="Frame" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Hands" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Images#1" Layer="Frame">
-            <POSITION x="-275.144562" y="134.748535" />
-            <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
-              <CATEGORY Name="Frame" />
-              <OPERATIONNODE Name="Images" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Images" />
-            </OUTPUTS>
-          </OPERATION>
-          <OPERATION Name="Gestures" Layer="Frame">
-            <POSITION x="-443.6549" y="139.37822" />
-            <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
-              <OPERATIONNODE Name="Gestures" />
-              <CATEGORY Name="Frame" IsDirectParent="true">
-                <CATEGORY Name="Leap" IsDirectParent="true" IsGlobal="true" />
-              </CATEGORY>
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="Baseline" Layer="DeviceInfo">
             <POSITION x="-174.4979" y="-88.8187561" />
             <NODEREF LastCat="Leap.Device" LastFile="LeapCSharp.NET4.0.dll">
@@ -3653,19 +3379,6 @@
               <OUPUT Name="Bytes Per Pixel" />
             </OUTPUTS>
           </OPERATION>
-          <OPERATION Name="ToSpread#6" Layer="Frame">
-            <POSITION x="-275.0993" y="188.57135" />
-            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
-              <OPERATIONNODE Name="ToSpread" />
-              <CATEGORY Name="Sequence" IsDirectParent="true" />
-            </NODEREF>
-            <INPUTS>
-              <INPUT Name="Input" />
-            </INPUTS>
-            <OUTPUTS>
-              <OUPUT Name="Result" />
-            </OUTPUTS>
-          </OPERATION>
           <OPERATION Name="IsValid#2" Layer="Image">
             <POSITION x="-1309.50977" y="412.2873" />
             <NODEREF LastCat="Leap.Image" LastFile="LeapCSharp.NET4.0.dll">
@@ -3775,37 +3488,71 @@
               <OUPUT Name="Result" />
             </OUTPUTS>
           </OPERATION>
+          <OPERATION Name="Hands" Layer="Frame">
+            <POSITION x="-563.511536" y="157.1187" />
+            <NODEREF LastCat="Devices.Leap.Frame" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="Hands" />
+              <CATEGORY Name="Frame" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Frame" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Hands" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Gestures#1" Layer="Frame">
+            <POSITION x="-498.967529" y="159.924942" />
+            <NODEREF LastCat="Devices.Leap.Frame" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="Gestures" />
+              <CATEGORY Name="Frame" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Frame" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Gestures" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Images" Layer="Frame">
+            <POSITION x="-395.135925" y="163.43277" />
+            <NODEREF LastCat="Devices.Leap.Frame" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="Images" />
+              <CATEGORY Name="Frame" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true">
+                  <CATEGORY Name="Devices" IsDirectParent="true" />
+                </CATEGORY>
+              </CATEGORY>
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Frame" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Frames" />
+            </OUTPUTS>
+          </OPERATION>
         </NODES>
         <LINKS>
-          <Link source="Nodes/Basis/Outputs/Basis" sink="Nodes/ToMatrix/Inputs/Matrix Leap" />
-          <Link source="Nodes/ToMatrix/Outputs/Matrix 3D" sink="Outlets/Basis" />
           <Link source="Nodes/Confidence/Outputs/Confidence" sink="Outlets/Confidence" />
           <Link source="Nodes/GrabStrength/Outputs/Grab Strength" sink="Outlets/Grab Strength" />
           <Link source="Nodes/PinchStrength/Outputs/Pinch Strength" sink="Outlets/Pinch Strength" />
           <Link source="Nodes/Id/Outputs/Id" sink="Outlets/Id" />
           <Link source="Nodes/IsLeft/Outputs/Is Left" sink="Outlets/Is Left" />
           <Link source="Nodes/TimeVisible/Outputs/Time Visible" sink="Outlets/Time Visible" />
-          <Link source="Nodes/Direction#1/Outputs/Direction" sink="Nodes/ToVector3/Inputs/Vector" />
-          <Link source="Nodes/ToVector3/Outputs/Vector3" sink="Outlets/Direction" />
-          <Link source="Nodes/ToVector3#1/Outputs/Vector3" sink="Outlets/Palm Position" />
-          <Link source="Nodes/ToVector3#2/Outputs/Vector3" sink="Outlets/Stabilized Palm Position" />
-          <Link source="Nodes/ToVector3#3/Outputs/Vector3" sink="Outlets/Palm Normal" />
-          <Link source="Nodes/ToVector3#4/Outputs/Vector3" sink="Outlets/Palm Velocity" />
-          <Link source="Nodes/ToVector3#5/Outputs/Vector3" sink="Outlets/Wrist Position" />
-          <Link source="Nodes/ToVector3#6/Outputs/Vector3" sink="Outlets/Sphere Center" />
           <Link source="Nodes/Basis#1/Outputs/Basis" sink="Nodes/ToMatrix#1/Inputs/Matrix Leap" />
           <Link source="Nodes/ToMatrix#1/Outputs/Matrix 3D" sink="Outlets/Basis#1" />
           <Link source="Nodes/ToVector3#7/Outputs/Vector3" sink="Outlets/ElbowPosition" />
           <Link source="Nodes/ToVector3#8/Outputs/Vector3" sink="Outlets/WristPosition" />
           <Link source="Nodes/ToVector3#9/Outputs/Vector3" sink="Outlets/Direction#1" />
-          <Link source="Nodes/ToSpread#9/Outputs/Result" sink="Outlets/Pointables#1" />
-          <Link source="Nodes/ToSpread#10/Outputs/Result" sink="Outlets/Tools#2" />
-          <Link source="Nodes/ToSpread#2/Outputs/Result" sink="Outlets/Fingers#2" />
           <Link source="Nodes/Arm#1/Outputs/Arm" sink="Outlets/Arm#1" />
-          <Link source="Nodes/Fingers#2/Outputs/Fingers" sink="Nodes/ToSpread#2/Inputs/Input" />
-          <Link source="Nodes/Tools#2/Outputs/Tools" sink="Nodes/ToSpread#10/Inputs/Input" />
-          <Link source="Nodes/Pointables#2/Outputs/Pointables" sink="Nodes/ToSpread#9/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Arm#1/Inputs/Input" />
           <Link source="Inlets/Arm" sink="Nodes/Basis#1/Inputs/Input" />
           <Link source="Inlets/Finger" sink="Nodes/GetBones/Inputs/Finger" />
           <Link source="Inlets/Bone" sink="Nodes/Basis#2/Inputs/Input" />
@@ -3820,28 +3567,6 @@
           <Link source="Nodes/Cons/Outputs/Result" sink="Nodes/Add/Inputs/Input" />
           <Link source="Nodes/Add/Outputs/Output" sink="Nodes/Add#1/Inputs/Input" />
           <Link source="Nodes/Add#1/Outputs/Output" sink="Outlets/Bones" />
-          <Link source="Nodes/PalmPosition/Outputs/Palm Position" sink="Nodes/*/Inputs/Input 2" />
-          <Link source="Nodes/*/Outputs/Result" sink="Nodes/ToVector3#1/Inputs/Vector" />
-          <Link source="Constants/mm to m" sink="Nodes/*/Inputs/Input" />
-          <Link source="Nodes/StabilizedPalmPosition/Outputs/Stabilized Palm Position" sink="Nodes/*#1/Inputs/Input 2" />
-          <Link source="Nodes/*#1/Outputs/Result" sink="Nodes/ToVector3#2/Inputs/Vector" />
-          <Link source="Nodes/PalmVelocity/Outputs/Palm Velocity" sink="Nodes/*#3/Inputs/Input 2" />
-          <Link source="Nodes/*#3/Outputs/Result" sink="Nodes/ToVector3#4/Inputs/Vector" />
-          <Link source="Nodes/PalmWidth/Outputs/Palm Width" sink="Nodes/*#4/Inputs/Input 2" />
-          <Link source="Nodes/*#4/Outputs/Output" sink="Outlets/Palm Width" />
-          <Link source="Nodes/PalmNormal/Outputs/Palm Normal" sink="Nodes/ToVector3#3/Inputs/Vector" />
-          <Link source="Constants/mm to m" sink="Nodes/*#3/Inputs/Input" />
-          <Link source="Constants/mm to m" sink="Nodes/*#1/Inputs/Input" />
-          <Link source="Nodes/WristPosition/Outputs/Wrist Position" sink="Nodes/*#2/Inputs/Input 2" />
-          <Link source="Nodes/*#2/Outputs/Result" sink="Nodes/ToVector3#5/Inputs/Vector" />
-          <Link source="Constants/mm to m" sink="Nodes/*#4/Inputs/Input" />
-          <Link source="Constants/mm to m" sink="Nodes/*#2/Inputs/Input" />
-          <Link source="Nodes/SphereCenter/Outputs/Sphere Center" sink="Nodes/*#5/Inputs/Input 2" />
-          <Link source="Nodes/*#5/Outputs/Result" sink="Nodes/ToVector3#6/Inputs/Vector" />
-          <Link source="Constants/mm to m" sink="Nodes/*#5/Inputs/Input" />
-          <Link source="Nodes/SphereRadius/Outputs/Sphere Radius" sink="Nodes/*#6/Inputs/Input 2" />
-          <Link source="Nodes/*#6/Outputs/Output" sink="Outlets/Sphere Radius" />
-          <Link source="Constants/mm to m" sink="Nodes/*#6/Inputs/Input" />
           <Link source="Nodes/Width/Outputs/Width" sink="Nodes/*#7/Inputs/Input 2" />
           <Link source="Nodes/*#7/Outputs/Output" sink="Outlets/Width" />
           <Link source="Nodes/WristPosition#1/Outputs/Wrist Position" sink="Nodes/*#11/Inputs/Input 2" />
@@ -3976,26 +3701,6 @@
           <Link source="Nodes/*#24/Outputs/Result" sink="Nodes/ToVector3#27/Inputs/Vector" />
           <Link source="Constants/mm to m#6" sink="Nodes/*#24/Inputs/Input" />
           <Link source="Constants/mm to m#6" sink="Nodes/*#23/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Fingers#2/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Tools#2/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Pointables#2/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Basis/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Direction#1/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/PalmPosition/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/StabilizedPalmPosition/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/PalmNormal/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/PalmVelocity/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/PalmWidth/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/WristPosition/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/SphereCenter/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/SphereRadius/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Confidence/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/GrabStrength/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/PinchStrength/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/Id/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/IsLeft/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/TimeVisible/Inputs/Input" />
-          <Link source="Inlets/Hand" sink="Nodes/IsValid/Inputs/Input" />
           <Link source="Inlets/Arm" sink="Nodes/ElbowPosition/Inputs/Input" />
           <Link source="Inlets/Arm" sink="Nodes/WristPosition#1/Inputs/Input" />
           <Link source="Inlets/Arm" sink="Nodes/Direction/Inputs/Input" />
@@ -4018,15 +3723,8 @@
           <Link source="Regions/ForEachLoop#2/Outputs/Former Indexs" sink="Outlets/Screen Tap Former Index" />
           <Link source="Regions/ForEachLoop#3/Outputs/Former Indexs" sink="Outlets/Key Tap Former Index" />
           <Link source="Nodes/ToSpread#3/Outputs/Result" sink="Regions/ForEachLoop#2/Inputs/Gestures" />
-          <Link source="Nodes/ToSpread#13/Outputs/Result" sink="Outlets/Hands" />
-          <Link source="Nodes/Hands#1/Outputs/Hands" sink="Nodes/ToSpread#13/Inputs/Input" />
           <Link source="Inlets/Finger" sink="Nodes/GetFingerType/Inputs/Finger" />
           <Link source="Inlets/Finger" sink="Nodes/Pointable/Inputs/Pointable" />
-          <Link source="Nodes/Gestures/Outputs/Result" sink="Regions/ForEachLoop#5/Inputs/Gesturess" />
-          <Link source="Regions/ForEachLoop#5/Outputs/Gesturess" sink="Outlets/Gestures" />
-          <Link source="Inlets/Frame" sink="Nodes/Hands#1/Inputs/Input" />
-          <Link source="Inlets/Frame" sink="Nodes/Gestures/Inputs/Input" />
-          <Link source="Inlets/Frame" sink="Nodes/Images#1/Inputs/Input" />
           <Link source="Inlets/Device" sink="Nodes/Baseline/Inputs/Input" />
           <Link source="Inlets/Device" sink="Nodes/HorizontalViewAngle/Inputs/Input" />
           <Link source="Inlets/Device" sink="Nodes/IsEmbedded/Inputs/Input" />
@@ -4037,8 +3735,6 @@
           <Link source="Inlets/Device" sink="Nodes/SerialNumber/Inputs/Input" />
           <Link source="Nodes/SerialNumber/Outputs/Serial Number" sink="Outlets/Serial Number" />
           <Link source="Inlets/Device" sink="Nodes/VerticalViewAngle/Inputs/Input" />
-          <Link source="Nodes/Images#1/Outputs/Images" sink="Nodes/ToSpread#6/Inputs/Input" />
-          <Link source="Nodes/ToSpread#6/Outputs/Result" sink="Outlets/Images" />
           <Link source="Inlets/Image" sink="Regions/IfElse/IfElseBody/Nodes/Data/Inputs/Input" />
           <Link source="Inlets/Image" sink="Nodes/BytesPerPixel/Inputs/Input" />
           <Link source="Inlets/Image" sink="Nodes/Height#1/Inputs/Input" />
@@ -4063,6 +3759,45 @@
           <Link source="Nodes/GetBoneType/Outputs/Result" sink="Outlets/Type" />
           <Link source="Regions/IfElse/Outputs/Bytes" sink="Nodes/ToRaw/Inputs/Input" />
           <Link source="Nodes/ToRaw/Outputs/Result" sink="Outlets/Result" />
+          <Link source="Nodes/Fingers#2/Outputs/Fingers" sink="Outlets/Fingers#2" />
+          <Link source="Inlets/Hand" sink="Nodes/Arm#1/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/Fingers#2/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/Tools#2/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/Pointables#2/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/Basis/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/Direction#1/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/PalmPosition/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/StabilizedPalmPosition/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/PalmNormal/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/PalmVelocity/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/PalmWidth/Inputs/Hand 2" />
+          <Link source="Inlets/Hand" sink="Nodes/WristPosition/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/SphereCenter/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/SphereRadius/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/Confidence/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/GrabStrength/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/PinchStrength/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/Id/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/IsLeft/Inputs/Hand" />
+          <Link source="Inlets/Hand" sink="Nodes/TimeVisible/Inputs/Hand" />
+          <Link source="Nodes/SphereRadius/Outputs/SphereRadius" sink="Outlets/Sphere Radius" />
+          <Link source="Nodes/SphereCenter/Outputs/SphereCenter" sink="Outlets/Sphere Center" />
+          <Link source="Nodes/WristPosition/Outputs/WristPosition" sink="Outlets/Wrist Position" />
+          <Link source="Nodes/PalmWidth/Outputs/PalmWidth" sink="Outlets/Palm Width" />
+          <Link source="Nodes/PalmVelocity/Outputs/PalmVelocity" sink="Outlets/Palm Velocity" />
+          <Link source="Nodes/PalmNormal/Outputs/PalmNormal" sink="Outlets/Palm Normal" />
+          <Link source="Nodes/StabilizedPalmPosition/Outputs/StabilizedPalmPosition" sink="Outlets/Stabilized Palm Position" />
+          <Link source="Nodes/PalmPosition/Outputs/PalmPosition" sink="Outlets/Palm Position" />
+          <Link source="Nodes/Direction#1/Outputs/Direction" sink="Outlets/Direction" />
+          <Link source="Nodes/Basis/Outputs/Basis" sink="Outlets/Basis" />
+          <Link source="Nodes/Pointables#2/Outputs/Pointables" sink="Outlets/Pointables#1" />
+          <Link source="Nodes/Tools#2/Outputs/Tools" sink="Outlets/Tools#2" />
+          <Link source="Inlets/Frame" sink="Nodes/Hands/Inputs/Frame" />
+          <Link source="Nodes/Hands/Outputs/Hands" sink="Outlets/Hands" />
+          <Link source="Inlets/Frame" sink="Nodes/Gestures#1/Inputs/Frame" />
+          <Link source="Nodes/Gestures#1/Outputs/Gestures" sink="Outlets/Gestures" />
+          <Link source="Inlets/Frame" sink="Nodes/Images/Inputs/Frame" />
+          <Link source="Nodes/Images/Outputs/Frames" sink="Outlets/Images" />
         </LINKS>
       </BODY>
     </PATCH>
@@ -6915,8 +6650,9 @@
               <NODES>
                 <OPERATION Name="IsLeft" Layer="Predicate">
                   <POSITION x="617.2611" y="344.845123" />
-                  <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
+                  <NODEREF LastFile="LeapCSharp.NET4.0.dll">
                     <OPERATIONNODE Name="IsLeft" />
+                    <CATEGORYPATH Name="Leap.Hand" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Input" />
@@ -7177,9 +6913,9 @@
               <NODES>
                 <OPERATION Name="StabilizedPalmPosition" Layer="Predicate">
                   <POSITION x="1797.41479" y="605.9071" />
-                  <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
-                    <CATEGORY Name="Hand" />
+                  <NODEREF LastFile="LeapCSharp.NET4.0.dll">
                     <OPERATIONNODE Name="StabilizedPalmPosition" />
+                    <CATEGORYPATH Name="Leap.Hand" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Input" />
@@ -7238,8 +6974,9 @@
               <NODES>
                 <OPERATION Name="StabilizedPalmPosition" Layer="Update">
                   <POSITION x="1858.92627" y="426.798737" />
-                  <NODEREF LastCat="Leap.Hand" LastFile="LeapCSharp.NET4.0.dll">
+                  <NODEREF LastFile="LeapCSharp.NET4.0.dll">
                     <OPERATIONNODE Name="StabilizedPalmPosition" />
+                    <CATEGORYPATH Name="Leap.Hand" />
                   </NODEREF>
                   <INPUTS>
                     <INPUT Name="Input" />
@@ -7700,6 +7437,969 @@
           <Link source="Nodes/SelectVector#2/Outputs/Vectors" sink="Regions/Where#5/WhereBody/Regions/Any/Inputs/Input" />
           <Link source="Regions/ForEachLoop#2/Outputs/Outputs" sink="Nodes/SelectVector#2/Inputs/Vectors" />
           <Link source="Regions/Where#5/Outputs/Output" sink="Outlets/Bones#1" />
+        </LINKS>
+      </BODY>
+    </PATCH>
+    <PATCH Name="Hand" Category="Devices.Leap.Hand">
+      <BODY Name="Utils2Body">
+        <LAYERS>
+          <LAYER Name="Fingers" />
+          <LAYER Name="Arm" />
+          <LAYER Name="Tools" />
+          <LAYER Name="Pointables" />
+          <LAYER Name="Basis" />
+          <LAYER Name="Direction" />
+          <LAYER Name="PalmPosition" />
+          <LAYER Name="StabilizedPalmPosition" />
+          <LAYER Name="PalmNormal" />
+          <LAYER Name="PalmVelocity" />
+          <LAYER Name="PalmWidth" />
+          <LAYER Name="WristPosition" />
+          <LAYER Name="SphereCenter" />
+          <LAYER Name="SphereRadius" />
+          <LAYER Name="Confidence" />
+          <LAYER Name="GrabStrength" />
+          <LAYER Name="PinchStrength" />
+          <LAYER Name="Id" />
+          <LAYER Name="IsLeft" />
+          <LAYER Name="TimeVisible" />
+          <LAYER Name="IsValid" />
+        </LAYERS>
+        <INLETS>
+          <INLET Name="Hand" Layer="Arm">
+            <POSITION x="710.275" y="212.853592" />
+          </INLET>
+          <INLET Name="Hand#1" Layer="Fingers">
+            <POSITION x="839.540466" y="179.680679" />
+          </INLET>
+          <INLET Name="Hand#2" Layer="Tools">
+            <POSITION x="938.626648" y="179.680679" />
+          </INLET>
+          <INLET Name="Hand#4" Layer="Pointables">
+            <POSITION x="1045.6897" y="168.503769" />
+          </INLET>
+          <INLET Name="Hand#3" Layer="Basis">
+            <POSITION x="1170.98877" y="191.016342" />
+          </INLET>
+          <INLET Name="Hand#5" Layer="Direction">
+            <POSITION x="1292.75867" y="185.722046" />
+          </INLET>
+          <INLET Name="Hand#6" Layer="PalmPosition">
+            <POSITION x="1413.35229" y="190.428116" />
+          </INLET>
+          <INLET Name="Hand#7" Layer="StabilizedPalmPosition">
+            <POSITION x="1543.94739" y="178.074722" />
+          </INLET>
+          <INLET Name="Hand#8" Layer="PalmNormal">
+            <POSITION x="1715.1311" y="187.486847" />
+          </INLET>
+          <INLET Name="Hand#9" Layer="PalmVelocity">
+            <POSITION x="1825.72449" y="181.604263" />
+          </INLET>
+          <INLET Name="Hand 2" Layer="PalmWidth">
+            <POSITION x="1972.60229" y="179.680679" />
+          </INLET>
+          <INLET Name="Hand#10" Layer="WristPosition">
+            <POSITION x="2100.52051" y="194.937912" />
+          </INLET>
+          <INLET Name="Hand#11" Layer="SphereCenter">
+            <POSITION x="2248.675" y="195.263321" />
+          </INLET>
+          <INLET Name="Hand#12" Layer="SphereRadius">
+            <POSITION x="2405.785" y="182.005127" />
+          </INLET>
+          <INLET Name="Hand#13" Layer="Confidence">
+            <POSITION x="2695.95874" y="180.104355" />
+          </INLET>
+          <INLET Name="Hand#14" Layer="GrabStrength">
+            <POSITION x="2784.87354" y="173.456528" />
+          </INLET>
+          <INLET Name="Hand#15" Layer="PinchStrength">
+            <POSITION x="2892.90112" y="164.31572" />
+          </INLET>
+          <INLET Name="Hand#16" Layer="Id">
+            <POSITION x="3044.97046" y="180.935349" />
+          </INLET>
+          <INLET Name="Hand#17" Layer="IsLeft">
+            <POSITION x="3101.477" y="168.470627" />
+          </INLET>
+          <INLET Name="Hand#18" Layer="TimeVisible">
+            <POSITION x="3167.95532" y="172.625534" />
+          </INLET>
+          <INLET Name="Hand#19" Layer="IsValid">
+            <POSITION x="3266.011" y="166.80867" />
+          </INLET>
+        </INLETS>
+        <OUTLETS>
+          <OUTLET Name="Arm" Layer="Arm">
+            <POSITION x="709.635" y="266.6075" />
+          </OUTLET>
+          <OUTLET Name="Fingers" Layer="Fingers">
+            <POSITION x="838.2605" y="336.66275" />
+          </OUTLET>
+          <OUTLET Name="Tools" Layer="Tools">
+            <POSITION x="936.27356" y="273.6984" />
+          </OUTLET>
+          <OUTLET Name="Pointables" Layer="Pointables">
+            <POSITION x="1040.98364" y="279.581" />
+          </OUTLET>
+          <OUTLET Name="Basis" Layer="Basis">
+            <POSITION x="1169.81213" y="273.372528" />
+          </OUTLET>
+          <OUTLET Name="Direction" Layer="Direction">
+            <POSITION x="1290.9939" y="266.9017" />
+          </OUTLET>
+          <OUTLET Name="PalmPosition" Layer="PalmPosition">
+            <POSITION x="1402.76367" y="335.139648" />
+          </OUTLET>
+          <OUTLET Name="StabilizedPalmPosition" Layer="StabilizedPalmPosition">
+            <POSITION x="1544.53564" y="338.081" />
+          </OUTLET>
+          <OUTLET Name="PalmNormal" Layer="PalmNormal">
+            <POSITION x="1717.48413" y="331.610138" />
+          </OUTLET>
+          <OUTLET Name="PalmVelocity" Layer="PalmVelocity">
+            <POSITION x="1822.7832" y="339.845764" />
+          </OUTLET>
+          <OUTLET Name="PalmWidth" Layer="PalmWidth">
+            <POSITION x="1969.16345" y="336.66275" />
+          </OUTLET>
+          <OUTLET Name="WristPosition" Layer="WristPosition">
+            <POSITION x="2101.208" y="340.737122" />
+          </OUTLET>
+          <OUTLET Name="SphereCenter" Layer="SphereCenter">
+            <POSITION x="2236.07959" y="349.721466" />
+          </OUTLET>
+          <OUTLET Name="SphereRadius" Layer="SphereRadius">
+            <POSITION x="2409.76221" y="335.800354" />
+          </OUTLET>
+          <OUTLET Name="Confidence" Layer="Confidence">
+            <POSITION x="2695.95874" y="254.0616" />
+          </OUTLET>
+          <OUTLET Name="Grab Strength" Layer="GrabStrength">
+            <POSITION x="2789.02856" y="252.399612" />
+          </OUTLET>
+          <OUTLET Name="Pinch Strength" Layer="PinchStrength">
+            <POSITION x="2896.22485" y="241.596878" />
+          </OUTLET>
+          <OUTLET Name="Id" Layer="Id">
+            <POSITION x="3041.64648" y="243.258835" />
+          </OUTLET>
+          <OUTLET Name="Is Left" Layer="IsLeft">
+            <POSITION x="3101.477" y="248.244736" />
+          </OUTLET>
+          <OUTLET Name="Time Visible" Layer="TimeVisible">
+            <POSITION x="3172.94141" y="254.892563" />
+          </OUTLET>
+          <OUTLET Name="Is Valid" Layer="IsValid">
+            <POSITION x="3267.673" y="249.0757" />
+          </OUTLET>
+        </OUTLETS>
+        <CONSTS>
+          <CONST Name="comment" Layer="Fingers" Type="String">
+            <POSITION x="335.558868" y="221.685745" />
+            <SIZE width="261.760742" height="10.7563477" />
+            <VALUE><![CDATA["left out all things with \"Since Frame\" - eg RotationAxis"]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m" Layer="SphereRadius">
+            <POSITION x="2478.358" y="244.267944" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#1" Layer="SphereCenter">
+            <POSITION x="2286.386" y="249.127136" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#2" Layer="WristPosition">
+            <POSITION x="2136.34253" y="252.8216" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#3" Layer="PalmWidth">
+            <POSITION x="2027.063" y="236.716492" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#4" Layer="PalmVelocity">
+            <POSITION x="1852.5614" y="239.246277" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#5" Layer="PalmPosition">
+            <POSITION x="1433.47681" y="255.7522" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+          <CONST Name="mm to m#6" Layer="StabilizedPalmPosition">
+            <POSITION x="1582.75635" y="248.964539" />
+            <SIZE width="40" height="15.7645035" />
+            <CONFIGURATION>
+              <PRECISION><![CDATA[3]]></PRECISION>
+            </CONFIGURATION>
+            <VALUE><![CDATA[0.001]]></VALUE>
+          </CONST>
+        </CONSTS>
+        <REGIONS />
+        <NODES>
+          <OPERATION Name="Arm#1" Layer="Arm">
+            <POSITION x="712.6946" y="232.711121" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Arm" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Arm" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Fingers#2" Layer="Fingers">
+            <POSITION x="841.1979" y="200.714737" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Fingers" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Fingers" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Tools#2" Layer="Tools">
+            <POSITION x="939.5306" y="203.717468" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Tools" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Tools" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#2" Layer="Fingers">
+            <POSITION x="840.52" y="238.274017" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#10" Layer="Tools">
+            <POSITION x="939.4586" y="241.096039" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#9" Layer="Pointables">
+            <POSITION x="1045.4563" y="234.752167" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Pointables#2" Layer="Pointables">
+            <POSITION x="1046.677" y="190" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Pointables" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Pointables" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Basis" Layer="Basis">
+            <POSITION x="1172.58057" y="213.188171" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Basis" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Basis" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToMatrix" Layer="Basis">
+            <POSITION x="1172.784" y="246.248871" />
+            <NODEREF LastCat="Leap.Matrix" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToMatrix" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Matrix Leap" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Matrix 3D" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Direction#1" Layer="Direction">
+            <POSITION x="1294.67749" y="205.5404" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Direction" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Direction" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3" Layer="Direction">
+            <POSITION x="1294.52026" y="242.081879" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*" Layer="PalmPosition">
+            <POSITION x="1400.4679" y="271.3497" />
+            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="*" Version="Single Vector" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="PalmPosition" Layer="PalmPosition">
+            <POSITION x="1415.50208" y="219.670822" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="PalmPosition" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Palm Position" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="StabilizedPalmPosition" Layer="StabilizedPalmPosition">
+            <POSITION x="1546.8573" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="StabilizedPalmPosition" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Stabilized Palm Position" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#1" Layer="StabilizedPalmPosition">
+            <POSITION x="1542.23694" y="271.3497" />
+            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="*" Version="Single Vector" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="PalmNormal" Layer="PalmNormal">
+            <POSITION x="1716.95825" y="219.670822" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="PalmNormal" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Palm Normal" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="PalmVelocity" Layer="PalmVelocity">
+            <POSITION x="1821.84155" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="PalmVelocity" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Palm Velocity" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#3" Layer="PalmVelocity">
+            <POSITION x="1820.6687" y="272.477631" />
+            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="*" Version="Single Vector" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="PalmWidth" Layer="PalmWidth">
+            <POSITION x="1969.40979" y="208.326874" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="PalmWidth" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Palm Width" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#4" Layer="PalmWidth">
+            <POSITION x="1971.10632" y="272.883" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="*" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+              <INPUT Name="Input 3" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#1" Layer="PalmPosition">
+            <POSITION x="1400.88513" y="299.83786" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#2" Layer="StabilizedPalmPosition">
+            <POSITION x="1541.05627" y="299.83786" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#3" Layer="PalmNormal">
+            <POSITION x="1720.29028" y="298.07312" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#4" Layer="PalmVelocity">
+            <POSITION x="1819.2937" y="299.83786" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="WristPosition" Layer="WristPosition">
+            <POSITION x="2103.73535" y="215.891937" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="WristPosition" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Wrist Position" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#5" Layer="WristPosition">
+            <POSITION x="2099.55029" y="311.941956" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#2" Layer="WristPosition">
+            <POSITION x="2098.95557" y="284.581726" />
+            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="*" Version="Single Vector" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="SphereCenter" Layer="SphereCenter">
+            <POSITION x="2242.22778" y="214.516479" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="SphereCenter" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Sphere Center" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToVector3#6" Layer="SphereCenter">
+            <POSITION x="2231.01" y="310.5665" />
+            <NODEREF LastCat="Leap.Vector" LastFile="VL.Devices.Leap.vl">
+              <OPERATIONNODE Name="ToVector3" />
+              <CATEGORY Name="Vector" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Vector" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Vector3" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#5" Layer="SphereCenter">
+            <POSITION x="2229.26978" y="282.078339" />
+            <NODEREF LastCat="Leap.Vector" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="*" Version="Single Vector" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="SphereRadius" Layer="SphereRadius">
+            <POSITION x="2406.07935" y="206.363708" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="SphereRadius" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Sphere Radius" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="*#6" Layer="SphereRadius">
+            <POSITION x="2406.59" y="285.462" />
+            <NODEREF LastCat="Adaptive" LastFile="VL.Lib.Basics.dll">
+              <OPERATIONNODE Name="*" />
+              <CATEGORY Name="Adaptive" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+              <INPUT Name="Input 2" />
+              <INPUT Name="Input 3" />
+              <INPUT Name="Enabled" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Output" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Confidence" Layer="Confidence">
+            <POSITION x="2694.23486" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Confidence" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Confidence" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="GrabStrength" Layer="GrabStrength">
+            <POSITION x="2780.516" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="GrabStrength" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Grab Strength" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="PinchStrength" Layer="PinchStrength">
+            <POSITION x="2891.52832" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="PinchStrength" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Pinch Strength" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Id" Layer="Id">
+            <POSITION x="3039.206" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Id" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Id" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="IsLeft" Layer="IsLeft">
+            <POSITION x="3094.58154" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="IsLeft" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Is Left" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="TimeVisible" Layer="TimeVisible">
+            <POSITION x="3164.47656" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="TimeVisible" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Time Visible" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="IsValid" Layer="IsValid">
+            <POSITION x="3268.36523" y="203.787842" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="IsValid" />
+              <CATEGORYPATH Name="Leap.Hand" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Is Valid" />
+            </OUTPUTS>
+          </OPERATION>
+        </NODES>
+        <LINKS>
+          <Link source="Constants/mm to m" sink="Nodes/*#6/Inputs/Input" />
+          <Link source="Nodes/Fingers#2/Outputs/Fingers" sink="Nodes/ToSpread#2/Inputs/Input" />
+          <Link source="Nodes/Tools#2/Outputs/Tools" sink="Nodes/ToSpread#10/Inputs/Input" />
+          <Link source="Nodes/Pointables#2/Outputs/Pointables" sink="Nodes/ToSpread#9/Inputs/Input" />
+          <Link source="Nodes/Basis/Outputs/Basis" sink="Nodes/ToMatrix/Inputs/Matrix Leap" />
+          <Link source="Nodes/Direction#1/Outputs/Direction" sink="Nodes/ToVector3/Inputs/Vector" />
+          <Link source="Nodes/*/Outputs/Result" sink="Nodes/ToVector3#1/Inputs/Vector" />
+          <Link source="Nodes/PalmPosition/Outputs/Palm Position" sink="Nodes/*/Inputs/Input 2" />
+          <Link source="Nodes/StabilizedPalmPosition/Outputs/Stabilized Palm Position" sink="Nodes/*#1/Inputs/Input 2" />
+          <Link source="Nodes/*#1/Outputs/Result" sink="Nodes/ToVector3#2/Inputs/Vector" />
+          <Link source="Nodes/PalmNormal/Outputs/Palm Normal" sink="Nodes/ToVector3#3/Inputs/Vector" />
+          <Link source="Nodes/PalmVelocity/Outputs/Palm Velocity" sink="Nodes/*#3/Inputs/Input 2" />
+          <Link source="Nodes/*#3/Outputs/Result" sink="Nodes/ToVector3#4/Inputs/Vector" />
+          <Link source="Nodes/PalmWidth/Outputs/Palm Width" sink="Nodes/*#4/Inputs/Input 2" />
+          <Link source="Nodes/WristPosition/Outputs/Wrist Position" sink="Nodes/*#2/Inputs/Input 2" />
+          <Link source="Nodes/*#2/Outputs/Result" sink="Nodes/ToVector3#5/Inputs/Vector" />
+          <Link source="Nodes/SphereCenter/Outputs/Sphere Center" sink="Nodes/*#5/Inputs/Input 2" />
+          <Link source="Nodes/*#5/Outputs/Result" sink="Nodes/ToVector3#6/Inputs/Vector" />
+          <Link source="Nodes/SphereRadius/Outputs/Sphere Radius" sink="Nodes/*#6/Inputs/Input 2" />
+          <Link source="Inlets/Hand" sink="Nodes/Arm#1/Inputs/Input" />
+          <Link source="Nodes/Arm#1/Outputs/Arm" sink="Outlets/Arm" />
+          <Link source="Inlets/Hand#1" sink="Nodes/Fingers#2/Inputs/Input" />
+          <Link source="Nodes/ToSpread#2/Outputs/Result" sink="Outlets/Fingers" />
+          <Link source="Inlets/Hand#2" sink="Nodes/Tools#2/Inputs/Input" />
+          <Link source="Nodes/ToSpread#10/Outputs/Result" sink="Outlets/Tools" />
+          <Link source="Inlets/Hand#4" sink="Nodes/Pointables#2/Inputs/Input" />
+          <Link source="Nodes/ToSpread#9/Outputs/Result" sink="Outlets/Pointables" />
+          <Link source="Inlets/Hand#3" sink="Nodes/Basis/Inputs/Input" />
+          <Link source="Nodes/ToMatrix/Outputs/Matrix 3D" sink="Outlets/Basis" />
+          <Link source="Inlets/Hand#5" sink="Nodes/Direction#1/Inputs/Input" />
+          <Link source="Nodes/ToVector3/Outputs/Vector3" sink="Outlets/Direction" />
+          <Link source="Inlets/Hand#6" sink="Nodes/PalmPosition/Inputs/Input" />
+          <Link source="Nodes/ToVector3#1/Outputs/Vector3" sink="Outlets/PalmPosition" />
+          <Link source="Inlets/Hand#7" sink="Nodes/StabilizedPalmPosition/Inputs/Input" />
+          <Link source="Nodes/ToVector3#2/Outputs/Vector3" sink="Outlets/StabilizedPalmPosition" />
+          <Link source="Inlets/Hand#8" sink="Nodes/PalmNormal/Inputs/Input" />
+          <Link source="Nodes/ToVector3#3/Outputs/Vector3" sink="Outlets/PalmNormal" />
+          <Link source="Inlets/Hand#9" sink="Nodes/PalmVelocity/Inputs/Input" />
+          <Link source="Nodes/ToVector3#4/Outputs/Vector3" sink="Outlets/PalmVelocity" />
+          <Link source="Inlets/Hand 2" sink="Nodes/PalmWidth/Inputs/Input" />
+          <Link source="Nodes/*#4/Outputs/Output" sink="Outlets/PalmWidth" />
+          <Link source="Inlets/Hand#10" sink="Nodes/WristPosition/Inputs/Input" />
+          <Link source="Nodes/ToVector3#5/Outputs/Vector3" sink="Outlets/WristPosition" />
+          <Link source="Inlets/Hand#11" sink="Nodes/SphereCenter/Inputs/Input" />
+          <Link source="Nodes/ToVector3#6/Outputs/Vector3" sink="Outlets/SphereCenter" />
+          <Link source="Inlets/Hand#12" sink="Nodes/SphereRadius/Inputs/Input" />
+          <Link source="Nodes/*#6/Outputs/Output" sink="Outlets/SphereRadius" />
+          <Link source="Constants/mm to m#5" sink="Nodes/*/Inputs/Input" />
+          <Link source="Constants/mm to m#6" sink="Nodes/*#1/Inputs/Input" />
+          <Link source="Constants/mm to m#4" sink="Nodes/*#3/Inputs/Input" />
+          <Link source="Constants/mm to m#3" sink="Nodes/*#4/Inputs/Input" />
+          <Link source="Constants/mm to m#2" sink="Nodes/*#2/Inputs/Input" />
+          <Link source="Constants/mm to m#1" sink="Nodes/*#5/Inputs/Input" />
+          <Link source="Inlets/Hand#13" sink="Nodes/Confidence/Inputs/Input" />
+          <Link source="Nodes/Confidence/Outputs/Confidence" sink="Outlets/Confidence" />
+          <Link source="Inlets/Hand#14" sink="Nodes/GrabStrength/Inputs/Input" />
+          <Link source="Nodes/GrabStrength/Outputs/Grab Strength" sink="Outlets/Grab Strength" />
+          <Link source="Inlets/Hand#15" sink="Nodes/PinchStrength/Inputs/Input" />
+          <Link source="Nodes/PinchStrength/Outputs/Pinch Strength" sink="Outlets/Pinch Strength" />
+          <Link source="Inlets/Hand#16" sink="Nodes/Id/Inputs/Input" />
+          <Link source="Nodes/Id/Outputs/Id" sink="Outlets/Id" />
+          <Link source="Inlets/Hand#17" sink="Nodes/IsLeft/Inputs/Input" />
+          <Link source="Nodes/IsLeft/Outputs/Is Left" sink="Outlets/Is Left" />
+          <Link source="Inlets/Hand#18" sink="Nodes/TimeVisible/Inputs/Input" />
+          <Link source="Nodes/TimeVisible/Outputs/Time Visible" sink="Outlets/Time Visible" />
+          <Link source="Inlets/Hand#19" sink="Nodes/IsValid/Inputs/Input" />
+          <Link source="Nodes/IsValid/Outputs/Is Valid" sink="Outlets/Is Valid" />
+        </LINKS>
+      </BODY>
+    </PATCH>
+    <PATCH Name="Frame" Category="Devices.Leap.Frame">
+      <BODY Name="Utils2Body">
+        <LAYERS>
+          <LAYER Name="Hands" />
+          <LAYER Name="Gestures" />
+          <LAYER Name="Images" />
+        </LAYERS>
+        <INLETS>
+          <INLET Name="Frame" Layer="Hands">
+            <POSITION x="754.2895" y="294.4571" />
+          </INLET>
+          <INLET Name="Frame#1" Layer="Gestures">
+            <POSITION x="860.7485" y="314.4571" />
+          </INLET>
+          <INLET Name="Frame#2" Layer="Images">
+            <POSITION x="1031.416" y="334.4571" />
+          </INLET>
+        </INLETS>
+        <OUTLETS>
+          <OUTLET Name="Hands" Layer="Hands">
+            <POSITION x="756.312256" y="504.3014" />
+          </OUTLET>
+          <OUTLET Name="Gestures" Layer="Gestures">
+            <POSITION x="863.050964" y="518.4781" />
+          </OUTLET>
+          <OUTLET Name="Frames" Layer="Images">
+            <POSITION x="1035.39673" y="464.250549" />
+          </OUTLET>
+        </OUTLETS>
+        <CONSTS />
+        <REGIONS>
+          <REGION Name="ForEachLoop#5" Layer="Gestures" Kind="ForEachLoop">
+            <POSITION x="860.527344" y="413.278351" />
+            <SIZE x="234.708252" y="22.97409" />
+            <INPUTS>
+              <INPUT Name="Gestures" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Gestures" />
+            </OUTPUTS>
+            <BODY Name="ForEachLoopBody">
+              <LAYERS>
+                <LAYER Name="Update" />
+              </LAYERS>
+              <INLETS>
+                <INLET Name="Gesture" Layer="Update">
+                  <POSITION x="864.0913" y="415.42865" />
+                </INLET>
+              </INLETS>
+              <OUTLETS>
+                <OUTLET Name="Gesture" Layer="Update">
+                  <POSITION x="864.0913" y="494.906525" />
+                </OUTLET>
+              </OUTLETS>
+              <CONSTS />
+              <REGIONS />
+              <NODES>
+                <OPERATION Name="SpecifyGestureType" Layer="Update">
+                  <POSITION x="865.527344" y="440.4466" />
+                  <NODEREF LastCat="Devices.Leap" LastFile="VL.Devices.Leap.vl">
+                    <OPERATIONNODE Name="SpecifyGestureType" />
+                  </NODEREF>
+                  <INPUTS>
+                    <INPUT Name="Gestures" />
+                  </INPUTS>
+                  <OUTPUTS>
+                    <OUPUT Name="Gestures" />
+                  </OUTPUTS>
+                </OPERATION>
+              </NODES>
+              <LINKS>
+                <Link source="Inlets/Gesture" sink="Nodes/SpecifyGestureType/Inputs/Gestures" />
+                <Link source="Nodes/SpecifyGestureType/Outputs/Gestures" sink="Outlets/Gesture" />
+              </LINKS>
+            </BODY>
+          </REGION>
+        </REGIONS>
+        <NODES>
+          <OPERATION Name="ToSpread#6" Layer="Images">
+            <POSITION x="1033.48242" y="418.860077" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Images#1" Layer="Images">
+            <POSITION x="1033.43713" y="365.037262" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Images" />
+              <CATEGORYPATH Name="Leap.Frame" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Images" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Gestures" Layer="Gestures">
+            <POSITION x="864.926758" y="369.666931" />
+            <NODEREF LastCat="Leap.Frame" LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Gestures" />
+              <CATEGORY Name="Frame" IsDirectParent="true">
+                <CATEGORY Name="Leap" IsDirectParent="true" IsGlobal="true" />
+              </CATEGORY>
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="ToSpread#13" Layer="Hands">
+            <POSITION x="755.4725" y="446.530457" />
+            <NODEREF LastCat="Collections.Sequence" LastFile="VL.Core.dll">
+              <OPERATIONNODE Name="ToSpread" />
+              <CATEGORY Name="Sequence" IsDirectParent="true" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Result" />
+            </OUTPUTS>
+          </OPERATION>
+          <OPERATION Name="Hands#1" Layer="Hands">
+            <POSITION x="756.6839" y="404.106659" />
+            <NODEREF LastFile="LeapCSharp.NET4.0.dll">
+              <OPERATIONNODE Name="Hands" />
+              <CATEGORYPATH Name="Leap.Frame" />
+            </NODEREF>
+            <INPUTS>
+              <INPUT Name="Input" />
+            </INPUTS>
+            <OUTPUTS>
+              <OUPUT Name="Hands" />
+            </OUTPUTS>
+          </OPERATION>
+        </NODES>
+        <LINKS>
+          <Link source="Inlets/Frame" sink="Nodes/Hands#1/Inputs/Input" />
+          <Link source="Nodes/Images#1/Outputs/Images" sink="Nodes/ToSpread#6/Inputs/Input" />
+          <Link source="Nodes/Gestures/Outputs/Result" sink="Regions/ForEachLoop#5/Inputs/Gestures" />
+          <Link source="Nodes/Hands#1/Outputs/Hands" sink="Nodes/ToSpread#13/Inputs/Input" />
+          <Link source="Inlets/Frame#1" sink="Nodes/Gestures/Inputs/Input" />
+          <Link source="Inlets/Frame#2" sink="Nodes/Images#1/Inputs/Input" />
+          <Link source="Nodes/ToSpread#6/Outputs/Result" sink="Outlets/Frames" />
+          <Link source="Regions/ForEachLoop#5/Outputs/Gestures" sink="Outlets/Gestures" />
+          <Link source="Nodes/ToSpread#13/Outputs/Result" sink="Outlets/Hands" />
         </LINKS>
       </BODY>
     </PATCH>
